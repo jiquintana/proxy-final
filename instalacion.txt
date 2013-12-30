@@ -1,0 +1,40 @@
+[root@entropia jiquintana]$ useradd -m proxy
+[root@entropia jiquintana]$ passwd proxy
+Cambiando la contraseña del usuario proxy.
+Nueva contraseña: 
+CONTRASEÑA INCORRECTA: La contraseña tiene menos de 9 caracteres
+Vuelva a escribir la nueva contraseña: 
+passwd: todos los tokens de autenticación se actualizaron exitosamente.
+
+[root@entropia jiquintana]$ su - proxy
+echo "export PATH=~/bin:$PATH" >> ~/.bashrc
+mkdir -p bin tmp
+ln -s /bin/python3 ~/bin/python
+exit
+
+[root@entropia jiquintana]$ su - proxy
+
+python -V
+cd tmp
+INITIAL_ENV=proxy-final
+VERSION=1.10.1
+ENV_OPTS='--no-site-packages --distribute'
+PYTHON=$(which python)
+URL_BASE=http://pypi.python.org/packages/source/v/virtualenv
+wget -q $URL_BASE/virtualenv-$VERSION.tar.gz
+tar xzf virtualenv-$VERSION.tar.gz
+cd ~
+$PYTHON tmp/virtualenv-$VERSION/virtualenv.py $ENV_OPTS $INITIAL_ENV
+rm -rf tmp/virtualenv-$VERSION
+$INITIAL_ENV/bin/pip install tmp/virtualenv-$VERSION.tar.gz
+echo "source proxy-final/bin/activate" >> ~/.bashrc
+exit
+
+[root@entropia jiquintana]$ su - proxy
+cd proxy-final
+git clone https://github.com/jiquintana/proxy-final.git
+ln -s proxy-final source
+cd source
+
+pip install requests
+pip install sqlalchemy
