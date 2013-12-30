@@ -26,7 +26,6 @@ from db_mapper import db_handler
 from db_layer import Database
 from Log import Log
 from Config import Config
-from bs4 import BeautifulSoup
 import unicodedata
 
 DEBUG = Config.DEBUG['Proxy.DEBUG']
