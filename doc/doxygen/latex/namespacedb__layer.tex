@@ -1,0 +1,151 @@
+\hypertarget{namespacedb__layer}{\section{Referencia del Namespace db\-\_\-layer}
+\label{namespacedb__layer}\index{db\-\_\-layer@{db\-\_\-layer}}
+}
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classdb__layer_1_1_alchemy_encoder}{Alchemy\-Encoder}
+\item 
+class \hyperlink{classdb__layer_1_1_database}{Database}
+\item 
+class \hyperlink{classdb__layer_1_1_rule}{Rule}
+\item 
+class \hyperlink{classdb__layer_1_1_groups}{Groups}
+\item 
+class \hyperlink{classdb__layer_1_1_rol_type}{Rol\-Type}
+\item 
+class \hyperlink{classdb__layer_1_1_user}{User}
+\item 
+class \hyperlink{classdb__layer_1_1_group}{Group}
+\item 
+class \hyperlink{classdb__layer_1_1_u_r_i_s}{U\-R\-I\-S}
+\item 
+class \hyperlink{classdb__layer_1_1_w_o_r_d_s}{W\-O\-R\-D\-S}
+\item 
+class \hyperlink{classdb__layer_1_1_m_i_m_e_s}{M\-I\-M\-E\-S}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacedb__layer_a8fd2ce6ee0abd7a51e1ec8fe295a5a6b}{python\-\_\-\-Old\-Version} = True
+\item 
+int \hyperlink{namespacedb__layer_a649e55a17a43790deef2961f2ca5c396}{M\-A\-X\-U\-S\-E\-R\-S} = 1024
+\item 
+int \hyperlink{namespacedb__layer_aa86922899182c14d523d4d72a501089b}{M\-A\-X\-G\-R\-O\-U\-P\-S} = 65536
+\item 
+list \hyperlink{namespacedb__layer_a7ed1ca76a740523975d0736208ae1f65}{D\-R\-I\-V\-E\-R} = \hyperlink{class_config_1_1_config_a62ca676b07391529a5c1abd433bed57f}{Config.\-db\-Files}\mbox{[}'proxy'\mbox{]}
+\item 
+list \hyperlink{namespacedb__layer_ad65ee0b7707a738bc9f93587eebd04f6}{Trace\-S\-Q\-L} = \hyperlink{class_config_1_1_config_af7a49b43885faa51f5f5b5687a05120c}{Config.\-db\-Trace}\mbox{[}'proxy'\mbox{]}
+\item 
+tuple \hyperlink{namespacedb__layer_ad6378d01c39f29fff5832fab694e3a9f}{engine} = create\-\_\-engine(\hyperlink{namespacedb__layer_a7ed1ca76a740523975d0736208ae1f65}{D\-R\-I\-V\-E\-R}, echo=\hyperlink{namespacedb__layer_ad65ee0b7707a738bc9f93587eebd04f6}{Trace\-S\-Q\-L},poolclass=Null\-Pool)
+\item 
+tuple \hyperlink{namespacedb__layer_abf9d884063baa5841f513855cff66c26}{Base} = declarative\-\_\-base()
+\item 
+dictionary \hyperlink{namespacedb__layer_afb05786606d962ab2909e3436e531854}{H\-O\-U\-R\-S\-\_\-\-I\-D\-X}
+\item 
+dictionary \hyperlink{namespacedb__layer_ad6ee299a7034867156fb8100ec6864d7}{H\-O\-U\-R\-S\-\_\-\-M\-A\-S\-K}
+\item 
+dictionary \hyperlink{namespacedb__layer_a0d5b65488cbaa2ab5d2cdb3c69a98c79}{roles} = \{'A' \-: 'Admin \hyperlink{classdb__layer_1_1_user}{User}', 'V' \-: 'Advanced \hyperlink{classdb__layer_1_1_user}{User}', 'K' \-: 'Kid \hyperlink{classdb__layer_1_1_user}{User}', 'G' \-: 'Guest \hyperlink{classdb__layer_1_1_user}{User}'\}
+\item 
+tuple \hyperlink{namespacedb__layer_a566ad0b24ebd9510b8017f700f4540b5}{db} = \hyperlink{classdb__layer_1_1_database}{Database}()
+\item 
+tuple \hyperlink{namespacedb__layer_aa5866ade4f254a145901ec8647407bdb}{rules} = db.\-get\-R\-U\-L\-E\-S('M\-I\-M\-E', 'kid1')
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las variables}
+\hypertarget{namespacedb__layer_abf9d884063baa5841f513855cff66c26}{\index{db\-\_\-layer@{db\-\_\-layer}!Base@{Base}}
+\index{Base@{Base}!db_layer@{db\-\_\-layer}}
+\subsubsection[{Base}]{\setlength{\rightskip}{0pt plus 5cm}tuple db\-\_\-layer.\-Base = declarative\-\_\-base()}}\label{namespacedb__layer_abf9d884063baa5841f513855cff66c26}
+
+
+Definición en la línea 30 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{namespacedb__layer_a566ad0b24ebd9510b8017f700f4540b5}{\index{db\-\_\-layer@{db\-\_\-layer}!db@{db}}
+\index{db@{db}!db_layer@{db\-\_\-layer}}
+\subsubsection[{db}]{\setlength{\rightskip}{0pt plus 5cm}tuple db\-\_\-layer.\-db = {\bf Database}()}}\label{namespacedb__layer_a566ad0b24ebd9510b8017f700f4540b5}
+
+
+Definición en la línea 1257 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{namespacedb__layer_a7ed1ca76a740523975d0736208ae1f65}{\index{db\-\_\-layer@{db\-\_\-layer}!D\-R\-I\-V\-E\-R@{D\-R\-I\-V\-E\-R}}
+\index{D\-R\-I\-V\-E\-R@{D\-R\-I\-V\-E\-R}!db_layer@{db\-\_\-layer}}
+\subsubsection[{D\-R\-I\-V\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}list db\-\_\-layer.\-D\-R\-I\-V\-E\-R = {\bf Config.\-db\-Files}\mbox{[}'proxy'\mbox{]}}}\label{namespacedb__layer_a7ed1ca76a740523975d0736208ae1f65}
+
+
+Definición en la línea 25 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{namespacedb__layer_ad6378d01c39f29fff5832fab694e3a9f}{\index{db\-\_\-layer@{db\-\_\-layer}!engine@{engine}}
+\index{engine@{engine}!db_layer@{db\-\_\-layer}}
+\subsubsection[{engine}]{\setlength{\rightskip}{0pt plus 5cm}tuple db\-\_\-layer.\-engine = create\-\_\-engine({\bf D\-R\-I\-V\-E\-R}, echo={\bf Trace\-S\-Q\-L},poolclass=Null\-Pool)}}\label{namespacedb__layer_ad6378d01c39f29fff5832fab694e3a9f}
+
+
+Definición en la línea 28 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{namespacedb__layer_afb05786606d962ab2909e3436e531854}{\index{db\-\_\-layer@{db\-\_\-layer}!H\-O\-U\-R\-S\-\_\-\-I\-D\-X@{H\-O\-U\-R\-S\-\_\-\-I\-D\-X}}
+\index{H\-O\-U\-R\-S\-\_\-\-I\-D\-X@{H\-O\-U\-R\-S\-\_\-\-I\-D\-X}!db_layer@{db\-\_\-layer}}
+\subsubsection[{H\-O\-U\-R\-S\-\_\-\-I\-D\-X}]{\setlength{\rightskip}{0pt plus 5cm}dictionary db\-\_\-layer.\-H\-O\-U\-R\-S\-\_\-\-I\-D\-X}}\label{namespacedb__layer_afb05786606d962ab2909e3436e531854}
+{\bfseries Valor inicial\-:}
+\begin{DoxyCode}
+1 = \{
+2      0: \textcolor{stringliteral}{'H00\_M'},  1: \textcolor{stringliteral}{'H01\_M'},  2: \textcolor{stringliteral}{'H02\_M'},  3: \textcolor{stringliteral}{'H03\_M'},
+3      4: \textcolor{stringliteral}{'H04\_M'},  5: \textcolor{stringliteral}{'H05\_M'},  6: \textcolor{stringliteral}{'H06\_M'},  7: \textcolor{stringliteral}{'H07\_M'},
+4      8: \textcolor{stringliteral}{'H08\_M'},  9: \textcolor{stringliteral}{'H09\_M'}, 10: \textcolor{stringliteral}{'H10\_M'}, 11: \textcolor{stringliteral}{'H11\_M'},
+5     12: \textcolor{stringliteral}{'H12\_M'}, 13: \textcolor{stringliteral}{'H13\_M'}, 14: \textcolor{stringliteral}{'H14\_M'}, 15: \textcolor{stringliteral}{'H15\_M'},
+6     16: \textcolor{stringliteral}{'H16\_M'}, 17: \textcolor{stringliteral}{'H17\_M'}, 18: \textcolor{stringliteral}{'H18\_M'}, 19: \textcolor{stringliteral}{'H19\_M'},
+7     20: \textcolor{stringliteral}{'H20\_M'}, 21: \textcolor{stringliteral}{'H21\_M'}, 22: \textcolor{stringliteral}{'H22\_M'}, 23: \textcolor{stringliteral}{'H23\_M'}
+8 \}
+\end{DoxyCode}
+
+
+Definición en la línea 33 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{namespacedb__layer_ad6ee299a7034867156fb8100ec6864d7}{\index{db\-\_\-layer@{db\-\_\-layer}!H\-O\-U\-R\-S\-\_\-\-M\-A\-S\-K@{H\-O\-U\-R\-S\-\_\-\-M\-A\-S\-K}}
+\index{H\-O\-U\-R\-S\-\_\-\-M\-A\-S\-K@{H\-O\-U\-R\-S\-\_\-\-M\-A\-S\-K}!db_layer@{db\-\_\-layer}}
+\subsubsection[{H\-O\-U\-R\-S\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}dictionary db\-\_\-layer.\-H\-O\-U\-R\-S\-\_\-\-M\-A\-S\-K}}\label{namespacedb__layer_ad6ee299a7034867156fb8100ec6864d7}
+
+
+Definición en la línea 42 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{namespacedb__layer_aa86922899182c14d523d4d72a501089b}{\index{db\-\_\-layer@{db\-\_\-layer}!M\-A\-X\-G\-R\-O\-U\-P\-S@{M\-A\-X\-G\-R\-O\-U\-P\-S}}
+\index{M\-A\-X\-G\-R\-O\-U\-P\-S@{M\-A\-X\-G\-R\-O\-U\-P\-S}!db_layer@{db\-\_\-layer}}
+\subsubsection[{M\-A\-X\-G\-R\-O\-U\-P\-S}]{\setlength{\rightskip}{0pt plus 5cm}int db\-\_\-layer.\-M\-A\-X\-G\-R\-O\-U\-P\-S = 65536}}\label{namespacedb__layer_aa86922899182c14d523d4d72a501089b}
+
+
+Definición en la línea 23 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{namespacedb__layer_a649e55a17a43790deef2961f2ca5c396}{\index{db\-\_\-layer@{db\-\_\-layer}!M\-A\-X\-U\-S\-E\-R\-S@{M\-A\-X\-U\-S\-E\-R\-S}}
+\index{M\-A\-X\-U\-S\-E\-R\-S@{M\-A\-X\-U\-S\-E\-R\-S}!db_layer@{db\-\_\-layer}}
+\subsubsection[{M\-A\-X\-U\-S\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}int db\-\_\-layer.\-M\-A\-X\-U\-S\-E\-R\-S = 1024}}\label{namespacedb__layer_a649e55a17a43790deef2961f2ca5c396}
+
+
+Definición en la línea 22 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{namespacedb__layer_a8fd2ce6ee0abd7a51e1ec8fe295a5a6b}{\index{db\-\_\-layer@{db\-\_\-layer}!python\-\_\-\-Old\-Version@{python\-\_\-\-Old\-Version}}
+\index{python\-\_\-\-Old\-Version@{python\-\_\-\-Old\-Version}!db_layer@{db\-\_\-layer}}
+\subsubsection[{python\-\_\-\-Old\-Version}]{\setlength{\rightskip}{0pt plus 5cm}db\-\_\-layer.\-python\-\_\-\-Old\-Version = True}}\label{namespacedb__layer_a8fd2ce6ee0abd7a51e1ec8fe295a5a6b}
+
+
+Definición en la línea 6 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{namespacedb__layer_a0d5b65488cbaa2ab5d2cdb3c69a98c79}{\index{db\-\_\-layer@{db\-\_\-layer}!roles@{roles}}
+\index{roles@{roles}!db_layer@{db\-\_\-layer}}
+\subsubsection[{roles}]{\setlength{\rightskip}{0pt plus 5cm}dictionary db\-\_\-layer.\-roles = \{'A' \-: 'Admin {\bf User}', 'V' \-: 'Advanced {\bf User}', 'K' \-: 'Kid {\bf User}', 'G' \-: 'Guest {\bf User}'\}}}\label{namespacedb__layer_a0d5b65488cbaa2ab5d2cdb3c69a98c79}
+
+
+Definición en la línea 1013 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{namespacedb__layer_aa5866ade4f254a145901ec8647407bdb}{\index{db\-\_\-layer@{db\-\_\-layer}!rules@{rules}}
+\index{rules@{rules}!db_layer@{db\-\_\-layer}}
+\subsubsection[{rules}]{\setlength{\rightskip}{0pt plus 5cm}tuple db\-\_\-layer.\-rules = db.\-get\-R\-U\-L\-E\-S('M\-I\-M\-E', 'kid1')}}\label{namespacedb__layer_aa5866ade4f254a145901ec8647407bdb}
+
+
+Definición en la línea 1260 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{namespacedb__layer_ad65ee0b7707a738bc9f93587eebd04f6}{\index{db\-\_\-layer@{db\-\_\-layer}!Trace\-S\-Q\-L@{Trace\-S\-Q\-L}}
+\index{Trace\-S\-Q\-L@{Trace\-S\-Q\-L}!db_layer@{db\-\_\-layer}}
+\subsubsection[{Trace\-S\-Q\-L}]{\setlength{\rightskip}{0pt plus 5cm}db\-\_\-layer.\-Trace\-S\-Q\-L = {\bf Config.\-db\-Trace}\mbox{[}'proxy'\mbox{]}}}\label{namespacedb__layer_ad65ee0b7707a738bc9f93587eebd04f6}
+
+
+Definición en la línea 26 del archivo db\-\_\-layer.\-py.
+

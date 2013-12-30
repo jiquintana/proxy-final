@@ -1,0 +1,236 @@
+.TH "db_layer.User" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+db_layer.User \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Herencias Base\&.
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "def \fBstringColumns\fP"
+.br
+.ti -1c
+.RI "def \fBintColumns\fP"
+.br
+.ti -1c
+.RI "def \fBfromdict\fP"
+.br
+.ti -1c
+.RI "def \fB__repr__\fP"
+.br
+.ti -1c
+.RI "def \fBtoString\fP"
+.br
+.in -1c
+.SS "Atributos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBuid\fP"
+.br
+.ti -1c
+.RI "\fBusername\fP"
+.br
+.ti -1c
+.RI "\fBrol\fP"
+.br
+.ti -1c
+.RI "\fBpassword\fP"
+.br
+.ti -1c
+.RI "\fBdescription\fP"
+.br
+.ti -1c
+.RI "\fBL_AH\fP"
+.br
+.ti -1c
+.RI "\fBM_AH\fP"
+.br
+.ti -1c
+.RI "\fBX_AH\fP"
+.br
+.ti -1c
+.RI "\fBJ_AH\fP"
+.br
+.ti -1c
+.RI "\fBV_AH\fP"
+.br
+.ti -1c
+.RI "\fBS_AH\fP"
+.br
+.ti -1c
+.RI "\fBD_AH\fP"
+.br
+.in -1c
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBuid\fP = Column(Integer, primary_key=True, autoincrement=True, unique=True, index=True)"
+.br
+.ti -1c
+.RI "tuple \fBusername\fP = Column(String(20), nullable=False, unique=True, index=True)"
+.br
+.ti -1c
+.RI "tuple \fBrol\fP = Column(Enum('A', 'V', 'K', 'G'), default = 'G')"
+.br
+.ti -1c
+.RI "tuple \fBpassword\fP = Column(String(16), nullable=False)"
+.br
+.ti -1c
+.RI "tuple \fBdescription\fP = Column(String(80), nullable=False)"
+.br
+.ti -1c
+.RI "tuple \fBL_AH\fP = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])"
+.br
+.ti -1c
+.RI "tuple \fBM_AH\fP = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])"
+.br
+.ti -1c
+.RI "tuple \fBX_AH\fP = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])"
+.br
+.ti -1c
+.RI "tuple \fBJ_AH\fP = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])"
+.br
+.ti -1c
+.RI "tuple \fBV_AH\fP = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])"
+.br
+.ti -1c
+.RI "tuple \fBS_AH\fP = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])"
+.br
+.ti -1c
+.RI "tuple \fBD_AH\fP = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Definición en la línea 1042 del archivo db_layer\&.py\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "def db_layer\&.User\&.__repr__ (self)"
+
+.PP
+Definición en la línea 1083 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.User\&.fromdict (self, dict_data)"
+
+.PP
+Definición en la línea 1067 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.User\&.intColumns (self)"
+
+.PP
+Definición en la línea 1064 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.User\&.stringColumns (self)"
+
+.PP
+Definición en la línea 1061 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.User\&.toString (self)"
+
+.PP
+Definición en la línea 1089 del archivo db_layer\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "tuple db_layer\&.User\&.D_AH = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])\fC [static]\fP"
+
+.PP
+Definición en la línea 1058 del archivo db_layer\&.py\&.
+.SS "db_layer\&.User\&.D_AH"
+
+.PP
+Definición en la línea 1080 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.User\&.description = Column(String(80), nullable=False)\fC [static]\fP"
+
+.PP
+Definición en la línea 1051 del archivo db_layer\&.py\&.
+.SS "db_layer\&.User\&.description"
+
+.PP
+Definición en la línea 1073 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.User\&.J_AH = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])\fC [static]\fP"
+
+.PP
+Definición en la línea 1055 del archivo db_layer\&.py\&.
+.SS "db_layer\&.User\&.J_AH"
+
+.PP
+Definición en la línea 1077 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.User\&.L_AH = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])\fC [static]\fP"
+
+.PP
+Definición en la línea 1052 del archivo db_layer\&.py\&.
+.SS "db_layer\&.User\&.L_AH"
+
+.PP
+Definición en la línea 1074 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.User\&.M_AH = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])\fC [static]\fP"
+
+.PP
+Definición en la línea 1053 del archivo db_layer\&.py\&.
+.SS "db_layer\&.User\&.M_AH"
+
+.PP
+Definición en la línea 1075 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.User\&.password = Column(String(16), nullable=False)\fC [static]\fP"
+
+.PP
+Definición en la línea 1050 del archivo db_layer\&.py\&.
+.SS "db_layer\&.User\&.password"
+
+.PP
+Definición en la línea 1072 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.User\&.rol = Column(Enum('A', 'V', 'K', 'G'), default = 'G')\fC [static]\fP"
+
+.PP
+Definición en la línea 1049 del archivo db_layer\&.py\&.
+.SS "db_layer\&.User\&.rol"
+
+.PP
+Definición en la línea 1071 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.User\&.S_AH = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])\fC [static]\fP"
+
+.PP
+Definición en la línea 1057 del archivo db_layer\&.py\&.
+.SS "db_layer\&.User\&.S_AH"
+
+.PP
+Definición en la línea 1079 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.User\&.uid = Column(Integer, primary_key=True, autoincrement=True, unique=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 1047 del archivo db_layer\&.py\&.
+.SS "db_layer\&.User\&.uid"
+
+.PP
+Definición en la línea 1069 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.User\&.username = Column(String(20), nullable=False, unique=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 1048 del archivo db_layer\&.py\&.
+.SS "db_layer\&.User\&.username"
+
+.PP
+Definición en la línea 1070 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.User\&.V_AH = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])\fC [static]\fP"
+
+.PP
+Definición en la línea 1056 del archivo db_layer\&.py\&.
+.SS "db_layer\&.User\&.V_AH"
+
+.PP
+Definición en la línea 1078 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.User\&.X_AH = Column(Integer, default=\fBHOURS_MASK\fP['NON_M'])\fC [static]\fP"
+
+.PP
+Definición en la línea 1054 del archivo db_layer\&.py\&.
+.SS "db_layer\&.User\&.X_AH"
+
+.PP
+Definición en la línea 1076 del archivo db_layer\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

@@ -1,0 +1,5 @@
+<map id="db_layer.Database.wr_insertWORDSbyGID" name="db_layer.Database.wr_insertWORDSbyGID">
+<area shape="rect" id="node2" href="$classdb__layer_1_1_database.html#a849faf2993ee0d75f38639f22c3553e7" title="db_layer.Database.insert\lWORDSbyGID" alt="" coords="197,34,357,75"/>
+<area shape="rect" id="node3" href="$classdb__layer_1_1_database.html#af7c91fdd73898b9e2aa1d1e04ebcb8a6" title="db_layer.Database.delete\lWORDSbyGID" alt="" coords="439,5,603,46"/>
+<area shape="rect" id="node4" href="$classdb__layer_1_1_database.html#a7f168024109c6490cca9f764cd0bbeac" title="db_layer.Database.findWORDSbyGID" alt="" coords="406,71,637,97"/>
+</map>

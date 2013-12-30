@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_cache_1_1_file_cache" kind="class" prot="public">
+    <compoundname>Cache::FileCache</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1aa3e48c8aceb54811558590d05769af11" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Cache.FileCache::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="34" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1ac7477499203679f01ba59c0763de4be8" compoundref="_proxy_8py" startline="384" endline="399">Proxy.Proxy.int_send_BODY</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a742f2490a7a47accf1b409fb62547ee6" compoundref="_proxy_8py" startline="870" endline="981">Proxy.Proxy.do_CONNECT</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a94712bab05ce67c5a20c3e2cfba47509" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Cache.FileCache::md5hash_str</definition>
+        <argsstring></argsstring>
+        <name>md5hash_str</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="35" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a643dfb38067e5c4785397ef0e8c20944" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Cache.FileCache::cache_filename_base</definition>
+        <argsstring></argsstring>
+        <name>cache_filename_base</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="36" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_cache_1_1_file_cache_1a45b17bfd8c65aa650fd0f53209d03b5c" compoundref="_cache_8py" startline="96" endline="115">Cache.FileCache.is_cached</referencedby>
+        <referencedby refid="class_cache_1_1_file_cache_1a6580598cf60ffda8176dbe4036c4929c" compoundref="_cache_8py" startline="167" endline="191">Cache.FileCache.get</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1ab6e30d3196eea1c3cae1186945c8e0e2" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Cache.FileCache::cache_filename_meta</definition>
+        <argsstring></argsstring>
+        <name>cache_filename_meta</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="37" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_cache_1_1_file_cache_1a45b17bfd8c65aa650fd0f53209d03b5c" compoundref="_cache_8py" startline="96" endline="115">Cache.FileCache.is_cached</referencedby>
+        <referencedby refid="class_cache_1_1_file_cache_1a474cd0cce36603d869add65a52ec852b" compoundref="_cache_8py" startline="116" endline="166">Cache.FileCache.put</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1abf7b20e99585e8ff1fd1c205eb02c2b3" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Cache.FileCache::cache_filename_cache</definition>
+        <argsstring></argsstring>
+        <name>cache_filename_cache</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="38" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_cache_1_1_file_cache_1a45b17bfd8c65aa650fd0f53209d03b5c" compoundref="_cache_8py" startline="96" endline="115">Cache.FileCache.is_cached</referencedby>
+        <referencedby refid="class_cache_1_1_file_cache_1a474cd0cce36603d869add65a52ec852b" compoundref="_cache_8py" startline="116" endline="166">Cache.FileCache.put</referencedby>
+        <referencedby refid="class_cache_1_1_file_cache_1a6580598cf60ffda8176dbe4036c4929c" compoundref="_cache_8py" startline="167" endline="191">Cache.FileCache.get</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a2f7d1283375128a83f657d9eb2ed5d3d" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Cache.FileCache::cache_filename_strip</definition>
+        <argsstring></argsstring>
+        <name>cache_filename_strip</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="39" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a27cec37d2b4d4aac26eb0999e220031e" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Cache.FileCache::cache_filename_header</definition>
+        <argsstring></argsstring>
+        <name>cache_filename_header</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="40" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_cache_1_1_file_cache_1a474cd0cce36603d869add65a52ec852b" compoundref="_cache_8py" startline="116" endline="166">Cache.FileCache.put</referencedby>
+        <referencedby refid="class_cache_1_1_file_cache_1a6580598cf60ffda8176dbe4036c4929c" compoundref="_cache_8py" startline="167" endline="191">Cache.FileCache.get</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1afda3d5760616e47bd8fda4fe7490d7a9" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Cache.FileCache::content_is_text</definition>
+        <argsstring></argsstring>
+        <name>content_is_text</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="41" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a6add3c86ea9523a23c289b660d064e57" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Cache.FileCache::content_stripped</definition>
+        <argsstring></argsstring>
+        <name>content_stripped</name>
+        <initializer>= bytes()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="42" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a7ebf67b0706f9ce71f54cdfadacbfe2e" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Cache.FileCache::logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="class_log_1_1_log" kindref="compound">Log</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="43" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a8582c66c170deb664f9e7cd78b21d6b1" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Cache.FileCache::is_initialized</definition>
+        <argsstring></argsstring>
+        <name>is_initialized</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="46" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_cache_1_1_file_cache_1a45b17bfd8c65aa650fd0f53209d03b5c" compoundref="_cache_8py" startline="96" endline="115">Cache.FileCache.is_cached</referencedby>
+        <referencedby refid="class_cache_1_1_file_cache_1a474cd0cce36603d869add65a52ec852b" compoundref="_cache_8py" startline="116" endline="166">Cache.FileCache.put</referencedby>
+        <referencedby refid="class_cache_1_1_file_cache_1a6580598cf60ffda8176dbe4036c4929c" compoundref="_cache_8py" startline="167" endline="191">Cache.FileCache.get</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a263cdec129a60caf90b7c6d5eb5c64f3" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list Cache.FileCache::DEBUG</definition>
+        <argsstring></argsstring>
+        <name>DEBUG</name>
+        <initializer>= Config.DEBUG[&apos;Cache.DEBUG&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="47" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_client_headers_1a7ee0d7e2c47c1c9810e8427116479f3d" compoundref="_headers_8py" startline="31" endline="62">Headers.ClientHeaders.parse</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a7572d026e3212c61e6d384a4bcb4c8e7" compoundref="_headers_8py" startline="99" endline="104">Headers.ServerHeaders.parsed_headers</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a731227c073d6a6226d7e74b7c38e98ca" compoundref="_headers_8py" startline="105" endline="113">Headers.ServerHeaders.dump</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1ac795fe342f956e8b8cd2ec23267c674d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Cache.FileCache::was_checked</definition>
+        <argsstring></argsstring>
+        <name>was_checked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="69" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1aca5f594f2c828bbb00e29385b527b5c4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Cache.FileCache::DEBUG</definition>
+        <argsstring></argsstring>
+        <name>DEBUG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="70" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_client_headers_1a7ee0d7e2c47c1c9810e8427116479f3d" compoundref="_headers_8py" startline="31" endline="62">Headers.ClientHeaders.parse</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a7572d026e3212c61e6d384a4bcb4c8e7" compoundref="_headers_8py" startline="99" endline="104">Headers.ServerHeaders.parsed_headers</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a731227c073d6a6226d7e74b7c38e98ca" compoundref="_headers_8py" startline="105" endline="113">Headers.ServerHeaders.dump</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a969a9af6b255a6d9b14d71ee429cf6af" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Cache.FileCache::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="74" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1ac7477499203679f01ba59c0763de4be8" compoundref="_proxy_8py" startline="384" endline="399">Proxy.Proxy.int_send_BODY</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a742f2490a7a47accf1b409fb62547ee6" compoundref="_proxy_8py" startline="870" endline="981">Proxy.Proxy.do_CONNECT</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a2b1c48cd0ee88344f405391545633787" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Cache.FileCache::md5hash</definition>
+        <argsstring></argsstring>
+        <name>md5hash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="81" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1ad4c782bcbd654eff2aea4c3b76815723" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Cache.FileCache::cache_filename_base</definition>
+        <argsstring></argsstring>
+        <name>cache_filename_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="83" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1abb789c23d266d9148f2fb9c3bc3e8d3c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Cache.FileCache::cache_filename_meta</definition>
+        <argsstring></argsstring>
+        <name>cache_filename_meta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="84" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1af64994359a6b953e12a1f3352cbf057a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Cache.FileCache::cache_filename_cache</definition>
+        <argsstring></argsstring>
+        <name>cache_filename_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="85" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a4a427efcf91e7550463882b99d6b3df2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Cache.FileCache::cache_filename_header</definition>
+        <argsstring></argsstring>
+        <name>cache_filename_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="86" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a7a879f97bdb8d6f8a5b14390db395cdf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Cache.FileCache::cache_filename_strip</definition>
+        <argsstring></argsstring>
+        <name>cache_filename_strip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="87" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cache_1_1_file_cache_1a6660cc5f8e2408bdece63291305a5e5e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Cache.FileCache::content_stripped</definition>
+        <argsstring></argsstring>
+        <name>content_stripped</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="145" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cache_1_1_file_cache_1ac5fa19d6e9b990f58ae6969abfdeceed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Cache.FileCache.remove_html_markup</definition>
+        <argsstring></argsstring>
+        <name>remove_html_markup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="49" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="49" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cache_1_1_file_cache_1a794781e8000f88b6990d1d1a2b24fbe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Cache.FileCache.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="66" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="66" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cache_1_1_file_cache_1a3a0ff0a693d8eb05c5635ac68c86a65b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Cache.FileCache.setup</definition>
+        <argsstring></argsstring>
+        <name>setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="73" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="73" bodyend="95"/>
+        <referencedby refid="class_cache_1_1_file_cache_1a45b17bfd8c65aa650fd0f53209d03b5c" compoundref="_cache_8py" startline="96" endline="115">Cache.FileCache.is_cached</referencedby>
+        <referencedby refid="class_cache_1_1_file_cache_1a474cd0cce36603d869add65a52ec852b" compoundref="_cache_8py" startline="116" endline="166">Cache.FileCache.put</referencedby>
+        <referencedby refid="class_cache_1_1_file_cache_1a6580598cf60ffda8176dbe4036c4929c" compoundref="_cache_8py" startline="167" endline="191">Cache.FileCache.get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cache_1_1_file_cache_1a45b17bfd8c65aa650fd0f53209d03b5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Cache.FileCache.is_cached</definition>
+        <argsstring></argsstring>
+        <name>is_cached</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="96" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="96" bodyend="115"/>
+        <references refid="class_cache_1_1_file_cache_1a8582c66c170deb664f9e7cd78b21d6b1" compoundref="_cache_8py" startline="46">Cache.FileCache.is_initialized</references>
+        <references refid="class_cache_1_1_file_cache_1a3a0ff0a693d8eb05c5635ac68c86a65b" compoundref="_cache_8py" startline="73" endline="95">Cache.FileCache.setup</references>
+        <references refid="class_cache_1_1_file_cache_1abf7b20e99585e8ff1fd1c205eb02c2b3" compoundref="_cache_8py" startline="38">Cache.FileCache.cache_filename_cache</references>
+        <references refid="class_cache_1_1_file_cache_1ab6e30d3196eea1c3cae1186945c8e0e2" compoundref="_cache_8py" startline="37">Cache.FileCache.cache_filename_meta</references>
+        <references refid="class_cache_1_1_file_cache_1a643dfb38067e5c4785397ef0e8c20944" compoundref="_cache_8py" startline="36">Cache.FileCache.cache_filename_base</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cache_1_1_file_cache_1a474cd0cce36603d869add65a52ec852b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Cache.FileCache.put</definition>
+        <argsstring></argsstring>
+        <name>put</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="116" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="116" bodyend="166"/>
+        <references refid="class_cache_1_1_file_cache_1a8582c66c170deb664f9e7cd78b21d6b1" compoundref="_cache_8py" startline="46">Cache.FileCache.is_initialized</references>
+        <references refid="class_cache_1_1_file_cache_1a3a0ff0a693d8eb05c5635ac68c86a65b" compoundref="_cache_8py" startline="73" endline="95">Cache.FileCache.setup</references>
+        <references refid="class_cache_1_1_file_cache_1ab6e30d3196eea1c3cae1186945c8e0e2" compoundref="_cache_8py" startline="37">Cache.FileCache.cache_filename_meta</references>
+        <references refid="class_cache_1_1_file_cache_1abf7b20e99585e8ff1fd1c205eb02c2b3" compoundref="_cache_8py" startline="38">Cache.FileCache.cache_filename_cache</references>
+        <references refid="class_cache_1_1_file_cache_1a27cec37d2b4d4aac26eb0999e220031e" compoundref="_cache_8py" startline="40">Cache.FileCache.cache_filename_header</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cache_1_1_file_cache_1a6580598cf60ffda8176dbe4036c4929c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Cache.FileCache.get</definition>
+        <argsstring></argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="167" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="167" bodyend="191"/>
+        <references refid="class_cache_1_1_file_cache_1a8582c66c170deb664f9e7cd78b21d6b1" compoundref="_cache_8py" startline="46">Cache.FileCache.is_initialized</references>
+        <references refid="class_cache_1_1_file_cache_1a3a0ff0a693d8eb05c5635ac68c86a65b" compoundref="_cache_8py" startline="73" endline="95">Cache.FileCache.setup</references>
+        <references refid="class_cache_1_1_file_cache_1abf7b20e99585e8ff1fd1c205eb02c2b3" compoundref="_cache_8py" startline="38">Cache.FileCache.cache_filename_cache</references>
+        <references refid="class_cache_1_1_file_cache_1a27cec37d2b4d4aac26eb0999e220031e" compoundref="_cache_8py" startline="40">Cache.FileCache.cache_filename_header</references>
+        <references refid="class_cache_1_1_file_cache_1a643dfb38067e5c4785397ef0e8c20944" compoundref="_cache_8py" startline="36">Cache.FileCache.cache_filename_base</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="97">
+        <label>string</label>
+      </node>
+      <node id="96">
+        <label>Cache.FileCache</label>
+        <link refid="class_cache_1_1_file_cache"/>
+        <childnode refid="97" relation="usage">
+          <edgelabel>cache_filename_meta</edgelabel>
+          <edgelabel>cache_filename_base</edgelabel>
+          <edgelabel>cache_filename_cache</edgelabel>
+          <edgelabel>md5hash_str</edgelabel>
+          <edgelabel>cache_filename_strip</edgelabel>
+          <edgelabel>path</edgelabel>
+          <edgelabel>cache_filename_header</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/prj/proxy-final/proxy/source/Cache.py" line="33" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="33" bodyend="191"/>
+    <listofallmembers>
+      <member refid="class_cache_1_1_file_cache_1a794781e8000f88b6990d1d1a2b24fbe6" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>__init__</name></member>
+      <member refid="class_cache_1_1_file_cache_1a643dfb38067e5c4785397ef0e8c20944" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>cache_filename_base</name></member>
+      <member refid="class_cache_1_1_file_cache_1ad4c782bcbd654eff2aea4c3b76815723" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>cache_filename_base</name></member>
+      <member refid="class_cache_1_1_file_cache_1abf7b20e99585e8ff1fd1c205eb02c2b3" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>cache_filename_cache</name></member>
+      <member refid="class_cache_1_1_file_cache_1af64994359a6b953e12a1f3352cbf057a" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>cache_filename_cache</name></member>
+      <member refid="class_cache_1_1_file_cache_1a27cec37d2b4d4aac26eb0999e220031e" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>cache_filename_header</name></member>
+      <member refid="class_cache_1_1_file_cache_1a4a427efcf91e7550463882b99d6b3df2" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>cache_filename_header</name></member>
+      <member refid="class_cache_1_1_file_cache_1ab6e30d3196eea1c3cae1186945c8e0e2" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>cache_filename_meta</name></member>
+      <member refid="class_cache_1_1_file_cache_1abb789c23d266d9148f2fb9c3bc3e8d3c" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>cache_filename_meta</name></member>
+      <member refid="class_cache_1_1_file_cache_1a2f7d1283375128a83f657d9eb2ed5d3d" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>cache_filename_strip</name></member>
+      <member refid="class_cache_1_1_file_cache_1a7a879f97bdb8d6f8a5b14390db395cdf" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>cache_filename_strip</name></member>
+      <member refid="class_cache_1_1_file_cache_1afda3d5760616e47bd8fda4fe7490d7a9" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>content_is_text</name></member>
+      <member refid="class_cache_1_1_file_cache_1a6add3c86ea9523a23c289b660d064e57" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>content_stripped</name></member>
+      <member refid="class_cache_1_1_file_cache_1a6660cc5f8e2408bdece63291305a5e5e" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>content_stripped</name></member>
+      <member refid="class_cache_1_1_file_cache_1a263cdec129a60caf90b7c6d5eb5c64f3" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>DEBUG</name></member>
+      <member refid="class_cache_1_1_file_cache_1aca5f594f2c828bbb00e29385b527b5c4" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>DEBUG</name></member>
+      <member refid="class_cache_1_1_file_cache_1a6580598cf60ffda8176dbe4036c4929c" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>get</name></member>
+      <member refid="class_cache_1_1_file_cache_1a45b17bfd8c65aa650fd0f53209d03b5c" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>is_cached</name></member>
+      <member refid="class_cache_1_1_file_cache_1a8582c66c170deb664f9e7cd78b21d6b1" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>is_initialized</name></member>
+      <member refid="class_cache_1_1_file_cache_1a7ebf67b0706f9ce71f54cdfadacbfe2e" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>logger</name></member>
+      <member refid="class_cache_1_1_file_cache_1a2b1c48cd0ee88344f405391545633787" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>md5hash</name></member>
+      <member refid="class_cache_1_1_file_cache_1a94712bab05ce67c5a20c3e2cfba47509" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>md5hash_str</name></member>
+      <member refid="class_cache_1_1_file_cache_1aa3e48c8aceb54811558590d05769af11" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>path</name></member>
+      <member refid="class_cache_1_1_file_cache_1a969a9af6b255a6d9b14d71ee429cf6af" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>path</name></member>
+      <member refid="class_cache_1_1_file_cache_1a474cd0cce36603d869add65a52ec852b" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>put</name></member>
+      <member refid="class_cache_1_1_file_cache_1ac5fa19d6e9b990f58ae6969abfdeceed" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>remove_html_markup</name></member>
+      <member refid="class_cache_1_1_file_cache_1a3a0ff0a693d8eb05c5635ac68c86a65b" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>setup</name></member>
+      <member refid="class_cache_1_1_file_cache_1ac795fe342f956e8b8cd2ec23267c674d" prot="public" virt="non-virtual"><scope>Cache::FileCache</scope><name>was_checked</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

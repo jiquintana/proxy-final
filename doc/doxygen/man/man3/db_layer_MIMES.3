@@ -1,0 +1,117 @@
+.TH "db_layer.MIMES" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+db_layer.MIMES \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Herencias Base\&.
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "def \fBstringColumns\fP"
+.br
+.ti -1c
+.RI "def \fBintColumns\fP"
+.br
+.ti -1c
+.RI "def \fBfromdict\fP"
+.br
+.ti -1c
+.RI "def \fBfromjson\fP"
+.br
+.ti -1c
+.RI "def \fB__repr__\fP"
+.br
+.ti -1c
+.RI "def \fB__toString__\fP"
+.br
+.in -1c
+.SS "Atributos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBwordsid\fP"
+.br
+.ti -1c
+.RI "\fBgid\fP"
+.br
+.ti -1c
+.RI "\fBwords\fP"
+.br
+.in -1c
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBmimeid\fP = Column(Integer, primary_key=True, autoincrement=True, index=True)"
+.br
+.ti -1c
+.RI "tuple \fBgid\fP = Column(Integer, ForeignKey('GRUPO\&.gid'), nullable=False, primary_key=True, index=True)"
+.br
+.ti -1c
+.RI "tuple \fBmimes\fP = Column(String(250), nullable=False)"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Definición en la línea 1218 del archivo db_layer\&.py\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "def db_layer\&.MIMES\&.__repr__ (self)"
+
+.PP
+Definición en la línea 1243 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.MIMES\&.__toString__ (self)"
+
+.PP
+Definición en la línea 1247 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.MIMES\&.fromdict (self, jsondata)"
+
+.PP
+Definición en la línea 1230 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.MIMES\&.fromjson (self, jsondata)"
+
+.PP
+Definición en la línea 1236 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.MIMES\&.intColumns (self)"
+
+.PP
+Definición en la línea 1227 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.MIMES\&.stringColumns (self)"
+
+.PP
+Definición en la línea 1224 del archivo db_layer\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "tuple db_layer\&.MIMES\&.gid = Column(Integer, ForeignKey('GRUPO\&.gid'), nullable=False, primary_key=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 1221 del archivo db_layer\&.py\&.
+.SS "db_layer\&.MIMES\&.gid"
+
+.PP
+Definición en la línea 1232 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.MIMES\&.mimeid = Column(Integer, primary_key=True, autoincrement=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 1220 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.MIMES\&.mimes = Column(String(250), nullable=False)\fC [static]\fP"
+
+.PP
+Definición en la línea 1222 del archivo db_layer\&.py\&.
+.SS "db_layer\&.MIMES\&.words"
+
+.PP
+Definición en la línea 1233 del archivo db_layer\&.py\&.
+.SS "db_layer\&.MIMES\&.wordsid"
+
+.PP
+Definición en la línea 1231 del archivo db_layer\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

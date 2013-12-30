@@ -1,0 +1,400 @@
+.TH "db_layer.Database" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+db_layer.Database \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.ti -1c
+.RI "def \fBfindUser\fP"
+.br
+.ti -1c
+.RI "def \fBfindUserByUsername\fP"
+.br
+.ti -1c
+.RI "def \fBisUserAllowed\fP"
+.br
+.ti -1c
+.RI "def \fBisAdminAllowed\fP"
+.br
+.ti -1c
+.RI "def \fBfindUserByUID\fP"
+.br
+.ti -1c
+.RI "def \fBgetAllUser\fP"
+.br
+.ti -1c
+.RI "def \fBgetLowestUnusedUIDfromUser\fP"
+.br
+.ti -1c
+.RI "def \fBaddUser\fP"
+.br
+.ti -1c
+.RI "def \fBaddRelation\fP"
+.br
+.ti -1c
+.RI "def \fBwr_addRelation\fP"
+.br
+.ti -1c
+.RI "def \fBdelRelation\fP"
+.br
+.ti -1c
+.RI "def \fBwr_delRelation\fP"
+.br
+.ti -1c
+.RI "def \fBdelUser\fP"
+.br
+.ti -1c
+.RI "def \fBsetUserAdmin\fP"
+.br
+.ti -1c
+.RI "def \fBchangeUser\fP"
+.br
+.ti -1c
+.RI "def \fBsetUserAdvanced\fP"
+.br
+.ti -1c
+.RI "def \fBsetUserKid\fP"
+.br
+.ti -1c
+.RI "def \fBsetUserGuest\fP"
+.br
+.ti -1c
+.RI "def \fBchangeUserPassword\fP"
+.br
+.ti -1c
+.RI "def \fBchangeUserDescription\fP"
+.br
+.ti -1c
+.RI "def \fBcommitDBChanges\fP"
+.br
+.ti -1c
+.RI "def \fBfindGroup\fP"
+.br
+.ti -1c
+.RI "def \fBfindGroupByGroupname\fP"
+.br
+.ti -1c
+.RI "def \fBfindGroupByGID\fP"
+.br
+.ti -1c
+.RI "def \fBdelGroup\fP"
+.br
+.ti -1c
+.RI "def \fBchangeGroup\fP"
+.br
+.ti -1c
+.RI "def \fBgetAllGroups\fP"
+.br
+.ti -1c
+.RI "def \fBgetAllCustomGroups\fP"
+.br
+.ti -1c
+.RI "def \fBgetLowestUnusedGIDfromGroup\fP"
+.br
+.ti -1c
+.RI "def \fBaddGroup\fP"
+.br
+.ti -1c
+.RI "def \fBchangeGroupDescription\fP"
+.br
+.ti -1c
+.RI "def \fBisUserAllowedNow\fP"
+.br
+.ti -1c
+.RI "def \fBisUserAdmin\fP"
+.br
+.ti -1c
+.RI "def \fBisUserAdvanced\fP"
+.br
+.ti -1c
+.RI "def \fBisUserKid\fP"
+.br
+.ti -1c
+.RI "def \fBisUserGuest\fP"
+.br
+.ti -1c
+.RI "def \fBfindGroupsByUser\fP"
+.br
+.ti -1c
+.RI "def \fBfindNotGroupsByUser\fP"
+.br
+.ti -1c
+.RI "def \fBfindURISbyGID\fP"
+.br
+.ti -1c
+.RI "def \fBdeleteURISbyGID\fP"
+.br
+.ti -1c
+.RI "def \fBinsertURISbyGID\fP"
+.br
+.ti -1c
+.RI "def \fBwr_insertURISbyGID\fP"
+.br
+.ti -1c
+.RI "def \fBfindWORDSbyGID\fP"
+.br
+.ti -1c
+.RI "def \fBdeleteWORDSbyGID\fP"
+.br
+.ti -1c
+.RI "def \fBinsertWORDSbyGID\fP"
+.br
+.ti -1c
+.RI "def \fBwr_insertWORDSbyGID\fP"
+.br
+.ti -1c
+.RI "def \fBfindMIMESbyGID\fP"
+.br
+.ti -1c
+.RI "def \fBdeleteMIMESbyGID\fP"
+.br
+.ti -1c
+.RI "def \fBinsertMIMESbyGID\fP"
+.br
+.ti -1c
+.RI "def \fBwr_insertMIMESbyGID\fP"
+.br
+.ti -1c
+.RI "def \fBgetRULES\fP"
+.br
+.in -1c
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "\fBsession\fP = None"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Definición en la línea 104 del archivo db_layer\&.py\&.
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "def db_layer\&.Database\&.__init__ (self)"
+
+.PP
+Definición en la línea 110 del archivo db_layer\&.py\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "def db_layer\&.Database\&.addGroup (self, newGroup)"
+
+.PP
+Definición en la línea 560 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.addRelation (self, uid, gid)"
+
+.PP
+Definición en la línea 269 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.addUser (self, newUser)"
+
+.PP
+Definición en la línea 206 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.changeGroup (self, requestedGroup)"
+
+.PP
+Definición en la línea 519 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.changeGroupDescription (self, requestedGroup)"
+
+.PP
+Definición en la línea 591 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.changeUser (self, requestedUser)"
+
+.PP
+Definición en la línea 348 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.changeUserDescription (self, requestedUser)"
+
+.PP
+Definición en la línea 438 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.changeUserPassword (self, requestedUser)"
+
+.PP
+Definición en la línea 423 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.commitDBChanges (self)"
+
+.PP
+Definición en la línea 453 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.deleteMIMESbyGID (self, gid)"
+
+.PP
+Definición en la línea 854 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.deleteURISbyGID (self, gid)"
+
+.PP
+Definición en la línea 759 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.deleteWORDSbyGID (self, gid)"
+
+.PP
+Definición en la línea 809 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.delGroup (self, grouptoDelete)"
+
+.PP
+Definición en la línea 500 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.delRelation (self, uid, gid)"
+
+.PP
+Definición en la línea 288 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.delUser (self, usertoDelete)"
+
+.PP
+Definición en la línea 308 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.findGroup (self, str2find)"
+
+.PP
+Definición en la línea 462 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.findGroupByGID (self, gid)"
+
+.PP
+Definición en la línea 491 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.findGroupByGroupname (self, groupname)"
+
+.PP
+Definición en la línea 482 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.findGroupsByUser (self, username)"
+
+.PP
+Definición en la línea 703 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.findMIMESbyGID (self, gid)"
+
+.PP
+Definición en la línea 845 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.findNotGroupsByUser (self, username)"
+
+.PP
+Definición en la línea 729 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.findURISbyGID (self, gid)"
+
+.PP
+Definición en la línea 750 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.findUser (self, str2find)"
+
+.PP
+Definición en la línea 125 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.findUserByUID (self, uid)"
+
+.PP
+Definición en la línea 178 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.findUserByUsername (self, username)"
+
+.PP
+Definición en la línea 146 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.findWORDSbyGID (self, gid)"
+
+.PP
+Definición en la línea 800 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.getAllCustomGroups (self)"
+
+.PP
+Definición en la línea 541 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.getAllGroups (self)"
+
+.PP
+Definición en la línea 535 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.getAllUser (self)"
+
+.PP
+Definición en la línea 188 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.getLowestUnusedGIDfromGroup (self)"
+
+.PP
+Definición en la línea 550 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.getLowestUnusedUIDfromUser (self)"
+
+.PP
+Definición en la línea 196 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.getRULES (self, kind, username)"
+
+.PP
+Definición en la línea 891 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.insertMIMESbyGID (self, gid, data)"
+
+.PP
+Definición en la línea 863 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.insertURISbyGID (self, gid, data)"
+
+.PP
+Definición en la línea 771 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.insertWORDSbyGID (self, gid, data)"
+
+.PP
+Definición en la línea 818 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.isAdminAllowed (self, username, password)"
+
+.PP
+Definición en la línea 166 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.isUserAdmin (self, username)"
+
+.PP
+Definición en la línea 655 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.isUserAdvanced (self, username)"
+
+.PP
+Definición en la línea 667 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.isUserAllowed (self, username, password)"
+
+.PP
+Definición en la línea 156 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.isUserAllowedNow (self, username)"
+
+.PP
+Definición en la línea 605 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.isUserGuest (self, username)"
+
+.PP
+Definición en la línea 691 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.isUserKid (self, username)"
+
+.PP
+Definición en la línea 679 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.setUserAdmin (self, requestedUser)"
+
+.PP
+Definición en la línea 332 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.setUserAdvanced (self, requestedUser)"
+
+.PP
+Definición en la línea 375 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.setUserGuest (self, requestedUser)"
+
+.PP
+Definición en la línea 407 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.setUserKid (self, requestedUser)"
+
+.PP
+Definición en la línea 391 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.wr_addRelation (self, theDict)"
+
+.PP
+Definición en la línea 279 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.wr_delRelation (self, theDict)"
+
+.PP
+Definición en la línea 299 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.wr_insertMIMESbyGID (self, theDict)"
+
+.PP
+Definición en la línea 881 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.wr_insertURISbyGID (self, theDict)"
+
+.PP
+Definición en la línea 790 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Database\&.wr_insertWORDSbyGID (self, theDict)"
+
+.PP
+Definición en la línea 836 del archivo db_layer\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "db_layer\&.Database\&.session = None\fC [static]\fP"
+
+.PP
+Definición en la línea 109 del archivo db_layer\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

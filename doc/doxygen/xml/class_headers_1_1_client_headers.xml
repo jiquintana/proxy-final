@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_headers_1_1_client_headers" kind="class" prot="public">
+    <compoundname>Headers::ClientHeaders</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1a94f0846ec0ba5288c82e0cc43f240f78" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list Headers.ClientHeaders::DEBUG</definition>
+        <argsstring></argsstring>
+        <name>DEBUG</name>
+        <initializer>= Config.DEBUG[&apos;ClientHeaders.DEBUG&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="10" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_client_headers_1a7ee0d7e2c47c1c9810e8427116479f3d" compoundref="_headers_8py" startline="31" endline="62">Headers.ClientHeaders.parse</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a7572d026e3212c61e6d384a4bcb4c8e7" compoundref="_headers_8py" startline="99" endline="104">Headers.ServerHeaders.parsed_headers</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a731227c073d6a6226d7e74b7c38e98ca" compoundref="_headers_8py" startline="105" endline="113">Headers.ServerHeaders.dump</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1a15b94d4c64d520378cf021770469ff74" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Headers.ClientHeaders::ip</definition>
+        <argsstring></argsstring>
+        <name>ip</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="14" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_client_headers_1a7ee0d7e2c47c1c9810e8427116479f3d" compoundref="_headers_8py" startline="31" endline="62">Headers.ClientHeaders.parse</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a731227c073d6a6226d7e74b7c38e98ca" compoundref="_headers_8py" startline="105" endline="113">Headers.ServerHeaders.dump</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1a6f9c18e89358e04c9c869aec27095d74" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Headers.ClientHeaders::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="15" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_client_headers_1a7ee0d7e2c47c1c9810e8427116479f3d" compoundref="_headers_8py" startline="31" endline="62">Headers.ClientHeaders.parse</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a731227c073d6a6226d7e74b7c38e98ca" compoundref="_headers_8py" startline="105" endline="113">Headers.ServerHeaders.dump</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1a5502fdd869b7ab7185c1049cbe5a534c" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Headers.ClientHeaders::log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>= <ref refid="class_log_1_1_log" kindref="compound">Log</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="16" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1a699a69b42011cc7b42299f0b67e4111f" prot="private" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Headers.ClientHeaders::__orig_headers</definition>
+        <argsstring></argsstring>
+        <name>__orig_headers</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="11" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_client_headers_1a7dfc5b4ba33e104c0c4c320273583f06" compoundref="_headers_8py" startline="19" endline="30">Headers.ClientHeaders.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1a7128eabd381fe7d8b9839a2b950da8e9" prot="private" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Headers.ClientHeaders::__headers</definition>
+        <argsstring></argsstring>
+        <name>__headers</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="12" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_client_headers_1a7dfc5b4ba33e104c0c4c320273583f06" compoundref="_headers_8py" startline="19" endline="30">Headers.ClientHeaders.__init__</referencedby>
+        <referencedby refid="class_headers_1_1_client_headers_1a7ee0d7e2c47c1c9810e8427116479f3d" compoundref="_headers_8py" startline="31" endline="62">Headers.ClientHeaders.parse</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a456a736b904107eddd7eba61ad716919" compoundref="_headers_8py" startline="76" endline="92">Headers.ServerHeaders.__init__</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a7572d026e3212c61e6d384a4bcb4c8e7" compoundref="_headers_8py" startline="99" endline="104">Headers.ServerHeaders.parsed_headers</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a731227c073d6a6226d7e74b7c38e98ca" compoundref="_headers_8py" startline="105" endline="113">Headers.ServerHeaders.dump</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1af9b5c13f2416bdcd185452e209eff2da" compoundref="_headers_8py" startline="227" endline="230">Headers.ServerHeaders.headers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1a17f27dec1400f56655fa5da93a42b1d1" prot="private" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Headers.ClientHeaders::__cookies</definition>
+        <argsstring></argsstring>
+        <name>__cookies</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="13" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_client_headers_1a7dfc5b4ba33e104c0c4c320273583f06" compoundref="_headers_8py" startline="19" endline="30">Headers.ClientHeaders.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1a4a71f26135ea776c02592820597a5a7f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Headers.ClientHeaders::__orig_headers</definition>
+        <argsstring></argsstring>
+        <name>__orig_headers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="20" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1afd59538639625c5472ee426496cf42e2" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Headers.ClientHeaders::__headers</definition>
+        <argsstring></argsstring>
+        <name>__headers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="21" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_server_headers_1a456a736b904107eddd7eba61ad716919" compoundref="_headers_8py" startline="76" endline="92">Headers.ServerHeaders.__init__</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a7572d026e3212c61e6d384a4bcb4c8e7" compoundref="_headers_8py" startline="99" endline="104">Headers.ServerHeaders.parsed_headers</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a731227c073d6a6226d7e74b7c38e98ca" compoundref="_headers_8py" startline="105" endline="113">Headers.ServerHeaders.dump</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1af9b5c13f2416bdcd185452e209eff2da" compoundref="_headers_8py" startline="227" endline="230">Headers.ServerHeaders.headers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1abb2b6e325ff15c8fdfa0ba64fb733f5a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Headers.ClientHeaders::__cookies</definition>
+        <argsstring></argsstring>
+        <name>__cookies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="22" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1ad6a52ab3ffc9bdb7a023e8b42ce7083a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Headers.ClientHeaders::DEBUG</definition>
+        <argsstring></argsstring>
+        <name>DEBUG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="23" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_server_headers_1a7572d026e3212c61e6d384a4bcb4c8e7" compoundref="_headers_8py" startline="99" endline="104">Headers.ServerHeaders.parsed_headers</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a731227c073d6a6226d7e74b7c38e98ca" compoundref="_headers_8py" startline="105" endline="113">Headers.ServerHeaders.dump</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1a3b830916eb5f486466733a631debd80f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Headers.ClientHeaders::ip</definition>
+        <argsstring></argsstring>
+        <name>ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="24" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_server_headers_1a731227c073d6a6226d7e74b7c38e98ca" compoundref="_headers_8py" startline="105" endline="113">Headers.ServerHeaders.dump</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_headers_1_1_client_headers_1af5c53154eabf8999c0445d47c2ec2e93" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Headers.ClientHeaders::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="25" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_server_headers_1a731227c073d6a6226d7e74b7c38e98ca" compoundref="_headers_8py" startline="105" endline="113">Headers.ServerHeaders.dump</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_headers_1_1_client_headers_1a7dfc5b4ba33e104c0c4c320273583f06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Headers.ClientHeaders.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="18" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="19" bodyend="30"/>
+        <references refid="class_headers_1_1_client_headers_1a699a69b42011cc7b42299f0b67e4111f" compoundref="_headers_8py" startline="11">Headers.ClientHeaders.__orig_headers</references>
+        <references refid="class_headers_1_1_client_headers_1a7128eabd381fe7d8b9839a2b950da8e9" compoundref="_headers_8py" startline="12">Headers.ClientHeaders.__headers</references>
+        <references refid="class_headers_1_1_client_headers_1a17f27dec1400f56655fa5da93a42b1d1" compoundref="_headers_8py" startline="13">Headers.ClientHeaders.__cookies</references>
+      </memberdef>
+      <memberdef kind="function" id="class_headers_1_1_client_headers_1a7ee0d7e2c47c1c9810e8427116479f3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Headers.ClientHeaders.parse</definition>
+        <argsstring></argsstring>
+        <name>parse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Headers.py" line="31" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="31" bodyend="62"/>
+        <references refid="class_cache_1_1_file_cache_1a263cdec129a60caf90b7c6d5eb5c64f3" compoundref="_cache_8py" startline="47">Cache.FileCache.DEBUG</references>
+        <references refid="class_config_1_1_config_1a1d5bf72f9f7f8047bc648261155e3141" compoundref="_config_8py" startline="25">Config.Config.DEBUG</references>
+        <references refid="class_headers_1_1_client_headers_1a94f0846ec0ba5288c82e0cc43f240f78" compoundref="_headers_8py" startline="10">Headers.ClientHeaders.DEBUG</references>
+        <references refid="class_headers_1_1_client_headers_1a15b94d4c64d520378cf021770469ff74" compoundref="_headers_8py" startline="14">Headers.ClientHeaders.ip</references>
+        <references refid="class_headers_1_1_client_headers_1a6f9c18e89358e04c9c869aec27095d74" compoundref="_headers_8py" startline="15">Headers.ClientHeaders.port</references>
+        <references refid="class_headers_1_1_client_headers_1a7128eabd381fe7d8b9839a2b950da8e9" compoundref="_headers_8py" startline="12">Headers.ClientHeaders.__headers</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="84">
+        <label>Headers.ClientHeaders</label>
+        <link refid="class_headers_1_1_client_headers"/>
+        <childnode refid="85" relation="usage">
+          <edgelabel>port</edgelabel>
+          <edgelabel>ip</edgelabel>
+        </childnode>
+      </node>
+      <node id="85">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="/prj/proxy-final/proxy/source/Headers.py" line="9" bodyfile="/prj/proxy-final/proxy/source/Headers.py" bodystart="9" bodyend="63"/>
+    <listofallmembers>
+      <member refid="class_headers_1_1_client_headers_1a17f27dec1400f56655fa5da93a42b1d1" prot="private" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>__cookies</name></member>
+      <member refid="class_headers_1_1_client_headers_1abb2b6e325ff15c8fdfa0ba64fb733f5a" prot="private" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>__cookies</name></member>
+      <member refid="class_headers_1_1_client_headers_1a7128eabd381fe7d8b9839a2b950da8e9" prot="private" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>__headers</name></member>
+      <member refid="class_headers_1_1_client_headers_1afd59538639625c5472ee426496cf42e2" prot="private" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>__headers</name></member>
+      <member refid="class_headers_1_1_client_headers_1a7dfc5b4ba33e104c0c4c320273583f06" prot="public" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>__init__</name></member>
+      <member refid="class_headers_1_1_client_headers_1a699a69b42011cc7b42299f0b67e4111f" prot="private" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>__orig_headers</name></member>
+      <member refid="class_headers_1_1_client_headers_1a4a71f26135ea776c02592820597a5a7f" prot="private" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>__orig_headers</name></member>
+      <member refid="class_headers_1_1_client_headers_1a94f0846ec0ba5288c82e0cc43f240f78" prot="public" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>DEBUG</name></member>
+      <member refid="class_headers_1_1_client_headers_1ad6a52ab3ffc9bdb7a023e8b42ce7083a" prot="public" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>DEBUG</name></member>
+      <member refid="class_headers_1_1_client_headers_1a15b94d4c64d520378cf021770469ff74" prot="public" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>ip</name></member>
+      <member refid="class_headers_1_1_client_headers_1a3b830916eb5f486466733a631debd80f" prot="public" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>ip</name></member>
+      <member refid="class_headers_1_1_client_headers_1a5502fdd869b7ab7185c1049cbe5a534c" prot="public" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>log</name></member>
+      <member refid="class_headers_1_1_client_headers_1a7ee0d7e2c47c1c9810e8427116479f3d" prot="public" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>parse</name></member>
+      <member refid="class_headers_1_1_client_headers_1a6f9c18e89358e04c9c869aec27095d74" prot="public" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>port</name></member>
+      <member refid="class_headers_1_1_client_headers_1af5c53154eabf8999c0445d47c2ec2e93" prot="public" virt="non-virtual"><scope>Headers::ClientHeaders</scope><name>port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

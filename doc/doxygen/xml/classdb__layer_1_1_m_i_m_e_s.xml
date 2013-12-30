@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classdb__layer_1_1_m_i_m_e_s" kind="class" prot="public">
+    <compoundname>db_layer::MIMES</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Base</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdb__layer_1_1_m_i_m_e_s_1a3fc2d49a9f888c5cd5e11f21c0264670" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string db_layer.MIMES::__tablename__</definition>
+        <argsstring></argsstring>
+        <name>__tablename__</name>
+        <initializer>= &apos;<ref refid="classdb__layer_1_1_m_i_m_e_s" kindref="compound">MIMES</ref>&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1219" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdb__layer_1_1_m_i_m_e_s_1a66872c780c00042cd689fd6b0d2028df" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_layer.MIMES::mimeid</definition>
+        <argsstring></argsstring>
+        <name>mimeid</name>
+        <initializer>= Column(Integer, primary_key=True, autoincrement=True, index=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1220" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1220" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a76e9016c987bbe373eeb0416a35a4e51" compoundref="db__layer_8py" startline="1243" endline="1246">db_layer.MIMES.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a4101e5315f081b7675139e1c5eaa7db0" compoundref="db__layer_8py" startline="1247" endline="1253">db_layer.MIMES.__toString__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_m_i_m_e_s_1a3ce87f789dd363c1a497bf44144ef051" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_layer.MIMES::gid</definition>
+        <argsstring></argsstring>
+        <name>gid</name>
+        <initializer>= Column(Integer, ForeignKey(&apos;GRUPO.gid&apos;), nullable=False, primary_key=True, index=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1221" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1221" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a4ec1674ef68ad1844d2afe45259bdc89" compoundref="db__layer_8py" startline="1236" endline="1242">db_layer.MIMES.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a76e9016c987bbe373eeb0416a35a4e51" compoundref="db__layer_8py" startline="1243" endline="1246">db_layer.MIMES.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a4101e5315f081b7675139e1c5eaa7db0" compoundref="db__layer_8py" startline="1247" endline="1253">db_layer.MIMES.__toString__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_m_i_m_e_s_1a0161e97244015d5d5828ef162f621897" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_layer.MIMES::mimes</definition>
+        <argsstring></argsstring>
+        <name>mimes</name>
+        <initializer>= Column(String(250), nullable=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1222" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1222" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a76e9016c987bbe373eeb0416a35a4e51" compoundref="db__layer_8py" startline="1243" endline="1246">db_layer.MIMES.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a4101e5315f081b7675139e1c5eaa7db0" compoundref="db__layer_8py" startline="1247" endline="1253">db_layer.MIMES.__toString__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdb__layer_1_1_m_i_m_e_s_1a5dd5df331308d3e58b82811885724468" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_layer.MIMES::wordsid</definition>
+        <argsstring></argsstring>
+        <name>wordsid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1231" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1231" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a4ec1674ef68ad1844d2afe45259bdc89" compoundref="db__layer_8py" startline="1236" endline="1242">db_layer.MIMES.fromjson</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_m_i_m_e_s_1a66f384fb971ec6f4d83f511e3fca7b7b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_layer.MIMES::gid</definition>
+        <argsstring></argsstring>
+        <name>gid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1232" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_m_i_m_e_s_1a636fc98e28fedf6a5eb57058e2d402d8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_layer.MIMES::words</definition>
+        <argsstring></argsstring>
+        <name>words</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1233" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1233" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a4ec1674ef68ad1844d2afe45259bdc89" compoundref="db__layer_8py" startline="1236" endline="1242">db_layer.MIMES.fromjson</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdb__layer_1_1_m_i_m_e_s_1a507d01e47453b187461ccf737326e8de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.MIMES.stringColumns</definition>
+        <argsstring></argsstring>
+        <name>stringColumns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1224" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1224" bodyend="1226"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_m_i_m_e_s_1a790fe339535f598d08ef553311075518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.MIMES.intColumns</definition>
+        <argsstring></argsstring>
+        <name>intColumns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1227" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1227" bodyend="1229"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_m_i_m_e_s_1a08eafc4a1c69df96fa32d4f1c65cb04f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.MIMES.fromdict</definition>
+        <argsstring></argsstring>
+        <name>fromdict</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1230" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1230" bodyend="1235"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_m_i_m_e_s_1a4ec1674ef68ad1844d2afe45259bdc89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.MIMES.fromjson</definition>
+        <argsstring></argsstring>
+        <name>fromjson</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1236" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1236" bodyend="1242"/>
+        <references refid="classdb__layer_1_1_w_o_r_d_s_1a191b73a99b2cb5624d7b6561ffba1707" compoundref="db__layer_8py" startline="1188">db_layer.WORDS.wordsid</references>
+        <references refid="classdb__layer_1_1_m_i_m_e_s_1a5dd5df331308d3e58b82811885724468" compoundref="db__layer_8py" startline="1231">db_layer.MIMES.wordsid</references>
+        <references refid="classdb__layer_1_1_rule_1acc2d1385294c5f2e6c904d5d45f6b993" compoundref="db__layer_8py" startline="935">db_layer.Rule.gid</references>
+        <references refid="classdb__layer_1_1_groups_1aded07ebac158a99bf9fd01c87bba222c" compoundref="db__layer_8py" startline="971">db_layer.Groups.gid</references>
+        <references refid="classdb__layer_1_1_group_1ad04297ad13e077524983def6a0af935b" compoundref="db__layer_8py" startline="1119">db_layer.Group.gid</references>
+        <references refid="classdb__layer_1_1_u_r_i_s_1a1d76417de9c74a2a88a926ba6cd972ba" compoundref="db__layer_8py" startline="1155">db_layer.URIS.gid</references>
+        <references refid="classdb__layer_1_1_w_o_r_d_s_1ab34399fc663ae9bb749e3bf378e93dc2" compoundref="db__layer_8py" startline="1189">db_layer.WORDS.gid</references>
+        <references refid="classdb__layer_1_1_m_i_m_e_s_1a3ce87f789dd363c1a497bf44144ef051" compoundref="db__layer_8py" startline="1221">db_layer.MIMES.gid</references>
+        <references refid="classdb__layer_1_1_w_o_r_d_s_1adb8240c0cbbcc83b04e6ab5f925d5094" compoundref="db__layer_8py" startline="1190">db_layer.WORDS.words</references>
+        <references refid="classdb__layer_1_1_m_i_m_e_s_1a636fc98e28fedf6a5eb57058e2d402d8" compoundref="db__layer_8py" startline="1233">db_layer.MIMES.words</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_m_i_m_e_s_1a76e9016c987bbe373eeb0416a35a4e51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.MIMES.__repr__</definition>
+        <argsstring></argsstring>
+        <name>__repr__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1243" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1243" bodyend="1246"/>
+        <references refid="classdb__layer_1_1_m_i_m_e_s_1a66872c780c00042cd689fd6b0d2028df" compoundref="db__layer_8py" startline="1220">db_layer.MIMES.mimeid</references>
+        <references refid="classdb__layer_1_1_rule_1acc2d1385294c5f2e6c904d5d45f6b993" compoundref="db__layer_8py" startline="935">db_layer.Rule.gid</references>
+        <references refid="classdb__layer_1_1_groups_1aded07ebac158a99bf9fd01c87bba222c" compoundref="db__layer_8py" startline="971">db_layer.Groups.gid</references>
+        <references refid="classdb__layer_1_1_group_1ad04297ad13e077524983def6a0af935b" compoundref="db__layer_8py" startline="1119">db_layer.Group.gid</references>
+        <references refid="classdb__layer_1_1_u_r_i_s_1a1d76417de9c74a2a88a926ba6cd972ba" compoundref="db__layer_8py" startline="1155">db_layer.URIS.gid</references>
+        <references refid="classdb__layer_1_1_w_o_r_d_s_1ab34399fc663ae9bb749e3bf378e93dc2" compoundref="db__layer_8py" startline="1189">db_layer.WORDS.gid</references>
+        <references refid="classdb__layer_1_1_m_i_m_e_s_1a3ce87f789dd363c1a497bf44144ef051" compoundref="db__layer_8py" startline="1221">db_layer.MIMES.gid</references>
+        <references refid="classdb__layer_1_1_m_i_m_e_s_1a0161e97244015d5d5828ef162f621897" compoundref="db__layer_8py" startline="1222">db_layer.MIMES.mimes</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_m_i_m_e_s_1a4101e5315f081b7675139e1c5eaa7db0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.MIMES.__toString__</definition>
+        <argsstring></argsstring>
+        <name>__toString__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1247" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1247" bodyend="1253"/>
+        <references refid="classdb__layer_1_1_m_i_m_e_s_1a66872c780c00042cd689fd6b0d2028df" compoundref="db__layer_8py" startline="1220">db_layer.MIMES.mimeid</references>
+        <references refid="classdb__layer_1_1_rule_1acc2d1385294c5f2e6c904d5d45f6b993" compoundref="db__layer_8py" startline="935">db_layer.Rule.gid</references>
+        <references refid="classdb__layer_1_1_groups_1aded07ebac158a99bf9fd01c87bba222c" compoundref="db__layer_8py" startline="971">db_layer.Groups.gid</references>
+        <references refid="classdb__layer_1_1_group_1ad04297ad13e077524983def6a0af935b" compoundref="db__layer_8py" startline="1119">db_layer.Group.gid</references>
+        <references refid="classdb__layer_1_1_u_r_i_s_1a1d76417de9c74a2a88a926ba6cd972ba" compoundref="db__layer_8py" startline="1155">db_layer.URIS.gid</references>
+        <references refid="classdb__layer_1_1_w_o_r_d_s_1ab34399fc663ae9bb749e3bf378e93dc2" compoundref="db__layer_8py" startline="1189">db_layer.WORDS.gid</references>
+        <references refid="classdb__layer_1_1_m_i_m_e_s_1a3ce87f789dd363c1a497bf44144ef051" compoundref="db__layer_8py" startline="1221">db_layer.MIMES.gid</references>
+        <references refid="classdb__layer_1_1_m_i_m_e_s_1a0161e97244015d5d5828ef162f621897" compoundref="db__layer_8py" startline="1222">db_layer.MIMES.mimes</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="113">
+        <label>Base</label>
+      </node>
+      <node id="112">
+        <label>db_layer.MIMES</label>
+        <link refid="classdb__layer_1_1_m_i_m_e_s"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="115">
+        <label>Base</label>
+      </node>
+      <node id="114">
+        <label>db_layer.MIMES</label>
+        <link refid="classdb__layer_1_1_m_i_m_e_s"/>
+        <childnode refid="115" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1218" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1218" bodyend="1254"/>
+    <listofallmembers>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a76e9016c987bbe373eeb0416a35a4e51" prot="public" virt="non-virtual"><scope>db_layer::MIMES</scope><name>__repr__</name></member>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a3fc2d49a9f888c5cd5e11f21c0264670" prot="private" virt="non-virtual"><scope>db_layer::MIMES</scope><name>__tablename__</name></member>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a4101e5315f081b7675139e1c5eaa7db0" prot="public" virt="non-virtual"><scope>db_layer::MIMES</scope><name>__toString__</name></member>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a08eafc4a1c69df96fa32d4f1c65cb04f" prot="public" virt="non-virtual"><scope>db_layer::MIMES</scope><name>fromdict</name></member>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a4ec1674ef68ad1844d2afe45259bdc89" prot="public" virt="non-virtual"><scope>db_layer::MIMES</scope><name>fromjson</name></member>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a3ce87f789dd363c1a497bf44144ef051" prot="public" virt="non-virtual"><scope>db_layer::MIMES</scope><name>gid</name></member>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a66f384fb971ec6f4d83f511e3fca7b7b" prot="public" virt="non-virtual"><scope>db_layer::MIMES</scope><name>gid</name></member>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a790fe339535f598d08ef553311075518" prot="public" virt="non-virtual"><scope>db_layer::MIMES</scope><name>intColumns</name></member>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a66872c780c00042cd689fd6b0d2028df" prot="public" virt="non-virtual"><scope>db_layer::MIMES</scope><name>mimeid</name></member>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a0161e97244015d5d5828ef162f621897" prot="public" virt="non-virtual"><scope>db_layer::MIMES</scope><name>mimes</name></member>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a507d01e47453b187461ccf737326e8de" prot="public" virt="non-virtual"><scope>db_layer::MIMES</scope><name>stringColumns</name></member>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a636fc98e28fedf6a5eb57058e2d402d8" prot="public" virt="non-virtual"><scope>db_layer::MIMES</scope><name>words</name></member>
+      <member refid="classdb__layer_1_1_m_i_m_e_s_1a5dd5df331308d3e58b82811885724468" prot="public" virt="non-virtual"><scope>db_layer::MIMES</scope><name>wordsid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

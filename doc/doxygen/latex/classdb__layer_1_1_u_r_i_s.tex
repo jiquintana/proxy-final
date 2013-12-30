@@ -1,0 +1,182 @@
+\hypertarget{classdb__layer_1_1_u_r_i_s}{\section{Referencia de la Clase db\-\_\-layer.\-U\-R\-I\-S}
+\label{classdb__layer_1_1_u_r_i_s}\index{db\-\_\-layer.\-U\-R\-I\-S@{db\-\_\-layer.\-U\-R\-I\-S}}
+}
+
+
+Diagrama de herencias de db\-\_\-layer.\-U\-R\-I\-S\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classdb__layer_1_1_u_r_i_s__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración para db\-\_\-layer.\-U\-R\-I\-S\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classdb__layer_1_1_u_r_i_s__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classdb__layer_1_1_u_r_i_s_abd12457dcfb2a81a6b788e10f30ca8a9}{string\-Columns}
+\item 
+def \hyperlink{classdb__layer_1_1_u_r_i_s_ae3a356f32006d48e4785f627ba7debb0}{int\-Columns}
+\item 
+def \hyperlink{classdb__layer_1_1_u_r_i_s_a6f10547450f029464c78dcf18ade87cc}{fromdict}
+\item 
+def \hyperlink{classdb__layer_1_1_u_r_i_s_a1742d3502f4701bb2ebeb4b0ccbfcf6c}{fromjson}
+\item 
+def \hyperlink{classdb__layer_1_1_u_r_i_s_a89b84b0303d692308a6c2eac9a17a5a9}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+\item 
+def \hyperlink{classdb__layer_1_1_u_r_i_s_ae1fb1b6feeed82040621396a68ab9fc6}{\-\_\-\-\_\-to\-String\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdb__layer_1_1_u_r_i_s_a28e0597e0d662150c83be1617ed84fb1}{uriid}
+\item 
+\hyperlink{classdb__layer_1_1_u_r_i_s_a264e2e0758357d18359f92380e8249dc}{gid}
+\item 
+\hyperlink{classdb__layer_1_1_u_r_i_s_a96adfe69ce986533f348b9534bd56ba1}{uri}
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classdb__layer_1_1_u_r_i_s_a6120a757a93cee58b3edbd0a21c53ea1}{uriid} = Column(Integer, primary\-\_\-key=True, autoincrement=True, index=True)
+\item 
+tuple \hyperlink{classdb__layer_1_1_u_r_i_s_a1d76417de9c74a2a88a926ba6cd972ba}{gid} = Column(Integer, Foreign\-Key('G\-R\-U\-P\-O.\-gid'), nullable=False, primary\-\_\-key=True, index=True)
+\item 
+tuple \hyperlink{classdb__layer_1_1_u_r_i_s_adb880c6700b90a1413c072e1897fb5ba}{uri} = Column(String(250), nullable=False)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 1152 del archivo db\-\_\-layer.\-py.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classdb__layer_1_1_u_r_i_s_a89b84b0303d692308a6c2eac9a17a5a9}{\index{db\-\_\-layer\-::\-U\-R\-I\-S@{db\-\_\-layer\-::\-U\-R\-I\-S}!\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}!db_layer::URIS@{db\-\_\-layer\-::\-U\-R\-I\-S}}
+\subsubsection[{\-\_\-\-\_\-repr\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def db\-\_\-layer.\-U\-R\-I\-S.\-\_\-\-\_\-repr\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classdb__layer_1_1_u_r_i_s_a89b84b0303d692308a6c2eac9a17a5a9}
+
+
+Definición en la línea 1178 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{classdb__layer_1_1_u_r_i_s_ae1fb1b6feeed82040621396a68ab9fc6}{\index{db\-\_\-layer\-::\-U\-R\-I\-S@{db\-\_\-layer\-::\-U\-R\-I\-S}!\-\_\-\-\_\-to\-String\-\_\-\-\_\-@{\-\_\-\-\_\-to\-String\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-to\-String\-\_\-\-\_\-@{\-\_\-\-\_\-to\-String\-\_\-\-\_\-}!db_layer::URIS@{db\-\_\-layer\-::\-U\-R\-I\-S}}
+\subsubsection[{\-\_\-\-\_\-to\-String\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def db\-\_\-layer.\-U\-R\-I\-S.\-\_\-\-\_\-to\-String\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classdb__layer_1_1_u_r_i_s_ae1fb1b6feeed82040621396a68ab9fc6}
+
+
+Definición en la línea 1181 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{classdb__layer_1_1_u_r_i_s_a6f10547450f029464c78dcf18ade87cc}{\index{db\-\_\-layer\-::\-U\-R\-I\-S@{db\-\_\-layer\-::\-U\-R\-I\-S}!fromdict@{fromdict}}
+\index{fromdict@{fromdict}!db_layer::URIS@{db\-\_\-layer\-::\-U\-R\-I\-S}}
+\subsubsection[{fromdict}]{\setlength{\rightskip}{0pt plus 5cm}def db\-\_\-layer.\-U\-R\-I\-S.\-fromdict (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{jsondata}
+\end{DoxyParamCaption}
+)}}\label{classdb__layer_1_1_u_r_i_s_a6f10547450f029464c78dcf18ade87cc}
+
+
+Definición en la línea 1165 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{classdb__layer_1_1_u_r_i_s_a1742d3502f4701bb2ebeb4b0ccbfcf6c}{\index{db\-\_\-layer\-::\-U\-R\-I\-S@{db\-\_\-layer\-::\-U\-R\-I\-S}!fromjson@{fromjson}}
+\index{fromjson@{fromjson}!db_layer::URIS@{db\-\_\-layer\-::\-U\-R\-I\-S}}
+\subsubsection[{fromjson}]{\setlength{\rightskip}{0pt plus 5cm}def db\-\_\-layer.\-U\-R\-I\-S.\-fromjson (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{jsondata}
+\end{DoxyParamCaption}
+)}}\label{classdb__layer_1_1_u_r_i_s_a1742d3502f4701bb2ebeb4b0ccbfcf6c}
+
+
+Definición en la línea 1171 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{classdb__layer_1_1_u_r_i_s_ae3a356f32006d48e4785f627ba7debb0}{\index{db\-\_\-layer\-::\-U\-R\-I\-S@{db\-\_\-layer\-::\-U\-R\-I\-S}!int\-Columns@{int\-Columns}}
+\index{int\-Columns@{int\-Columns}!db_layer::URIS@{db\-\_\-layer\-::\-U\-R\-I\-S}}
+\subsubsection[{int\-Columns}]{\setlength{\rightskip}{0pt plus 5cm}def db\-\_\-layer.\-U\-R\-I\-S.\-int\-Columns (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classdb__layer_1_1_u_r_i_s_ae3a356f32006d48e4785f627ba7debb0}
+
+
+Definición en la línea 1162 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{classdb__layer_1_1_u_r_i_s_abd12457dcfb2a81a6b788e10f30ca8a9}{\index{db\-\_\-layer\-::\-U\-R\-I\-S@{db\-\_\-layer\-::\-U\-R\-I\-S}!string\-Columns@{string\-Columns}}
+\index{string\-Columns@{string\-Columns}!db_layer::URIS@{db\-\_\-layer\-::\-U\-R\-I\-S}}
+\subsubsection[{string\-Columns}]{\setlength{\rightskip}{0pt plus 5cm}def db\-\_\-layer.\-U\-R\-I\-S.\-string\-Columns (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classdb__layer_1_1_u_r_i_s_abd12457dcfb2a81a6b788e10f30ca8a9}
+
+
+Definición en la línea 1159 del archivo db\-\_\-layer.\-py.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classdb__layer_1_1_u_r_i_s_a1d76417de9c74a2a88a926ba6cd972ba}{\index{db\-\_\-layer\-::\-U\-R\-I\-S@{db\-\_\-layer\-::\-U\-R\-I\-S}!gid@{gid}}
+\index{gid@{gid}!db_layer::URIS@{db\-\_\-layer\-::\-U\-R\-I\-S}}
+\subsubsection[{gid}]{\setlength{\rightskip}{0pt plus 5cm}tuple db\-\_\-layer.\-U\-R\-I\-S.\-gid = Column(Integer, Foreign\-Key('G\-R\-U\-P\-O.\-gid'), nullable=False, primary\-\_\-key=True, index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classdb__layer_1_1_u_r_i_s_a1d76417de9c74a2a88a926ba6cd972ba}
+
+
+Definición en la línea 1155 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{classdb__layer_1_1_u_r_i_s_a264e2e0758357d18359f92380e8249dc}{\index{db\-\_\-layer\-::\-U\-R\-I\-S@{db\-\_\-layer\-::\-U\-R\-I\-S}!gid@{gid}}
+\index{gid@{gid}!db_layer::URIS@{db\-\_\-layer\-::\-U\-R\-I\-S}}
+\subsubsection[{gid}]{\setlength{\rightskip}{0pt plus 5cm}db\-\_\-layer.\-U\-R\-I\-S.\-gid}}\label{classdb__layer_1_1_u_r_i_s_a264e2e0758357d18359f92380e8249dc}
+
+
+Definición en la línea 1167 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{classdb__layer_1_1_u_r_i_s_adb880c6700b90a1413c072e1897fb5ba}{\index{db\-\_\-layer\-::\-U\-R\-I\-S@{db\-\_\-layer\-::\-U\-R\-I\-S}!uri@{uri}}
+\index{uri@{uri}!db_layer::URIS@{db\-\_\-layer\-::\-U\-R\-I\-S}}
+\subsubsection[{uri}]{\setlength{\rightskip}{0pt plus 5cm}tuple db\-\_\-layer.\-U\-R\-I\-S.\-uri = Column(String(250), nullable=False)\hspace{0.3cm}{\ttfamily [static]}}}\label{classdb__layer_1_1_u_r_i_s_adb880c6700b90a1413c072e1897fb5ba}
+
+
+Definición en la línea 1156 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{classdb__layer_1_1_u_r_i_s_a96adfe69ce986533f348b9534bd56ba1}{\index{db\-\_\-layer\-::\-U\-R\-I\-S@{db\-\_\-layer\-::\-U\-R\-I\-S}!uri@{uri}}
+\index{uri@{uri}!db_layer::URIS@{db\-\_\-layer\-::\-U\-R\-I\-S}}
+\subsubsection[{uri}]{\setlength{\rightskip}{0pt plus 5cm}db\-\_\-layer.\-U\-R\-I\-S.\-uri}}\label{classdb__layer_1_1_u_r_i_s_a96adfe69ce986533f348b9534bd56ba1}
+
+
+Definición en la línea 1168 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{classdb__layer_1_1_u_r_i_s_a6120a757a93cee58b3edbd0a21c53ea1}{\index{db\-\_\-layer\-::\-U\-R\-I\-S@{db\-\_\-layer\-::\-U\-R\-I\-S}!uriid@{uriid}}
+\index{uriid@{uriid}!db_layer::URIS@{db\-\_\-layer\-::\-U\-R\-I\-S}}
+\subsubsection[{uriid}]{\setlength{\rightskip}{0pt plus 5cm}tuple db\-\_\-layer.\-U\-R\-I\-S.\-uriid = Column(Integer, primary\-\_\-key=True, autoincrement=True, index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classdb__layer_1_1_u_r_i_s_a6120a757a93cee58b3edbd0a21c53ea1}
+
+
+Definición en la línea 1154 del archivo db\-\_\-layer.\-py.
+
+\hypertarget{classdb__layer_1_1_u_r_i_s_a28e0597e0d662150c83be1617ed84fb1}{\index{db\-\_\-layer\-::\-U\-R\-I\-S@{db\-\_\-layer\-::\-U\-R\-I\-S}!uriid@{uriid}}
+\index{uriid@{uriid}!db_layer::URIS@{db\-\_\-layer\-::\-U\-R\-I\-S}}
+\subsubsection[{uriid}]{\setlength{\rightskip}{0pt plus 5cm}db\-\_\-layer.\-U\-R\-I\-S.\-uriid}}\label{classdb__layer_1_1_u_r_i_s_a28e0597e0d662150c83be1617ed84fb1}
+
+
+Definición en la línea 1166 del archivo db\-\_\-layer.\-py.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{db__layer_8py}{db\-\_\-layer.\-py}\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classdb__layer_1_1_alchemy_encoder" kind="class" prot="public">
+    <compoundname>db_layer::AlchemyEncoder</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JSONEncoder</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdb__layer_1_1_alchemy_encoder_1abe41d36769d9edad84e480fed20c96f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.AlchemyEncoder.default</definition>
+        <argsstring></argsstring>
+        <name>default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="81" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="81" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="80">
+        <label>json::JSONEncoder</label>
+      </node>
+      <node id="79">
+        <label>db_layer.AlchemyEncoder</label>
+        <link refid="classdb__layer_1_1_alchemy_encoder"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="82">
+        <label>json::JSONEncoder</label>
+      </node>
+      <node id="81">
+        <label>db_layer.AlchemyEncoder</label>
+        <link refid="classdb__layer_1_1_alchemy_encoder"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/prj/proxy-final/proxy/source/db_layer.py" line="80" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="80" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classdb__layer_1_1_alchemy_encoder_1abe41d36769d9edad84e480fed20c96f7" prot="public" virt="non-virtual"><scope>db_layer::AlchemyEncoder</scope><name>default</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

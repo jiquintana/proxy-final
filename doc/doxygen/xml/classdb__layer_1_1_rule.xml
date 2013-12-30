@@ -1,0 +1,378 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classdb__layer_1_1_rule" kind="class" prot="public">
+    <compoundname>db_layer::Rule</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1a95e5ea7102732d56c61b4a0b3f37619b" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string db_layer.Rule::tableid</definition>
+        <argsstring></argsstring>
+        <name>tableid</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="932" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="932" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_rule_1a745c8dd200e8dfefd352f1e260e5ab50" compoundref="db__layer_8py" startline="960" endline="962">db_layer.Rule.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_rule_1a727eb695fe5bb6d6a42219429ff8c7cc" compoundref="db__layer_8py" startline="963" endline="967">db_layer.Rule.__toString__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1a9826ed75d79061c3fe046e62864ffa58" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int db_layer.Rule::ruleid</definition>
+        <argsstring></argsstring>
+        <name>ruleid</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="933" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="933" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_rule_1a745c8dd200e8dfefd352f1e260e5ab50" compoundref="db__layer_8py" startline="960" endline="962">db_layer.Rule.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_rule_1a727eb695fe5bb6d6a42219429ff8c7cc" compoundref="db__layer_8py" startline="963" endline="967">db_layer.Rule.__toString__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1acd0964c11f2797d211f109a379bfd595" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int db_layer.Rule::uid</definition>
+        <argsstring></argsstring>
+        <name>uid</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="934" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="934" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_rule_1a745c8dd200e8dfefd352f1e260e5ab50" compoundref="db__layer_8py" startline="960" endline="962">db_layer.Rule.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_rule_1a727eb695fe5bb6d6a42219429ff8c7cc" compoundref="db__layer_8py" startline="963" endline="967">db_layer.Rule.__toString__</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1ad6c13cffa730507128cffd4401485225" compoundref="db__layer_8py" startline="980" endline="985">db_layer.Groups.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1a8ce7c44c7a07175c805663313741c54e" compoundref="db__layer_8py" startline="986" endline="988">db_layer.Groups.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1a42a22e15d4c61b933187e912db73be95" compoundref="db__layer_8py" startline="989" endline="991">db_layer.Groups.__toSring__</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1ac11f473a264eb8924516c1e19053d571" compoundref="db__layer_8py" startline="1000" endline="1005">db_layer.Groups.pertenece</referencedby>
+        <referencedby refid="classdb__layer_1_1_user_1a08d47a952fa6c5e35a53186babee6781" compoundref="db__layer_8py" startline="1083" endline="1088">db_layer.User.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_user_1a6eb84d2363fb99e85e098f9ebd10cd19" compoundref="db__layer_8py" startline="1089" endline="1116">db_layer.User.toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1acc2d1385294c5f2e6c904d5d45f6b993" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int db_layer.Rule::gid</definition>
+        <argsstring></argsstring>
+        <name>gid</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="935" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="935" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_rule_1a745c8dd200e8dfefd352f1e260e5ab50" compoundref="db__layer_8py" startline="960" endline="962">db_layer.Rule.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_rule_1a727eb695fe5bb6d6a42219429ff8c7cc" compoundref="db__layer_8py" startline="963" endline="967">db_layer.Rule.__toString__</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1ad6c13cffa730507128cffd4401485225" compoundref="db__layer_8py" startline="980" endline="985">db_layer.Groups.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1a8ce7c44c7a07175c805663313741c54e" compoundref="db__layer_8py" startline="986" endline="988">db_layer.Groups.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1a42a22e15d4c61b933187e912db73be95" compoundref="db__layer_8py" startline="989" endline="991">db_layer.Groups.__toSring__</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1a654f6803bf6349c14312e034f3b7112e" compoundref="db__layer_8py" startline="1006" endline="1012">db_layer.Groups.contiene</referencedby>
+        <referencedby refid="classdb__layer_1_1_group_1a1c492e33e84e5d601f33b719ab55fc87" compoundref="db__layer_8py" startline="1137" endline="1143">db_layer.Group.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_group_1aef6cf965b5d044fd05881fb31dd8aed6" compoundref="db__layer_8py" startline="1144" endline="1146">db_layer.Group.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_group_1a3aeaee5af2612241745f52de063bee7f" compoundref="db__layer_8py" startline="1147" endline="1151">db_layer.Group.__toSring__</referencedby>
+        <referencedby refid="classdb__layer_1_1_u_r_i_s_1a1742d3502f4701bb2ebeb4b0ccbfcf6c" compoundref="db__layer_8py" startline="1171" endline="1177">db_layer.URIS.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_u_r_i_s_1a89b84b0303d692308a6c2eac9a17a5a9" compoundref="db__layer_8py" startline="1178" endline="1180">db_layer.URIS.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_u_r_i_s_1ae1fb1b6feeed82040621396a68ab9fc6" compoundref="db__layer_8py" startline="1181" endline="1185">db_layer.URIS.__toString__</referencedby>
+        <referencedby refid="classdb__layer_1_1_w_o_r_d_s_1ab1557ec56523b2be35708beb8c09f2f5" compoundref="db__layer_8py" startline="1204" endline="1210">db_layer.WORDS.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_w_o_r_d_s_1a963538e546aa97f139237d0152cb0170" compoundref="db__layer_8py" startline="1211" endline="1214">db_layer.WORDS.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_w_o_r_d_s_1a741add95506ad7ec7d13f88fdd4a86bd" compoundref="db__layer_8py" startline="1215" endline="1217">db_layer.WORDS.__toString__</referencedby>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a4ec1674ef68ad1844d2afe45259bdc89" compoundref="db__layer_8py" startline="1236" endline="1242">db_layer.MIMES.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a76e9016c987bbe373eeb0416a35a4e51" compoundref="db__layer_8py" startline="1243" endline="1246">db_layer.MIMES.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a4101e5315f081b7675139e1c5eaa7db0" compoundref="db__layer_8py" startline="1247" endline="1253">db_layer.MIMES.__toString__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1a3b04471d06abe2199c7f9deb646be68d" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string db_layer.Rule::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="936" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="936" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_rule_1a745c8dd200e8dfefd352f1e260e5ab50" compoundref="db__layer_8py" startline="960" endline="962">db_layer.Rule.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_rule_1a727eb695fe5bb6d6a42219429ff8c7cc" compoundref="db__layer_8py" startline="963" endline="967">db_layer.Rule.__toString__</referencedby>
+        <referencedby refid="classdb__layer_1_1_user_1a08d47a952fa6c5e35a53186babee6781" compoundref="db__layer_8py" startline="1083" endline="1088">db_layer.User.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_user_1a6eb84d2363fb99e85e098f9ebd10cd19" compoundref="db__layer_8py" startline="1089" endline="1116">db_layer.User.toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1a34a1b2f08b6ff459e4a4ab84ddf6732e" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string db_layer.Rule::groupname</definition>
+        <argsstring></argsstring>
+        <name>groupname</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="937" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="937" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_rule_1a745c8dd200e8dfefd352f1e260e5ab50" compoundref="db__layer_8py" startline="960" endline="962">db_layer.Rule.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_rule_1a727eb695fe5bb6d6a42219429ff8c7cc" compoundref="db__layer_8py" startline="963" endline="967">db_layer.Rule.__toString__</referencedby>
+        <referencedby refid="classdb__layer_1_1_group_1a1c492e33e84e5d601f33b719ab55fc87" compoundref="db__layer_8py" startline="1137" endline="1143">db_layer.Group.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_group_1aef6cf965b5d044fd05881fb31dd8aed6" compoundref="db__layer_8py" startline="1144" endline="1146">db_layer.Group.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_group_1a3aeaee5af2612241745f52de063bee7f" compoundref="db__layer_8py" startline="1147" endline="1151">db_layer.Group.__toSring__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1adda2b017e49fb9e1ce8a18821062e94d" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string db_layer.Rule::rulecontent</definition>
+        <argsstring></argsstring>
+        <name>rulecontent</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="938" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="938" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_rule_1a745c8dd200e8dfefd352f1e260e5ab50" compoundref="db__layer_8py" startline="960" endline="962">db_layer.Rule.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_rule_1a727eb695fe5bb6d6a42219429ff8c7cc" compoundref="db__layer_8py" startline="963" endline="967">db_layer.Rule.__toString__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1a99584e0f74f7c52fb08bd7df132672ad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_layer.Rule::uid</definition>
+        <argsstring></argsstring>
+        <name>uid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="942" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="942" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_groups_1ad6c13cffa730507128cffd4401485225" compoundref="db__layer_8py" startline="980" endline="985">db_layer.Groups.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1a8ce7c44c7a07175c805663313741c54e" compoundref="db__layer_8py" startline="986" endline="988">db_layer.Groups.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1a42a22e15d4c61b933187e912db73be95" compoundref="db__layer_8py" startline="989" endline="991">db_layer.Groups.__toSring__</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1ac11f473a264eb8924516c1e19053d571" compoundref="db__layer_8py" startline="1000" endline="1005">db_layer.Groups.pertenece</referencedby>
+        <referencedby refid="classdb__layer_1_1_user_1a08d47a952fa6c5e35a53186babee6781" compoundref="db__layer_8py" startline="1083" endline="1088">db_layer.User.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_user_1a6eb84d2363fb99e85e098f9ebd10cd19" compoundref="db__layer_8py" startline="1089" endline="1116">db_layer.User.toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1a91b3762b7d9fff303d381673fa4d2b7e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_layer.Rule::gid</definition>
+        <argsstring></argsstring>
+        <name>gid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="943" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="943" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_groups_1ad6c13cffa730507128cffd4401485225" compoundref="db__layer_8py" startline="980" endline="985">db_layer.Groups.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1a8ce7c44c7a07175c805663313741c54e" compoundref="db__layer_8py" startline="986" endline="988">db_layer.Groups.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1a42a22e15d4c61b933187e912db73be95" compoundref="db__layer_8py" startline="989" endline="991">db_layer.Groups.__toSring__</referencedby>
+        <referencedby refid="classdb__layer_1_1_groups_1a654f6803bf6349c14312e034f3b7112e" compoundref="db__layer_8py" startline="1006" endline="1012">db_layer.Groups.contiene</referencedby>
+        <referencedby refid="classdb__layer_1_1_group_1a1c492e33e84e5d601f33b719ab55fc87" compoundref="db__layer_8py" startline="1137" endline="1143">db_layer.Group.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_group_1aef6cf965b5d044fd05881fb31dd8aed6" compoundref="db__layer_8py" startline="1144" endline="1146">db_layer.Group.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_group_1a3aeaee5af2612241745f52de063bee7f" compoundref="db__layer_8py" startline="1147" endline="1151">db_layer.Group.__toSring__</referencedby>
+        <referencedby refid="classdb__layer_1_1_u_r_i_s_1a1742d3502f4701bb2ebeb4b0ccbfcf6c" compoundref="db__layer_8py" startline="1171" endline="1177">db_layer.URIS.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_u_r_i_s_1a89b84b0303d692308a6c2eac9a17a5a9" compoundref="db__layer_8py" startline="1178" endline="1180">db_layer.URIS.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_u_r_i_s_1ae1fb1b6feeed82040621396a68ab9fc6" compoundref="db__layer_8py" startline="1181" endline="1185">db_layer.URIS.__toString__</referencedby>
+        <referencedby refid="classdb__layer_1_1_w_o_r_d_s_1ab1557ec56523b2be35708beb8c09f2f5" compoundref="db__layer_8py" startline="1204" endline="1210">db_layer.WORDS.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_w_o_r_d_s_1a963538e546aa97f139237d0152cb0170" compoundref="db__layer_8py" startline="1211" endline="1214">db_layer.WORDS.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_w_o_r_d_s_1a741add95506ad7ec7d13f88fdd4a86bd" compoundref="db__layer_8py" startline="1215" endline="1217">db_layer.WORDS.__toString__</referencedby>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a4ec1674ef68ad1844d2afe45259bdc89" compoundref="db__layer_8py" startline="1236" endline="1242">db_layer.MIMES.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a76e9016c987bbe373eeb0416a35a4e51" compoundref="db__layer_8py" startline="1243" endline="1246">db_layer.MIMES.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_m_i_m_e_s_1a4101e5315f081b7675139e1c5eaa7db0" compoundref="db__layer_8py" startline="1247" endline="1253">db_layer.MIMES.__toString__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1adb9fcf60a52edeada35d9074b1533080" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_layer.Rule::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="944" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="944" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_user_1a08d47a952fa6c5e35a53186babee6781" compoundref="db__layer_8py" startline="1083" endline="1088">db_layer.User.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_user_1a6eb84d2363fb99e85e098f9ebd10cd19" compoundref="db__layer_8py" startline="1089" endline="1116">db_layer.User.toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1a55660655f1b48f3f9f6c564781e7146b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_layer.Rule::groupname</definition>
+        <argsstring></argsstring>
+        <name>groupname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="945" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="945" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_group_1a1c492e33e84e5d601f33b719ab55fc87" compoundref="db__layer_8py" startline="1137" endline="1143">db_layer.Group.fromjson</referencedby>
+        <referencedby refid="classdb__layer_1_1_group_1aef6cf965b5d044fd05881fb31dd8aed6" compoundref="db__layer_8py" startline="1144" endline="1146">db_layer.Group.__repr__</referencedby>
+        <referencedby refid="classdb__layer_1_1_group_1a3aeaee5af2612241745f52de063bee7f" compoundref="db__layer_8py" startline="1147" endline="1151">db_layer.Group.__toSring__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1a27231c3bdb91a5ca5182fd3d82b450f2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_layer.Rule::tableid</definition>
+        <argsstring></argsstring>
+        <name>tableid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="947" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="947" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1af82864d81aca316dcd34545f42598160" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_layer.Rule::ruleid</definition>
+        <argsstring></argsstring>
+        <name>ruleid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="948" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="948" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_rule_1a818bda1ddeae841530511302a3a4d12b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_layer.Rule::rulecontent</definition>
+        <argsstring></argsstring>
+        <name>rulecontent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="949" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="949" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdb__layer_1_1_rule_1a9b86f9db748678957d419cbf0ff1ab1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Rule.fromData</definition>
+        <argsstring></argsstring>
+        <name>fromData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="940" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="940" bodyend="959"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rule_1a745c8dd200e8dfefd352f1e260e5ab50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Rule.__repr__</definition>
+        <argsstring></argsstring>
+        <name>__repr__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="960" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="960" bodyend="962"/>
+        <references refid="classdb__layer_1_1_rule_1a95e5ea7102732d56c61b4a0b3f37619b" compoundref="db__layer_8py" startline="932">db_layer.Rule.tableid</references>
+        <references refid="classdb__layer_1_1_rule_1a9826ed75d79061c3fe046e62864ffa58" compoundref="db__layer_8py" startline="933">db_layer.Rule.ruleid</references>
+        <references refid="classdb__layer_1_1_rule_1acd0964c11f2797d211f109a379bfd595" compoundref="db__layer_8py" startline="934">db_layer.Rule.uid</references>
+        <references refid="classdb__layer_1_1_rule_1acc2d1385294c5f2e6c904d5d45f6b993" compoundref="db__layer_8py" startline="935">db_layer.Rule.gid</references>
+        <references refid="classdb__layer_1_1_rule_1a3b04471d06abe2199c7f9deb646be68d" compoundref="db__layer_8py" startline="936">db_layer.Rule.username</references>
+        <references refid="classdb__layer_1_1_rule_1a34a1b2f08b6ff459e4a4ab84ddf6732e" compoundref="db__layer_8py" startline="937">db_layer.Rule.groupname</references>
+        <references refid="classdb__layer_1_1_rule_1adda2b017e49fb9e1ce8a18821062e94d" compoundref="db__layer_8py" startline="938">db_layer.Rule.rulecontent</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rule_1a727eb695fe5bb6d6a42219429ff8c7cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Rule.__toString__</definition>
+        <argsstring></argsstring>
+        <name>__toString__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="963" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="963" bodyend="967"/>
+        <references refid="classdb__layer_1_1_rule_1a95e5ea7102732d56c61b4a0b3f37619b" compoundref="db__layer_8py" startline="932">db_layer.Rule.tableid</references>
+        <references refid="classdb__layer_1_1_rule_1a9826ed75d79061c3fe046e62864ffa58" compoundref="db__layer_8py" startline="933">db_layer.Rule.ruleid</references>
+        <references refid="classdb__layer_1_1_rule_1acd0964c11f2797d211f109a379bfd595" compoundref="db__layer_8py" startline="934">db_layer.Rule.uid</references>
+        <references refid="classdb__layer_1_1_rule_1acc2d1385294c5f2e6c904d5d45f6b993" compoundref="db__layer_8py" startline="935">db_layer.Rule.gid</references>
+        <references refid="classdb__layer_1_1_rule_1a3b04471d06abe2199c7f9deb646be68d" compoundref="db__layer_8py" startline="936">db_layer.Rule.username</references>
+        <references refid="classdb__layer_1_1_rule_1a34a1b2f08b6ff459e4a4ab84ddf6732e" compoundref="db__layer_8py" startline="937">db_layer.Rule.groupname</references>
+        <references refid="classdb__layer_1_1_rule_1adda2b017e49fb9e1ce8a18821062e94d" compoundref="db__layer_8py" startline="938">db_layer.Rule.rulecontent</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="126">
+        <label>object</label>
+      </node>
+      <node id="125">
+        <label>db_layer.Rule</label>
+        <link refid="classdb__layer_1_1_rule"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="129">
+        <label>string</label>
+      </node>
+      <node id="128">
+        <label>object</label>
+      </node>
+      <node id="127">
+        <label>db_layer.Rule</label>
+        <link refid="classdb__layer_1_1_rule"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+        <childnode refid="129" relation="usage">
+          <edgelabel>tableid</edgelabel>
+          <edgelabel>groupname</edgelabel>
+          <edgelabel>username</edgelabel>
+          <edgelabel>rulecontent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/prj/proxy-final/proxy/source/db_layer.py" line="931" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="931" bodyend="968"/>
+    <listofallmembers>
+      <member refid="classdb__layer_1_1_rule_1a745c8dd200e8dfefd352f1e260e5ab50" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>__repr__</name></member>
+      <member refid="classdb__layer_1_1_rule_1a727eb695fe5bb6d6a42219429ff8c7cc" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>__toString__</name></member>
+      <member refid="classdb__layer_1_1_rule_1a9b86f9db748678957d419cbf0ff1ab1b" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>fromData</name></member>
+      <member refid="classdb__layer_1_1_rule_1acc2d1385294c5f2e6c904d5d45f6b993" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>gid</name></member>
+      <member refid="classdb__layer_1_1_rule_1a91b3762b7d9fff303d381673fa4d2b7e" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>gid</name></member>
+      <member refid="classdb__layer_1_1_rule_1a34a1b2f08b6ff459e4a4ab84ddf6732e" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>groupname</name></member>
+      <member refid="classdb__layer_1_1_rule_1a55660655f1b48f3f9f6c564781e7146b" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>groupname</name></member>
+      <member refid="classdb__layer_1_1_rule_1adda2b017e49fb9e1ce8a18821062e94d" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>rulecontent</name></member>
+      <member refid="classdb__layer_1_1_rule_1a818bda1ddeae841530511302a3a4d12b" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>rulecontent</name></member>
+      <member refid="classdb__layer_1_1_rule_1a9826ed75d79061c3fe046e62864ffa58" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>ruleid</name></member>
+      <member refid="classdb__layer_1_1_rule_1af82864d81aca316dcd34545f42598160" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>ruleid</name></member>
+      <member refid="classdb__layer_1_1_rule_1a95e5ea7102732d56c61b4a0b3f37619b" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>tableid</name></member>
+      <member refid="classdb__layer_1_1_rule_1a27231c3bdb91a5ca5182fd3d82b450f2" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>tableid</name></member>
+      <member refid="classdb__layer_1_1_rule_1acd0964c11f2797d211f109a379bfd595" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>uid</name></member>
+      <member refid="classdb__layer_1_1_rule_1a99584e0f74f7c52fb08bd7df132672ad" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>uid</name></member>
+      <member refid="classdb__layer_1_1_rule_1a3b04471d06abe2199c7f9deb646be68d" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>username</name></member>
+      <member refid="classdb__layer_1_1_rule_1adb9fcf60a52edeada35d9074b1533080" prot="public" virt="non-virtual"><scope>db_layer::Rule</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

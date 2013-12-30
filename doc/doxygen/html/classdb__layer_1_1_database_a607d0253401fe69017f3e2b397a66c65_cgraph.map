@@ -1,0 +1,7 @@
+<map id="db_layer.Database.addUser" name="db_layer.Database.addUser">
+<area shape="rect" id="node2" href="$classdb__layer_1_1_database.html#a99ba044bb2e8692e27c34b74f6420ce8" title="db_layer.Database.getLowest\lUnusedUIDfromUser" alt="" coords="229,5,416,46"/>
+<area shape="rect" id="node3" href="$classdb__layer_1_1_database.html#a16008b08c96fa493d7ee12b2a7a5b181" title="db_layer.Database.findGroup\lByGID" alt="" coords="231,70,415,111"/>
+<area shape="rect" id="node4" href="$classdb__layer_1_1_database.html#a321ec63103a76c21fb556f82bc03e08f" title="db_layer.Database.findUser\lByUsername" alt="" coords="235,135,410,177"/>
+<area shape="rect" id="node5" href="$classdb__layer_1_1_database.html#a20c7dd43617755b5ebaf0e1d22a4a2f8" title="db_layer.Database.findGroup\lByGroupname" alt="" coords="231,201,415,242"/>
+<area shape="rect" id="node6" href="$classdb__layer_1_1_database.html#aa97a7c93c41d97e60600dec9fb87270e" title="db_layer.Database.findUser\lByUID" alt="" coords="235,266,410,307"/>
+</map>

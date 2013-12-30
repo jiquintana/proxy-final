@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_thread_pool_1_1_thread_pool_mix_in" kind="class" prot="public">
+    <compoundname>ThreadPool::ThreadPoolMixIn</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ThreadingMixIn</basecompoundref>
+    <derivedcompoundref refid="classmain_1_1_threaded_server" prot="public" virt="non-virtual">main.ThreadedServer</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_thread_pool_1_1_thread_pool_mix_in_1adc4a62f954256f803da312f6e26ee254" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>ThreadPool.ThreadPoolMixIn::numThreads</definition>
+        <argsstring></argsstring>
+        <name>numThreads</name>
+        <initializer>= <ref refid="class_config_1_1_config_1a30a0b4f26a731f1f315b86b16eef807c" kindref="member">Config.NUM_THREADS</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="38" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_thread_pool_1_1_thread_pool_mix_in_1a6be85971f1b071cd2f7d958ff988310f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>ThreadPool.ThreadPoolMixIn::allow_reuse_address</definition>
+        <argsstring></argsstring>
+        <name>allow_reuse_address</name>
+        <initializer>= True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="39" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_thread_pool_1_1_thread_pool_mix_in_1ac5a128ba2a86dc5cd90fd526a26ad148" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>ThreadPool.ThreadPoolMixIn::daemon_threads</definition>
+        <argsstring></argsstring>
+        <name>daemon_threads</name>
+        <initializer>= True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="40" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_thread_pool_1_1_thread_pool_mix_in_1a7e3bc178cfa9c8583685c62e1104a370" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>ThreadPool.ThreadPoolMixIn::KEEP_RUNNING</definition>
+        <argsstring></argsstring>
+        <name>KEEP_RUNNING</name>
+        <initializer>= True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="41" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_thread_pool_1_1_thread_pool_mix_in_1aca5cd6b9a97351bc88b58a94b55d5bf8" compoundref="_thread_pool_8py" startline="47" endline="49">ThreadPool.ThreadPoolMixIn.keep_running</referencedby>
+        <referencedby refid="class_thread_pool_1_1_thread_pool_mix_in_1a52ba9961e4dba0d2151dfc9bb1109c05" compoundref="_thread_pool_8py" startline="50" endline="55">ThreadPool.ThreadPoolMixIn.force_shutdown</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_thread_pool_1_1_thread_pool_mix_in_1ad8942e9f9352de2747eda5ecbc00c047" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple ThreadPool.ThreadPoolMixIn::logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="class_log_1_1_log" kindref="compound">Log</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="42" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_thread_pool_1_1_thread_pool_mix_in_1a93c8c7dd5f32ba5faa17096ea56070ad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ThreadPool.ThreadPoolMixIn::requests</definition>
+        <argsstring></argsstring>
+        <name>requests</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="63" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_thread_pool_1_1_thread_pool_mix_in_1aca5cd6b9a97351bc88b58a94b55d5bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ThreadPool.ThreadPoolMixIn.keep_running</definition>
+        <argsstring></argsstring>
+        <name>keep_running</name>
+        <briefdescription>
+<para>Changed: Start Changed: End. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="47" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="47" bodyend="49"/>
+        <references refid="class_thread_pool_1_1_thread_pool_mix_in_1a7e3bc178cfa9c8583685c62e1104a370" compoundref="_thread_pool_8py" startline="41">ThreadPool.ThreadPoolMixIn.KEEP_RUNNING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_thread_pool_1_1_thread_pool_mix_in_1a52ba9961e4dba0d2151dfc9bb1109c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ThreadPool.ThreadPoolMixIn.force_shutdown</definition>
+        <argsstring></argsstring>
+        <name>force_shutdown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="50" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="50" bodyend="55"/>
+        <references refid="class_thread_pool_1_1_thread_pool_mix_in_1a7e3bc178cfa9c8583685c62e1104a370" compoundref="_thread_pool_8py" startline="41">ThreadPool.ThreadPoolMixIn.KEEP_RUNNING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_thread_pool_1_1_thread_pool_mix_in_1ab81f98e7bd32d246c065f9d4da78e1cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ThreadPool.ThreadPoolMixIn.serve_forever</definition>
+        <argsstring></argsstring>
+        <name>serve_forever</name>
+        <briefdescription>
+<para>Handle one request at a time until doomsday. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="60" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="60" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_thread_pool_1_1_thread_pool_mix_in_1a3967a11cc2a1ec6cf6d44368ac90ed42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ThreadPool.ThreadPoolMixIn.process_request_thread</definition>
+        <argsstring></argsstring>
+        <name>process_request_thread</name>
+        <briefdescription>
+<para>obtain request from queue instead of directly from server socket </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="84" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_thread_pool_1_1_thread_pool_mix_in_1af2edfa9a820be9f947c90b737743dea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ThreadPool.ThreadPoolMixIn.handle_request</definition>
+        <argsstring></argsstring>
+        <name>handle_request</name>
+        <briefdescription>
+<para>simply collect requests and put them on the queue for the workers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="93" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="93" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>use a thread pool instead of a new thread on every request </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="142">
+        <label>ThreadingMixIn</label>
+      </node>
+      <node id="141">
+        <label>ThreadPool.ThreadPoolMixIn</label>
+        <link refid="class_thread_pool_1_1_thread_pool_mix_in"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>main.ThreadedServer</label>
+        <link refid="classmain_1_1_threaded_server"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="145">
+        <label>ThreadingMixIn</label>
+      </node>
+      <node id="144">
+        <label>ThreadPool.ThreadPoolMixIn</label>
+        <link refid="class_thread_pool_1_1_thread_pool_mix_in"/>
+        <childnode refid="145" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="36" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="36" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1a6be85971f1b071cd2f7d958ff988310f" prot="public" virt="non-virtual"><scope>ThreadPool::ThreadPoolMixIn</scope><name>allow_reuse_address</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1ac5a128ba2a86dc5cd90fd526a26ad148" prot="public" virt="non-virtual"><scope>ThreadPool::ThreadPoolMixIn</scope><name>daemon_threads</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1a52ba9961e4dba0d2151dfc9bb1109c05" prot="public" virt="non-virtual"><scope>ThreadPool::ThreadPoolMixIn</scope><name>force_shutdown</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1af2edfa9a820be9f947c90b737743dea4" prot="public" virt="non-virtual"><scope>ThreadPool::ThreadPoolMixIn</scope><name>handle_request</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1a7e3bc178cfa9c8583685c62e1104a370" prot="public" virt="non-virtual"><scope>ThreadPool::ThreadPoolMixIn</scope><name>KEEP_RUNNING</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1aca5cd6b9a97351bc88b58a94b55d5bf8" prot="public" virt="non-virtual"><scope>ThreadPool::ThreadPoolMixIn</scope><name>keep_running</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1ad8942e9f9352de2747eda5ecbc00c047" prot="public" virt="non-virtual"><scope>ThreadPool::ThreadPoolMixIn</scope><name>logger</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1adc4a62f954256f803da312f6e26ee254" prot="public" virt="non-virtual"><scope>ThreadPool::ThreadPoolMixIn</scope><name>numThreads</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1a3967a11cc2a1ec6cf6d44368ac90ed42" prot="public" virt="non-virtual"><scope>ThreadPool::ThreadPoolMixIn</scope><name>process_request_thread</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1a93c8c7dd5f32ba5faa17096ea56070ad" prot="public" virt="non-virtual"><scope>ThreadPool::ThreadPoolMixIn</scope><name>requests</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1ab81f98e7bd32d246c065f9d4da78e1cb" prot="public" virt="non-virtual"><scope>ThreadPool::ThreadPoolMixIn</scope><name>serve_forever</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

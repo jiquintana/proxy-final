@@ -1,0 +1,117 @@
+.TH "db_layer.URIS" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+db_layer.URIS \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Herencias Base\&.
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "def \fBstringColumns\fP"
+.br
+.ti -1c
+.RI "def \fBintColumns\fP"
+.br
+.ti -1c
+.RI "def \fBfromdict\fP"
+.br
+.ti -1c
+.RI "def \fBfromjson\fP"
+.br
+.ti -1c
+.RI "def \fB__repr__\fP"
+.br
+.ti -1c
+.RI "def \fB__toString__\fP"
+.br
+.in -1c
+.SS "Atributos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBuriid\fP"
+.br
+.ti -1c
+.RI "\fBgid\fP"
+.br
+.ti -1c
+.RI "\fBuri\fP"
+.br
+.in -1c
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBuriid\fP = Column(Integer, primary_key=True, autoincrement=True, index=True)"
+.br
+.ti -1c
+.RI "tuple \fBgid\fP = Column(Integer, ForeignKey('GRUPO\&.gid'), nullable=False, primary_key=True, index=True)"
+.br
+.ti -1c
+.RI "tuple \fBuri\fP = Column(String(250), nullable=False)"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Definición en la línea 1152 del archivo db_layer\&.py\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "def db_layer\&.URIS\&.__repr__ (self)"
+
+.PP
+Definición en la línea 1178 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.URIS\&.__toString__ (self)"
+
+.PP
+Definición en la línea 1181 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.URIS\&.fromdict (self, jsondata)"
+
+.PP
+Definición en la línea 1165 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.URIS\&.fromjson (self, jsondata)"
+
+.PP
+Definición en la línea 1171 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.URIS\&.intColumns (self)"
+
+.PP
+Definición en la línea 1162 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.URIS\&.stringColumns (self)"
+
+.PP
+Definición en la línea 1159 del archivo db_layer\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "tuple db_layer\&.URIS\&.gid = Column(Integer, ForeignKey('GRUPO\&.gid'), nullable=False, primary_key=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 1155 del archivo db_layer\&.py\&.
+.SS "db_layer\&.URIS\&.gid"
+
+.PP
+Definición en la línea 1167 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.URIS\&.uri = Column(String(250), nullable=False)\fC [static]\fP"
+
+.PP
+Definición en la línea 1156 del archivo db_layer\&.py\&.
+.SS "db_layer\&.URIS\&.uri"
+
+.PP
+Definición en la línea 1168 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.URIS\&.uriid = Column(Integer, primary_key=True, autoincrement=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 1154 del archivo db_layer\&.py\&.
+.SS "db_layer\&.URIS\&.uriid"
+
+.PP
+Definición en la línea 1166 del archivo db_layer\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

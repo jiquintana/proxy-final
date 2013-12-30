@@ -1,0 +1,757 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module db_layer</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>db_layer</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/prj/proxy-final/proxy/source/db_layer.py">/prj/proxy-final/proxy/source/db_layer.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;-*-&nbsp;coding:&nbsp;utf-8&nbsp;-*-<br>
+#&nbsp;vim:&nbsp;ts=4:sw=4:sts=4:ai:et:fileencoding=utf-8:number</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="datetime.html">datetime</a><br>
+<a href="sqlalchemy.event.html">sqlalchemy.event</a><br>
+</td><td width="25%" valign=top><a href="json.html">json</a><br>
+<a href="string.html">string</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#object">__builtin__.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="db_layer.html#RolType">RolType</a>
+</font></dt><dt><font face="helvetica, arial"><a href="db_layer.html#Rule">Rule</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="db_layer.html#Database">Database</a>
+</font></dt><dt><font face="helvetica, arial"><a href="json.encoder.html#JSONEncoder">json.encoder.JSONEncoder</a>(<a href="__builtin__.html#object">__builtin__.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="db_layer.html#AlchemyEncoder">AlchemyEncoder</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial">sqlalchemy.ext.declarative.api.Base(<a href="__builtin__.html#object">__builtin__.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="db_layer.html#Group">Group</a>
+</font></dt><dt><font face="helvetica, arial"><a href="db_layer.html#Groups">Groups</a>
+</font></dt><dt><font face="helvetica, arial"><a href="db_layer.html#MIMES">MIMES</a>
+</font></dt><dt><font face="helvetica, arial"><a href="db_layer.html#URIS">URIS</a>
+</font></dt><dt><font face="helvetica, arial"><a href="db_layer.html#User">User</a>
+</font></dt><dt><font face="helvetica, arial"><a href="db_layer.html#WORDS">WORDS</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="AlchemyEncoder">class <strong>AlchemyEncoder</strong></a>(<a href="json.encoder.html#JSONEncoder">json.encoder.JSONEncoder</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="db_layer.html#AlchemyEncoder">AlchemyEncoder</a></dd>
+<dd><a href="json.encoder.html#JSONEncoder">json.encoder.JSONEncoder</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="AlchemyEncoder-default"><strong>default</strong></a>(self, obj)</dt></dl>
+
+<hr>
+Methods inherited from <a href="json.encoder.html#JSONEncoder">json.encoder.JSONEncoder</a>:<br>
+<dl><dt><a name="AlchemyEncoder-__init__"><strong>__init__</strong></a>(self, skipkeys<font color="#909090">=False</font>, ensure_ascii<font color="#909090">=True</font>, check_circular<font color="#909090">=True</font>, allow_nan<font color="#909090">=True</font>, sort_keys<font color="#909090">=False</font>, indent<font color="#909090">=None</font>, separators<font color="#909090">=None</font>, encoding<font color="#909090">='utf-8'</font>, default<font color="#909090">=None</font>)</dt><dd><tt>Constructor&nbsp;for&nbsp;<a href="json.encoder.html#JSONEncoder">JSONEncoder</a>,&nbsp;with&nbsp;sensible&nbsp;defaults.<br>
+&nbsp;<br>
+If&nbsp;skipkeys&nbsp;is&nbsp;false,&nbsp;then&nbsp;it&nbsp;is&nbsp;a&nbsp;TypeError&nbsp;to&nbsp;attempt<br>
+encoding&nbsp;of&nbsp;keys&nbsp;that&nbsp;are&nbsp;not&nbsp;str,&nbsp;int,&nbsp;long,&nbsp;float&nbsp;or&nbsp;None.&nbsp;&nbsp;If<br>
+skipkeys&nbsp;is&nbsp;True,&nbsp;such&nbsp;items&nbsp;are&nbsp;simply&nbsp;skipped.<br>
+&nbsp;<br>
+If&nbsp;*ensure_ascii*&nbsp;is&nbsp;true&nbsp;(the&nbsp;default),&nbsp;all&nbsp;non-ASCII<br>
+characters&nbsp;in&nbsp;the&nbsp;output&nbsp;are&nbsp;escaped&nbsp;with&nbsp;\uXXXX&nbsp;sequences,<br>
+and&nbsp;the&nbsp;results&nbsp;are&nbsp;str&nbsp;instances&nbsp;consisting&nbsp;of&nbsp;ASCII<br>
+characters&nbsp;only.&nbsp;&nbsp;If&nbsp;ensure_ascii&nbsp;is&nbsp;False,&nbsp;a&nbsp;result&nbsp;may&nbsp;be&nbsp;a<br>
+unicode&nbsp;instance.&nbsp;&nbsp;This&nbsp;usually&nbsp;happens&nbsp;if&nbsp;the&nbsp;input&nbsp;contains<br>
+unicode&nbsp;strings&nbsp;or&nbsp;the&nbsp;*encoding*&nbsp;parameter&nbsp;is&nbsp;used.<br>
+&nbsp;<br>
+If&nbsp;check_circular&nbsp;is&nbsp;true,&nbsp;then&nbsp;lists,&nbsp;dicts,&nbsp;and&nbsp;custom&nbsp;encoded<br>
+objects&nbsp;will&nbsp;be&nbsp;checked&nbsp;for&nbsp;circular&nbsp;references&nbsp;during&nbsp;encoding&nbsp;to<br>
+prevent&nbsp;an&nbsp;infinite&nbsp;recursion&nbsp;(which&nbsp;would&nbsp;cause&nbsp;an&nbsp;OverflowError).<br>
+Otherwise,&nbsp;no&nbsp;such&nbsp;check&nbsp;takes&nbsp;place.<br>
+&nbsp;<br>
+If&nbsp;allow_nan&nbsp;is&nbsp;true,&nbsp;then&nbsp;NaN,&nbsp;Infinity,&nbsp;and&nbsp;-Infinity&nbsp;will&nbsp;be<br>
+encoded&nbsp;as&nbsp;such.&nbsp;&nbsp;This&nbsp;behavior&nbsp;is&nbsp;not&nbsp;JSON&nbsp;specification&nbsp;compliant,<br>
+but&nbsp;is&nbsp;consistent&nbsp;with&nbsp;most&nbsp;JavaScript&nbsp;based&nbsp;encoders&nbsp;and&nbsp;decoders.<br>
+Otherwise,&nbsp;it&nbsp;will&nbsp;be&nbsp;a&nbsp;ValueError&nbsp;to&nbsp;encode&nbsp;such&nbsp;floats.<br>
+&nbsp;<br>
+If&nbsp;sort_keys&nbsp;is&nbsp;true,&nbsp;then&nbsp;the&nbsp;output&nbsp;of&nbsp;dictionaries&nbsp;will&nbsp;be<br>
+sorted&nbsp;by&nbsp;key;&nbsp;this&nbsp;is&nbsp;useful&nbsp;for&nbsp;regression&nbsp;tests&nbsp;to&nbsp;ensure<br>
+that&nbsp;JSON&nbsp;serializations&nbsp;can&nbsp;be&nbsp;compared&nbsp;on&nbsp;a&nbsp;day-to-day&nbsp;basis.<br>
+&nbsp;<br>
+If&nbsp;indent&nbsp;is&nbsp;a&nbsp;non-negative&nbsp;integer,&nbsp;then&nbsp;JSON&nbsp;array<br>
+elements&nbsp;and&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;members&nbsp;will&nbsp;be&nbsp;pretty-printed&nbsp;with&nbsp;that<br>
+indent&nbsp;level.&nbsp;&nbsp;An&nbsp;indent&nbsp;level&nbsp;of&nbsp;0&nbsp;will&nbsp;only&nbsp;insert&nbsp;newlines.<br>
+None&nbsp;is&nbsp;the&nbsp;most&nbsp;compact&nbsp;representation.&nbsp;&nbsp;Since&nbsp;the&nbsp;default<br>
+item&nbsp;separator&nbsp;is&nbsp;',&nbsp;',&nbsp;&nbsp;the&nbsp;output&nbsp;might&nbsp;include&nbsp;trailing<br>
+whitespace&nbsp;when&nbsp;indent&nbsp;is&nbsp;specified.&nbsp;&nbsp;You&nbsp;can&nbsp;use<br>
+separators=(',',&nbsp;':&nbsp;')&nbsp;to&nbsp;avoid&nbsp;this.<br>
+&nbsp;<br>
+If&nbsp;specified,&nbsp;separators&nbsp;should&nbsp;be&nbsp;a&nbsp;(item_separator,&nbsp;key_separator)<br>
+tuple.&nbsp;&nbsp;The&nbsp;default&nbsp;is&nbsp;(',&nbsp;',&nbsp;':&nbsp;').&nbsp;&nbsp;To&nbsp;get&nbsp;the&nbsp;most&nbsp;compact&nbsp;JSON<br>
+representation&nbsp;you&nbsp;should&nbsp;specify&nbsp;(',',&nbsp;':')&nbsp;to&nbsp;eliminate&nbsp;whitespace.<br>
+&nbsp;<br>
+If&nbsp;specified,&nbsp;default&nbsp;is&nbsp;a&nbsp;function&nbsp;that&nbsp;gets&nbsp;called&nbsp;for&nbsp;objects<br>
+that&nbsp;can't&nbsp;otherwise&nbsp;be&nbsp;serialized.&nbsp;&nbsp;It&nbsp;should&nbsp;return&nbsp;a&nbsp;JSON&nbsp;encodable<br>
+version&nbsp;of&nbsp;the&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;or&nbsp;raise&nbsp;a&nbsp;``TypeError``.<br>
+&nbsp;<br>
+If&nbsp;encoding&nbsp;is&nbsp;not&nbsp;None,&nbsp;then&nbsp;all&nbsp;input&nbsp;strings&nbsp;will&nbsp;be<br>
+transformed&nbsp;into&nbsp;unicode&nbsp;using&nbsp;that&nbsp;encoding&nbsp;prior&nbsp;to&nbsp;JSON-encoding.<br>
+The&nbsp;default&nbsp;is&nbsp;UTF-8.</tt></dd></dl>
+
+<dl><dt><a name="AlchemyEncoder-encode"><strong>encode</strong></a>(self, o)</dt><dd><tt>Return&nbsp;a&nbsp;JSON&nbsp;string&nbsp;representation&nbsp;of&nbsp;a&nbsp;Python&nbsp;data&nbsp;structure.<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;<a href="json.encoder.html#JSONEncoder">JSONEncoder</a>().<a href="#AlchemyEncoder-encode">encode</a>({"foo":&nbsp;["bar",&nbsp;"baz"]})<br>
+'{"foo":&nbsp;["bar",&nbsp;"baz"]}'</tt></dd></dl>
+
+<dl><dt><a name="AlchemyEncoder-iterencode"><strong>iterencode</strong></a>(self, o, _one_shot<font color="#909090">=False</font>)</dt><dd><tt>Encode&nbsp;the&nbsp;given&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;and&nbsp;yield&nbsp;each&nbsp;string<br>
+representation&nbsp;as&nbsp;available.<br>
+&nbsp;<br>
+For&nbsp;example::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;chunk&nbsp;in&nbsp;<a href="json.encoder.html#JSONEncoder">JSONEncoder</a>().<a href="#AlchemyEncoder-iterencode">iterencode</a>(bigobject):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mysocket.write(chunk)</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="json.encoder.html#JSONEncoder">json.encoder.JSONEncoder</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="json.encoder.html#JSONEncoder">json.encoder.JSONEncoder</a>:<br>
+<dl><dt><strong>item_separator</strong> = ', '</dl>
+
+<dl><dt><strong>key_separator</strong> = ': '</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Database">class <strong>Database</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Database-__init__"><strong>__init__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Database-addGroup"><strong>addGroup</strong></a>(self, newGroup)</dt></dl>
+
+<dl><dt><a name="Database-addRelation"><strong>addRelation</strong></a>(self, uid, gid)</dt></dl>
+
+<dl><dt><a name="Database-addUser"><strong>addUser</strong></a>(self, newUser)</dt></dl>
+
+<dl><dt><a name="Database-changeGroup"><strong>changeGroup</strong></a>(self, requestedGroup)</dt></dl>
+
+<dl><dt><a name="Database-changeGroupDescription"><strong>changeGroupDescription</strong></a>(self, requestedGroup)</dt></dl>
+
+<dl><dt><a name="Database-changeUser"><strong>changeUser</strong></a>(self, requestedUser)</dt></dl>
+
+<dl><dt><a name="Database-changeUserDescription"><strong>changeUserDescription</strong></a>(self, requestedUser)</dt></dl>
+
+<dl><dt><a name="Database-changeUserPassword"><strong>changeUserPassword</strong></a>(self, requestedUser)</dt></dl>
+
+<dl><dt><a name="Database-commitDBChanges"><strong>commitDBChanges</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Database-delGroup"><strong>delGroup</strong></a>(self, grouptoDelete)</dt></dl>
+
+<dl><dt><a name="Database-delRelation"><strong>delRelation</strong></a>(self, uid, gid)</dt></dl>
+
+<dl><dt><a name="Database-delUser"><strong>delUser</strong></a>(self, usertoDelete)</dt></dl>
+
+<dl><dt><a name="Database-deleteMIMESbyGID"><strong>deleteMIMESbyGID</strong></a>(self, gid)</dt></dl>
+
+<dl><dt><a name="Database-deleteURISbyGID"><strong>deleteURISbyGID</strong></a>(self, gid)</dt></dl>
+
+<dl><dt><a name="Database-deleteWORDSbyGID"><strong>deleteWORDSbyGID</strong></a>(self, gid)</dt></dl>
+
+<dl><dt><a name="Database-findGroup"><strong>findGroup</strong></a>(self, str2find)</dt></dl>
+
+<dl><dt><a name="Database-findGroupByGID"><strong>findGroupByGID</strong></a>(self, gid)</dt></dl>
+
+<dl><dt><a name="Database-findGroupByGroupname"><strong>findGroupByGroupname</strong></a>(self, groupname)</dt></dl>
+
+<dl><dt><a name="Database-findGroupsByUser"><strong>findGroupsByUser</strong></a>(self, username)</dt></dl>
+
+<dl><dt><a name="Database-findMIMESbyGID"><strong>findMIMESbyGID</strong></a>(self, gid)</dt></dl>
+
+<dl><dt><a name="Database-findNotGroupsByUser"><strong>findNotGroupsByUser</strong></a>(self, username)</dt></dl>
+
+<dl><dt><a name="Database-findURISbyGID"><strong>findURISbyGID</strong></a>(self, gid)</dt></dl>
+
+<dl><dt><a name="Database-findUser"><strong>findUser</strong></a>(self, str2find)</dt></dl>
+
+<dl><dt><a name="Database-findUserByUID"><strong>findUserByUID</strong></a>(self, uid)</dt></dl>
+
+<dl><dt><a name="Database-findUserByUsername"><strong>findUserByUsername</strong></a>(self, username)</dt></dl>
+
+<dl><dt><a name="Database-findWORDSbyGID"><strong>findWORDSbyGID</strong></a>(self, gid)</dt></dl>
+
+<dl><dt><a name="Database-getAllCustomGroups"><strong>getAllCustomGroups</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Database-getAllGroups"><strong>getAllGroups</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Database-getAllUser"><strong>getAllUser</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Database-getLowestUnusedGIDfromGroup"><strong>getLowestUnusedGIDfromGroup</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Database-getLowestUnusedUIDfromUser"><strong>getLowestUnusedUIDfromUser</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Database-getRULES"><strong>getRULES</strong></a>(self, kind, username)</dt></dl>
+
+<dl><dt><a name="Database-insertMIMESbyGID"><strong>insertMIMESbyGID</strong></a>(self, gid, data)</dt></dl>
+
+<dl><dt><a name="Database-insertURISbyGID"><strong>insertURISbyGID</strong></a>(self, gid, data)</dt></dl>
+
+<dl><dt><a name="Database-insertWORDSbyGID"><strong>insertWORDSbyGID</strong></a>(self, gid, data)</dt></dl>
+
+<dl><dt><a name="Database-isAdminAllowed"><strong>isAdminAllowed</strong></a>(self, username, password)</dt></dl>
+
+<dl><dt><a name="Database-isUserAdmin"><strong>isUserAdmin</strong></a>(self, username)</dt></dl>
+
+<dl><dt><a name="Database-isUserAdvanced"><strong>isUserAdvanced</strong></a>(self, username)</dt></dl>
+
+<dl><dt><a name="Database-isUserAllowed"><strong>isUserAllowed</strong></a>(self, username, password)</dt></dl>
+
+<dl><dt><a name="Database-isUserAllowedNow"><strong>isUserAllowedNow</strong></a>(self, username)</dt></dl>
+
+<dl><dt><a name="Database-isUserGuest"><strong>isUserGuest</strong></a>(self, username)</dt></dl>
+
+<dl><dt><a name="Database-isUserKid"><strong>isUserKid</strong></a>(self, username)</dt></dl>
+
+<dl><dt><a name="Database-setUserAdmin"><strong>setUserAdmin</strong></a>(self, requestedUser)</dt></dl>
+
+<dl><dt><a name="Database-setUserAdvanced"><strong>setUserAdvanced</strong></a>(self, requestedUser)</dt></dl>
+
+<dl><dt><a name="Database-setUserGuest"><strong>setUserGuest</strong></a>(self, requestedUser)</dt></dl>
+
+<dl><dt><a name="Database-setUserKid"><strong>setUserKid</strong></a>(self, requestedUser)</dt></dl>
+
+<dl><dt><a name="Database-wr_addRelation"><strong>wr_addRelation</strong></a>(self, theDict)</dt></dl>
+
+<dl><dt><a name="Database-wr_delRelation"><strong>wr_delRelation</strong></a>(self, theDict)</dt></dl>
+
+<dl><dt><a name="Database-wr_insertMIMESbyGID"><strong>wr_insertMIMESbyGID</strong></a>(self, theDict)</dt></dl>
+
+<dl><dt><a name="Database-wr_insertURISbyGID"><strong>wr_insertURISbyGID</strong></a>(self, theDict)</dt></dl>
+
+<dl><dt><a name="Database-wr_insertWORDSbyGID"><strong>wr_insertWORDSbyGID</strong></a>(self, theDict)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__BASE__</strong> = None</dl>
+
+<dl><dt><strong>__DBSession__</strong> = None</dl>
+
+<dl><dt><strong>__engine__</strong> = None</dl>
+
+<dl><dt><strong>__initialized__</strong> = False</dl>
+
+<dl><dt><strong>session</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Group">class <strong>Group</strong></a>(sqlalchemy.ext.declarative.api.Base)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="db_layer.html#Group">Group</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Base</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Group-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</tt></dd></dl>
+
+<dl><dt><a name="Group-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Group-__toSring__"><strong>__toSring__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Group-fromdict"><strong>fromdict</strong></a>(self, dict_data)</dt></dl>
+
+<dl><dt><a name="Group-fromjson"><strong>fromjson</strong></a>(self, jsondata)</dt></dl>
+
+<dl><dt><a name="Group-intColumns"><strong>intColumns</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Group-stringColumns"><strong>stringColumns</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>description</strong></dt>
+</dl>
+<dl><dt><strong>gid</strong></dt>
+</dl>
+<dl><dt><strong>groupname</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x2b14650; Group&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('GRUPO', MetaData(bind=None), Column('gid'...80), table=&lt;GRUPO&gt;, nullable=False), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'GRUPO'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Groups">class <strong>Groups</strong></a>(sqlalchemy.ext.declarative.api.Base)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="db_layer.html#Groups">Groups</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Base</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Groups-JSONdump"><strong>JSONdump</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Groups-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="Groups-__init__"><strong>__init__</strong></a>(self, user, group)</dt></dl>
+
+<dl><dt><a name="Groups-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Groups-__toSring__"><strong>__toSring__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Groups-contiene"><strong>contiene</strong></a>(self, group)</dt></dl>
+
+<dl><dt><a name="Groups-fromjson"><strong>fromjson</strong></a>(self, jsondata)</dt></dl>
+
+<dl><dt><a name="Groups-pertenece"><strong>pertenece</strong></a>(self, user)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>gid</strong></dt>
+</dl>
+<dl><dt><strong>uid</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x2aaded0; Groups&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('GRUPOS', MetaData(bind=None), Column('uid..., primary_key=True, nullable=False), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'GRUPOS'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MIMES">class <strong>MIMES</strong></a>(sqlalchemy.ext.declarative.api.Base)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="db_layer.html#MIMES">MIMES</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Base</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MIMES-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</tt></dd></dl>
+
+<dl><dt><a name="MIMES-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MIMES-__toString__"><strong>__toString__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MIMES-fromdict"><strong>fromdict</strong></a>(self, jsondata)</dt></dl>
+
+<dl><dt><a name="MIMES-fromjson"><strong>fromjson</strong></a>(self, jsondata)</dt></dl>
+
+<dl><dt><a name="MIMES-intColumns"><strong>intColumns</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MIMES-stringColumns"><strong>stringColumns</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>gid</strong></dt>
+</dl>
+<dl><dt><strong>mimeid</strong></dt>
+</dl>
+<dl><dt><strong>mimes</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x2b1ad90; MIMES&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('MIMES', MetaData(bind=None), Column('mime...50), table=&lt;MIMES&gt;, nullable=False), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'MIMES'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RolType">class <strong>RolType</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="RolType-dbTypes"><strong>dbTypes</strong></a>()</dt></dl>
+
+<dl><dt><a name="RolType-getKeys"><strong>getKeys</strong></a>()</dt></dl>
+
+<dl><dt><a name="RolType-getValue"><strong>getValue</strong></a>(key)</dt></dl>
+
+<dl><dt><a name="RolType-getValues"><strong>getValues</strong></a>()</dt></dl>
+
+<dl><dt><a name="RolType-get_adm_user"><strong>get_adm_user</strong></a>()</dt></dl>
+
+<dl><dt><a name="RolType-get_adm_user_key"><strong>get_adm_user_key</strong></a>()</dt></dl>
+
+<dl><dt><a name="RolType-get_adv_user"><strong>get_adv_user</strong></a>()</dt></dl>
+
+<dl><dt><a name="RolType-get_adv_user_key"><strong>get_adv_user_key</strong></a>()</dt></dl>
+
+<dl><dt><a name="RolType-get_guest_user"><strong>get_guest_user</strong></a>()</dt></dl>
+
+<dl><dt><a name="RolType-get_guest_user_key"><strong>get_guest_user_key</strong></a>()</dt></dl>
+
+<dl><dt><a name="RolType-get_kid_user"><strong>get_kid_user</strong></a>()</dt></dl>
+
+<dl><dt><a name="RolType-get_kid_user_key"><strong>get_kid_user_key</strong></a>()</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Rule">class <strong>Rule</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Rule-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Rule-__toString__"><strong>__toString__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Rule-fromData"><strong>fromData</strong></a>(self, data)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>gid</strong> = 0</dl>
+
+<dl><dt><strong>groupname</strong> = ''</dl>
+
+<dl><dt><strong>rulecontent</strong> = ''</dl>
+
+<dl><dt><strong>ruleid</strong> = 0</dl>
+
+<dl><dt><strong>tableid</strong> = ''</dl>
+
+<dl><dt><strong>uid</strong> = 0</dl>
+
+<dl><dt><strong>username</strong> = ''</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="URIS">class <strong>URIS</strong></a>(sqlalchemy.ext.declarative.api.Base)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="db_layer.html#URIS">URIS</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Base</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="URIS-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</tt></dd></dl>
+
+<dl><dt><a name="URIS-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="URIS-__toString__"><strong>__toString__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="URIS-fromdict"><strong>fromdict</strong></a>(self, jsondata)</dt></dl>
+
+<dl><dt><a name="URIS-fromjson"><strong>fromjson</strong></a>(self, jsondata)</dt></dl>
+
+<dl><dt><a name="URIS-intColumns"><strong>intColumns</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="URIS-stringColumns"><strong>stringColumns</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>gid</strong></dt>
+</dl>
+<dl><dt><strong>uri</strong></dt>
+</dl>
+<dl><dt><strong>uriid</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x2b17390; URIS&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('URIS', MetaData(bind=None), Column('uriid...250), table=&lt;URIS&gt;, nullable=False), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'URIS'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="User">class <strong>User</strong></a>(sqlalchemy.ext.declarative.api.Base)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="db_layer.html#User">User</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Base</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="User-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</tt></dd></dl>
+
+<dl><dt><a name="User-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="User-fromdict"><strong>fromdict</strong></a>(self, dict_data)</dt></dl>
+
+<dl><dt><a name="User-intColumns"><strong>intColumns</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="User-stringColumns"><strong>stringColumns</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="User-toString"><strong>toString</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>D_AH</strong></dt>
+</dl>
+<dl><dt><strong>J_AH</strong></dt>
+</dl>
+<dl><dt><strong>L_AH</strong></dt>
+</dl>
+<dl><dt><strong>M_AH</strong></dt>
+</dl>
+<dl><dt><strong>S_AH</strong></dt>
+</dl>
+<dl><dt><strong>V_AH</strong></dt>
+</dl>
+<dl><dt><strong>X_AH</strong></dt>
+</dl>
+<dl><dt><strong>description</strong></dt>
+</dl>
+<dl><dt><strong>password</strong></dt>
+</dl>
+<dl><dt><strong>rol</strong></dt>
+</dl>
+<dl><dt><strong>uid</strong></dt>
+</dl>
+<dl><dt><strong>username</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x2b0f150; User&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('USUARIO', MetaData(bind=None), Column('ui...USUARIO&gt;, default=ColumnDefault(0)), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'USUARIO'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="WORDS">class <strong>WORDS</strong></a>(sqlalchemy.ext.declarative.api.Base)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="db_layer.html#WORDS">WORDS</a></dd>
+<dd>sqlalchemy.ext.declarative.api.Base</dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="WORDS-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</tt></dd></dl>
+
+<dl><dt><a name="WORDS-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="WORDS-__toString__"><strong>__toString__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="WORDS-fromdict"><strong>fromdict</strong></a>(self, jsondata)</dt></dl>
+
+<dl><dt><a name="WORDS-fromjson"><strong>fromjson</strong></a>(self, jsondata)</dt></dl>
+
+<dl><dt><a name="WORDS-intColumns"><strong>intColumns</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="WORDS-stringColumns"><strong>stringColumns</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>gid</strong></dt>
+</dl>
+<dl><dt><strong>words</strong></dt>
+</dl>
+<dl><dt><strong>wordsid</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x2b1a090; WORDS&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('WORDS', MetaData(bind=None), Column('word...50), table=&lt;WORDS&gt;, nullable=False), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'WORDS'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.ext.declarative.api.Base:<br>
+<dl><dt><strong>metadata</strong> = MetaData(bind=None)</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>DRIVER</strong> = 'sqlite:///./db/proxy.db'<br>
+<strong>HOURS_IDX</strong> = {0: 'H00_M', 1: 'H01_M', 2: 'H02_M', 3: 'H03_M', 4: 'H04_M', 5: 'H05_M', 6: 'H06_M', 7: 'H07_M', 8: 'H08_M', 9: 'H09_M', ...}<br>
+<strong>HOURS_MASK</strong> = {'ALL_M': 16777215, 'DAY_M': 2096896, 'H00_M': 1, 'H01_M': 2, 'H02_M': 4, 'H03_M': 8, 'H04_M': 16, 'H05_M': 32, 'H06_M': 64, 'H07_M': 128, ...}<br>
+<strong>MAXGROUPS</strong> = 65536<br>
+<strong>MAXUSERS</strong> = 1024<br>
+<strong>TraceSQL</strong> = False<br>
+<strong>engine</strong> = Engine(sqlite:///./db/proxy.db)<br>
+<strong>python_OldVersion</strong> = True<br>
+<strong>roles</strong> = {'A': 'Admin User', 'G': 'Guest User', 'K': 'Kid User', 'V': 'Advanced User'}</td></tr></table>
+</body></html>

@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classdb__layer_1_1_rol_type" kind="class" prot="public">
+    <compoundname>db_layer::RolType</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdb__layer_1_1_rol_type_1ac219734b1185319c39edd2d1ce8ebdd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.RolType.getValue</definition>
+        <argsstring></argsstring>
+        <name>getValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1017" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1017" bodyend="1018"/>
+        <referencedby refid="classdb__layer_1_1_rol_type_1ac819be49bc1ef2a87970cf7e372bef0c" compoundref="db__layer_8py" startline="1033" endline="1034">db_layer.RolType.get_adm_user</referencedby>
+        <referencedby refid="classdb__layer_1_1_rol_type_1a0707e3b825ccab3ea4bb857bfb4cd344" compoundref="db__layer_8py" startline="1035" endline="1036">db_layer.RolType.get_adv_user</referencedby>
+        <referencedby refid="classdb__layer_1_1_rol_type_1ae03637b7a2156ef5524a408944153775" compoundref="db__layer_8py" startline="1037" endline="1038">db_layer.RolType.get_kid_user</referencedby>
+        <referencedby refid="classdb__layer_1_1_rol_type_1a05917cf2e8a756295bd011f48ec4ddc3" compoundref="db__layer_8py" startline="1039" endline="1041">db_layer.RolType.get_guest_user</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rol_type_1a8c95271c5e2ca02343571ccc433a7ae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.RolType.getKeys</definition>
+        <argsstring></argsstring>
+        <name>getKeys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1019" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1019" bodyend="1020"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rol_type_1ac5bb27c22700d45efbcc4c70008bf132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.RolType.getValues</definition>
+        <argsstring></argsstring>
+        <name>getValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1021" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1021" bodyend="1022"/>
+        <referencedby refid="classdb__layer_1_1_rol_type_1af434fa575abfc7b77fc9a42232cfabce" compoundref="db__layer_8py" startline="1023" endline="1024">db_layer.RolType.dbTypes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rol_type_1af434fa575abfc7b77fc9a42232cfabce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.RolType.dbTypes</definition>
+        <argsstring></argsstring>
+        <name>dbTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1023" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1023" bodyend="1024"/>
+        <references refid="classdb__layer_1_1_rol_type_1ac5bb27c22700d45efbcc4c70008bf132" compoundref="db__layer_8py" startline="1021" endline="1022">db_layer.RolType.getValues</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rol_type_1a44f36ecca8c51e602cff1de6ea476851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.RolType.get_adm_user_key</definition>
+        <argsstring></argsstring>
+        <name>get_adm_user_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1025" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1025" bodyend="1026"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rol_type_1a3c8749a4826906bc3f2f92f181161cd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.RolType.get_adv_user_key</definition>
+        <argsstring></argsstring>
+        <name>get_adv_user_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1027" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1027" bodyend="1028"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rol_type_1aa43cd09dad2819bca4e4da02f412d770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.RolType.get_kid_user_key</definition>
+        <argsstring></argsstring>
+        <name>get_kid_user_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1029" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1029" bodyend="1030"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rol_type_1a3f6b03ea44b384f6793883881b8510b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.RolType.get_guest_user_key</definition>
+        <argsstring></argsstring>
+        <name>get_guest_user_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1031" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1031" bodyend="1032"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rol_type_1ac819be49bc1ef2a87970cf7e372bef0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.RolType.get_adm_user</definition>
+        <argsstring></argsstring>
+        <name>get_adm_user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1033" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1033" bodyend="1034"/>
+        <references refid="classdb__layer_1_1_rol_type_1ac219734b1185319c39edd2d1ce8ebdd3" compoundref="db__layer_8py" startline="1017" endline="1018">db_layer.RolType.getValue</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rol_type_1a0707e3b825ccab3ea4bb857bfb4cd344" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.RolType.get_adv_user</definition>
+        <argsstring></argsstring>
+        <name>get_adv_user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1035" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1035" bodyend="1036"/>
+        <references refid="classdb__layer_1_1_rol_type_1ac219734b1185319c39edd2d1ce8ebdd3" compoundref="db__layer_8py" startline="1017" endline="1018">db_layer.RolType.getValue</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rol_type_1ae03637b7a2156ef5524a408944153775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.RolType.get_kid_user</definition>
+        <argsstring></argsstring>
+        <name>get_kid_user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1037" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1037" bodyend="1038"/>
+        <references refid="classdb__layer_1_1_rol_type_1ac219734b1185319c39edd2d1ce8ebdd3" compoundref="db__layer_8py" startline="1017" endline="1018">db_layer.RolType.getValue</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_rol_type_1a05917cf2e8a756295bd011f48ec4ddc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.RolType.get_guest_user</definition>
+        <argsstring></argsstring>
+        <name>get_guest_user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1039" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1039" bodyend="1041"/>
+        <references refid="classdb__layer_1_1_rol_type_1ac219734b1185319c39edd2d1ce8ebdd3" compoundref="db__layer_8py" startline="1017" endline="1018">db_layer.RolType.getValue</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="121">
+        <label>db_layer.RolType</label>
+        <link refid="classdb__layer_1_1_rol_type"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="123">
+        <label>db_layer.RolType</label>
+        <link refid="classdb__layer_1_1_rol_type"/>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1016" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1016" bodyend="1042"/>
+    <listofallmembers>
+      <member refid="classdb__layer_1_1_rol_type_1af434fa575abfc7b77fc9a42232cfabce" prot="public" virt="non-virtual"><scope>db_layer::RolType</scope><name>dbTypes</name></member>
+      <member refid="classdb__layer_1_1_rol_type_1ac819be49bc1ef2a87970cf7e372bef0c" prot="public" virt="non-virtual"><scope>db_layer::RolType</scope><name>get_adm_user</name></member>
+      <member refid="classdb__layer_1_1_rol_type_1a44f36ecca8c51e602cff1de6ea476851" prot="public" virt="non-virtual"><scope>db_layer::RolType</scope><name>get_adm_user_key</name></member>
+      <member refid="classdb__layer_1_1_rol_type_1a0707e3b825ccab3ea4bb857bfb4cd344" prot="public" virt="non-virtual"><scope>db_layer::RolType</scope><name>get_adv_user</name></member>
+      <member refid="classdb__layer_1_1_rol_type_1a3c8749a4826906bc3f2f92f181161cd0" prot="public" virt="non-virtual"><scope>db_layer::RolType</scope><name>get_adv_user_key</name></member>
+      <member refid="classdb__layer_1_1_rol_type_1a05917cf2e8a756295bd011f48ec4ddc3" prot="public" virt="non-virtual"><scope>db_layer::RolType</scope><name>get_guest_user</name></member>
+      <member refid="classdb__layer_1_1_rol_type_1a3f6b03ea44b384f6793883881b8510b6" prot="public" virt="non-virtual"><scope>db_layer::RolType</scope><name>get_guest_user_key</name></member>
+      <member refid="classdb__layer_1_1_rol_type_1ae03637b7a2156ef5524a408944153775" prot="public" virt="non-virtual"><scope>db_layer::RolType</scope><name>get_kid_user</name></member>
+      <member refid="classdb__layer_1_1_rol_type_1aa43cd09dad2819bca4e4da02f412d770" prot="public" virt="non-virtual"><scope>db_layer::RolType</scope><name>get_kid_user_key</name></member>
+      <member refid="classdb__layer_1_1_rol_type_1a8c95271c5e2ca02343571ccc433a7ae7" prot="public" virt="non-virtual"><scope>db_layer::RolType</scope><name>getKeys</name></member>
+      <member refid="classdb__layer_1_1_rol_type_1ac219734b1185319c39edd2d1ce8ebdd3" prot="public" virt="non-virtual"><scope>db_layer::RolType</scope><name>getValue</name></member>
+      <member refid="classdb__layer_1_1_rol_type_1ac5bb27c22700d45efbcc4c70008bf132" prot="public" virt="non-virtual"><scope>db_layer::RolType</scope><name>getValues</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,229 @@
+.TH "Cache.FileCache" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Cache.FileCache \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "def \fBremove_html_markup\fP"
+.br
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.ti -1c
+.RI "def \fBsetup\fP"
+.br
+.ti -1c
+.RI "def \fBis_cached\fP"
+.br
+.ti -1c
+.RI "def \fBput\fP"
+.br
+.ti -1c
+.RI "def \fBget\fP"
+.br
+.in -1c
+.SS "Atributos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBwas_checked\fP"
+.br
+.ti -1c
+.RI "\fBDEBUG\fP"
+.br
+.ti -1c
+.RI "\fBpath\fP"
+.br
+.ti -1c
+.RI "\fBmd5hash\fP"
+.br
+.ti -1c
+.RI "\fBcache_filename_base\fP"
+.br
+.ti -1c
+.RI "\fBcache_filename_meta\fP"
+.br
+.ti -1c
+.RI "\fBcache_filename_cache\fP"
+.br
+.ti -1c
+.RI "\fBcache_filename_header\fP"
+.br
+.ti -1c
+.RI "\fBcache_filename_strip\fP"
+.br
+.ti -1c
+.RI "\fBcontent_stripped\fP"
+.br
+.in -1c
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "string \fBpath\fP = ''"
+.br
+.ti -1c
+.RI "string \fBmd5hash_str\fP = ''"
+.br
+.ti -1c
+.RI "string \fBcache_filename_base\fP = ''"
+.br
+.ti -1c
+.RI "string \fBcache_filename_meta\fP = ''"
+.br
+.ti -1c
+.RI "string \fBcache_filename_cache\fP = ''"
+.br
+.ti -1c
+.RI "string \fBcache_filename_strip\fP = ''"
+.br
+.ti -1c
+.RI "string \fBcache_filename_header\fP = ''"
+.br
+.ti -1c
+.RI "\fBcontent_is_text\fP = False"
+.br
+.ti -1c
+.RI "tuple \fBcontent_stripped\fP = bytes()"
+.br
+.ti -1c
+.RI "tuple \fBlogger\fP = \fBLog\fP()"
+.br
+.ti -1c
+.RI "\fBis_initialized\fP = False"
+.br
+.ti -1c
+.RI "list \fBDEBUG\fP = Config\&.DEBUG['Cache\&.DEBUG']"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Definición en la línea 33 del archivo Cache\&.py\&.
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "def Cache\&.FileCache\&.__init__ (self)"
+
+.PP
+Definición en la línea 66 del archivo Cache\&.py\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "def Cache\&.FileCache\&.get (self, path, debug = \fCFalse\fP, ip = \fC''\fP, port = \fC''\fP)"
+
+.PP
+Definición en la línea 167 del archivo Cache\&.py\&.
+.SS "def Cache\&.FileCache\&.is_cached (self, path, debug = \fCFalse\fP, ip = \fC''\fP, port = \fC''\fP)"
+
+.PP
+Definición en la línea 96 del archivo Cache\&.py\&.
+.SS "def Cache\&.FileCache\&.put (self, path, content, headers, strip_text, debug = \fCFalse\fP, ip = \fC''\fP, port = \fC''\fP)"
+
+.PP
+Definición en la línea 116 del archivo Cache\&.py\&.
+.SS "def Cache\&.FileCache\&.remove_html_markup (self, s)"
+
+.PP
+Definición en la línea 49 del archivo Cache\&.py\&.
+.SS "def Cache\&.FileCache\&.setup (self, path, debug = \fCFalse\fP, ip = \fC''\fP, port = \fC''\fP)"
+
+.PP
+Definición en la línea 73 del archivo Cache\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "string Cache\&.FileCache\&.cache_filename_base = ''\fC [static]\fP"
+
+.PP
+Definición en la línea 36 del archivo Cache\&.py\&.
+.SS "Cache\&.FileCache\&.cache_filename_base"
+
+.PP
+Definición en la línea 83 del archivo Cache\&.py\&.
+.SS "string Cache\&.FileCache\&.cache_filename_cache = ''\fC [static]\fP"
+
+.PP
+Definición en la línea 38 del archivo Cache\&.py\&.
+.SS "Cache\&.FileCache\&.cache_filename_cache"
+
+.PP
+Definición en la línea 85 del archivo Cache\&.py\&.
+.SS "string Cache\&.FileCache\&.cache_filename_header = ''\fC [static]\fP"
+
+.PP
+Definición en la línea 40 del archivo Cache\&.py\&.
+.SS "Cache\&.FileCache\&.cache_filename_header"
+
+.PP
+Definición en la línea 86 del archivo Cache\&.py\&.
+.SS "string Cache\&.FileCache\&.cache_filename_meta = ''\fC [static]\fP"
+
+.PP
+Definición en la línea 37 del archivo Cache\&.py\&.
+.SS "Cache\&.FileCache\&.cache_filename_meta"
+
+.PP
+Definición en la línea 84 del archivo Cache\&.py\&.
+.SS "string Cache\&.FileCache\&.cache_filename_strip = ''\fC [static]\fP"
+
+.PP
+Definición en la línea 39 del archivo Cache\&.py\&.
+.SS "Cache\&.FileCache\&.cache_filename_strip"
+
+.PP
+Definición en la línea 87 del archivo Cache\&.py\&.
+.SS "Cache\&.FileCache\&.content_is_text = False\fC [static]\fP"
+
+.PP
+Definición en la línea 41 del archivo Cache\&.py\&.
+.SS "tuple Cache\&.FileCache\&.content_stripped = bytes()\fC [static]\fP"
+
+.PP
+Definición en la línea 42 del archivo Cache\&.py\&.
+.SS "Cache\&.FileCache\&.content_stripped"
+
+.PP
+Definición en la línea 145 del archivo Cache\&.py\&.
+.SS "list Cache\&.FileCache\&.DEBUG = Config\&.DEBUG['Cache\&.DEBUG']\fC [static]\fP"
+
+.PP
+Definición en la línea 47 del archivo Cache\&.py\&.
+.SS "Cache\&.FileCache\&.DEBUG"
+
+.PP
+Definición en la línea 70 del archivo Cache\&.py\&.
+.SS "Cache\&.FileCache\&.is_initialized = False\fC [static]\fP"
+
+.PP
+Definición en la línea 46 del archivo Cache\&.py\&.
+.SS "tuple Cache\&.FileCache\&.logger = \fBLog\fP()\fC [static]\fP"
+
+.PP
+Definición en la línea 43 del archivo Cache\&.py\&.
+.SS "Cache\&.FileCache\&.md5hash"
+
+.PP
+Definición en la línea 81 del archivo Cache\&.py\&.
+.SS "string Cache\&.FileCache\&.md5hash_str = ''\fC [static]\fP"
+
+.PP
+Definición en la línea 35 del archivo Cache\&.py\&.
+.SS "string Cache\&.FileCache\&.path = ''\fC [static]\fP"
+
+.PP
+Definición en la línea 34 del archivo Cache\&.py\&.
+.SS "Cache\&.FileCache\&.path"
+
+.PP
+Definición en la línea 74 del archivo Cache\&.py\&.
+.SS "Cache\&.FileCache\&.was_checked"
+
+.PP
+Definición en la línea 69 del archivo Cache\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

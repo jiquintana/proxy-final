@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_thread_pool_8py" kind="file">
+    <compoundname>ThreadPool.py</compoundname>
+    <innerclass refid="class_thread_pool_1_1_thread_pool_mix_in" prot="public">ThreadPool::ThreadPoolMixIn</innerclass>
+    <innernamespace refid="namespace_thread_pool">ThreadPool</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace_thread_pool" refkind="compound"><highlight class="comment">#!/usr/bin/python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>vim:<sp/>ts=4:sw=4:sts=4:ai:et:fileencoding=utf-8:number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#https://github.com/pirateproxy/PirateProxy/blob/master/pirateproxy-0.4/Proxy.py</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#http://stackoverflow.com/questions/4287019/stuck-with-python-http-server-with-basic-authentication-using-basehttp/8153189#8153189</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#http://en.wikipedia.org/wiki/List_of_HTTP_header_fields</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#http://stackoverflow.com/questions/2018026/should-i-use-urllib-or-urllib2-or-requests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#http://www.rmunn.com/sqlalchemy-tutorial/tutorial.html</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#http://stackoverflow.com/questions/7942547/using-or-in-sqlalchemy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>sys.version_info<sp/>&lt;<sp/>(3,<sp/>0):</highlight></codeline>
+<codeline lineno="14" refid="namespace_thread_pool_1ab6ecc6904921422a44cc643ab7cfbd7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>python_OldVersion<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>python_OldVersion<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pprint<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pprint</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>python_OldVersion:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Python<sp/>version<sp/>2.7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>SocketServer<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ThreadingMixIn</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>Queue<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Queue</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Python<sp/>version<sp/>3.x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>socketserver<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ThreadingMixIn</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>queue<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Queue</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>threading,<sp/>socket,<sp/>os,<sp/>time</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>Config<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Config</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>Log<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Log</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">##</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">#<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>use<sp/>a<sp/>thread<sp/>pool<sp/>instead<sp/>of<sp/>a<sp/>new<sp/>thread<sp/>on<sp/>every<sp/>request</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_thread_pool_1_1_thread_pool_mix_in" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_thread_pool_1_1_thread_pool_mix_in" kindref="compound" tooltip="use a thread pool instead of a new thread on every request">ThreadPoolMixIn</ref>(ThreadingMixIn):</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_thread_pool_1_1_thread_pool_mix_in_1adc4a62f954256f803da312f6e26ee254" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>numThreads<sp/>=<sp/>Config.NUM_THREADS</highlight></codeline>
+<codeline lineno="39" refid="class_thread_pool_1_1_thread_pool_mix_in_1a6be85971f1b071cd2f7d958ff988310f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>allow_reuse_address<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>seems<sp/>to<sp/>fix<sp/>socket.error<sp/>on<sp/>server<sp/>restart</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_thread_pool_1_1_thread_pool_mix_in_1ac5a128ba2a86dc5cd90fd526a26ad148" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>daemon_threads<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_thread_pool_1_1_thread_pool_mix_in_1a7e3bc178cfa9c8583685c62e1104a370" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KEEP_RUNNING<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_thread_pool_1_1_thread_pool_mix_in_1ad8942e9f9352de2747eda5ecbc00c047" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>logger<sp/>=<sp/><ref refid="class_log_1_1_log" kindref="compound">Log</ref>()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>Changed:<sp/>Start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>Changed:<sp/>End</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_thread_pool_1_1_thread_pool_mix_in_1aca5cd6b9a97351bc88b58a94b55d5bf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="class_thread_pool_1_1_thread_pool_mix_in_1aca5cd6b9a97351bc88b58a94b55d5bf8" kindref="member" tooltip="Changed: Start Changed: End.">keep_running</ref>(self):</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="class_thread_pool_1_1_thread_pool_mix_in_1a7e3bc178cfa9c8583685c62e1104a370" kindref="member">KEEP_RUNNING</ref></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="class_thread_pool_1_1_thread_pool_mix_in_1a52ba9961e4dba0d2151dfc9bb1109c05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="class_thread_pool_1_1_thread_pool_mix_in_1a52ba9961e4dba0d2151dfc9bb1109c05" kindref="member">force_shutdown</ref>(self):</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="class_thread_pool_1_1_thread_pool_mix_in_1a7e3bc178cfa9c8583685c62e1104a370" kindref="member">KEEP_RUNNING</ref>=</highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.logger.pdebug(</highlight><highlight class="stringliteral">&quot;ServerHTTP<sp/>Forced<sp/>Shutdown...&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#os._exit(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Handle<sp/>one<sp/>request<sp/>at<sp/>a<sp/>time<sp/>until<sp/>doomsday.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_thread_pool_1_1_thread_pool_mix_in_1ab81f98e7bd32d246c065f9d4da78e1cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="class_thread_pool_1_1_thread_pool_mix_in_1ab81f98e7bd32d246c065f9d4da78e1cb" kindref="member" tooltip="Handle one request at a time until doomsday.">serve_forever</ref>(self):</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.logger.pdebug(</highlight><highlight class="stringliteral">&quot;ServerHTTP<sp/>Started<sp/>on<sp/>%s:%s...&quot;</highlight><highlight class="normal"><sp/>%<sp/>(self.server_address[0],<sp/>self.server_address[1]))</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>set<sp/>up<sp/>the<sp/>threadpool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="class_thread_pool_1_1_thread_pool_mix_in_1a93c8c7dd5f32ba5faa17096ea56070ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="class_thread_pool_1_1_thread_pool_mix_in_1a93c8c7dd5f32ba5faa17096ea56070ad" kindref="member">requests</ref><sp/>=<sp/>Queue(self.<ref refid="class_thread_pool_1_1_thread_pool_mix_in_1adc4a62f954256f803da312f6e26ee254" kindref="member">numThreads</ref>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(self.<ref refid="class_thread_pool_1_1_thread_pool_mix_in_1adc4a62f954256f803da312f6e26ee254" kindref="member">numThreads</ref>):</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>=<sp/>threading.Thread(target<sp/>=<sp/>self.<ref refid="class_thread_pool_1_1_thread_pool_mix_in_1a3967a11cc2a1ec6cf6d44368ac90ed42" kindref="member" tooltip="obtain request from queue instead of directly from server socket">process_request_thread</ref>)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t.setDaemon(1)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t.start()</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>server<sp/>main<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>self.<ref refid="class_thread_pool_1_1_thread_pool_mix_in_1aca5cd6b9a97351bc88b58a94b55d5bf8" kindref="member" tooltip="Changed: Start Changed: End.">keep_running</ref>():</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="class_thread_pool_1_1_thread_pool_mix_in_1af2edfa9a820be9f947c90b737743dea4" kindref="member" tooltip="simply collect requests and put them on the queue for the workers.">handle_request</ref>()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys.exit(0)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;end<sp/>loop&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#self.server_close()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obtain<sp/>request<sp/>from<sp/>queue<sp/>instead<sp/>of<sp/>directly<sp/>from<sp/>server<sp/>socket</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="class_thread_pool_1_1_thread_pool_mix_in_1a3967a11cc2a1ec6cf6d44368ac90ed42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="class_thread_pool_1_1_thread_pool_mix_in_1a3967a11cc2a1ec6cf6d44368ac90ed42" kindref="member" tooltip="obtain request from queue instead of directly from server socket">process_request_thread</ref>(self):</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ThreadingMixIn.process_request_thread(self,<sp/>*self.requests.get())</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>simply<sp/>collect<sp/>requests<sp/>and<sp/>put<sp/>them<sp/>on<sp/>the<sp/>queue<sp/>for<sp/>the<sp/>workers.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="class_thread_pool_1_1_thread_pool_mix_in_1af2edfa9a820be9f947c90b737743dea4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="class_thread_pool_1_1_thread_pool_mix_in_1af2edfa9a820be9f947c90b737743dea4" kindref="member" tooltip="simply collect requests and put them on the queue for the workers.">handle_request</ref>(self):</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>request,<sp/>client_address<sp/>=<sp/>self.get_request()</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>socket.error:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>self.verify_request(request,<sp/>client_address):</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.requests.put((request,<sp/>client_address))</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/prj/proxy-final/proxy/source/ThreadPool.py"/>
+  </compounddef>
+</doxygen>

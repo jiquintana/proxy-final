@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespace_proxy" kind="namespace">
+    <compoundname>Proxy</compoundname>
+    <innerclass refid="class_proxy_1_1_proxy" prot="public">Proxy::Proxy</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_proxy_1a71cbd99af8c17ead847d851d5adee87c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.python_OldVersion</definition>
+        <argsstring></argsstring>
+        <name>python_OldVersion</name>
+        <initializer>= True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="8" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_proxy_1ac3c3dbdcf46988a1727c8b106ce2ad8f" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list Proxy.DEBUG</definition>
+        <argsstring></argsstring>
+        <name>DEBUG</name>
+        <initializer>= Config.DEBUG[&apos;Proxy.DEBUG&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="31" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_proxy_1a403844540a843656f16ad342add5c23a" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list Proxy.DEBUG_BEFORE_HANDLING</definition>
+        <argsstring></argsstring>
+        <name>DEBUG_BEFORE_HANDLING</name>
+        <initializer>= <ref refid="class_config_1_1_config_1a1d5bf72f9f7f8047bc648261155e3141" kindref="member">Config.DEBUG</ref>[&apos;Proxy.DEBUG_BEFORE_HANDLING&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="32" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_proxy_1a65ab36d84166679071cbadedb6c188f9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="986" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="986" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_proxy_1a2d23bcf24b7c5e920bbcbb96a341b01a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="993" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="993" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_proxy_1aef58a1f8870767a90fcd50fe3f608f3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.do_OPTIONS</definition>
+        <argsstring></argsstring>
+        <name>do_OPTIONS</name>
+        <briefdescription>
+<para>__verbs_supported =&apos;GET, HEAD, POST, PUT, TRACE, OPTIONS, CONNECT&apos; xxx xxxx xxxx xxxxxxx xxxxxxx </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="985" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="985" bodyend="1018"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_proxy_1a6b3c98b218b9f93497e6904d2b38dc9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.do_HEAD</definition>
+        <argsstring></argsstring>
+        <name>do_HEAD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="1019" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="1019" bodyend="1050"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_proxy_1a5b338e47e1b0e9cb39567e0889821505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.do_TRACE</definition>
+        <argsstring></argsstring>
+        <name>do_TRACE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="1051" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="1051" bodyend="1077"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_proxy_1a0b28bfc4e90ada34208df3f8aa0c35b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.do_GET</definition>
+        <argsstring></argsstring>
+        <name>do_GET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="1078" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="1078" bodyend="1139"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_proxy_1a01ffd6241674f75151672dd0510f9f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.do_POST</definition>
+        <argsstring></argsstring>
+        <name>do_POST</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="1140" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="1140" bodyend="1180"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_proxy_1a68c74661fb7b7d5a4cf291e22ca18990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.do_OTHER</definition>
+        <argsstring></argsstring>
+        <name>do_OTHER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="1181" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="1181" bodyend="1194"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/prj/proxy-final/proxy/source/Proxy.py" line="1"/>
+  </compounddef>
+</doxygen>

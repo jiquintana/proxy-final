@@ -1,0 +1,5 @@
+<map id="db_layer.Database.addGroup" name="db_layer.Database.addGroup">
+<area shape="rect" id="node2" href="$classdb__layer_1_1_database.html#a98fa2d3a8377bca1fe5f2d2946ef2929" title="db_layer.Database.getLowest\lUnusedGIDfromGroup" alt="" coords="240,5,427,46"/>
+<area shape="rect" id="node3" href="$classdb__layer_1_1_database.html#a20c7dd43617755b5ebaf0e1d22a4a2f8" title="db_layer.Database.findGroup\lByGroupname" alt="" coords="241,70,425,111"/>
+<area shape="rect" id="node4" href="$classdb__layer_1_1_database.html#a16008b08c96fa493d7ee12b2a7a5b181" title="db_layer.Database.findGroup\lByGID" alt="" coords="241,135,425,177"/>
+</map>

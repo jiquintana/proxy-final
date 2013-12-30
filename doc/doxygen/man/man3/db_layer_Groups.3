@@ -1,0 +1,119 @@
+.TH "db_layer.Groups" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+db_layer.Groups \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Herencias Base\&.
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.ti -1c
+.RI "def \fBfromjson\fP"
+.br
+.ti -1c
+.RI "def \fB__repr__\fP"
+.br
+.ti -1c
+.RI "def \fB__toSring__\fP"
+.br
+.ti -1c
+.RI "def \fBJSONdump\fP"
+.br
+.ti -1c
+.RI "def \fB__eq__\fP"
+.br
+.ti -1c
+.RI "def \fBpertenece\fP"
+.br
+.ti -1c
+.RI "def \fBcontiene\fP"
+.br
+.in -1c
+.SS "Atributos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBuid\fP"
+.br
+.ti -1c
+.RI "\fBgid\fP"
+.br
+.in -1c
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBuid\fP = Column(Integer, ForeignKey('USUARIO\&.uid'), nullable=False, primary_key=True, index=True)"
+.br
+.ti -1c
+.RI "tuple \fBgid\fP = Column(Integer, ForeignKey('GRUPO\&.gid'), nullable=False, primary_key=True, index=True)"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Definición en la línea 968 del archivo db_layer\&.py\&.
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "def db_layer\&.Groups\&.__init__ (self, user, group)"
+
+.PP
+Definición en la línea 976 del archivo db_layer\&.py\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "def db_layer\&.Groups\&.__eq__ (self, other)"
+
+.PP
+Definición en la línea 995 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Groups\&.__repr__ (self)"
+
+.PP
+Definición en la línea 986 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Groups\&.__toSring__ (self)"
+
+.PP
+Definición en la línea 989 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Groups\&.contiene (self, group)"
+
+.PP
+Definición en la línea 1006 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Groups\&.fromjson (self, jsondata)"
+
+.PP
+Definición en la línea 980 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Groups\&.JSONdump (self)"
+
+.PP
+Definición en la línea 992 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Groups\&.pertenece (self, user)"
+
+.PP
+Definición en la línea 1000 del archivo db_layer\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "tuple db_layer\&.Groups\&.gid = Column(Integer, ForeignKey('GRUPO\&.gid'), nullable=False, primary_key=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 971 del archivo db_layer\&.py\&.
+.SS "db_layer\&.Groups\&.gid"
+
+.PP
+Definición en la línea 978 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.Groups\&.uid = Column(Integer, ForeignKey('USUARIO\&.uid'), nullable=False, primary_key=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 970 del archivo db_layer\&.py\&.
+.SS "db_layer\&.Groups\&.uid"
+
+.PP
+Definición en la línea 977 del archivo db_layer\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

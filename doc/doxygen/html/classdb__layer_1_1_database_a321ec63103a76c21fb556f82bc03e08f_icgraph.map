@@ -1,0 +1,19 @@
+<map id="db_layer.Database.findUserByUsername" name="db_layer.Database.findUserByUsername">
+<area shape="rect" id="node2" href="$classdb__layer_1_1_database.html#a738e07ff3b7292931bb057d174866249" title="db_layer.Database.isUser\lAllowed" alt="" coords="246,5,410,46"/>
+<area shape="rect" id="node3" href="$classdb__layer_1_1_database.html#a1f4a9b4e8dbd15d9f0ce74c1464ec3f9" title="db_layer.Database.isAdmin\lAllowed" alt="" coords="475,366,650,407"/>
+<area shape="rect" id="node4" href="$classdb__layer_1_1_database.html#a607d0253401fe69017f3e2b397a66c65" title="db_layer.Database.addUser" alt="" coords="240,121,416,148"/>
+<area shape="rect" id="node5" href="$classdb__layer_1_1_database.html#a03795c597d3a3ca0ef5d7c73299f8421" title="db_layer.Database.setUser\lAdmin" alt="" coords="243,173,413,214"/>
+<area shape="rect" id="node6" href="$classdb__layer_1_1_database.html#a6b55a92453cf88fd95b0e6b565663bbc" title="db_layer.Database.changeUser" alt="" coords="229,239,427,265"/>
+<area shape="rect" id="node7" href="$classdb__layer_1_1_database.html#a203864bb4a53dfb89f57c23392559b46" title="db_layer.Database.setUser\lAdvanced" alt="" coords="243,290,413,331"/>
+<area shape="rect" id="node8" href="$classdb__layer_1_1_database.html#a03a583931163ed9bac45c5b05e4bf69f" title="db_layer.Database.setUserKid" alt="" coords="233,356,423,383"/>
+<area shape="rect" id="node9" href="$classdb__layer_1_1_database.html#ab86b18a8ab851b48703101ab53af6f8b" title="db_layer.Database.setUser\lGuest" alt="" coords="243,407,413,449"/>
+<area shape="rect" id="node10" href="$classdb__layer_1_1_database.html#a2faddc3de17c5f91a96d835339e5b187" title="db_layer.Database.change\lUserPassword" alt="" coords="242,473,414,514"/>
+<area shape="rect" id="node11" href="$classdb__layer_1_1_database.html#ad49eca83ffa1263e355f5757e9b4d814" title="db_layer.Database.change\lUserDescription" alt="" coords="242,538,414,579"/>
+<area shape="rect" id="node12" href="$classdb__layer_1_1_database.html#af6ba4fcf6bcd589b0c85b05f49f46ef5" title="db_layer.Database.isUser\lAllowedNow" alt="" coords="246,603,410,645"/>
+<area shape="rect" id="node13" href="$classdb__layer_1_1_database.html#a9ddac6b8ec475ecd6e817329416e3d22" title="db_layer.Database.isUser\lAdmin" alt="" coords="246,669,410,710"/>
+<area shape="rect" id="node14" href="$classdb__layer_1_1_database.html#abbe6297269170e88f0ebe7da784fb62b" title="db_layer.Database.isUser\lAdvanced" alt="" coords="246,734,410,775"/>
+<area shape="rect" id="node15" href="$classdb__layer_1_1_database.html#a3aaf3d095b7c6d005ec9061f83ccdc66" title="db_layer.Database.isUserKid" alt="" coords="237,800,419,827"/>
+<area shape="rect" id="node16" href="$classdb__layer_1_1_database.html#a9ff75e8e93503e1e6b5ceb083910864a" title="db_layer.Database.isUser\lGuest" alt="" coords="246,851,410,893"/>
+<area shape="rect" id="node17" href="$classdb__layer_1_1_database.html#acf2271857a561c1e17069068f5c7e317" title="db_layer.Database.findGroups\lByUser" alt="" coords="233,917,423,958"/>
+<area shape="rect" id="node18" href="$classdb__layer_1_1_database.html#a782bfdf0a4415ef9f520722125851924" title="db_layer.Database.findNot\lGroupsByUser" alt="" coords="478,946,647,987"/>
+</map>

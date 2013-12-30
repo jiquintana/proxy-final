@@ -1,0 +1,146 @@
+.TH "db_layer" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+db_layer \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Clases"
+
+.in +1c
+.ti -1c
+.RI "class \fBAlchemyEncoder\fP"
+.br
+.ti -1c
+.RI "class \fBDatabase\fP"
+.br
+.ti -1c
+.RI "class \fBRule\fP"
+.br
+.ti -1c
+.RI "class \fBGroups\fP"
+.br
+.ti -1c
+.RI "class \fBRolType\fP"
+.br
+.ti -1c
+.RI "class \fBUser\fP"
+.br
+.ti -1c
+.RI "class \fBGroup\fP"
+.br
+.ti -1c
+.RI "class \fBURIS\fP"
+.br
+.ti -1c
+.RI "class \fBWORDS\fP"
+.br
+.ti -1c
+.RI "class \fBMIMES\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBpython_OldVersion\fP = True"
+.br
+.ti -1c
+.RI "int \fBMAXUSERS\fP = 1024"
+.br
+.ti -1c
+.RI "int \fBMAXGROUPS\fP = 65536"
+.br
+.ti -1c
+.RI "list \fBDRIVER\fP = \fBConfig\&.dbFiles\fP['proxy']"
+.br
+.ti -1c
+.RI "list \fBTraceSQL\fP = \fBConfig\&.dbTrace\fP['proxy']"
+.br
+.ti -1c
+.RI "tuple \fBengine\fP = create_engine(\fBDRIVER\fP, echo=\fBTraceSQL\fP,poolclass=NullPool)"
+.br
+.ti -1c
+.RI "tuple \fBBase\fP = declarative_base()"
+.br
+.ti -1c
+.RI "dictionary \fBHOURS_IDX\fP"
+.br
+.ti -1c
+.RI "dictionary \fBHOURS_MASK\fP"
+.br
+.ti -1c
+.RI "dictionary \fBroles\fP = {'A' : 'Admin \fBUser\fP', 'V' : 'Advanced \fBUser\fP', 'K' : 'Kid \fBUser\fP', 'G' : 'Guest \fBUser\fP'}"
+.br
+.ti -1c
+.RI "tuple \fBdb\fP = \fBDatabase\fP()"
+.br
+.ti -1c
+.RI "tuple \fBrules\fP = db\&.getRULES('MIME', 'kid1')"
+.br
+.in -1c
+.SH "Documentación de las variables"
+.PP 
+.SS "tuple db_layer\&.Base = declarative_base()"
+
+.PP
+Definición en la línea 30 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.db = \fBDatabase\fP()"
+
+.PP
+Definición en la línea 1257 del archivo db_layer\&.py\&.
+.SS "list db_layer\&.DRIVER = \fBConfig\&.dbFiles\fP['proxy']"
+
+.PP
+Definición en la línea 25 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.engine = create_engine(\fBDRIVER\fP, echo=\fBTraceSQL\fP,poolclass=NullPool)"
+
+.PP
+Definición en la línea 28 del archivo db_layer\&.py\&.
+.SS "dictionary db_layer\&.HOURS_IDX"
+\fBValor inicial:\fP
+.PP
+.nf
+1 = {
+2      0: 'H00_M',  1: 'H01_M',  2: 'H02_M',  3: 'H03_M',
+3      4: 'H04_M',  5: 'H05_M',  6: 'H06_M',  7: 'H07_M',
+4      8: 'H08_M',  9: 'H09_M', 10: 'H10_M', 11: 'H11_M',
+5     12: 'H12_M', 13: 'H13_M', 14: 'H14_M', 15: 'H15_M',
+6     16: 'H16_M', 17: 'H17_M', 18: 'H18_M', 19: 'H19_M',
+7     20: 'H20_M', 21: 'H21_M', 22: 'H22_M', 23: 'H23_M'
+8 }
+.fi
+.PP
+Definición en la línea 33 del archivo db_layer\&.py\&.
+.SS "dictionary db_layer\&.HOURS_MASK"
+
+.PP
+Definición en la línea 42 del archivo db_layer\&.py\&.
+.SS "int db_layer\&.MAXGROUPS = 65536"
+
+.PP
+Definición en la línea 23 del archivo db_layer\&.py\&.
+.SS "int db_layer\&.MAXUSERS = 1024"
+
+.PP
+Definición en la línea 22 del archivo db_layer\&.py\&.
+.SS "db_layer\&.python_OldVersion = True"
+
+.PP
+Definición en la línea 6 del archivo db_layer\&.py\&.
+.SS "dictionary db_layer\&.roles = {'A' : 'Admin \fBUser\fP', 'V' : 'Advanced \fBUser\fP', 'K' : 'Kid \fBUser\fP', 'G' : 'Guest \fBUser\fP'}"
+
+.PP
+Definición en la línea 1013 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.rules = db\&.getRULES('MIME', 'kid1')"
+
+.PP
+Definición en la línea 1260 del archivo db_layer\&.py\&.
+.SS "db_layer\&.TraceSQL = \fBConfig\&.dbTrace\fP['proxy']"
+
+.PP
+Definición en la línea 26 del archivo db_layer\&.py\&.
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

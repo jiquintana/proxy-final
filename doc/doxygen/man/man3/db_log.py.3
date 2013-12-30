@@ -1,0 +1,50 @@
+.TH "db_log.py" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+db_log.py \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Clases"
+
+.in +1c
+.ti -1c
+.RI "class \fBdb_log\&.Database\fP"
+.br
+.ti -1c
+.RI "class \fBdb_log\&.Lines\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBdb_log\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBdb_log\&.python_OldVersion\fP = True"
+.br
+.ti -1c
+.RI "list \fBdb_log\&.DRIVER\fP = Config\&.dbFiles['log']"
+.br
+.ti -1c
+.RI "list \fBdb_log\&.TraceSQL\fP = Config\&.dbTrace['log']"
+.br
+.ti -1c
+.RI "tuple \fBdb_log\&.engine\fP = create_engine(DRIVER, echo=TraceSQL,poolclass=NullPool)"
+.br
+.ti -1c
+.RI "tuple \fBdb_log\&.Base\fP = declarative_base()"
+.br
+.ti -1c
+.RI "tuple \fBdb_log\&.db\fP = Database()"
+.br
+.in -1c
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

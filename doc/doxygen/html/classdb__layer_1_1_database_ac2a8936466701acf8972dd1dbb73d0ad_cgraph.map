@@ -1,0 +1,5 @@
+<map id="db_layer.Database.wr_insertMIMESbyGID" name="db_layer.Database.wr_insertMIMESbyGID">
+<area shape="rect" id="node2" href="$classdb__layer_1_1_database.html#ae95955bc5ae21324a753dca4d76f69f1" title="db_layer.Database.insert\lMIMESbyGID" alt="" coords="197,34,357,75"/>
+<area shape="rect" id="node3" href="$classdb__layer_1_1_database.html#a844ac1872f0ddf55d238e2bc229354c0" title="db_layer.Database.delete\lMIMESbyGID" alt="" coords="437,5,601,46"/>
+<area shape="rect" id="node4" href="$classdb__layer_1_1_database.html#a940f5d9df2aa98c4c4452d9a005a0788" title="db_layer.Database.findMIMESbyGID" alt="" coords="405,71,632,97"/>
+</map>

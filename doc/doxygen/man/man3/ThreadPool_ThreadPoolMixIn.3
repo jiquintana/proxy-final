@@ -1,0 +1,129 @@
+.TH "ThreadPool.ThreadPoolMixIn" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ThreadPool.ThreadPoolMixIn \- 
+.PP
+use a thread pool instead of a new thread on every request  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Herencias ThreadingMixIn\&.
+.PP
+Heredado por \fBmain\&.ThreadedServer\fP\&.
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "def \fBkeep_running\fP"
+.br
+.RI "\fIChanged: Start Changed: End\&. \fP"
+.ti -1c
+.RI "def \fBforce_shutdown\fP"
+.br
+.ti -1c
+.RI "def \fBserve_forever\fP"
+.br
+.RI "\fIHandle one request at a time until doomsday\&. \fP"
+.ti -1c
+.RI "def \fBprocess_request_thread\fP"
+.br
+.RI "\fIobtain request from queue instead of directly from server socket \fP"
+.ti -1c
+.RI "def \fBhandle_request\fP"
+.br
+.RI "\fIsimply collect requests and put them on the queue for the workers\&. \fP"
+.in -1c
+.SS "Atributos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBrequests\fP"
+.br
+.in -1c
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "\fBnumThreads\fP = \fBConfig\&.NUM_THREADS\fP"
+.br
+.ti -1c
+.RI "\fBallow_reuse_address\fP = True"
+.br
+.ti -1c
+.RI "\fBdaemon_threads\fP = True"
+.br
+.ti -1c
+.RI "\fBKEEP_RUNNING\fP = True"
+.br
+.ti -1c
+.RI "tuple \fBlogger\fP = \fBLog\fP()"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+use a thread pool instead of a new thread on every request 
+.PP
+Definición en la línea 36 del archivo ThreadPool\&.py\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "def ThreadPool\&.ThreadPoolMixIn\&.force_shutdown (self)"
+
+.PP
+Definición en la línea 50 del archivo ThreadPool\&.py\&.
+.SS "def ThreadPool\&.ThreadPoolMixIn\&.handle_request (self)"
+
+.PP
+simply collect requests and put them on the queue for the workers\&. 
+.PP
+Definición en la línea 93 del archivo ThreadPool\&.py\&.
+.SS "def ThreadPool\&.ThreadPoolMixIn\&.keep_running (self)"
+
+.PP
+Changed: Start Changed: End\&. 
+.PP
+Definición en la línea 47 del archivo ThreadPool\&.py\&.
+.SS "def ThreadPool\&.ThreadPoolMixIn\&.process_request_thread (self)"
+
+.PP
+obtain request from queue instead of directly from server socket 
+.PP
+Definición en la línea 84 del archivo ThreadPool\&.py\&.
+.SS "def ThreadPool\&.ThreadPoolMixIn\&.serve_forever (self)"
+
+.PP
+Handle one request at a time until doomsday\&. 
+.PP
+Definición en la línea 60 del archivo ThreadPool\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "ThreadPool\&.ThreadPoolMixIn\&.allow_reuse_address = True\fC [static]\fP"
+
+.PP
+Definición en la línea 39 del archivo ThreadPool\&.py\&.
+.SS "ThreadPool\&.ThreadPoolMixIn\&.daemon_threads = True\fC [static]\fP"
+
+.PP
+Definición en la línea 40 del archivo ThreadPool\&.py\&.
+.SS "ThreadPool\&.ThreadPoolMixIn\&.KEEP_RUNNING = True\fC [static]\fP"
+
+.PP
+Definición en la línea 41 del archivo ThreadPool\&.py\&.
+.SS "tuple ThreadPool\&.ThreadPoolMixIn\&.logger = \fBLog\fP()\fC [static]\fP"
+
+.PP
+Definición en la línea 42 del archivo ThreadPool\&.py\&.
+.SS "ThreadPool\&.ThreadPoolMixIn\&.numThreads = \fBConfig\&.NUM_THREADS\fP\fC [static]\fP"
+
+.PP
+Definición en la línea 38 del archivo ThreadPool\&.py\&.
+.SS "ThreadPool\&.ThreadPoolMixIn\&.requests"
+
+.PP
+Definición en la línea 63 del archivo ThreadPool\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

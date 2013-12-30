@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_log_8py" kind="file">
+    <compoundname>Log.py</compoundname>
+    <innerclass refid="class_log_1_1_log" prot="public">Log::Log</innerclass>
+    <innernamespace refid="namespace_log">Log</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace_log" refkind="compound"><highlight class="comment">#!/usr/bin/python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>vim:<sp/>ts=4:sw=4:sts=4:ai:et:fileencoding=utf-8:number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>select,<sp/>time,<sp/>sys,<sp/>datetime</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>Config<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Config</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>traceback</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>db_log</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>Config<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Config</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="namespace_log_1ae8f55475ed5df129255d987cde8c6b07" refkind="member"><highlight class="normal">TRACE<sp/>=<sp/>Config.TRACE[</highlight><highlight class="stringliteral">&apos;Log_TRACE&apos;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_log_1_1_log" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_log_1_1_log" kindref="compound">Log</ref>:</highlight></codeline>
+<codeline lineno="16" refid="class_log_1_1_log_1a9cf05fd2c1a24e2b2ef2da956fc1dd08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>theLOGDB<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_log_1_1_log_1a8f7e098f7a323dfe8f09a7c76d61d828" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="class_log_1_1_log_1a8f7e098f7a323dfe8f09a7c76d61d828" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="class_log_1_1_log_1a9cf05fd2c1a24e2b2ef2da956fc1dd08" kindref="member">theLOGDB</ref><sp/>=<sp/><ref refid="classdb__log_1_1_database" kindref="compound">db_log.Database</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_log_1_1_log_1a69b4cadac782371d26ed0b12feb3451f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="class_log_1_1_log_1a69b4cadac782371d26ed0b12feb3451f" kindref="member">get_timestamp</ref>(self):</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>str(datetime.datetime.now())</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_log_1_1_log_1a1ccee7bac0f543ece376f29ee51ac3ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="class_log_1_1_log_1a1ccee7bac0f543ece376f29ee51ac3ad" kindref="member">pdebug</ref>(self,*args):</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>TRACE:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(args[0].__len__())<sp/>&gt;<sp/>Config.MAX_LEN_MSG:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys.stdout.write(</highlight><highlight class="stringliteral">&apos;%s,<sp/>%s\n&apos;</highlight><highlight class="normal"><sp/>%<sp/>(self.<ref refid="class_log_1_1_log_1a69b4cadac782371d26ed0b12feb3451f" kindref="member">get_timestamp</ref>(),<sp/>args[0][0:Config.MAX_LEN_MSG-3]+</highlight><highlight class="stringliteral">&apos;..&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys.stdout.write(</highlight><highlight class="stringliteral">&apos;%s,<sp/>%s\n&apos;</highlight><highlight class="normal"><sp/>%<sp/>(self.<ref refid="class_log_1_1_log_1a69b4cadac782371d26ed0b12feb3451f" kindref="member">get_timestamp</ref>(),<sp/>args[0]))</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>Exception<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>e:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(traceback.format_exc())</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(args)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&apos;!!!<sp/>Log<sp/>exception<sp/>%s,<sp/>%r&apos;</highlight><highlight class="normal"><sp/>%<sp/>(e,<sp/>len(args)))</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.theLOGDB.addLine(args[0])</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/prj/proxy-final/proxy/source/Log.py"/>
+  </compounddef>
+</doxygen>

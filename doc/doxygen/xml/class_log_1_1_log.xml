@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_log_1_1_log" kind="class" prot="public">
+    <compoundname>Log::Log</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_log_1_1_log_1a9cf05fd2c1a24e2b2ef2da956fc1dd08" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Log.Log::theLOGDB</definition>
+        <argsstring></argsstring>
+        <name>theLOGDB</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Log.py" line="16" bodyfile="/prj/proxy-final/proxy/source/Log.py" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_log_1_1_log_1a8f7e098f7a323dfe8f09a7c76d61d828" compoundref="_log_8py" startline="18" endline="20">Log.Log.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_log_1_1_log_1a8f7e098f7a323dfe8f09a7c76d61d828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Log.Log.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Log.py" line="18" bodyfile="/prj/proxy-final/proxy/source/Log.py" bodystart="18" bodyend="20"/>
+        <references refid="class_log_1_1_log_1a9cf05fd2c1a24e2b2ef2da956fc1dd08" compoundref="_log_8py" startline="16">Log.Log.theLOGDB</references>
+      </memberdef>
+      <memberdef kind="function" id="class_log_1_1_log_1a69b4cadac782371d26ed0b12feb3451f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Log.Log.get_timestamp</definition>
+        <argsstring></argsstring>
+        <name>get_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Log.py" line="21" bodyfile="/prj/proxy-final/proxy/source/Log.py" bodystart="21" bodyend="23"/>
+        <referencedby refid="class_log_1_1_log_1a1ccee7bac0f543ece376f29ee51ac3ad" compoundref="_log_8py" startline="24" endline="39">Log.Log.pdebug</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_log_1_1_log_1a1ccee7bac0f543ece376f29ee51ac3ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Log.Log.pdebug</definition>
+        <argsstring></argsstring>
+        <name>pdebug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Log.py" line="24" bodyfile="/prj/proxy-final/proxy/source/Log.py" bodystart="24" bodyend="39"/>
+        <references refid="class_log_1_1_log_1a69b4cadac782371d26ed0b12feb3451f" compoundref="_log_8py" startline="21" endline="23">Log.Log.get_timestamp</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/prj/proxy-final/proxy/source/Log.py" line="15" bodyfile="/prj/proxy-final/proxy/source/Log.py" bodystart="15" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_log_1_1_log_1a8f7e098f7a323dfe8f09a7c76d61d828" prot="public" virt="non-virtual"><scope>Log::Log</scope><name>__init__</name></member>
+      <member refid="class_log_1_1_log_1a69b4cadac782371d26ed0b12feb3451f" prot="public" virt="non-virtual"><scope>Log::Log</scope><name>get_timestamp</name></member>
+      <member refid="class_log_1_1_log_1a1ccee7bac0f543ece376f29ee51ac3ad" prot="public" virt="non-virtual"><scope>Log::Log</scope><name>pdebug</name></member>
+      <member refid="class_log_1_1_log_1a9cf05fd2c1a24e2b2ef2da956fc1dd08" prot="public" virt="non-virtual"><scope>Log::Log</scope><name>theLOGDB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

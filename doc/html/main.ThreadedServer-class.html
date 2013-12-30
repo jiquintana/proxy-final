@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>main.ThreadedServer</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="main-module.html">Module&nbsp;main</a> ::
+        Class&nbsp;ThreadedServer
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="main.ThreadedServer-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class ThreadedServer</h1><p class="nomargin-top"><span class="codelink"><a href="main-pysrc.html#ThreadedServer">source&nbsp;code</a></span></p>
+<center>
+<center>  <map id="uml_class_diagram_for_main_thr" name="uml_class_diagram_for_main_thr">
+<area shape="rect" id="node1" href="main.ThreadedServer-class.html" title="main.ThreadedServer" alt="" coords="270,430,386,474"/>
+<area shape="rect" id="node2_28" href="ThreadPool.ThreadPoolMixIn-class.html#numThreads" title="ThreadPool.ThreadPoolMixIn.numThreads" alt="" coords="65,205,233,224"/>
+<area shape="rect" id="node2_29" href="ThreadPool.ThreadPoolMixIn-class.html#allow_reuse_address" title="ThreadPool.ThreadPoolMixIn.allow_reuse_address" alt="" coords="65,224,233,243"/>
+<area shape="rect" id="node2_30" href="ThreadPool.ThreadPoolMixIn-class.html#daemon_threads" title="ThreadPool.ThreadPoolMixIn.daemon_threads" alt="" coords="65,243,233,261"/>
+<area shape="rect" id="node2_31" href="ThreadPool.ThreadPoolMixIn-class.html#KEEP_RUNNING" title="ThreadPool.ThreadPoolMixIn.KEEP_RUNNING" alt="" coords="65,261,233,280"/>
+<area shape="rect" id="node2_32" href="ThreadPool.ThreadPoolMixIn-class.html#logger" title="ThreadPool.ThreadPoolMixIn.logger" alt="" coords="65,280,233,299"/>
+<area shape="rect" id="node2_33" href="ThreadPool.ThreadPoolMixIn-class.html#keep_running" title="ThreadPool.ThreadPoolMixIn.keep_running" alt="" coords="65,301,233,320"/>
+<area shape="rect" id="node2_34" href="ThreadPool.ThreadPoolMixIn-class.html#force_shutdown" title="ThreadPool.ThreadPoolMixIn.force_shutdown" alt="" coords="65,320,233,339"/>
+<area shape="rect" id="node2_35" href="ThreadPool.ThreadPoolMixIn-class.html#serve_forever" title="Handle one request at a time until doomsday." alt="" coords="65,339,233,357"/>
+<area shape="rect" id="node2_36" href="ThreadPool.ThreadPoolMixIn-class.html#process_request_thread" title="obtain request from queue instead of directly from server socket" alt="" coords="65,357,233,376"/>
+<area shape="rect" id="node2_37" href="ThreadPool.ThreadPoolMixIn-class.html#handle_request" title="simply collect requests and put them on the queue for the workers." alt="" coords="65,376,233,395"/>
+<area shape="rect" id="node2" href="ThreadPool.ThreadPoolMixIn-class.html" title="use a thread pool instead of a new thread on every request" alt="" coords="53,181,245,401"/>
+<area shape="rect" id="node3_38" href="javascript:void(0);" title="Start a new thread to process the request." alt="" coords="17,83,281,101"/>
+<area shape="rect" id="node3" href="javascript:void(0);" title="Mix&#45;in class to handle each request in a new thread." alt="" coords="5,50,293,107"/>
+<area shape="rect" id="node4_39" href="javascript:void(0);" title="SocketServer.BaseServer.timeout" alt="" coords="384,31,636,49"/>
+<area shape="rect" id="node4_40" href="javascript:void(0);" title="Finish one request by instantiating RequestHandlerClass." alt="" coords="384,52,636,71"/>
+<area shape="rect" id="node4_41" href="javascript:void(0);" title="Handle an error gracefully." alt="" coords="384,71,636,89"/>
+<area shape="rect" id="node4_42" href="javascript:void(0);" title="Called if no new request arrives within self.timeout." alt="" coords="384,89,636,108"/>
+<area shape="rect" id="node4_43" href="javascript:void(0);" title="Stops the serve_forever loop." alt="" coords="384,108,636,127"/>
+<area shape="rect" id="node4_44" href="javascript:void(0);" title="Verify the request." alt="" coords="384,127,636,145"/>
+<area shape="rect" id="node4" href="javascript:void(0);" title="Base class for server classes." alt="" coords="371,6,647,151"/>
+<area shape="rect" id="node5_45" href="javascript:void(0);" title="SocketServer.TCPServer.address_family" alt="" coords="288,196,732,215"/>
+<area shape="rect" id="node5_46" href="javascript:void(0);" title="SocketServer.TCPServer.request_queue_size" alt="" coords="288,215,732,233"/>
+<area shape="rect" id="node5_47" href="javascript:void(0);" title="SocketServer.TCPServer.socket_type" alt="" coords="288,233,732,252"/>
+<area shape="rect" id="node5_48" href="javascript:void(0);" title="Constructor." alt="" coords="288,255,732,273"/>
+<area shape="rect" id="node5_49" href="javascript:void(0);" title="Called to clean up an individual request." alt="" coords="288,273,732,292"/>
+<area shape="rect" id="node5_50" href="javascript:void(0);" title="Return socket file number." alt="" coords="288,292,732,311"/>
+<area shape="rect" id="node5_51" href="javascript:void(0);" title="Get the request and client address from the socket." alt="" coords="288,311,732,329"/>
+<area shape="rect" id="node5_52" href="javascript:void(0);" title="Called by constructor to activate the server." alt="" coords="288,329,732,348"/>
+<area shape="rect" id="node5_53" href="javascript:void(0);" title="Called by constructor to bind the socket." alt="" coords="288,348,732,367"/>
+<area shape="rect" id="node5_54" href="javascript:void(0);" title="Called to clean&#45;up the server." alt="" coords="288,367,732,385"/>
+<area shape="rect" id="node5_55" href="javascript:void(0);" title="Called to shutdown and close an individual request." alt="" coords="288,385,732,404"/>
+<area shape="rect" id="node5" href="javascript:void(0);" title="Base class for various socket&#45;based server classes." alt="" coords="275,171,743,410"/>
+</map>
+  <img src="uml_class_diagram_for_main_thr.png" alt='' usemap="#uml_class_diagram_for_main_thr" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="ThreadPool.ThreadPoolMixIn-class.html">ThreadPool.ThreadPoolMixIn</a></code></b>:
+      <code><a href="ThreadPool.ThreadPoolMixIn-class.html#force_shutdown">force_shutdown</a></code>,
+      <code><a href="ThreadPool.ThreadPoolMixIn-class.html#handle_request">handle_request</a></code>,
+      <code><a href="ThreadPool.ThreadPoolMixIn-class.html#keep_running">keep_running</a></code>,
+      <code><a href="ThreadPool.ThreadPoolMixIn-class.html#process_request_thread">process_request_thread</a></code>,
+      <code><a href="ThreadPool.ThreadPoolMixIn-class.html#serve_forever">serve_forever</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>SocketServer.ThreadingMixIn</code></b>:
+      <code>process_request</code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>SocketServer.TCPServer</code></b>:
+      <code>__init__</code>,
+      <code>close_request</code>,
+      <code>fileno</code>,
+      <code>get_request</code>,
+      <code>server_activate</code>,
+      <code>server_bind</code>,
+      <code>server_close</code>,
+      <code>shutdown_request</code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>SocketServer.BaseServer</code></b>:
+      <code>finish_request</code>,
+      <code>handle_error</code>,
+      <code>handle_timeout</code>,
+      <code>shutdown</code>,
+      <code>verify_request</code>
+      </p>
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code>SocketServer.BaseServer</code></b> (private):
+      <code>_handle_request_noblock</code>
+      </p></div>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="ThreadPool.ThreadPoolMixIn-class.html">ThreadPool.ThreadPoolMixIn</a></code></b>:
+      <code><a href="ThreadPool.ThreadPoolMixIn-class.html#KEEP_RUNNING">KEEP_RUNNING</a></code>,
+      <code><a href="ThreadPool.ThreadPoolMixIn-class.html#allow_reuse_address">allow_reuse_address</a></code>,
+      <code><a href="ThreadPool.ThreadPoolMixIn-class.html#daemon_threads">daemon_threads</a></code>,
+      <code><a href="ThreadPool.ThreadPoolMixIn-class.html#logger">logger</a></code>,
+      <code><a href="ThreadPool.ThreadPoolMixIn-class.html#numThreads">numThreads</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>SocketServer.TCPServer</code></b>:
+      <code>address_family</code>,
+      <code>request_queue_size</code>,
+      <code>socket_type</code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>SocketServer.BaseServer</code></b>:
+      <code>timeout</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Dec 30 17:39:33 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

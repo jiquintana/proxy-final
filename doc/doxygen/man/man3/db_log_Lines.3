@@ -1,0 +1,117 @@
+.TH "db_log.Lines" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+db_log.Lines \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Herencias Base\&.
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "def \fBstringColumns\fP"
+.br
+.ti -1c
+.RI "def \fBintColumns\fP"
+.br
+.ti -1c
+.RI "def \fBfromdict\fP"
+.br
+.ti -1c
+.RI "def \fBfromjson\fP"
+.br
+.ti -1c
+.RI "def \fB__repr__\fP"
+.br
+.ti -1c
+.RI "def \fB__toString__\fP"
+.br
+.in -1c
+.SS "Atributos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBlineid\fP"
+.br
+.ti -1c
+.RI "\fBtimestamp\fP"
+.br
+.ti -1c
+.RI "\fBline\fP"
+.br
+.in -1c
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBlineid\fP = Column(Integer, primary_key=True, autoincrement=True, index=True)"
+.br
+.ti -1c
+.RI "tuple \fBtimestamp\fP = Column(TIMESTAMP(timezone=True), primary_key=False, nullable=False, default=datetime\&.datetime\&.now())"
+.br
+.ti -1c
+.RI "tuple \fBline\fP = Column(String(400), nullable=False)"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Definición en la línea 72 del archivo db_log\&.py\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "def db_log\&.Lines\&.__repr__ (self)"
+
+.PP
+Definición en la línea 103 del archivo db_log\&.py\&.
+.SS "def db_log\&.Lines\&.__toString__ (self)"
+
+.PP
+Definición en la línea 106 del archivo db_log\&.py\&.
+.SS "def db_log\&.Lines\&.fromdict (self, jsondata)"
+
+.PP
+Definición en la línea 90 del archivo db_log\&.py\&.
+.SS "def db_log\&.Lines\&.fromjson (self, jsondata)"
+
+.PP
+Definición en la línea 96 del archivo db_log\&.py\&.
+.SS "def db_log\&.Lines\&.intColumns (self)"
+
+.PP
+Definición en la línea 87 del archivo db_log\&.py\&.
+.SS "def db_log\&.Lines\&.stringColumns (self)"
+
+.PP
+Definición en la línea 84 del archivo db_log\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "tuple db_log\&.Lines\&.line = Column(String(400), nullable=False)\fC [static]\fP"
+
+.PP
+Definición en la línea 76 del archivo db_log\&.py\&.
+.SS "db_log\&.Lines\&.line"
+
+.PP
+Definición en la línea 93 del archivo db_log\&.py\&.
+.SS "tuple db_log\&.Lines\&.lineid = Column(Integer, primary_key=True, autoincrement=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 74 del archivo db_log\&.py\&.
+.SS "db_log\&.Lines\&.lineid"
+
+.PP
+Definición en la línea 91 del archivo db_log\&.py\&.
+.SS "tuple db_log\&.Lines\&.timestamp = Column(TIMESTAMP(timezone=True), primary_key=False, nullable=False, default=datetime\&.datetime\&.now())\fC [static]\fP"
+
+.PP
+Definición en la línea 75 del archivo db_log\&.py\&.
+.SS "db_log\&.Lines\&.timestamp"
+
+.PP
+Definición en la línea 92 del archivo db_log\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

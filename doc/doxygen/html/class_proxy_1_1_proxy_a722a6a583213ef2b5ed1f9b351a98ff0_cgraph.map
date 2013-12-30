@@ -1,0 +1,5 @@
+<map id="Proxy.Proxy.svc_hndl_VIRTUAL" name="Proxy.Proxy.svc_hndl_VIRTUAL">
+<area shape="rect" id="node2" href="$class_proxy_1_1_proxy.html#a8d819c5915ae01dcaf8018098c6960e9" title="Proxy.Proxy.int_HEAD\l_PROXY_AUTH" alt="" coords="201,5,351,46"/>
+<area shape="rect" id="node3" href="$class_proxy_1_1_proxy.html#ae9c85135fb49817252b73425b119040a" title="Proxy.Proxy.int_HEAD\l_HTTP_AUTH" alt="" coords="201,70,351,111"/>
+<area shape="rect" id="node4" href="$class_proxy_1_1_proxy.html#acab4f744c21caa18f64a9825630fe7c1" title="Proxy.Proxy.int_send\l_HEADERS_redirect" alt="" coords="205,135,347,177"/>
+</map>

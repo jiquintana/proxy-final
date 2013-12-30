@@ -1,0 +1,494 @@
+.TH "Proxy.Proxy" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Proxy.Proxy \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Herencias BaseHTTPRequestHandler\&.
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.ti -1c
+.RI "def \fBlog_message\fP"
+.br
+.ti -1c
+.RI "def \fBsvc_hndl_FILE\fP"
+.br
+.ti -1c
+.RI "def \fBsvc_hndl_LIB\fP"
+.br
+.ti -1c
+.RI "def \fBsvc_hndl_ULIB\fP"
+.br
+.ti -1c
+.RI "def \fBsvc_hndl_DB\fP"
+.br
+.ti -1c
+.RI "def \fBsvc_hndl_VIRTUAL\fP"
+.br
+.ti -1c
+.RI "def \fBsvc_hndl_CONFIG\fP"
+.br
+.ti -1c
+.RI "def \fBsvc_hndl_FAVICON\fP"
+.br
+.ti -1c
+.RI "def \fBsvc_hndl_STOP\fP"
+.br
+.ti -1c
+.RI "def \fBsvc_hndl_POST\fP"
+.br
+.ti -1c
+.RI "def \fBsvc_hndl_NOOP\fP"
+.br
+.ti -1c
+.RI "def \fBint_get_html_message\fP"
+.br
+.ti -1c
+.RI "def \fBmap_ext_to_filetype\fP"
+.br
+.ti -1c
+.RI "def \fBint_send_HEADERS_JSON\fP"
+.br
+.ti -1c
+.RI "def \fBint_send_HEADERS_redirect\fP"
+.br
+.ti -1c
+.RI "def \fBint_send_HEADERS\fP"
+.br
+.ti -1c
+.RI "def \fBint_send_HEADERS_FILETYPE\fP"
+.br
+.ti -1c
+.RI "def \fBint_send_BODY\fP"
+.br
+.ti -1c
+.RI "def \fBint_HEAD_PROXY_AUTH\fP"
+.br
+.ti -1c
+.RI "def \fBint_HEAD_HTTP_AUTH\fP"
+.br
+.ti -1c
+.RI "def \fBparse_query\fP"
+.br
+.ti -1c
+.RI "def \fBhandle_PROXY_AUTH\fP"
+.br
+.ti -1c
+.RI "def \fBhandle_HTTP_AUTH\fP"
+.br
+.ti -1c
+.RI "def \fBBASIC\fP"
+.br
+.ti -1c
+.RI "def \fBdo_CONNECT\fP"
+.br
+.in -1c
+.SS "Atributos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBcontent\fP"
+.br
+.ti -1c
+.RI "\fBcontent_lenght\fP"
+.br
+.ti -1c
+.RI "\fBcode\fP"
+.br
+.ti -1c
+.RI "\fBAllowed\fP"
+.br
+.ti -1c
+.RI "\fBparsed_path\fP"
+.br
+.ti -1c
+.RI "\fBproxy_user\fP"
+.br
+.RI "\fIPython 3 => removed self\&.headers\&. \fP"
+.ti -1c
+.RI "\fBproxy_password\fP"
+.br
+.ti -1c
+.RI "\fBhttp_user\fP"
+.br
+.RI "\fIPython 3 => removed self\&.headers\&. \fP"
+.ti -1c
+.RI "\fBhttp_password\fP"
+.br
+.ti -1c
+.RI "\fBselfquery\fP"
+.br
+.RI "\fITODO: aqui hay que cambiar que empiece por la cadena en vez de que sea la cadena TODO: cuando atacamos localhost:PUERTO (modo proxy), devuelve OK, pero cuando se ataca el servicio TODO: sin puerto, se devuelve como contenido las cabeceras\&. \fP"
+.ti -1c
+.RI "\fBwhat\fP"
+.br
+.ti -1c
+.RI "\fBclient_headers\fP"
+.br
+.ti -1c
+.RI "\fBprocessed_headers\fP"
+.br
+.ti -1c
+.RI "\fBserver_socket\fP"
+.br
+.ti -1c
+.RI "\fBserver_wfile\fP"
+.br
+.in -1c
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBtheDB\fP = \fBDatabase\fP()"
+.br
+.ti -1c
+.RI "\fBthreadServer\fP = None"
+.br
+.ti -1c
+.RI "string \fBserver_version\fP = 'HTTP_Proxy/'"
+.br
+.ti -1c
+.RI "string \fBproxy_user\fP = 'xxxxxxxxx'"
+.br
+.ti -1c
+.RI "string \fBproxy_password\fP = ''"
+.br
+.ti -1c
+.RI "string \fBhttp_user\fP = 'xxxxxxxxx'"
+.br
+.ti -1c
+.RI "string \fBhttp_password\fP = ''"
+.br
+.ti -1c
+.RI "\fBbodySize\fP = None"
+.br
+.ti -1c
+.RI "int \fBAllowed\fP = 0"
+.br
+.ti -1c
+.RI "string \fBparsed_path\fP = ''"
+.br
+.ti -1c
+.RI "string \fBcontent\fP = b''"
+.br
+.ti -1c
+.RI "int \fBcontent_lenght\fP = 0"
+.br
+.ti -1c
+.RI "list \fBprocessed_headers\fP = []"
+.br
+.ti -1c
+.RI "int \fBcode\fP = 0"
+.br
+.ti -1c
+.RI "\fBcontent_cached\fP = False"
+.br
+.ti -1c
+.RI "tuple \fBmyServerAddress\fP = (socket\&.gethostname()+':'+ str(\fBConfig\&.PORT\fP))"
+.br
+.ti -1c
+.RI "tuple \fBlogger\fP = \fBLog\fP()"
+.br
+.ti -1c
+.RI "dictionary \fBLocalServices\fP"
+.br
+.ti -1c
+.RI "dictionary \fBServiceHandle\fP"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Definición en la línea 34 del archivo Proxy\&.py\&.
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "def Proxy\&.Proxy\&.__init__ (self, request, client_address, server)"
+
+.PP
+Definición en la línea 69 del archivo Proxy\&.py\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "def Proxy\&.Proxy\&.BASIC (self, what)"
+
+.PP
+Definición en la línea 557 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.do_CONNECT (self)"
+
+.PP
+Definición en la línea 870 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.handle_HTTP_AUTH (self)"
+
+.PP
+Definición en la línea 491 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.handle_PROXY_AUTH (self)"
+
+.PP
+Definición en la línea 427 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.int_get_html_message (self, what)"
+
+.PP
+Definición en la línea 304 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.int_HEAD_HTTP_AUTH (self)"
+
+.PP
+Definición en la línea 409 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.int_HEAD_PROXY_AUTH (self)"
+
+.PP
+Definición en la línea 400 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.int_send_BODY (self, message = \fC''\fP)"
+
+.PP
+Definición en la línea 384 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.int_send_HEADERS (self, code = \fC200\fP, message = \fC''\fP)"
+
+.PP
+Definición en la línea 361 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.int_send_HEADERS_FILETYPE (self, code, filename, tamagno)"
+
+.PP
+Definición en la línea 375 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.int_send_HEADERS_JSON (self, code = \fC200\fP, message = \fC''\fP)"
+
+.PP
+Definición en la línea 337 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.int_send_HEADERS_redirect (self, code = \fC301\fP, location = \fC''\fP)"
+
+.PP
+Definición en la línea 351 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.log_message (self, format, args)"
+
+.PP
+Definición en la línea 83 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.map_ext_to_filetype (self, extension)"
+
+.PP
+Definición en la línea 309 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.parse_query (self)"
+
+.PP
+Definición en la línea 417 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.svc_hndl_CONFIG (self, parms, query, Verb = \fC''\fP)"
+
+.PP
+Definición en la línea 210 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.svc_hndl_DB (self, query, parms, Verb = \fC''\fP)"
+
+.PP
+Definición en la línea 180 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.svc_hndl_FAVICON (self, parms, query, Verb = \fC''\fP)"
+
+.PP
+Definición en la línea 222 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.svc_hndl_FILE (self, parms, query, Verb = \fC''\fP)"
+
+.PP
+Definición en la línea 95 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.svc_hndl_LIB (self, parms, query, Verb = \fC''\fP)"
+
+.PP
+Definición en la línea 123 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.svc_hndl_NOOP (self, parms, query, Verb = \fC''\fP)"
+
+.PP
+Definición en la línea 263 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.svc_hndl_POST (self, parms, query, Verb = \fC''\fP)"
+
+.PP
+Definición en la línea 250 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.svc_hndl_STOP (self, parms, query, Verb = \fC''\fP)"
+
+.PP
+Definición en la línea 234 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.svc_hndl_ULIB (self, parms, query, Verb = \fC''\fP)"
+
+.PP
+Definición en la línea 151 del archivo Proxy\&.py\&.
+.SS "def Proxy\&.Proxy\&.svc_hndl_VIRTUAL (self, query, parms, Verb = \fC''\fP)"
+
+.PP
+Definición en la línea 198 del archivo Proxy\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "int Proxy\&.Proxy\&.Allowed = 0\fC [static]\fP"
+
+.PP
+Definición en la línea 44 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.Allowed"
+
+.PP
+Definición en la línea 81 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.bodySize = None\fC [static]\fP"
+
+.PP
+Definición en la línea 43 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.client_headers"
+
+.PP
+Definición en la línea 663 del archivo Proxy\&.py\&.
+.SS "int Proxy\&.Proxy\&.code = 0\fC [static]\fP"
+
+.PP
+Definición en la línea 49 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.code"
+
+.PP
+Definición en la línea 78 del archivo Proxy\&.py\&.
+.SS "string Proxy\&.Proxy\&.content = b''\fC [static]\fP"
+
+.PP
+Definición en la línea 46 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.content"
+
+.PP
+Definición en la línea 76 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.content_cached = False\fC [static]\fP"
+
+.PP
+Definición en la línea 50 del archivo Proxy\&.py\&.
+.SS "int Proxy\&.Proxy\&.content_lenght = 0\fC [static]\fP"
+
+.PP
+Definición en la línea 47 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.content_lenght"
+
+.PP
+Definición en la línea 77 del archivo Proxy\&.py\&.
+.SS "string Proxy\&.Proxy\&.http_password = ''\fC [static]\fP"
+
+.PP
+Definición en la línea 42 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.http_password"
+
+.PP
+Definición en la línea 525 del archivo Proxy\&.py\&.
+.SS "string Proxy\&.Proxy\&.http_user = 'xxxxxxxxx'\fC [static]\fP"
+
+.PP
+Definición en la línea 41 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.http_user"
+
+.PP
+Python 3 => removed self\&.headers\&. >has_key<('Authorization'): cambiado por 'in' 
+.PP
+Definición en la línea 524 del archivo Proxy\&.py\&.
+.SS "dictionary Proxy\&.Proxy\&.LocalServices\fC [static]\fP"
+\fBValor inicial:\fP
+.PP
+.nf
+1 = {
+2         re\&.compile(r'/favicon\&.ico', re\&.IGNORECASE),
+3         re\&.compile(r'/STOP', re\&.IGNORECASE),
+4         re\&.compile(r'/CONFIG', re\&.IGNORECASE),
+5         re\&.compile(r'/POST/', re\&.IGNORECASE),
+6         re\&.compile(r'/VIRTUAL/', re\&.IGNORECASE),
+7         re\&.compile(r'/FILE/', re\&.IGNORECASE),
+8         re\&.compile(r'/LIB/', re\&.IGNORECASE),
+9         re\&.compile(r'/ULIB/', re\&.IGNORECASE),
+10         re\&.compile(r'/DB/', re\&.IGNORECASE),
+11         re\&.compile(r'/NOOP/', re\&.IGNORECASE)
+12     }
+.fi
+.PP
+Definición en la línea 277 del archivo Proxy\&.py\&.
+.SS "tuple Proxy\&.Proxy\&.logger = \fBLog\fP()\fC [static]\fP"
+
+.PP
+Definición en la línea 53 del archivo Proxy\&.py\&.
+.SS "tuple Proxy\&.Proxy\&.myServerAddress = (socket\&.gethostname()+':'+ str(\fBConfig\&.PORT\fP))\fC [static]\fP"
+
+.PP
+Definición en la línea 51 del archivo Proxy\&.py\&.
+.SS "string Proxy\&.Proxy\&.parsed_path = ''\fC [static]\fP"
+
+.PP
+Definición en la línea 45 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.parsed_path"
+
+.PP
+Definición en la línea 419 del archivo Proxy\&.py\&.
+.SS "list Proxy\&.Proxy\&.processed_headers = []\fC [static]\fP"
+
+.PP
+Definición en la línea 48 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.processed_headers"
+
+.PP
+Definición en la línea 735 del archivo Proxy\&.py\&.
+.SS "string Proxy\&.Proxy\&.proxy_password = ''\fC [static]\fP"
+
+.PP
+Definición en la línea 40 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.proxy_password"
+
+.PP
+Definición en la línea 458 del archivo Proxy\&.py\&.
+.SS "string Proxy\&.Proxy\&.proxy_user = 'xxxxxxxxx'\fC [static]\fP"
+
+.PP
+Definición en la línea 39 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.proxy_user"
+
+.PP
+Python 3 => removed self\&.headers\&. >has_key<('Proxy-Authorization'): cambiado por 'in' 
+.PP
+Definición en la línea 457 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.selfquery"
+
+.PP
+TODO: aqui hay que cambiar que empiece por la cadena en vez de que sea la cadena TODO: cuando atacamos localhost:PUERTO (modo proxy), devuelve OK, pero cuando se ataca el servicio TODO: sin puerto, se devuelve como contenido las cabeceras\&. 
+.PP
+Definición en la línea 565 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.server_socket"
+
+.PP
+Definición en la línea 897 del archivo Proxy\&.py\&.
+.SS "string Proxy\&.Proxy\&.server_version = 'HTTP_Proxy/'\fC [static]\fP"
+
+.PP
+Definición en la línea 38 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.server_wfile"
+
+.PP
+Definición en la línea 915 del archivo Proxy\&.py\&.
+.SS "dictionary Proxy\&.Proxy\&.ServiceHandle\fC [static]\fP"
+\fBValor inicial:\fP
+.PP
+.nf
+1 = {
+2         'FAVICON\&.ICO': svc_hndl_FAVICON,
+3         'STOP': svc_hndl_STOP,
+4         'CONFIG': svc_hndl_CONFIG,
+5         'POST': svc_hndl_POST,
+6         'FILE': svc_hndl_FILE,
+7         'LIB': svc_hndl_LIB,
+8         'ULIB': svc_hndl_ULIB,
+9         'DB': svc_hndl_DB,
+10         'VIRTUAL': svc_hndl_VIRTUAL,
+11         'NOOP': svc_hndl_NOOP
+12     }
+.fi
+.PP
+Definición en la línea 290 del archivo Proxy\&.py\&.
+.SS "tuple Proxy\&.Proxy\&.theDB = \fBDatabase\fP()\fC [static]\fP"
+
+.PP
+Definición en la línea 35 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.threadServer = None\fC [static]\fP"
+
+.PP
+Definición en la línea 36 del archivo Proxy\&.py\&.
+.SS "Proxy\&.Proxy\&.what"
+
+.PP
+Definición en la línea 567 del archivo Proxy\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

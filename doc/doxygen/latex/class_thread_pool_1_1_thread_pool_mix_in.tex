@@ -1,0 +1,188 @@
+\hypertarget{class_thread_pool_1_1_thread_pool_mix_in}{\section{Referencia de la Clase Thread\-Pool.\-Thread\-Pool\-Mix\-In}
+\label{class_thread_pool_1_1_thread_pool_mix_in}\index{Thread\-Pool.\-Thread\-Pool\-Mix\-In@{Thread\-Pool.\-Thread\-Pool\-Mix\-In}}
+}
+
+
+use a thread pool instead of a new thread on every request  
+
+
+
+
+Diagrama de herencias de Thread\-Pool.\-Thread\-Pool\-Mix\-In\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_thread_pool_1_1_thread_pool_mix_in__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración para Thread\-Pool.\-Thread\-Pool\-Mix\-In\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_thread_pool_1_1_thread_pool_mix_in__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{class_thread_pool_1_1_thread_pool_mix_in_aca5cd6b9a97351bc88b58a94b55d5bf8}{keep\-\_\-running}
+\begin{DoxyCompactList}\small\item\em Changed\-: Start Changed\-: End. \end{DoxyCompactList}\item 
+def \hyperlink{class_thread_pool_1_1_thread_pool_mix_in_a52ba9961e4dba0d2151dfc9bb1109c05}{force\-\_\-shutdown}
+\item 
+def \hyperlink{class_thread_pool_1_1_thread_pool_mix_in_ab81f98e7bd32d246c065f9d4da78e1cb}{serve\-\_\-forever}
+\begin{DoxyCompactList}\small\item\em Handle one request at a time until doomsday. \end{DoxyCompactList}\item 
+def \hyperlink{class_thread_pool_1_1_thread_pool_mix_in_a3967a11cc2a1ec6cf6d44368ac90ed42}{process\-\_\-request\-\_\-thread}
+\begin{DoxyCompactList}\small\item\em obtain request from queue instead of directly from server socket \end{DoxyCompactList}\item 
+def \hyperlink{class_thread_pool_1_1_thread_pool_mix_in_af2edfa9a820be9f947c90b737743dea4}{handle\-\_\-request}
+\begin{DoxyCompactList}\small\item\em simply collect requests and put them on the queue for the workers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_thread_pool_1_1_thread_pool_mix_in_a93c8c7dd5f32ba5faa17096ea56070ad}{requests}
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_thread_pool_1_1_thread_pool_mix_in_adc4a62f954256f803da312f6e26ee254}{num\-Threads} = \hyperlink{class_config_1_1_config_a30a0b4f26a731f1f315b86b16eef807c}{Config.\-N\-U\-M\-\_\-\-T\-H\-R\-E\-A\-D\-S}
+\item 
+\hyperlink{class_thread_pool_1_1_thread_pool_mix_in_a6be85971f1b071cd2f7d958ff988310f}{allow\-\_\-reuse\-\_\-address} = True
+\item 
+\hyperlink{class_thread_pool_1_1_thread_pool_mix_in_ac5a128ba2a86dc5cd90fd526a26ad148}{daemon\-\_\-threads} = True
+\item 
+\hyperlink{class_thread_pool_1_1_thread_pool_mix_in_a7e3bc178cfa9c8583685c62e1104a370}{K\-E\-E\-P\-\_\-\-R\-U\-N\-N\-I\-N\-G} = True
+\item 
+tuple \hyperlink{class_thread_pool_1_1_thread_pool_mix_in_ad8942e9f9352de2747eda5ecbc00c047}{logger} = \hyperlink{class_log_1_1_log}{Log}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+use a thread pool instead of a new thread on every request 
+
+Definición en la línea 36 del archivo Thread\-Pool.\-py.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_thread_pool_1_1_thread_pool_mix_in_a52ba9961e4dba0d2151dfc9bb1109c05}{\index{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}!force\-\_\-shutdown@{force\-\_\-shutdown}}
+\index{force\-\_\-shutdown@{force\-\_\-shutdown}!ThreadPool::ThreadPoolMixIn@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}}
+\subsubsection[{force\-\_\-shutdown}]{\setlength{\rightskip}{0pt plus 5cm}def Thread\-Pool.\-Thread\-Pool\-Mix\-In.\-force\-\_\-shutdown (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{class_thread_pool_1_1_thread_pool_mix_in_a52ba9961e4dba0d2151dfc9bb1109c05}
+
+
+Definición en la línea 50 del archivo Thread\-Pool.\-py.
+
+\hypertarget{class_thread_pool_1_1_thread_pool_mix_in_af2edfa9a820be9f947c90b737743dea4}{\index{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}!handle\-\_\-request@{handle\-\_\-request}}
+\index{handle\-\_\-request@{handle\-\_\-request}!ThreadPool::ThreadPoolMixIn@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}}
+\subsubsection[{handle\-\_\-request}]{\setlength{\rightskip}{0pt plus 5cm}def Thread\-Pool.\-Thread\-Pool\-Mix\-In.\-handle\-\_\-request (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{class_thread_pool_1_1_thread_pool_mix_in_af2edfa9a820be9f947c90b737743dea4}
+
+
+simply collect requests and put them on the queue for the workers. 
+
+
+
+Definición en la línea 93 del archivo Thread\-Pool.\-py.
+
+\hypertarget{class_thread_pool_1_1_thread_pool_mix_in_aca5cd6b9a97351bc88b58a94b55d5bf8}{\index{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}!keep\-\_\-running@{keep\-\_\-running}}
+\index{keep\-\_\-running@{keep\-\_\-running}!ThreadPool::ThreadPoolMixIn@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}}
+\subsubsection[{keep\-\_\-running}]{\setlength{\rightskip}{0pt plus 5cm}def Thread\-Pool.\-Thread\-Pool\-Mix\-In.\-keep\-\_\-running (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{class_thread_pool_1_1_thread_pool_mix_in_aca5cd6b9a97351bc88b58a94b55d5bf8}
+
+
+Changed\-: Start Changed\-: End. 
+
+
+
+Definición en la línea 47 del archivo Thread\-Pool.\-py.
+
+\hypertarget{class_thread_pool_1_1_thread_pool_mix_in_a3967a11cc2a1ec6cf6d44368ac90ed42}{\index{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}!process\-\_\-request\-\_\-thread@{process\-\_\-request\-\_\-thread}}
+\index{process\-\_\-request\-\_\-thread@{process\-\_\-request\-\_\-thread}!ThreadPool::ThreadPoolMixIn@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}}
+\subsubsection[{process\-\_\-request\-\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}def Thread\-Pool.\-Thread\-Pool\-Mix\-In.\-process\-\_\-request\-\_\-thread (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{class_thread_pool_1_1_thread_pool_mix_in_a3967a11cc2a1ec6cf6d44368ac90ed42}
+
+
+obtain request from queue instead of directly from server socket 
+
+
+
+Definición en la línea 84 del archivo Thread\-Pool.\-py.
+
+\hypertarget{class_thread_pool_1_1_thread_pool_mix_in_ab81f98e7bd32d246c065f9d4da78e1cb}{\index{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}!serve\-\_\-forever@{serve\-\_\-forever}}
+\index{serve\-\_\-forever@{serve\-\_\-forever}!ThreadPool::ThreadPoolMixIn@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}}
+\subsubsection[{serve\-\_\-forever}]{\setlength{\rightskip}{0pt plus 5cm}def Thread\-Pool.\-Thread\-Pool\-Mix\-In.\-serve\-\_\-forever (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{class_thread_pool_1_1_thread_pool_mix_in_ab81f98e7bd32d246c065f9d4da78e1cb}
+
+
+Handle one request at a time until doomsday. 
+
+
+
+Definición en la línea 60 del archivo Thread\-Pool.\-py.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{class_thread_pool_1_1_thread_pool_mix_in_a6be85971f1b071cd2f7d958ff988310f}{\index{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}!allow\-\_\-reuse\-\_\-address@{allow\-\_\-reuse\-\_\-address}}
+\index{allow\-\_\-reuse\-\_\-address@{allow\-\_\-reuse\-\_\-address}!ThreadPool::ThreadPoolMixIn@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}}
+\subsubsection[{allow\-\_\-reuse\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}Thread\-Pool.\-Thread\-Pool\-Mix\-In.\-allow\-\_\-reuse\-\_\-address = True\hspace{0.3cm}{\ttfamily [static]}}}\label{class_thread_pool_1_1_thread_pool_mix_in_a6be85971f1b071cd2f7d958ff988310f}
+
+
+Definición en la línea 39 del archivo Thread\-Pool.\-py.
+
+\hypertarget{class_thread_pool_1_1_thread_pool_mix_in_ac5a128ba2a86dc5cd90fd526a26ad148}{\index{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}!daemon\-\_\-threads@{daemon\-\_\-threads}}
+\index{daemon\-\_\-threads@{daemon\-\_\-threads}!ThreadPool::ThreadPoolMixIn@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}}
+\subsubsection[{daemon\-\_\-threads}]{\setlength{\rightskip}{0pt plus 5cm}Thread\-Pool.\-Thread\-Pool\-Mix\-In.\-daemon\-\_\-threads = True\hspace{0.3cm}{\ttfamily [static]}}}\label{class_thread_pool_1_1_thread_pool_mix_in_ac5a128ba2a86dc5cd90fd526a26ad148}
+
+
+Definición en la línea 40 del archivo Thread\-Pool.\-py.
+
+\hypertarget{class_thread_pool_1_1_thread_pool_mix_in_a7e3bc178cfa9c8583685c62e1104a370}{\index{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}!K\-E\-E\-P\-\_\-\-R\-U\-N\-N\-I\-N\-G@{K\-E\-E\-P\-\_\-\-R\-U\-N\-N\-I\-N\-G}}
+\index{K\-E\-E\-P\-\_\-\-R\-U\-N\-N\-I\-N\-G@{K\-E\-E\-P\-\_\-\-R\-U\-N\-N\-I\-N\-G}!ThreadPool::ThreadPoolMixIn@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}}
+\subsubsection[{K\-E\-E\-P\-\_\-\-R\-U\-N\-N\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}Thread\-Pool.\-Thread\-Pool\-Mix\-In.\-K\-E\-E\-P\-\_\-\-R\-U\-N\-N\-I\-N\-G = True\hspace{0.3cm}{\ttfamily [static]}}}\label{class_thread_pool_1_1_thread_pool_mix_in_a7e3bc178cfa9c8583685c62e1104a370}
+
+
+Definición en la línea 41 del archivo Thread\-Pool.\-py.
+
+\hypertarget{class_thread_pool_1_1_thread_pool_mix_in_ad8942e9f9352de2747eda5ecbc00c047}{\index{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}!logger@{logger}}
+\index{logger@{logger}!ThreadPool::ThreadPoolMixIn@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}}
+\subsubsection[{logger}]{\setlength{\rightskip}{0pt plus 5cm}tuple Thread\-Pool.\-Thread\-Pool\-Mix\-In.\-logger = {\bf Log}()\hspace{0.3cm}{\ttfamily [static]}}}\label{class_thread_pool_1_1_thread_pool_mix_in_ad8942e9f9352de2747eda5ecbc00c047}
+
+
+Definición en la línea 42 del archivo Thread\-Pool.\-py.
+
+\hypertarget{class_thread_pool_1_1_thread_pool_mix_in_adc4a62f954256f803da312f6e26ee254}{\index{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}!num\-Threads@{num\-Threads}}
+\index{num\-Threads@{num\-Threads}!ThreadPool::ThreadPoolMixIn@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}}
+\subsubsection[{num\-Threads}]{\setlength{\rightskip}{0pt plus 5cm}Thread\-Pool.\-Thread\-Pool\-Mix\-In.\-num\-Threads = {\bf Config.\-N\-U\-M\-\_\-\-T\-H\-R\-E\-A\-D\-S}\hspace{0.3cm}{\ttfamily [static]}}}\label{class_thread_pool_1_1_thread_pool_mix_in_adc4a62f954256f803da312f6e26ee254}
+
+
+Definición en la línea 38 del archivo Thread\-Pool.\-py.
+
+\hypertarget{class_thread_pool_1_1_thread_pool_mix_in_a93c8c7dd5f32ba5faa17096ea56070ad}{\index{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}!requests@{requests}}
+\index{requests@{requests}!ThreadPool::ThreadPoolMixIn@{Thread\-Pool\-::\-Thread\-Pool\-Mix\-In}}
+\subsubsection[{requests}]{\setlength{\rightskip}{0pt plus 5cm}Thread\-Pool.\-Thread\-Pool\-Mix\-In.\-requests}}\label{class_thread_pool_1_1_thread_pool_mix_in_a93c8c7dd5f32ba5faa17096ea56070ad}
+
+
+Definición en la línea 63 del archivo Thread\-Pool.\-py.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_thread_pool_8py}{Thread\-Pool.\-py}\end{DoxyCompactItemize}

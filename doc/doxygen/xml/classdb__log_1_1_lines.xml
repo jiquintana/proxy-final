@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classdb__log_1_1_lines" kind="class" prot="public">
+    <compoundname>db_log::Lines</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Base</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdb__log_1_1_lines_1aab009d3b3c85e949268e3fa307a25d82" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string db_log.Lines::__tablename__</definition>
+        <argsstring></argsstring>
+        <name>__tablename__</name>
+        <initializer>= &apos;LINES&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="73" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__log_1_1_lines_1a0d1564dadae48adbf609ecd987bd800c" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_log.Lines::__table_args__</definition>
+        <argsstring></argsstring>
+        <name>__table_args__</name>
+        <initializer>= (
+        Index(&apos;idx_lineid_asc&apos;, lineid.asc()),
+        Index(&apos;idx_lineid_desc&apos;, lineid.desc()),
+        )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="77" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdb__log_1_1_lines_1a3356fd4f820f9182bf824d0b3e1b537b" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_log.Lines::lineid</definition>
+        <argsstring></argsstring>
+        <name>lineid</name>
+        <initializer>= Column(Integer, primary_key=True, autoincrement=True, index=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="74" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="74" bodyend="-1"/>
+        <referencedby refid="classdb__log_1_1_lines_1a914fd0c463878da41107306755afeb4b" compoundref="db__log_8py" startline="96" endline="102">db_log.Lines.fromjson</referencedby>
+        <referencedby refid="classdb__log_1_1_lines_1aa548522f88fa1ea01ffe26cdbdb26054" compoundref="db__log_8py" startline="103" endline="105">db_log.Lines.__repr__</referencedby>
+        <referencedby refid="classdb__log_1_1_lines_1aff5943fbeba30789d71e44a6a5fd61f1" compoundref="db__log_8py" startline="106" endline="111">db_log.Lines.__toString__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__log_1_1_lines_1a19e178d833d57124bd08401e99865f3c" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_log.Lines::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <initializer>= Column(TIMESTAMP(timezone=True), primary_key=False, nullable=False, default=datetime.datetime.now())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="75" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="75" bodyend="-1"/>
+        <referencedby refid="classdb__log_1_1_lines_1a914fd0c463878da41107306755afeb4b" compoundref="db__log_8py" startline="96" endline="102">db_log.Lines.fromjson</referencedby>
+        <referencedby refid="classdb__log_1_1_lines_1aa548522f88fa1ea01ffe26cdbdb26054" compoundref="db__log_8py" startline="103" endline="105">db_log.Lines.__repr__</referencedby>
+        <referencedby refid="classdb__log_1_1_lines_1aff5943fbeba30789d71e44a6a5fd61f1" compoundref="db__log_8py" startline="106" endline="111">db_log.Lines.__toString__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__log_1_1_lines_1aa63d836730a16dfcf24119149e5faa44" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_log.Lines::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <initializer>= Column(String(400), nullable=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="76" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classdb__log_1_1_lines_1a914fd0c463878da41107306755afeb4b" compoundref="db__log_8py" startline="96" endline="102">db_log.Lines.fromjson</referencedby>
+        <referencedby refid="classdb__log_1_1_lines_1aa548522f88fa1ea01ffe26cdbdb26054" compoundref="db__log_8py" startline="103" endline="105">db_log.Lines.__repr__</referencedby>
+        <referencedby refid="classdb__log_1_1_lines_1aff5943fbeba30789d71e44a6a5fd61f1" compoundref="db__log_8py" startline="106" endline="111">db_log.Lines.__toString__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdb__log_1_1_lines_1af96b35a0ff4187be6583293d21f56c52" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_log.Lines::lineid</definition>
+        <argsstring></argsstring>
+        <name>lineid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="91" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__log_1_1_lines_1ac55c8876ae06fae44dab728313506935" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_log.Lines::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="92" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__log_1_1_lines_1a2bdb98ff311182c24248853587f3ebb9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_log.Lines::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="93" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdb__log_1_1_lines_1a7ed83f9b62253730ba834116b3a9dacb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_log.Lines.stringColumns</definition>
+        <argsstring></argsstring>
+        <name>stringColumns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="84" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__log_1_1_lines_1af5b1c788ddcbd885dfd504a582bfb2cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_log.Lines.intColumns</definition>
+        <argsstring></argsstring>
+        <name>intColumns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="87" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__log_1_1_lines_1a52ae33670fb93711d6016d66c78a5619" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_log.Lines.fromdict</definition>
+        <argsstring></argsstring>
+        <name>fromdict</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="90" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__log_1_1_lines_1a914fd0c463878da41107306755afeb4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_log.Lines.fromjson</definition>
+        <argsstring></argsstring>
+        <name>fromjson</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="96" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="96" bodyend="102"/>
+        <references refid="classdb__log_1_1_lines_1a3356fd4f820f9182bf824d0b3e1b537b" compoundref="db__log_8py" startline="74">db_log.Lines.lineid</references>
+        <references refid="classdb__log_1_1_lines_1a19e178d833d57124bd08401e99865f3c" compoundref="db__log_8py" startline="75">db_log.Lines.timestamp</references>
+        <references refid="classdb__log_1_1_lines_1aa63d836730a16dfcf24119149e5faa44" compoundref="db__log_8py" startline="76">db_log.Lines.line</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__log_1_1_lines_1aa548522f88fa1ea01ffe26cdbdb26054" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_log.Lines.__repr__</definition>
+        <argsstring></argsstring>
+        <name>__repr__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="103" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="103" bodyend="105"/>
+        <references refid="classdb__log_1_1_lines_1a3356fd4f820f9182bf824d0b3e1b537b" compoundref="db__log_8py" startline="74">db_log.Lines.lineid</references>
+        <references refid="classdb__log_1_1_lines_1a19e178d833d57124bd08401e99865f3c" compoundref="db__log_8py" startline="75">db_log.Lines.timestamp</references>
+        <references refid="classdb__log_1_1_lines_1aa63d836730a16dfcf24119149e5faa44" compoundref="db__log_8py" startline="76">db_log.Lines.line</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__log_1_1_lines_1aff5943fbeba30789d71e44a6a5fd61f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_log.Lines.__toString__</definition>
+        <argsstring></argsstring>
+        <name>__toString__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="106" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="106" bodyend="111"/>
+        <references refid="classdb__log_1_1_lines_1a3356fd4f820f9182bf824d0b3e1b537b" compoundref="db__log_8py" startline="74">db_log.Lines.lineid</references>
+        <references refid="classdb__log_1_1_lines_1a19e178d833d57124bd08401e99865f3c" compoundref="db__log_8py" startline="75">db_log.Lines.timestamp</references>
+        <references refid="classdb__log_1_1_lines_1aa63d836730a16dfcf24119149e5faa44" compoundref="db__log_8py" startline="76">db_log.Lines.line</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="106">
+        <label>db_log.Lines</label>
+        <link refid="classdb__log_1_1_lines"/>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>Base</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="108">
+        <label>db_log.Lines</label>
+        <link refid="classdb__log_1_1_lines"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>Base</label>
+      </node>
+    </collaborationgraph>
+    <location file="/prj/proxy-final/proxy/source/db_log.py" line="72" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="72" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classdb__log_1_1_lines_1aa548522f88fa1ea01ffe26cdbdb26054" prot="public" virt="non-virtual"><scope>db_log::Lines</scope><name>__repr__</name></member>
+      <member refid="classdb__log_1_1_lines_1a0d1564dadae48adbf609ecd987bd800c" prot="private" virt="non-virtual"><scope>db_log::Lines</scope><name>__table_args__</name></member>
+      <member refid="classdb__log_1_1_lines_1aab009d3b3c85e949268e3fa307a25d82" prot="private" virt="non-virtual"><scope>db_log::Lines</scope><name>__tablename__</name></member>
+      <member refid="classdb__log_1_1_lines_1aff5943fbeba30789d71e44a6a5fd61f1" prot="public" virt="non-virtual"><scope>db_log::Lines</scope><name>__toString__</name></member>
+      <member refid="classdb__log_1_1_lines_1a52ae33670fb93711d6016d66c78a5619" prot="public" virt="non-virtual"><scope>db_log::Lines</scope><name>fromdict</name></member>
+      <member refid="classdb__log_1_1_lines_1a914fd0c463878da41107306755afeb4b" prot="public" virt="non-virtual"><scope>db_log::Lines</scope><name>fromjson</name></member>
+      <member refid="classdb__log_1_1_lines_1af5b1c788ddcbd885dfd504a582bfb2cc" prot="public" virt="non-virtual"><scope>db_log::Lines</scope><name>intColumns</name></member>
+      <member refid="classdb__log_1_1_lines_1aa63d836730a16dfcf24119149e5faa44" prot="public" virt="non-virtual"><scope>db_log::Lines</scope><name>line</name></member>
+      <member refid="classdb__log_1_1_lines_1a2bdb98ff311182c24248853587f3ebb9" prot="public" virt="non-virtual"><scope>db_log::Lines</scope><name>line</name></member>
+      <member refid="classdb__log_1_1_lines_1a3356fd4f820f9182bf824d0b3e1b537b" prot="public" virt="non-virtual"><scope>db_log::Lines</scope><name>lineid</name></member>
+      <member refid="classdb__log_1_1_lines_1af96b35a0ff4187be6583293d21f56c52" prot="public" virt="non-virtual"><scope>db_log::Lines</scope><name>lineid</name></member>
+      <member refid="classdb__log_1_1_lines_1a7ed83f9b62253730ba834116b3a9dacb" prot="public" virt="non-virtual"><scope>db_log::Lines</scope><name>stringColumns</name></member>
+      <member refid="classdb__log_1_1_lines_1a19e178d833d57124bd08401e99865f3c" prot="public" virt="non-virtual"><scope>db_log::Lines</scope><name>timestamp</name></member>
+      <member refid="classdb__log_1_1_lines_1ac55c8876ae06fae44dab728313506935" prot="public" virt="non-virtual"><scope>db_log::Lines</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

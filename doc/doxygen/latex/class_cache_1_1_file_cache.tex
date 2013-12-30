@@ -1,0 +1,382 @@
+\hypertarget{class_cache_1_1_file_cache}{\section{Referencia de la Clase Cache.\-File\-Cache}
+\label{class_cache_1_1_file_cache}\index{Cache.\-File\-Cache@{Cache.\-File\-Cache}}
+}
+
+
+Diagrama de colaboración para Cache.\-File\-Cache\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_cache_1_1_file_cache__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{class_cache_1_1_file_cache_ac5fa19d6e9b990f58ae6969abfdeceed}{remove\-\_\-html\-\_\-markup}
+\item 
+def \hyperlink{class_cache_1_1_file_cache_a794781e8000f88b6990d1d1a2b24fbe6}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{class_cache_1_1_file_cache_a3a0ff0a693d8eb05c5635ac68c86a65b}{setup}
+\item 
+def \hyperlink{class_cache_1_1_file_cache_a45b17bfd8c65aa650fd0f53209d03b5c}{is\-\_\-cached}
+\item 
+def \hyperlink{class_cache_1_1_file_cache_a474cd0cce36603d869add65a52ec852b}{put}
+\item 
+def \hyperlink{class_cache_1_1_file_cache_a6580598cf60ffda8176dbe4036c4929c}{get}
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cache_1_1_file_cache_ac795fe342f956e8b8cd2ec23267c674d}{was\-\_\-checked}
+\item 
+\hyperlink{class_cache_1_1_file_cache_aca5f594f2c828bbb00e29385b527b5c4}{D\-E\-B\-U\-G}
+\item 
+\hyperlink{class_cache_1_1_file_cache_a969a9af6b255a6d9b14d71ee429cf6af}{path}
+\item 
+\hyperlink{class_cache_1_1_file_cache_a2b1c48cd0ee88344f405391545633787}{md5hash}
+\item 
+\hyperlink{class_cache_1_1_file_cache_ad4c782bcbd654eff2aea4c3b76815723}{cache\-\_\-filename\-\_\-base}
+\item 
+\hyperlink{class_cache_1_1_file_cache_abb789c23d266d9148f2fb9c3bc3e8d3c}{cache\-\_\-filename\-\_\-meta}
+\item 
+\hyperlink{class_cache_1_1_file_cache_af64994359a6b953e12a1f3352cbf057a}{cache\-\_\-filename\-\_\-cache}
+\item 
+\hyperlink{class_cache_1_1_file_cache_a4a427efcf91e7550463882b99d6b3df2}{cache\-\_\-filename\-\_\-header}
+\item 
+\hyperlink{class_cache_1_1_file_cache_a7a879f97bdb8d6f8a5b14390db395cdf}{cache\-\_\-filename\-\_\-strip}
+\item 
+\hyperlink{class_cache_1_1_file_cache_a6660cc5f8e2408bdece63291305a5e5e}{content\-\_\-stripped}
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_cache_1_1_file_cache_aa3e48c8aceb54811558590d05769af11}{path} = ''
+\item 
+string \hyperlink{class_cache_1_1_file_cache_a94712bab05ce67c5a20c3e2cfba47509}{md5hash\-\_\-str} = ''
+\item 
+string \hyperlink{class_cache_1_1_file_cache_a643dfb38067e5c4785397ef0e8c20944}{cache\-\_\-filename\-\_\-base} = ''
+\item 
+string \hyperlink{class_cache_1_1_file_cache_ab6e30d3196eea1c3cae1186945c8e0e2}{cache\-\_\-filename\-\_\-meta} = ''
+\item 
+string \hyperlink{class_cache_1_1_file_cache_abf7b20e99585e8ff1fd1c205eb02c2b3}{cache\-\_\-filename\-\_\-cache} = ''
+\item 
+string \hyperlink{class_cache_1_1_file_cache_a2f7d1283375128a83f657d9eb2ed5d3d}{cache\-\_\-filename\-\_\-strip} = ''
+\item 
+string \hyperlink{class_cache_1_1_file_cache_a27cec37d2b4d4aac26eb0999e220031e}{cache\-\_\-filename\-\_\-header} = ''
+\item 
+\hyperlink{class_cache_1_1_file_cache_afda3d5760616e47bd8fda4fe7490d7a9}{content\-\_\-is\-\_\-text} = False
+\item 
+tuple \hyperlink{class_cache_1_1_file_cache_a6add3c86ea9523a23c289b660d064e57}{content\-\_\-stripped} = bytes()
+\item 
+tuple \hyperlink{class_cache_1_1_file_cache_a7ebf67b0706f9ce71f54cdfadacbfe2e}{logger} = \hyperlink{class_log_1_1_log}{Log}()
+\item 
+\hyperlink{class_cache_1_1_file_cache_a8582c66c170deb664f9e7cd78b21d6b1}{is\-\_\-initialized} = False
+\item 
+list \hyperlink{class_cache_1_1_file_cache_a263cdec129a60caf90b7c6d5eb5c64f3}{D\-E\-B\-U\-G} = Config.\-D\-E\-B\-U\-G\mbox{[}'Cache.\-D\-E\-B\-U\-G'\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 33 del archivo Cache.\-py.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_cache_1_1_file_cache_a794781e8000f88b6990d1d1a2b24fbe6}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def Cache.\-File\-Cache.\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{class_cache_1_1_file_cache_a794781e8000f88b6990d1d1a2b24fbe6}
+
+
+Definición en la línea 66 del archivo Cache.\-py.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_cache_1_1_file_cache_a6580598cf60ffda8176dbe4036c4929c}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!get@{get}}
+\index{get@{get}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}def Cache.\-File\-Cache.\-get (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{path, }
+\item[{}]{debug = {\ttfamily False}, }
+\item[{}]{ip = {\ttfamily ''}, }
+\item[{}]{port = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{class_cache_1_1_file_cache_a6580598cf60ffda8176dbe4036c4929c}
+
+
+Definición en la línea 167 del archivo Cache.\-py.
+
+
+
+Gráfico de llamadas para esta función\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_cache_1_1_file_cache_a6580598cf60ffda8176dbe4036c4929c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_cache_1_1_file_cache_a45b17bfd8c65aa650fd0f53209d03b5c}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!is\-\_\-cached@{is\-\_\-cached}}
+\index{is\-\_\-cached@{is\-\_\-cached}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{is\-\_\-cached}]{\setlength{\rightskip}{0pt plus 5cm}def Cache.\-File\-Cache.\-is\-\_\-cached (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{path, }
+\item[{}]{debug = {\ttfamily False}, }
+\item[{}]{ip = {\ttfamily ''}, }
+\item[{}]{port = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{class_cache_1_1_file_cache_a45b17bfd8c65aa650fd0f53209d03b5c}
+
+
+Definición en la línea 96 del archivo Cache.\-py.
+
+
+
+Gráfico de llamadas para esta función\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_cache_1_1_file_cache_a45b17bfd8c65aa650fd0f53209d03b5c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_cache_1_1_file_cache_a474cd0cce36603d869add65a52ec852b}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!put@{put}}
+\index{put@{put}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{put}]{\setlength{\rightskip}{0pt plus 5cm}def Cache.\-File\-Cache.\-put (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{path, }
+\item[{}]{content, }
+\item[{}]{headers, }
+\item[{}]{strip\-\_\-text, }
+\item[{}]{debug = {\ttfamily False}, }
+\item[{}]{ip = {\ttfamily ''}, }
+\item[{}]{port = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{class_cache_1_1_file_cache_a474cd0cce36603d869add65a52ec852b}
+
+
+Definición en la línea 116 del archivo Cache.\-py.
+
+
+
+Gráfico de llamadas para esta función\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_cache_1_1_file_cache_a474cd0cce36603d869add65a52ec852b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_cache_1_1_file_cache_ac5fa19d6e9b990f58ae6969abfdeceed}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!remove\-\_\-html\-\_\-markup@{remove\-\_\-html\-\_\-markup}}
+\index{remove\-\_\-html\-\_\-markup@{remove\-\_\-html\-\_\-markup}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{remove\-\_\-html\-\_\-markup}]{\setlength{\rightskip}{0pt plus 5cm}def Cache.\-File\-Cache.\-remove\-\_\-html\-\_\-markup (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_cache_1_1_file_cache_ac5fa19d6e9b990f58ae6969abfdeceed}
+
+
+Definición en la línea 49 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a3a0ff0a693d8eb05c5635ac68c86a65b}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!setup@{setup}}
+\index{setup@{setup}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}def Cache.\-File\-Cache.\-setup (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{path, }
+\item[{}]{debug = {\ttfamily False}, }
+\item[{}]{ip = {\ttfamily ''}, }
+\item[{}]{port = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{class_cache_1_1_file_cache_a3a0ff0a693d8eb05c5635ac68c86a65b}
+
+
+Definición en la línea 73 del archivo Cache.\-py.
+
+
+
+Gráfico de llamadas a esta función\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_cache_1_1_file_cache_a3a0ff0a693d8eb05c5635ac68c86a65b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{class_cache_1_1_file_cache_a643dfb38067e5c4785397ef0e8c20944}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!cache\-\_\-filename\-\_\-base@{cache\-\_\-filename\-\_\-base}}
+\index{cache\-\_\-filename\-\_\-base@{cache\-\_\-filename\-\_\-base}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{cache\-\_\-filename\-\_\-base}]{\setlength{\rightskip}{0pt plus 5cm}string Cache.\-File\-Cache.\-cache\-\_\-filename\-\_\-base = ''\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cache_1_1_file_cache_a643dfb38067e5c4785397ef0e8c20944}
+
+
+Definición en la línea 36 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_ad4c782bcbd654eff2aea4c3b76815723}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!cache\-\_\-filename\-\_\-base@{cache\-\_\-filename\-\_\-base}}
+\index{cache\-\_\-filename\-\_\-base@{cache\-\_\-filename\-\_\-base}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{cache\-\_\-filename\-\_\-base}]{\setlength{\rightskip}{0pt plus 5cm}Cache.\-File\-Cache.\-cache\-\_\-filename\-\_\-base}}\label{class_cache_1_1_file_cache_ad4c782bcbd654eff2aea4c3b76815723}
+
+
+Definición en la línea 83 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_abf7b20e99585e8ff1fd1c205eb02c2b3}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!cache\-\_\-filename\-\_\-cache@{cache\-\_\-filename\-\_\-cache}}
+\index{cache\-\_\-filename\-\_\-cache@{cache\-\_\-filename\-\_\-cache}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{cache\-\_\-filename\-\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}string Cache.\-File\-Cache.\-cache\-\_\-filename\-\_\-cache = ''\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cache_1_1_file_cache_abf7b20e99585e8ff1fd1c205eb02c2b3}
+
+
+Definición en la línea 38 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_af64994359a6b953e12a1f3352cbf057a}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!cache\-\_\-filename\-\_\-cache@{cache\-\_\-filename\-\_\-cache}}
+\index{cache\-\_\-filename\-\_\-cache@{cache\-\_\-filename\-\_\-cache}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{cache\-\_\-filename\-\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}Cache.\-File\-Cache.\-cache\-\_\-filename\-\_\-cache}}\label{class_cache_1_1_file_cache_af64994359a6b953e12a1f3352cbf057a}
+
+
+Definición en la línea 85 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a27cec37d2b4d4aac26eb0999e220031e}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!cache\-\_\-filename\-\_\-header@{cache\-\_\-filename\-\_\-header}}
+\index{cache\-\_\-filename\-\_\-header@{cache\-\_\-filename\-\_\-header}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{cache\-\_\-filename\-\_\-header}]{\setlength{\rightskip}{0pt plus 5cm}string Cache.\-File\-Cache.\-cache\-\_\-filename\-\_\-header = ''\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cache_1_1_file_cache_a27cec37d2b4d4aac26eb0999e220031e}
+
+
+Definición en la línea 40 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a4a427efcf91e7550463882b99d6b3df2}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!cache\-\_\-filename\-\_\-header@{cache\-\_\-filename\-\_\-header}}
+\index{cache\-\_\-filename\-\_\-header@{cache\-\_\-filename\-\_\-header}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{cache\-\_\-filename\-\_\-header}]{\setlength{\rightskip}{0pt plus 5cm}Cache.\-File\-Cache.\-cache\-\_\-filename\-\_\-header}}\label{class_cache_1_1_file_cache_a4a427efcf91e7550463882b99d6b3df2}
+
+
+Definición en la línea 86 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_ab6e30d3196eea1c3cae1186945c8e0e2}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!cache\-\_\-filename\-\_\-meta@{cache\-\_\-filename\-\_\-meta}}
+\index{cache\-\_\-filename\-\_\-meta@{cache\-\_\-filename\-\_\-meta}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{cache\-\_\-filename\-\_\-meta}]{\setlength{\rightskip}{0pt plus 5cm}string Cache.\-File\-Cache.\-cache\-\_\-filename\-\_\-meta = ''\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cache_1_1_file_cache_ab6e30d3196eea1c3cae1186945c8e0e2}
+
+
+Definición en la línea 37 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_abb789c23d266d9148f2fb9c3bc3e8d3c}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!cache\-\_\-filename\-\_\-meta@{cache\-\_\-filename\-\_\-meta}}
+\index{cache\-\_\-filename\-\_\-meta@{cache\-\_\-filename\-\_\-meta}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{cache\-\_\-filename\-\_\-meta}]{\setlength{\rightskip}{0pt plus 5cm}Cache.\-File\-Cache.\-cache\-\_\-filename\-\_\-meta}}\label{class_cache_1_1_file_cache_abb789c23d266d9148f2fb9c3bc3e8d3c}
+
+
+Definición en la línea 84 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a2f7d1283375128a83f657d9eb2ed5d3d}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!cache\-\_\-filename\-\_\-strip@{cache\-\_\-filename\-\_\-strip}}
+\index{cache\-\_\-filename\-\_\-strip@{cache\-\_\-filename\-\_\-strip}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{cache\-\_\-filename\-\_\-strip}]{\setlength{\rightskip}{0pt plus 5cm}string Cache.\-File\-Cache.\-cache\-\_\-filename\-\_\-strip = ''\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cache_1_1_file_cache_a2f7d1283375128a83f657d9eb2ed5d3d}
+
+
+Definición en la línea 39 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a7a879f97bdb8d6f8a5b14390db395cdf}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!cache\-\_\-filename\-\_\-strip@{cache\-\_\-filename\-\_\-strip}}
+\index{cache\-\_\-filename\-\_\-strip@{cache\-\_\-filename\-\_\-strip}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{cache\-\_\-filename\-\_\-strip}]{\setlength{\rightskip}{0pt plus 5cm}Cache.\-File\-Cache.\-cache\-\_\-filename\-\_\-strip}}\label{class_cache_1_1_file_cache_a7a879f97bdb8d6f8a5b14390db395cdf}
+
+
+Definición en la línea 87 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_afda3d5760616e47bd8fda4fe7490d7a9}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!content\-\_\-is\-\_\-text@{content\-\_\-is\-\_\-text}}
+\index{content\-\_\-is\-\_\-text@{content\-\_\-is\-\_\-text}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{content\-\_\-is\-\_\-text}]{\setlength{\rightskip}{0pt plus 5cm}Cache.\-File\-Cache.\-content\-\_\-is\-\_\-text = False\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cache_1_1_file_cache_afda3d5760616e47bd8fda4fe7490d7a9}
+
+
+Definición en la línea 41 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a6add3c86ea9523a23c289b660d064e57}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!content\-\_\-stripped@{content\-\_\-stripped}}
+\index{content\-\_\-stripped@{content\-\_\-stripped}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{content\-\_\-stripped}]{\setlength{\rightskip}{0pt plus 5cm}tuple Cache.\-File\-Cache.\-content\-\_\-stripped = bytes()\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cache_1_1_file_cache_a6add3c86ea9523a23c289b660d064e57}
+
+
+Definición en la línea 42 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a6660cc5f8e2408bdece63291305a5e5e}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!content\-\_\-stripped@{content\-\_\-stripped}}
+\index{content\-\_\-stripped@{content\-\_\-stripped}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{content\-\_\-stripped}]{\setlength{\rightskip}{0pt plus 5cm}Cache.\-File\-Cache.\-content\-\_\-stripped}}\label{class_cache_1_1_file_cache_a6660cc5f8e2408bdece63291305a5e5e}
+
+
+Definición en la línea 145 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a263cdec129a60caf90b7c6d5eb5c64f3}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!D\-E\-B\-U\-G@{D\-E\-B\-U\-G}}
+\index{D\-E\-B\-U\-G@{D\-E\-B\-U\-G}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}list Cache.\-File\-Cache.\-D\-E\-B\-U\-G = Config.\-D\-E\-B\-U\-G\mbox{[}'Cache.\-D\-E\-B\-U\-G'\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cache_1_1_file_cache_a263cdec129a60caf90b7c6d5eb5c64f3}
+
+
+Definición en la línea 47 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_aca5f594f2c828bbb00e29385b527b5c4}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!D\-E\-B\-U\-G@{D\-E\-B\-U\-G}}
+\index{D\-E\-B\-U\-G@{D\-E\-B\-U\-G}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}Cache.\-File\-Cache.\-D\-E\-B\-U\-G}}\label{class_cache_1_1_file_cache_aca5f594f2c828bbb00e29385b527b5c4}
+
+
+Definición en la línea 70 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a8582c66c170deb664f9e7cd78b21d6b1}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!is\-\_\-initialized@{is\-\_\-initialized}}
+\index{is\-\_\-initialized@{is\-\_\-initialized}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{is\-\_\-initialized}]{\setlength{\rightskip}{0pt plus 5cm}Cache.\-File\-Cache.\-is\-\_\-initialized = False\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cache_1_1_file_cache_a8582c66c170deb664f9e7cd78b21d6b1}
+
+
+Definición en la línea 46 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a7ebf67b0706f9ce71f54cdfadacbfe2e}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!logger@{logger}}
+\index{logger@{logger}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{logger}]{\setlength{\rightskip}{0pt plus 5cm}tuple Cache.\-File\-Cache.\-logger = {\bf Log}()\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cache_1_1_file_cache_a7ebf67b0706f9ce71f54cdfadacbfe2e}
+
+
+Definición en la línea 43 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a2b1c48cd0ee88344f405391545633787}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!md5hash@{md5hash}}
+\index{md5hash@{md5hash}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{md5hash}]{\setlength{\rightskip}{0pt plus 5cm}Cache.\-File\-Cache.\-md5hash}}\label{class_cache_1_1_file_cache_a2b1c48cd0ee88344f405391545633787}
+
+
+Definición en la línea 81 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a94712bab05ce67c5a20c3e2cfba47509}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!md5hash\-\_\-str@{md5hash\-\_\-str}}
+\index{md5hash\-\_\-str@{md5hash\-\_\-str}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{md5hash\-\_\-str}]{\setlength{\rightskip}{0pt plus 5cm}string Cache.\-File\-Cache.\-md5hash\-\_\-str = ''\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cache_1_1_file_cache_a94712bab05ce67c5a20c3e2cfba47509}
+
+
+Definición en la línea 35 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_aa3e48c8aceb54811558590d05769af11}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!path@{path}}
+\index{path@{path}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}string Cache.\-File\-Cache.\-path = ''\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cache_1_1_file_cache_aa3e48c8aceb54811558590d05769af11}
+
+
+Definición en la línea 34 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_a969a9af6b255a6d9b14d71ee429cf6af}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!path@{path}}
+\index{path@{path}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}Cache.\-File\-Cache.\-path}}\label{class_cache_1_1_file_cache_a969a9af6b255a6d9b14d71ee429cf6af}
+
+
+Definición en la línea 74 del archivo Cache.\-py.
+
+\hypertarget{class_cache_1_1_file_cache_ac795fe342f956e8b8cd2ec23267c674d}{\index{Cache\-::\-File\-Cache@{Cache\-::\-File\-Cache}!was\-\_\-checked@{was\-\_\-checked}}
+\index{was\-\_\-checked@{was\-\_\-checked}!Cache::FileCache@{Cache\-::\-File\-Cache}}
+\subsubsection[{was\-\_\-checked}]{\setlength{\rightskip}{0pt plus 5cm}Cache.\-File\-Cache.\-was\-\_\-checked}}\label{class_cache_1_1_file_cache_ac795fe342f956e8b8cd2ec23267c674d}
+
+
+Definición en la línea 69 del archivo Cache.\-py.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cache_8py}{Cache.\-py}\end{DoxyCompactItemize}

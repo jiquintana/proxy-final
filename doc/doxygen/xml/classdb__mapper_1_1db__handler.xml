@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classdb__mapper_1_1db__handler" kind="class" prot="public">
+    <compoundname>db_mapper::db_handler</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdb__mapper_1_1db__handler_1a004b9ab0541b221b768208f3f48ee6fd" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>db_mapper.db_handler::__db__</definition>
+        <argsstring></argsstring>
+        <name>__db__</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="18" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classdb__mapper_1_1db__handler_1a479a5e4baa7d3a4a0c086b5f20b19886" compoundref="db__mapper_8py" startline="21" endline="24">db_mapper.db_handler.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__mapper_1_1db__handler_1a887477da56ca06eb8f49454634dc7c39" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>db_mapper.db_handler::__log__</definition>
+        <argsstring></argsstring>
+        <name>__log__</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="19" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classdb__mapper_1_1db__handler_1a479a5e4baa7d3a4a0c086b5f20b19886" compoundref="db__mapper_8py" startline="21" endline="24">db_mapper.db_handler.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdb__mapper_1_1db__handler_1a479a5e4baa7d3a4a0c086b5f20b19886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_mapper.db_handler.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="21" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="21" bodyend="24"/>
+        <references refid="classdb__mapper_1_1db__handler_1a004b9ab0541b221b768208f3f48ee6fd" compoundref="db__mapper_8py" startline="18">db_mapper.db_handler.__db__</references>
+        <references refid="classdb__mapper_1_1db__handler_1a887477da56ca06eb8f49454634dc7c39" compoundref="db__mapper_8py" startline="19">db_mapper.db_handler.__log__</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__mapper_1_1db__handler_1a5fcc6f04805b1668cfdd37a56b96e481" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_mapper.db_handler.answer_wrapper</definition>
+        <argsstring></argsstring>
+        <name>answer_wrapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="25" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="25" bodyend="40"/>
+        <referencedby refid="classdb__mapper_1_1db__handler_1a4d3b0376c65e8fafd85e7ebd66c9b268" compoundref="db__mapper_8py" startline="41" endline="52">db_mapper.db_handler.map_db2answer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__mapper_1_1db__handler_1a4d3b0376c65e8fafd85e7ebd66c9b268" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_mapper.db_handler.map_db2answer</definition>
+        <argsstring></argsstring>
+        <name>map_db2answer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="41" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="41" bodyend="52"/>
+        <references refid="classdb__mapper_1_1db__handler_1a5fcc6f04805b1668cfdd37a56b96e481" compoundref="db__mapper_8py" startline="25" endline="40">db_mapper.db_handler.answer_wrapper</references>
+        <referencedby refid="classdb__mapper_1_1db__handler_1adebfe1a956d4058883ce07bdaf253365" compoundref="db__mapper_8py" startline="53" endline="71">db_mapper.db_handler.handle_request</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__mapper_1_1db__handler_1adebfe1a956d4058883ce07bdaf253365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_mapper.db_handler.handle_request</definition>
+        <argsstring></argsstring>
+        <name>handle_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="53" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="53" bodyend="71"/>
+        <references refid="classdb__mapper_1_1db__handler_1acab02d962db6d8b42cdeae79bf46425d" compoundref="db__mapper_8py" startline="72" endline="104">db_mapper.db_handler.map_query2db</references>
+        <references refid="classdb__mapper_1_1db__handler_1a4d3b0376c65e8fafd85e7ebd66c9b268" compoundref="db__mapper_8py" startline="41" endline="52">db_mapper.db_handler.map_db2answer</references>
+        <references refid="classdb__mapper_1_1db__handler_1ab82596ecdbec3136052c2f63ea282f0c" compoundref="db__mapper_8py" startline="105" endline="133">db_mapper.db_handler.map_parms2db</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__mapper_1_1db__handler_1acab02d962db6d8b42cdeae79bf46425d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_mapper.db_handler.map_query2db</definition>
+        <argsstring></argsstring>
+        <name>map_query2db</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="72" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="72" bodyend="104"/>
+        <referencedby refid="classdb__mapper_1_1db__handler_1adebfe1a956d4058883ce07bdaf253365" compoundref="db__mapper_8py" startline="53" endline="71">db_mapper.db_handler.handle_request</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__mapper_1_1db__handler_1ab82596ecdbec3136052c2f63ea282f0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_mapper.db_handler.map_parms2db</definition>
+        <argsstring></argsstring>
+        <name>map_parms2db</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="105" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="105" bodyend="133"/>
+        <references refid="classdb__mapper_1_1db__handler_1aadb435084c4d5fccc96513605042b49b" compoundref="db__mapper_8py" startline="134" endline="150">db_mapper.db_handler.map_dict2User</references>
+        <references refid="classdb__mapper_1_1db__handler_1aa0a226e11a8afd0b8dfa20fd76362832" compoundref="db__mapper_8py" startline="151" endline="167">db_mapper.db_handler.map_dict2Group</references>
+        <referencedby refid="classdb__mapper_1_1db__handler_1adebfe1a956d4058883ce07bdaf253365" compoundref="db__mapper_8py" startline="53" endline="71">db_mapper.db_handler.handle_request</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__mapper_1_1db__handler_1aadb435084c4d5fccc96513605042b49b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_mapper.db_handler.map_dict2User</definition>
+        <argsstring></argsstring>
+        <name>map_dict2User</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="134" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="134" bodyend="150"/>
+        <referencedby refid="classdb__mapper_1_1db__handler_1ab82596ecdbec3136052c2f63ea282f0c" compoundref="db__mapper_8py" startline="105" endline="133">db_mapper.db_handler.map_parms2db</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__mapper_1_1db__handler_1aa0a226e11a8afd0b8dfa20fd76362832" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_mapper.db_handler.map_dict2Group</definition>
+        <argsstring></argsstring>
+        <name>map_dict2Group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="151" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="151" bodyend="167"/>
+        <referencedby refid="classdb__mapper_1_1db__handler_1ab82596ecdbec3136052c2f63ea282f0c" compoundref="db__mapper_8py" startline="105" endline="133">db_mapper.db_handler.map_parms2db</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__mapper_1_1db__handler_1a7f56361e908c36b3b9a89679276b70c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_mapper.db_handler.map_dict2URIS</definition>
+        <argsstring></argsstring>
+        <name>map_dict2URIS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="168" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="168" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__mapper_1_1db__handler_1a622709833c8db8cf253628fb6e599f17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_mapper.db_handler.map_dict2WORDS</definition>
+        <argsstring></argsstring>
+        <name>map_dict2WORDS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="187" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="187" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classdb__mapper_1_1db__handler_1a911bd297d667fd50426a75ad13ab8779" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_mapper.db_handler.map_dict2MIMES</definition>
+        <argsstring></argsstring>
+        <name>map_dict2MIMES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="204" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="204" bodyend="222"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="17" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="17" bodyend="223"/>
+    <listofallmembers>
+      <member refid="classdb__mapper_1_1db__handler_1a004b9ab0541b221b768208f3f48ee6fd" prot="private" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>__db__</name></member>
+      <member refid="classdb__mapper_1_1db__handler_1a479a5e4baa7d3a4a0c086b5f20b19886" prot="public" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>__init__</name></member>
+      <member refid="classdb__mapper_1_1db__handler_1a887477da56ca06eb8f49454634dc7c39" prot="private" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>__log__</name></member>
+      <member refid="classdb__mapper_1_1db__handler_1a5fcc6f04805b1668cfdd37a56b96e481" prot="public" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>answer_wrapper</name></member>
+      <member refid="classdb__mapper_1_1db__handler_1adebfe1a956d4058883ce07bdaf253365" prot="public" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>handle_request</name></member>
+      <member refid="classdb__mapper_1_1db__handler_1a4d3b0376c65e8fafd85e7ebd66c9b268" prot="public" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>map_db2answer</name></member>
+      <member refid="classdb__mapper_1_1db__handler_1aa0a226e11a8afd0b8dfa20fd76362832" prot="public" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>map_dict2Group</name></member>
+      <member refid="classdb__mapper_1_1db__handler_1a911bd297d667fd50426a75ad13ab8779" prot="public" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>map_dict2MIMES</name></member>
+      <member refid="classdb__mapper_1_1db__handler_1a7f56361e908c36b3b9a89679276b70c9" prot="public" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>map_dict2URIS</name></member>
+      <member refid="classdb__mapper_1_1db__handler_1aadb435084c4d5fccc96513605042b49b" prot="public" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>map_dict2User</name></member>
+      <member refid="classdb__mapper_1_1db__handler_1a622709833c8db8cf253628fb6e599f17" prot="public" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>map_dict2WORDS</name></member>
+      <member refid="classdb__mapper_1_1db__handler_1ab82596ecdbec3136052c2f63ea282f0c" prot="public" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>map_parms2db</name></member>
+      <member refid="classdb__mapper_1_1db__handler_1acab02d962db6d8b42cdeae79bf46425d" prot="public" virt="non-virtual"><scope>db_mapper::db_handler</scope><name>map_query2db</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,117 @@
+.TH "db_layer.Group" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+db_layer.Group \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Herencias Base\&.
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "def \fBstringColumns\fP"
+.br
+.ti -1c
+.RI "def \fBintColumns\fP"
+.br
+.ti -1c
+.RI "def \fBfromdict\fP"
+.br
+.ti -1c
+.RI "def \fBfromjson\fP"
+.br
+.ti -1c
+.RI "def \fB__repr__\fP"
+.br
+.ti -1c
+.RI "def \fB__toSring__\fP"
+.br
+.in -1c
+.SS "Atributos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBgid\fP"
+.br
+.ti -1c
+.RI "\fBgroupname\fP"
+.br
+.ti -1c
+.RI "\fBdescription\fP"
+.br
+.in -1c
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBgid\fP = Column(Integer, primary_key=True, autoincrement=True, unique=True, index=True)"
+.br
+.ti -1c
+.RI "tuple \fBgroupname\fP = Column(String(20), nullable=False, unique=True, index=True)"
+.br
+.ti -1c
+.RI "tuple \fBdescription\fP = Column(String(80), nullable=False)"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Definición en la línea 1117 del archivo db_layer\&.py\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "def db_layer\&.Group\&.__repr__ (self)"
+
+.PP
+Definición en la línea 1144 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Group\&.__toSring__ (self)"
+
+.PP
+Definición en la línea 1147 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Group\&.fromdict (self, dict_data)"
+
+.PP
+Definición en la línea 1130 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Group\&.fromjson (self, jsondata)"
+
+.PP
+Definición en la línea 1137 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Group\&.intColumns (self)"
+
+.PP
+Definición en la línea 1127 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.Group\&.stringColumns (self)"
+
+.PP
+Definición en la línea 1124 del archivo db_layer\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "tuple db_layer\&.Group\&.description = Column(String(80), nullable=False)\fC [static]\fP"
+
+.PP
+Definición en la línea 1121 del archivo db_layer\&.py\&.
+.SS "db_layer\&.Group\&.description"
+
+.PP
+Definición en la línea 1134 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.Group\&.gid = Column(Integer, primary_key=True, autoincrement=True, unique=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 1119 del archivo db_layer\&.py\&.
+.SS "db_layer\&.Group\&.gid"
+
+.PP
+Definición en la línea 1132 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.Group\&.groupname = Column(String(20), nullable=False, unique=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 1120 del archivo db_layer\&.py\&.
+.SS "db_layer\&.Group\&.groupname"
+
+.PP
+Definición en la línea 1133 del archivo db_layer\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

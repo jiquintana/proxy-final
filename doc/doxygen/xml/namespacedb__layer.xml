@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespacedb__layer" kind="namespace">
+    <compoundname>db_layer</compoundname>
+    <innerclass refid="classdb__layer_1_1_alchemy_encoder" prot="public">db_layer::AlchemyEncoder</innerclass>
+    <innerclass refid="classdb__layer_1_1_database" prot="public">db_layer::Database</innerclass>
+    <innerclass refid="classdb__layer_1_1_rule" prot="public">db_layer::Rule</innerclass>
+    <innerclass refid="classdb__layer_1_1_groups" prot="public">db_layer::Groups</innerclass>
+    <innerclass refid="classdb__layer_1_1_rol_type" prot="public">db_layer::RolType</innerclass>
+    <innerclass refid="classdb__layer_1_1_user" prot="public">db_layer::User</innerclass>
+    <innerclass refid="classdb__layer_1_1_group" prot="public">db_layer::Group</innerclass>
+    <innerclass refid="classdb__layer_1_1_u_r_i_s" prot="public">db_layer::URIS</innerclass>
+    <innerclass refid="classdb__layer_1_1_w_o_r_d_s" prot="public">db_layer::WORDS</innerclass>
+    <innerclass refid="classdb__layer_1_1_m_i_m_e_s" prot="public">db_layer::MIMES</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacedb__layer_1a8fd2ce6ee0abd7a51e1ec8fe295a5a6b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_layer.python_OldVersion</definition>
+        <argsstring></argsstring>
+        <name>python_OldVersion</name>
+        <initializer>= True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="6" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__layer_1a649e55a17a43790deef2961f2ca5c396" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int db_layer.MAXUSERS</definition>
+        <argsstring></argsstring>
+        <name>MAXUSERS</name>
+        <initializer>= 1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="22" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__layer_1aa86922899182c14d523d4d72a501089b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int db_layer.MAXGROUPS</definition>
+        <argsstring></argsstring>
+        <name>MAXGROUPS</name>
+        <initializer>= 65536</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="23" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__layer_1a7ed1ca76a740523975d0736208ae1f65" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list db_layer.DRIVER</definition>
+        <argsstring></argsstring>
+        <name>DRIVER</name>
+        <initializer>= <ref refid="class_config_1_1_config_1a62ca676b07391529a5c1abd433bed57f" kindref="member">Config.dbFiles</ref>[&apos;proxy&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="25" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__layer_1ad65ee0b7707a738bc9f93587eebd04f6" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>db_layer.TraceSQL</definition>
+        <argsstring></argsstring>
+        <name>TraceSQL</name>
+        <initializer>= <ref refid="class_config_1_1_config_1af7a49b43885faa51f5f5b5687a05120c" kindref="member">Config.dbTrace</ref>[&apos;proxy&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="26" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__layer_1ad6378d01c39f29fff5832fab694e3a9f" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_layer.engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <initializer>= create_engine(<ref refid="namespacedb__layer_1a7ed1ca76a740523975d0736208ae1f65" kindref="member">DRIVER</ref>, echo=<ref refid="namespacedb__layer_1ad65ee0b7707a738bc9f93587eebd04f6" kindref="member">TraceSQL</ref>,poolclass=NullPool)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="28" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__layer_1abf9d884063baa5841f513855cff66c26" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_layer.Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <initializer>= declarative_base()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="30" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__layer_1afb05786606d962ab2909e3436e531854" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary db_layer.HOURS_IDX</definition>
+        <argsstring></argsstring>
+        <name>HOURS_IDX</name>
+        <initializer>= {
+     0: &apos;H00_M&apos;,  1: &apos;H01_M&apos;,  2: &apos;H02_M&apos;,  3: &apos;H03_M&apos;,
+     4: &apos;H04_M&apos;,  5: &apos;H05_M&apos;,  6: &apos;H06_M&apos;,  7: &apos;H07_M&apos;,
+     8: &apos;H08_M&apos;,  9: &apos;H09_M&apos;, 10: &apos;H10_M&apos;, 11: &apos;H11_M&apos;,
+    12: &apos;H12_M&apos;, 13: &apos;H13_M&apos;, 14: &apos;H14_M&apos;, 15: &apos;H15_M&apos;,
+    16: &apos;H16_M&apos;, 17: &apos;H17_M&apos;, 18: &apos;H18_M&apos;, 19: &apos;H19_M&apos;,
+    20: &apos;H20_M&apos;, 21: &apos;H21_M&apos;, 22: &apos;H22_M&apos;, 23: &apos;H23_M&apos;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="33" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__layer_1ad6ee299a7034867156fb8100ec6864d7" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary db_layer.HOURS_MASK</definition>
+        <argsstring></argsstring>
+        <name>HOURS_MASK</name>
+        <initializer>= {
+    #              2         1         0
+    #           321098765432109876543210
+    &apos;NON_M&apos; : 0b000000000000000000000000,  # NONE ASIGNED
+    &apos;H00_M&apos; : 0b000000000000000000000001,  # 00.xxh mask
+    &apos;H01_M&apos; : 0b000000000000000000000010,  # 01.xxh mask
+    &apos;H02_M&apos; : 0b000000000000000000000100,  # 02.xxh mask
+    &apos;H03_M&apos; : 0b000000000000000000001000,  # 03.xxh mask
+    &apos;H04_M&apos; : 0b000000000000000000010000,  # 04.xxh mask
+    &apos;H05_M&apos; : 0b000000000000000000100000,  # 05.xxh mask
+    &apos;H06_M&apos; : 0b000000000000000001000000,  # 06.xxh mask
+    &apos;H07_M&apos; : 0b000000000000000010000000,  # 07.xxh mask
+    &apos;H08_M&apos; : 0b000000000000000100000000,  # 08.xxh mask
+    &apos;H09_M&apos; : 0b000000000000001000000000,  # 09.xxh mask
+    &apos;H10_M&apos; : 0b000000000000010000000000,  # 10.xxh mask
+    &apos;H11_M&apos; : 0b000000000000100000000000,  # 11.xxh mask
+    &apos;H12_M&apos; : 0b000000000001000000000000,  # 12.xxh mask
+    &apos;H13_M&apos; : 0b000000000010000000000000,  # 13.xxh mask
+    &apos;H14_M&apos; : 0b000000000100000000000000,  # 14.xxh mask
+    &apos;H15_M&apos; : 0b000000001000000000000000,  # 15.xxh mask
+    &apos;H16_M&apos; : 0b000000010000000000000000,  # 16.xxh mask
+    &apos;H17_M&apos; : 0b000000100000000000000000,  # 17.xxh mask
+    &apos;H18_M&apos; : 0b000001000000000000000000,  # 18.xxh mask
+    &apos;H19_M&apos; : 0b000010000000000000000000,  # 19.xxh mask
+    &apos;H20_M&apos; : 0b000100000000000000000000,  # 20.xxh mask
+    &apos;H21_M&apos; : 0b001000000000000000000000,  # 21.xxh mask
+    &apos;H22_M&apos; : 0b010000000000000000000000,  # 22.xxh mask
+    &apos;H23_M&apos; : 0b100000000000000000000000,  # 23.xxh mask
+    &apos;NIG_M&apos; : 0b111000000000000011111111,  # 00.xxh - 07.xxh &amp;&amp; 21.xxh-23.xxh mask
+    &apos;DAY_M&apos; : 0b000111111111111100000000,  # 08.xxh - 20.xxh mask
+    &apos;ALL_M&apos; : 0b111111111111111111111111   # ALL hours mask
+
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="42" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__layer_1a0d5b65488cbaa2ab5d2cdb3c69a98c79" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary db_layer.roles</definition>
+        <argsstring></argsstring>
+        <name>roles</name>
+        <initializer>= {&apos;A&apos; : &apos;Admin <ref refid="classdb__layer_1_1_user" kindref="compound">User</ref>&apos;, &apos;V&apos; : &apos;Advanced <ref refid="classdb__layer_1_1_user" kindref="compound">User</ref>&apos;, &apos;K&apos; : &apos;Kid <ref refid="classdb__layer_1_1_user" kindref="compound">User</ref>&apos;, &apos;G&apos; : &apos;Guest <ref refid="classdb__layer_1_1_user" kindref="compound">User</ref>&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1013" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1013" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__layer_1a566ad0b24ebd9510b8017f700f4540b5" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_layer.db</definition>
+        <argsstring></argsstring>
+        <name>db</name>
+        <initializer>= <ref refid="classdb__layer_1_1_database" kindref="compound">Database</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1257" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__layer_1aa5866ade4f254a145901ec8647407bdb" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_layer::rules</definition>
+        <argsstring></argsstring>
+        <name>rules</name>
+        <initializer>= db.getRULES(&apos;MIME&apos;, &apos;kid1&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1260" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="1260" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedb__layer_1a33ae76b14662891cbcafd282cc5fd99a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.__bitwise_not_hours</definition>
+        <argsstring></argsstring>
+        <name>__bitwise_not_hours</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="97" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="97" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/prj/proxy-final/proxy/source/db_layer.py" line="1"/>
+  </compounddef>
+</doxygen>

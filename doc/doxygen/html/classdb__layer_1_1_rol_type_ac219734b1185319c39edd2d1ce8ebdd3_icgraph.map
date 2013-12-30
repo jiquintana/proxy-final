@@ -1,0 +1,6 @@
+<map id="db_layer.RolType.getValue" name="db_layer.RolType.getValue">
+<area shape="rect" id="node2" href="$classdb__layer_1_1_rol_type.html#ac819be49bc1ef2a87970cf7e372bef0c" title="db_layer.RolType.get\l_adm_user" alt="" coords="227,5,367,46"/>
+<area shape="rect" id="node3" href="$classdb__layer_1_1_rol_type.html#a0707e3b825ccab3ea4bb857bfb4cd344" title="db_layer.RolType.get\l_adv_user" alt="" coords="227,70,367,111"/>
+<area shape="rect" id="node4" href="$classdb__layer_1_1_rol_type.html#ae03637b7a2156ef5524a408944153775" title="db_layer.RolType.get\l_kid_user" alt="" coords="227,135,367,177"/>
+<area shape="rect" id="node5" href="$classdb__layer_1_1_rol_type.html#a05917cf2e8a756295bd011f48ec4ddc3" title="db_layer.RolType.get\l_guest_user" alt="" coords="227,201,367,242"/>
+</map>

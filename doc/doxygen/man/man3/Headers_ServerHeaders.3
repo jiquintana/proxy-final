@@ -1,0 +1,145 @@
+.TH "Headers.ServerHeaders" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Headers.ServerHeaders \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.ti -1c
+.RI "def \fBis_text\fP"
+.br
+.ti -1c
+.RI "def \fBget_content_type\fP"
+.br
+.ti -1c
+.RI "def \fBparsed_headers\fP"
+.br
+.ti -1c
+.RI "def \fBdump\fP"
+.br
+.ti -1c
+.RI "def \fBheaders\fP"
+.br
+.in -1c
+.SS "Atributos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBip\fP"
+.br
+.ti -1c
+.RI "\fBport\fP"
+.br
+.ti -1c
+.RI "\fBDEBUG\fP"
+.br
+.ti -1c
+.RI "\fBserver_version\fP"
+.br
+.in -1c
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "list \fBDEBUG\fP = Config\&.DEBUG['ServerHeaders\&.DEBUG']"
+.br
+.ti -1c
+.RI "\fBvia_header_seen\fP = False"
+.br
+.ti -1c
+.RI "\fBheaders_have_been_parsed\fP = False"
+.br
+.ti -1c
+.RI "string \fBip\fP = ''"
+.br
+.ti -1c
+.RI "string \fBport\fP = ''"
+.br
+.ti -1c
+.RI "tuple \fBlog\fP = \fBLog\fP()"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Definición en la línea 63 del archivo Headers\&.py\&.
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "def Headers\&.ServerHeaders\&.__init__ (self, response, debug = \fCFalse\fP, ip = \fC''\fP, port = \fC''\fP, server_version = \fC'HTTP_Proxy/0\&.1'\fP)"
+
+.PP
+Definición en la línea 76 del archivo Headers\&.py\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "def Headers\&.ServerHeaders\&.dump (self)"
+
+.PP
+Definición en la línea 105 del archivo Headers\&.py\&.
+.SS "def Headers\&.ServerHeaders\&.get_content_type (self)"
+
+.PP
+Definición en la línea 96 del archivo Headers\&.py\&.
+.SS "def Headers\&.ServerHeaders\&.headers ()"
+
+.PP
+Definición en la línea 227 del archivo Headers\&.py\&.
+.SS "def Headers\&.ServerHeaders\&.is_text (self)"
+
+.PP
+Definición en la línea 93 del archivo Headers\&.py\&.
+.SS "def Headers\&.ServerHeaders\&.parsed_headers (self)"
+
+.PP
+Definición en la línea 99 del archivo Headers\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "list Headers\&.ServerHeaders\&.DEBUG = Config\&.DEBUG['ServerHeaders\&.DEBUG']\fC [static]\fP"
+
+.PP
+Definición en la línea 64 del archivo Headers\&.py\&.
+.SS "Headers\&.ServerHeaders\&.DEBUG"
+
+.PP
+Definición en la línea 81 del archivo Headers\&.py\&.
+.SS "Headers\&.ServerHeaders\&.headers_have_been_parsed = False\fC [static]\fP"
+
+.PP
+Definición en la línea 66 del archivo Headers\&.py\&.
+.SS "string Headers\&.ServerHeaders\&.ip = ''\fC [static]\fP"
+
+.PP
+Definición en la línea 69 del archivo Headers\&.py\&.
+.SS "Headers\&.ServerHeaders\&.ip"
+
+.PP
+Definición en la línea 79 del archivo Headers\&.py\&.
+.SS "tuple Headers\&.ServerHeaders\&.log = \fBLog\fP()\fC [static]\fP"
+
+.PP
+Definición en la línea 71 del archivo Headers\&.py\&.
+.SS "string Headers\&.ServerHeaders\&.port = ''\fC [static]\fP"
+
+.PP
+Definición en la línea 70 del archivo Headers\&.py\&.
+.SS "Headers\&.ServerHeaders\&.port"
+
+.PP
+Definición en la línea 80 del archivo Headers\&.py\&.
+.SS "Headers\&.ServerHeaders\&.server_version"
+
+.PP
+Definición en la línea 84 del archivo Headers\&.py\&.
+.SS "Headers\&.ServerHeaders\&.via_header_seen = False\fC [static]\fP"
+
+.PP
+Definición en la línea 65 del archivo Headers\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

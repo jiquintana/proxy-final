@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespace_cache" kind="namespace">
+    <compoundname>Cache</compoundname>
+    <innerclass refid="class_cache_1_1_file_cache" prot="public">Cache::FileCache</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_cache_1aa592a726ef6e7ac4acdafea398c8d708" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Cache.python_OldVersion</definition>
+        <argsstring></argsstring>
+        <name>python_OldVersion</name>
+        <initializer>= True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="6" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_cache_1a454f0b35804230efc79679c9f26e39c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Cache.remove_html_markup</definition>
+        <argsstring></argsstring>
+        <name>remove_html_markup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Cache.py" line="17" bodyfile="/prj/proxy-final/proxy/source/Cache.py" bodystart="17" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/prj/proxy-final/proxy/source/Cache.py" line="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespacedb__log" kind="namespace">
+    <compoundname>db_log</compoundname>
+    <innerclass refid="classdb__log_1_1_database" prot="public">db_log::Database</innerclass>
+    <innerclass refid="classdb__log_1_1_lines" prot="public">db_log::Lines</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacedb__log_1afc79f78c97078e4f04bab40c7263cdda" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_log.python_OldVersion</definition>
+        <argsstring></argsstring>
+        <name>python_OldVersion</name>
+        <initializer>= True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="6" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__log_1aca93446ca8bacea6ca9dd645f0530ba3" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list db_log.DRIVER</definition>
+        <argsstring></argsstring>
+        <name>DRIVER</name>
+        <initializer>= <ref refid="class_config_1_1_config_1a62ca676b07391529a5c1abd433bed57f" kindref="member">Config.dbFiles</ref>[&apos;log&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="22" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__log_1ad132a586866e641593afdf5e56e1e8f7" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list db_log.TraceSQL</definition>
+        <argsstring></argsstring>
+        <name>TraceSQL</name>
+        <initializer>= <ref refid="class_config_1_1_config_1af7a49b43885faa51f5f5b5687a05120c" kindref="member">Config.dbTrace</ref>[&apos;log&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="23" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__log_1a42129d882358fd3e758cc0a07676f45d" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_log.engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <initializer>= create_engine(<ref refid="namespacedb__log_1aca93446ca8bacea6ca9dd645f0530ba3" kindref="member">DRIVER</ref>, echo=<ref refid="namespacedb__log_1ad132a586866e641593afdf5e56e1e8f7" kindref="member">TraceSQL</ref>,poolclass=NullPool)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="25" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__log_1a38ab36859074003153c593a6833deca1" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_log.Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <initializer>= declarative_base()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="28" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__log_1aba9234ce5907ed35a58854aa5f6fd18c" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_log.db</definition>
+        <argsstring></argsstring>
+        <name>db</name>
+        <initializer>= <ref refid="classdb__log_1_1_database" kindref="compound">Database</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="116" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/prj/proxy-final/proxy/source/db_log.py" line="1"/>
+  </compounddef>
+</doxygen>

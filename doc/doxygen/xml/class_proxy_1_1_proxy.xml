@@ -1,0 +1,1123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_proxy_1_1_proxy" kind="class" prot="public">
+    <compoundname>Proxy::Proxy</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseHTTPRequestHandler</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a19dcf84349392c1c43473fe836593307" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Proxy.Proxy::theDB</definition>
+        <argsstring></argsstring>
+        <name>theDB</name>
+        <initializer>= <ref refid="classdb__layer_1_1_database" kindref="compound">Database</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="35" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1abeccfa250f08858f279dfba710a600c4" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::threadServer</definition>
+        <argsstring></argsstring>
+        <name>threadServer</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="36" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a5b2e47ca8b9c1f1f1bb66947420ae45f" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Proxy.Proxy::server_version</definition>
+        <argsstring></argsstring>
+        <name>server_version</name>
+        <initializer>= &quot;HTTP_Proxy/&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="38" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1a8d819c5915ae01dcaf8018098c6960e9" compoundref="_proxy_8py" startline="400" endline="408">Proxy.Proxy.int_HEAD_PROXY_AUTH</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1ae9c85135fb49817252b73425b119040a" compoundref="_proxy_8py" startline="409" endline="416">Proxy.Proxy.int_HEAD_HTTP_AUTH</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a21e5768434deac18cef85f8a8a9870ac" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Proxy.Proxy::proxy_user</definition>
+        <argsstring></argsstring>
+        <name>proxy_user</name>
+        <initializer>= &apos;xxxxxxxxx&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="39" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1a742f2490a7a47accf1b409fb62547ee6" compoundref="_proxy_8py" startline="870" endline="981">Proxy.Proxy.do_CONNECT</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1ac53a135a1f0cd666c4a4136e433bbaab" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Proxy.Proxy::proxy_password</definition>
+        <argsstring></argsstring>
+        <name>proxy_password</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="40" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1aafb9a0c764e3e3439045f830cbb7276d" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Proxy.Proxy::http_user</definition>
+        <argsstring></argsstring>
+        <name>http_user</name>
+        <initializer>= &apos;xxxxxxxxx&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="41" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1ac1cb73a7484ca9effbfe1f5075906894" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Proxy.Proxy::http_password</definition>
+        <argsstring></argsstring>
+        <name>http_password</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="42" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a69cca6a8dc492a7df46430f19598a27b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::bodySize</definition>
+        <argsstring></argsstring>
+        <name>bodySize</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="43" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1a3d5391352ca830a079824ec9af61a0c9" compoundref="_proxy_8py" startline="123" endline="150">Proxy.Proxy.svc_hndl_LIB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1aad2d321a995641e7fecc7cfe9cd7a0f9" compoundref="_proxy_8py" startline="151" endline="179">Proxy.Proxy.svc_hndl_ULIB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a79f93e001c37ae2bbb63cfa14e5bb4d2" compoundref="_proxy_8py" startline="337" endline="350">Proxy.Proxy.int_send_HEADERS_JSON</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a29b4b46dc227817d96e5decebda2643d" compoundref="_proxy_8py" startline="361" endline="374">Proxy.Proxy.int_send_HEADERS</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1aebddfde379db60d1ded977e657e6bec4" compoundref="_proxy_8py" startline="375" endline="383">Proxy.Proxy.int_send_HEADERS_FILETYPE</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1ac74831cde9a7ad2ebb39d6ef92d5aaf6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Proxy.Proxy::Allowed</definition>
+        <argsstring></argsstring>
+        <name>Allowed</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="44" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1ad2d9d933fc7adfa8b17e1a5f0b175298" compoundref="_proxy_8py" startline="557" endline="869">Proxy.Proxy.BASIC</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a742f2490a7a47accf1b409fb62547ee6" compoundref="_proxy_8py" startline="870" endline="981">Proxy.Proxy.do_CONNECT</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a7e88511cbc9940770aa5b62a2d05f0ff" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Proxy.Proxy::parsed_path</definition>
+        <argsstring></argsstring>
+        <name>parsed_path</name>
+        <initializer>= &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="45" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1a742f2490a7a47accf1b409fb62547ee6" compoundref="_proxy_8py" startline="870" endline="981">Proxy.Proxy.do_CONNECT</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a6415f8b9913c11a773f03f25618db57c" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Proxy.Proxy::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <initializer>= b&apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="46" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1ad2d9d933fc7adfa8b17e1a5f0b175298" compoundref="_proxy_8py" startline="557" endline="869">Proxy.Proxy.BASIC</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a6db9fd736b73c14f6cf809c17abf6180" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Proxy.Proxy::content_lenght</definition>
+        <argsstring></argsstring>
+        <name>content_lenght</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="47" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1a3d5391352ca830a079824ec9af61a0c9" compoundref="_proxy_8py" startline="123" endline="150">Proxy.Proxy.svc_hndl_LIB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1aad2d321a995641e7fecc7cfe9cd7a0f9" compoundref="_proxy_8py" startline="151" endline="179">Proxy.Proxy.svc_hndl_ULIB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a79f93e001c37ae2bbb63cfa14e5bb4d2" compoundref="_proxy_8py" startline="337" endline="350">Proxy.Proxy.int_send_HEADERS_JSON</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a29b4b46dc227817d96e5decebda2643d" compoundref="_proxy_8py" startline="361" endline="374">Proxy.Proxy.int_send_HEADERS</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1ad2d9d933fc7adfa8b17e1a5f0b175298" compoundref="_proxy_8py" startline="557" endline="869">Proxy.Proxy.BASIC</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a742f2490a7a47accf1b409fb62547ee6" compoundref="_proxy_8py" startline="870" endline="981">Proxy.Proxy.do_CONNECT</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a83e27fbf0f02ac854aa73b8adf95b1e1" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list Proxy.Proxy::processed_headers</definition>
+        <argsstring></argsstring>
+        <name>processed_headers</name>
+        <initializer>= []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="48" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1ad2d9d933fc7adfa8b17e1a5f0b175298" compoundref="_proxy_8py" startline="557" endline="869">Proxy.Proxy.BASIC</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a570ab3ad0617dac2e5f6837f17da9385" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Proxy.Proxy::code</definition>
+        <argsstring></argsstring>
+        <name>code</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="49" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1a3d5391352ca830a079824ec9af61a0c9" compoundref="_proxy_8py" startline="123" endline="150">Proxy.Proxy.svc_hndl_LIB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1aad2d321a995641e7fecc7cfe9cd7a0f9" compoundref="_proxy_8py" startline="151" endline="179">Proxy.Proxy.svc_hndl_ULIB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a79f93e001c37ae2bbb63cfa14e5bb4d2" compoundref="_proxy_8py" startline="337" endline="350">Proxy.Proxy.int_send_HEADERS_JSON</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1acab4f744c21caa18f64a9825630fe7c1" compoundref="_proxy_8py" startline="351" endline="360">Proxy.Proxy.int_send_HEADERS_redirect</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a29b4b46dc227817d96e5decebda2643d" compoundref="_proxy_8py" startline="361" endline="374">Proxy.Proxy.int_send_HEADERS</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1aebddfde379db60d1ded977e657e6bec4" compoundref="_proxy_8py" startline="375" endline="383">Proxy.Proxy.int_send_HEADERS_FILETYPE</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a8d819c5915ae01dcaf8018098c6960e9" compoundref="_proxy_8py" startline="400" endline="408">Proxy.Proxy.int_HEAD_PROXY_AUTH</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1ae9c85135fb49817252b73425b119040a" compoundref="_proxy_8py" startline="409" endline="416">Proxy.Proxy.int_HEAD_HTTP_AUTH</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1ad2d9d933fc7adfa8b17e1a5f0b175298" compoundref="_proxy_8py" startline="557" endline="869">Proxy.Proxy.BASIC</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a742f2490a7a47accf1b409fb62547ee6" compoundref="_proxy_8py" startline="870" endline="981">Proxy.Proxy.do_CONNECT</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1ae24029c912f5ea05cad1ee6635954971" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::content_cached</definition>
+        <argsstring></argsstring>
+        <name>content_cached</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="50" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1ad2d9d933fc7adfa8b17e1a5f0b175298" compoundref="_proxy_8py" startline="557" endline="869">Proxy.Proxy.BASIC</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a062b5fa9885896b6c1e05542794d28d8" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Proxy.Proxy::myServerAddress</definition>
+        <argsstring></argsstring>
+        <name>myServerAddress</name>
+        <initializer>= (socket.gethostname()+&apos;:&apos;+ str(<ref refid="class_config_1_1_config_1aef20c383d5c356bfc5771e132ad241df" kindref="member">Config.PORT</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="51" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a1d1c37c018e4b8145ef91a90784e2652" prot="public" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple Proxy.Proxy::logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="class_log_1_1_log" kindref="compound">Log</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="53" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1ab8904909599e432eceb2e73c44dca4ef" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Proxy.Proxy::LocalServices</definition>
+        <argsstring></argsstring>
+        <name>LocalServices</name>
+        <initializer>= {
+        re.compile(r&quot;/favicon.ico&quot;, re.IGNORECASE),
+        re.compile(r&quot;/STOP&quot;, re.IGNORECASE),
+        re.compile(r&quot;/CONFIG&quot;, re.IGNORECASE),
+        re.compile(r&quot;/POST/&quot;, re.IGNORECASE),
+        re.compile(r&quot;/VIRTUAL/&quot;, re.IGNORECASE),
+        re.compile(r&quot;/FILE/&quot;, re.IGNORECASE),
+        re.compile(r&quot;/LIB/&quot;, re.IGNORECASE),
+        re.compile(r&quot;/ULIB/&quot;, re.IGNORECASE),
+        re.compile(r&quot;/DB/&quot;, re.IGNORECASE),
+        re.compile(r&quot;/NOOP/&quot;, re.IGNORECASE)
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="277" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a3d8cb3aac8f5187e97d2b09e71d1d834" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Proxy.Proxy::ServiceHandle</definition>
+        <argsstring></argsstring>
+        <name>ServiceHandle</name>
+        <initializer>= {
+        &quot;FAVICON.ICO&quot;: svc_hndl_FAVICON,
+        &quot;STOP&quot;: svc_hndl_STOP,
+        &quot;CONFIG&quot;: svc_hndl_CONFIG,
+        &quot;POST&quot;: svc_hndl_POST,
+        &quot;FILE&quot;: svc_hndl_FILE,
+        &quot;LIB&quot;: svc_hndl_LIB,
+        &quot;ULIB&quot;: svc_hndl_ULIB,
+        &quot;DB&quot;: svc_hndl_DB,
+        &quot;VIRTUAL&quot;: svc_hndl_VIRTUAL,
+        &quot;NOOP&quot;: svc_hndl_NOOP
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="290" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a1f0b40188c9c1885278eb4fb170eb9e8" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Proxy.Proxy::__version__</definition>
+        <argsstring></argsstring>
+        <name>__version__</name>
+        <initializer>= &apos;0.1&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="37" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1afd2271a97b05b26a22696fa0a57d03b4" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Proxy.Proxy::__verbs_supported</definition>
+        <argsstring></argsstring>
+        <name>__verbs_supported</name>
+        <initializer>= &apos;GET, HEAD, POST, PUT, TRACE, OPTIONS, CONNECT&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="64" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a5e813cee5f53787d281c047306364841" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Proxy.Proxy::__verbs_unsupported</definition>
+        <argsstring></argsstring>
+        <name>__verbs_unsupported</name>
+        <initializer>= &apos;PATCH, DELETE&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="65" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a5da4f6c1800ab55b1d3d935a2928c82a" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Proxy.Proxy::__verbs_safe</definition>
+        <argsstring></argsstring>
+        <name>__verbs_safe</name>
+        <initializer>= &apos;GET, HEAD, OPTIONS, TRACE&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="66" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a08a9034e04e2f83ab90d64595b5946b6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="76" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1aa22aa2049c12d112186e97e3e4649686" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::content_lenght</definition>
+        <argsstring></argsstring>
+        <name>content_lenght</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="77" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a8b14a11476e1a3b851ce385386590bd6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::code</definition>
+        <argsstring></argsstring>
+        <name>code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="78" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1abb25fa16c6d4a74eaf353de545a7f1ed" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::Allowed</definition>
+        <argsstring></argsstring>
+        <name>Allowed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="81" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a7ff07ccd879fa486f5a51243ba65ca97" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::parsed_path</definition>
+        <argsstring></argsstring>
+        <name>parsed_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="419" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a6e94f2561fe165ea83cfd7871f78d847" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::proxy_user</definition>
+        <argsstring></argsstring>
+        <name>proxy_user</name>
+        <briefdescription>
+<para>Python 3 =&gt; removed self.headers. </para>        </briefdescription>
+        <detaileddescription>
+<para>&gt;has_key&lt;(&apos;Proxy-Authorization&apos;): cambiado por &apos;in&apos; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="457" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a3a1b288bb4785d556eaf48f81a938f16" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::proxy_password</definition>
+        <argsstring></argsstring>
+        <name>proxy_password</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="458" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a4d932c725d9b809b5ba5dc56d7d3d5aa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::http_user</definition>
+        <argsstring></argsstring>
+        <name>http_user</name>
+        <briefdescription>
+<para>Python 3 =&gt; removed self.headers. </para>        </briefdescription>
+        <detaileddescription>
+<para>&gt;has_key&lt;(&apos;Authorization&apos;): cambiado por &apos;in&apos; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="524" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1adc00a281fb7111263639ffb60924877d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::http_password</definition>
+        <argsstring></argsstring>
+        <name>http_password</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="525" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a69004ca892885efbc366741241b569a4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::selfquery</definition>
+        <argsstring></argsstring>
+        <name>selfquery</name>
+        <briefdescription>
+<para>TODO: aqui hay que cambiar que empiece por la cadena en vez de que sea la cadena TODO: cuando atacamos localhost:PUERTO (modo proxy), devuelve OK, pero cuando se ataca el servicio TODO: sin puerto, se devuelve como contenido las cabeceras. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="565" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1adf0eb725567f57446e803fdb9f665132" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::what</definition>
+        <argsstring></argsstring>
+        <name>what</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="567" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="567" bodyend="-1"/>
+        <referencedby refid="class_proxy_1_1_proxy_1ac7477499203679f01ba59c0763de4be8" compoundref="_proxy_8py" startline="384" endline="399">Proxy.Proxy.int_send_BODY</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1ad923748d196f3f4cc70844214ae70e85" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::client_headers</definition>
+        <argsstring></argsstring>
+        <name>client_headers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="663" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1a53d61e9b00af20aa42fcf1f8c5b3f2d9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::processed_headers</definition>
+        <argsstring></argsstring>
+        <name>processed_headers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="735" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1aa0ad641288078cfa3c7ca4370e74859c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::server_socket</definition>
+        <argsstring></argsstring>
+        <name>server_socket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="897" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="897" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_proxy_1_1_proxy_1abaa6decc509fa9749a7070681840e60f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Proxy.Proxy::server_wfile</definition>
+        <argsstring></argsstring>
+        <name>server_wfile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="915" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="915" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1ac2ac55dfff6cbcfcac643e7e3129e2da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="69" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="69" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a9db6864eab9f2006368fe909847d83bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.log_message</definition>
+        <argsstring></argsstring>
+        <name>log_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="83" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="83" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1ab39c82e0930ce514c746b5e0ec01c94e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.svc_hndl_FILE</definition>
+        <argsstring></argsstring>
+        <name>svc_hndl_FILE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="95" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="95" bodyend="122"/>
+        <references refid="class_proxy_1_1_proxy_1a29b4b46dc227817d96e5decebda2643d" compoundref="_proxy_8py" startline="361" endline="374">Proxy.Proxy.int_send_HEADERS</references>
+        <references refid="class_proxy_1_1_proxy_1ad86f15414a1c7ec360023c0100eb2b27" compoundref="_proxy_8py" startline="304" endline="308">Proxy.Proxy.int_get_html_message</references>
+        <references refid="class_proxy_1_1_proxy_1ac7477499203679f01ba59c0763de4be8" compoundref="_proxy_8py" startline="384" endline="399">Proxy.Proxy.int_send_BODY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a3d5391352ca830a079824ec9af61a0c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.svc_hndl_LIB</definition>
+        <argsstring></argsstring>
+        <name>svc_hndl_LIB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="123" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="123" bodyend="150"/>
+        <references refid="class_proxy_1_1_proxy_1a69cca6a8dc492a7df46430f19598a27b" compoundref="_proxy_8py" startline="43">Proxy.Proxy.bodySize</references>
+        <references refid="class_proxy_1_1_proxy_1a570ab3ad0617dac2e5f6837f17da9385" compoundref="_proxy_8py" startline="49">Proxy.Proxy.code</references>
+        <references refid="class_proxy_1_1_proxy_1a6db9fd736b73c14f6cf809c17abf6180" compoundref="_proxy_8py" startline="47">Proxy.Proxy.content_lenght</references>
+        <references refid="class_proxy_1_1_proxy_1aebddfde379db60d1ded977e657e6bec4" compoundref="_proxy_8py" startline="375" endline="383">Proxy.Proxy.int_send_HEADERS_FILETYPE</references>
+        <references refid="class_proxy_1_1_proxy_1ad86f15414a1c7ec360023c0100eb2b27" compoundref="_proxy_8py" startline="304" endline="308">Proxy.Proxy.int_get_html_message</references>
+        <references refid="class_proxy_1_1_proxy_1a29b4b46dc227817d96e5decebda2643d" compoundref="_proxy_8py" startline="361" endline="374">Proxy.Proxy.int_send_HEADERS</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1aad2d321a995641e7fecc7cfe9cd7a0f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.svc_hndl_ULIB</definition>
+        <argsstring></argsstring>
+        <name>svc_hndl_ULIB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="151" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="151" bodyend="179"/>
+        <references refid="class_proxy_1_1_proxy_1a69cca6a8dc492a7df46430f19598a27b" compoundref="_proxy_8py" startline="43">Proxy.Proxy.bodySize</references>
+        <references refid="class_proxy_1_1_proxy_1a570ab3ad0617dac2e5f6837f17da9385" compoundref="_proxy_8py" startline="49">Proxy.Proxy.code</references>
+        <references refid="class_proxy_1_1_proxy_1a6db9fd736b73c14f6cf809c17abf6180" compoundref="_proxy_8py" startline="47">Proxy.Proxy.content_lenght</references>
+        <references refid="class_proxy_1_1_proxy_1aebddfde379db60d1ded977e657e6bec4" compoundref="_proxy_8py" startline="375" endline="383">Proxy.Proxy.int_send_HEADERS_FILETYPE</references>
+        <references refid="class_proxy_1_1_proxy_1ad86f15414a1c7ec360023c0100eb2b27" compoundref="_proxy_8py" startline="304" endline="308">Proxy.Proxy.int_get_html_message</references>
+        <references refid="class_proxy_1_1_proxy_1a29b4b46dc227817d96e5decebda2643d" compoundref="_proxy_8py" startline="361" endline="374">Proxy.Proxy.int_send_HEADERS</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1af21544c49ea3bd10fbe5e2df39ea0bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.svc_hndl_DB</definition>
+        <argsstring></argsstring>
+        <name>svc_hndl_DB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="180" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="180" bodyend="197"/>
+        <references refid="class_proxy_1_1_proxy_1a29b4b46dc227817d96e5decebda2643d" compoundref="_proxy_8py" startline="361" endline="374">Proxy.Proxy.int_send_HEADERS</references>
+        <references refid="class_proxy_1_1_proxy_1a79f93e001c37ae2bbb63cfa14e5bb4d2" compoundref="_proxy_8py" startline="337" endline="350">Proxy.Proxy.int_send_HEADERS_JSON</references>
+        <references refid="class_proxy_1_1_proxy_1ac7477499203679f01ba59c0763de4be8" compoundref="_proxy_8py" startline="384" endline="399">Proxy.Proxy.int_send_BODY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a722a6a583213ef2b5ed1f9b351a98ff0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.svc_hndl_VIRTUAL</definition>
+        <argsstring></argsstring>
+        <name>svc_hndl_VIRTUAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="198" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="198" bodyend="209"/>
+        <references refid="class_proxy_1_1_proxy_1a8d819c5915ae01dcaf8018098c6960e9" compoundref="_proxy_8py" startline="400" endline="408">Proxy.Proxy.int_HEAD_PROXY_AUTH</references>
+        <references refid="class_proxy_1_1_proxy_1ae9c85135fb49817252b73425b119040a" compoundref="_proxy_8py" startline="409" endline="416">Proxy.Proxy.int_HEAD_HTTP_AUTH</references>
+        <references refid="class_proxy_1_1_proxy_1acab4f744c21caa18f64a9825630fe7c1" compoundref="_proxy_8py" startline="351" endline="360">Proxy.Proxy.int_send_HEADERS_redirect</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a1237202957a6b08d9b7af77df5f282e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.svc_hndl_CONFIG</definition>
+        <argsstring></argsstring>
+        <name>svc_hndl_CONFIG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="210" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="210" bodyend="221"/>
+        <references refid="class_proxy_1_1_proxy_1ad86f15414a1c7ec360023c0100eb2b27" compoundref="_proxy_8py" startline="304" endline="308">Proxy.Proxy.int_get_html_message</references>
+        <references refid="class_proxy_1_1_proxy_1acab4f744c21caa18f64a9825630fe7c1" compoundref="_proxy_8py" startline="351" endline="360">Proxy.Proxy.int_send_HEADERS_redirect</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a00c77e59bfbd6f31df38461de9d3b86e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.svc_hndl_FAVICON</definition>
+        <argsstring></argsstring>
+        <name>svc_hndl_FAVICON</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="222" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="222" bodyend="233"/>
+        <references refid="class_proxy_1_1_proxy_1ad86f15414a1c7ec360023c0100eb2b27" compoundref="_proxy_8py" startline="304" endline="308">Proxy.Proxy.int_get_html_message</references>
+        <references refid="class_proxy_1_1_proxy_1acab4f744c21caa18f64a9825630fe7c1" compoundref="_proxy_8py" startline="351" endline="360">Proxy.Proxy.int_send_HEADERS_redirect</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a903eb309eb48270d1a81c4aafbdcd66b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.svc_hndl_STOP</definition>
+        <argsstring></argsstring>
+        <name>svc_hndl_STOP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="234" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="234" bodyend="249"/>
+        <references refid="class_proxy_1_1_proxy_1ad86f15414a1c7ec360023c0100eb2b27" compoundref="_proxy_8py" startline="304" endline="308">Proxy.Proxy.int_get_html_message</references>
+        <references refid="class_proxy_1_1_proxy_1a29b4b46dc227817d96e5decebda2643d" compoundref="_proxy_8py" startline="361" endline="374">Proxy.Proxy.int_send_HEADERS</references>
+        <references refid="class_proxy_1_1_proxy_1ac7477499203679f01ba59c0763de4be8" compoundref="_proxy_8py" startline="384" endline="399">Proxy.Proxy.int_send_BODY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1afd2a93e40151bb893e17a161b3a9a592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.svc_hndl_POST</definition>
+        <argsstring></argsstring>
+        <name>svc_hndl_POST</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="250" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="250" bodyend="262"/>
+        <references refid="class_proxy_1_1_proxy_1a29b4b46dc227817d96e5decebda2643d" compoundref="_proxy_8py" startline="361" endline="374">Proxy.Proxy.int_send_HEADERS</references>
+        <references refid="class_proxy_1_1_proxy_1ac7477499203679f01ba59c0763de4be8" compoundref="_proxy_8py" startline="384" endline="399">Proxy.Proxy.int_send_BODY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a8197ed85f0e852510889d7b0027d18b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.svc_hndl_NOOP</definition>
+        <argsstring></argsstring>
+        <name>svc_hndl_NOOP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="263" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="263" bodyend="276"/>
+        <references refid="class_proxy_1_1_proxy_1ad86f15414a1c7ec360023c0100eb2b27" compoundref="_proxy_8py" startline="304" endline="308">Proxy.Proxy.int_get_html_message</references>
+        <references refid="class_proxy_1_1_proxy_1a29b4b46dc227817d96e5decebda2643d" compoundref="_proxy_8py" startline="361" endline="374">Proxy.Proxy.int_send_HEADERS</references>
+        <references refid="class_proxy_1_1_proxy_1ac7477499203679f01ba59c0763de4be8" compoundref="_proxy_8py" startline="384" endline="399">Proxy.Proxy.int_send_BODY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1ad86f15414a1c7ec360023c0100eb2b27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.int_get_html_message</definition>
+        <argsstring></argsstring>
+        <name>int_get_html_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="304" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="304" bodyend="308"/>
+        <referencedby refid="class_proxy_1_1_proxy_1ab39c82e0930ce514c746b5e0ec01c94e" compoundref="_proxy_8py" startline="95" endline="122">Proxy.Proxy.svc_hndl_FILE</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a3d5391352ca830a079824ec9af61a0c9" compoundref="_proxy_8py" startline="123" endline="150">Proxy.Proxy.svc_hndl_LIB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1aad2d321a995641e7fecc7cfe9cd7a0f9" compoundref="_proxy_8py" startline="151" endline="179">Proxy.Proxy.svc_hndl_ULIB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a1237202957a6b08d9b7af77df5f282e2" compoundref="_proxy_8py" startline="210" endline="221">Proxy.Proxy.svc_hndl_CONFIG</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a00c77e59bfbd6f31df38461de9d3b86e" compoundref="_proxy_8py" startline="222" endline="233">Proxy.Proxy.svc_hndl_FAVICON</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a903eb309eb48270d1a81c4aafbdcd66b" compoundref="_proxy_8py" startline="234" endline="249">Proxy.Proxy.svc_hndl_STOP</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a8197ed85f0e852510889d7b0027d18b0" compoundref="_proxy_8py" startline="263" endline="276">Proxy.Proxy.svc_hndl_NOOP</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a393429624d1944463a47b63c079f4722" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.map_ext_to_filetype</definition>
+        <argsstring></argsstring>
+        <name>map_ext_to_filetype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="309" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="309" bodyend="336"/>
+        <referencedby refid="class_proxy_1_1_proxy_1aebddfde379db60d1ded977e657e6bec4" compoundref="_proxy_8py" startline="375" endline="383">Proxy.Proxy.int_send_HEADERS_FILETYPE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a79f93e001c37ae2bbb63cfa14e5bb4d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.int_send_HEADERS_JSON</definition>
+        <argsstring></argsstring>
+        <name>int_send_HEADERS_JSON</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="337" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="337" bodyend="350"/>
+        <references refid="class_proxy_1_1_proxy_1a570ab3ad0617dac2e5f6837f17da9385" compoundref="_proxy_8py" startline="49">Proxy.Proxy.code</references>
+        <references refid="class_proxy_1_1_proxy_1a69cca6a8dc492a7df46430f19598a27b" compoundref="_proxy_8py" startline="43">Proxy.Proxy.bodySize</references>
+        <references refid="class_proxy_1_1_proxy_1a6db9fd736b73c14f6cf809c17abf6180" compoundref="_proxy_8py" startline="47">Proxy.Proxy.content_lenght</references>
+        <referencedby refid="class_proxy_1_1_proxy_1af21544c49ea3bd10fbe5e2df39ea0bfa" compoundref="_proxy_8py" startline="180" endline="197">Proxy.Proxy.svc_hndl_DB</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1acab4f744c21caa18f64a9825630fe7c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.int_send_HEADERS_redirect</definition>
+        <argsstring></argsstring>
+        <name>int_send_HEADERS_redirect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="351" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="351" bodyend="360"/>
+        <references refid="class_proxy_1_1_proxy_1a570ab3ad0617dac2e5f6837f17da9385" compoundref="_proxy_8py" startline="49">Proxy.Proxy.code</references>
+        <referencedby refid="class_proxy_1_1_proxy_1a722a6a583213ef2b5ed1f9b351a98ff0" compoundref="_proxy_8py" startline="198" endline="209">Proxy.Proxy.svc_hndl_VIRTUAL</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a1237202957a6b08d9b7af77df5f282e2" compoundref="_proxy_8py" startline="210" endline="221">Proxy.Proxy.svc_hndl_CONFIG</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a00c77e59bfbd6f31df38461de9d3b86e" compoundref="_proxy_8py" startline="222" endline="233">Proxy.Proxy.svc_hndl_FAVICON</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a29b4b46dc227817d96e5decebda2643d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.int_send_HEADERS</definition>
+        <argsstring></argsstring>
+        <name>int_send_HEADERS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="361" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="361" bodyend="374"/>
+        <references refid="class_proxy_1_1_proxy_1a570ab3ad0617dac2e5f6837f17da9385" compoundref="_proxy_8py" startline="49">Proxy.Proxy.code</references>
+        <references refid="class_proxy_1_1_proxy_1a69cca6a8dc492a7df46430f19598a27b" compoundref="_proxy_8py" startline="43">Proxy.Proxy.bodySize</references>
+        <references refid="class_proxy_1_1_proxy_1a6db9fd736b73c14f6cf809c17abf6180" compoundref="_proxy_8py" startline="47">Proxy.Proxy.content_lenght</references>
+        <referencedby refid="class_proxy_1_1_proxy_1ab39c82e0930ce514c746b5e0ec01c94e" compoundref="_proxy_8py" startline="95" endline="122">Proxy.Proxy.svc_hndl_FILE</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a3d5391352ca830a079824ec9af61a0c9" compoundref="_proxy_8py" startline="123" endline="150">Proxy.Proxy.svc_hndl_LIB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1aad2d321a995641e7fecc7cfe9cd7a0f9" compoundref="_proxy_8py" startline="151" endline="179">Proxy.Proxy.svc_hndl_ULIB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1af21544c49ea3bd10fbe5e2df39ea0bfa" compoundref="_proxy_8py" startline="180" endline="197">Proxy.Proxy.svc_hndl_DB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a903eb309eb48270d1a81c4aafbdcd66b" compoundref="_proxy_8py" startline="234" endline="249">Proxy.Proxy.svc_hndl_STOP</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1afd2a93e40151bb893e17a161b3a9a592" compoundref="_proxy_8py" startline="250" endline="262">Proxy.Proxy.svc_hndl_POST</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a8197ed85f0e852510889d7b0027d18b0" compoundref="_proxy_8py" startline="263" endline="276">Proxy.Proxy.svc_hndl_NOOP</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1aebddfde379db60d1ded977e657e6bec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.int_send_HEADERS_FILETYPE</definition>
+        <argsstring></argsstring>
+        <name>int_send_HEADERS_FILETYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="375" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="375" bodyend="383"/>
+        <references refid="class_proxy_1_1_proxy_1a570ab3ad0617dac2e5f6837f17da9385" compoundref="_proxy_8py" startline="49">Proxy.Proxy.code</references>
+        <references refid="class_proxy_1_1_proxy_1a393429624d1944463a47b63c079f4722" compoundref="_proxy_8py" startline="309" endline="336">Proxy.Proxy.map_ext_to_filetype</references>
+        <references refid="class_proxy_1_1_proxy_1a69cca6a8dc492a7df46430f19598a27b" compoundref="_proxy_8py" startline="43">Proxy.Proxy.bodySize</references>
+        <referencedby refid="class_proxy_1_1_proxy_1a3d5391352ca830a079824ec9af61a0c9" compoundref="_proxy_8py" startline="123" endline="150">Proxy.Proxy.svc_hndl_LIB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1aad2d321a995641e7fecc7cfe9cd7a0f9" compoundref="_proxy_8py" startline="151" endline="179">Proxy.Proxy.svc_hndl_ULIB</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1ac7477499203679f01ba59c0763de4be8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.int_send_BODY</definition>
+        <argsstring></argsstring>
+        <name>int_send_BODY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="384" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="384" bodyend="399"/>
+        <references refid="class_proxy_1_1_proxy_1adf0eb725567f57446e803fdb9f665132" compoundref="_proxy_8py" startline="567">Proxy.Proxy.what</references>
+        <references refid="class_cache_1_1_file_cache_1aa3e48c8aceb54811558590d05769af11" compoundref="_cache_8py" startline="34">Cache.FileCache.path</references>
+        <referencedby refid="class_proxy_1_1_proxy_1ab39c82e0930ce514c746b5e0ec01c94e" compoundref="_proxy_8py" startline="95" endline="122">Proxy.Proxy.svc_hndl_FILE</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1af21544c49ea3bd10fbe5e2df39ea0bfa" compoundref="_proxy_8py" startline="180" endline="197">Proxy.Proxy.svc_hndl_DB</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a903eb309eb48270d1a81c4aafbdcd66b" compoundref="_proxy_8py" startline="234" endline="249">Proxy.Proxy.svc_hndl_STOP</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1afd2a93e40151bb893e17a161b3a9a592" compoundref="_proxy_8py" startline="250" endline="262">Proxy.Proxy.svc_hndl_POST</referencedby>
+        <referencedby refid="class_proxy_1_1_proxy_1a8197ed85f0e852510889d7b0027d18b0" compoundref="_proxy_8py" startline="263" endline="276">Proxy.Proxy.svc_hndl_NOOP</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a8d819c5915ae01dcaf8018098c6960e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.int_HEAD_PROXY_AUTH</definition>
+        <argsstring></argsstring>
+        <name>int_HEAD_PROXY_AUTH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="400" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="400" bodyend="408"/>
+        <references refid="class_proxy_1_1_proxy_1a570ab3ad0617dac2e5f6837f17da9385" compoundref="_proxy_8py" startline="49">Proxy.Proxy.code</references>
+        <references refid="class_headers_1_1_server_headers_1a53a6310df6c7b3c19966b47313a6bdf4" compoundref="_headers_8py" startline="84">Headers.ServerHeaders.server_version</references>
+        <references refid="class_proxy_1_1_proxy_1a5b2e47ca8b9c1f1f1bb66947420ae45f" compoundref="_proxy_8py" startline="38">Proxy.Proxy.server_version</references>
+        <referencedby refid="class_proxy_1_1_proxy_1a722a6a583213ef2b5ed1f9b351a98ff0" compoundref="_proxy_8py" startline="198" endline="209">Proxy.Proxy.svc_hndl_VIRTUAL</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1ae9c85135fb49817252b73425b119040a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.int_HEAD_HTTP_AUTH</definition>
+        <argsstring></argsstring>
+        <name>int_HEAD_HTTP_AUTH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="409" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="409" bodyend="416"/>
+        <references refid="class_proxy_1_1_proxy_1a570ab3ad0617dac2e5f6837f17da9385" compoundref="_proxy_8py" startline="49">Proxy.Proxy.code</references>
+        <references refid="class_headers_1_1_server_headers_1a53a6310df6c7b3c19966b47313a6bdf4" compoundref="_headers_8py" startline="84">Headers.ServerHeaders.server_version</references>
+        <references refid="class_proxy_1_1_proxy_1a5b2e47ca8b9c1f1f1bb66947420ae45f" compoundref="_proxy_8py" startline="38">Proxy.Proxy.server_version</references>
+        <referencedby refid="class_proxy_1_1_proxy_1a722a6a583213ef2b5ed1f9b351a98ff0" compoundref="_proxy_8py" startline="198" endline="209">Proxy.Proxy.svc_hndl_VIRTUAL</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a6d31d5befd7c4b94ee5175d4b0a6c8bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.parse_query</definition>
+        <argsstring></argsstring>
+        <name>parse_query</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="417" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="417" bodyend="423"/>
+        <referencedby refid="class_proxy_1_1_proxy_1a742f2490a7a47accf1b409fb62547ee6" compoundref="_proxy_8py" startline="870" endline="981">Proxy.Proxy.do_CONNECT</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a7a49414b02686c27d29bc911dccd66fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.handle_PROXY_AUTH</definition>
+        <argsstring></argsstring>
+        <name>handle_PROXY_AUTH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="427" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="427" bodyend="490"/>
+        <references refid="class_headers_1_1_server_headers_1af9b5c13f2416bdcd185452e209eff2da" compoundref="_headers_8py" startline="227" endline="230">Headers.ServerHeaders.headers</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1af666b8280db350ab1754a04f8561a4b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.handle_HTTP_AUTH</definition>
+        <argsstring></argsstring>
+        <name>handle_HTTP_AUTH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="491" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="491" bodyend="556"/>
+        <references refid="class_headers_1_1_server_headers_1af9b5c13f2416bdcd185452e209eff2da" compoundref="_headers_8py" startline="227" endline="230">Headers.ServerHeaders.headers</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1ad2d9d933fc7adfa8b17e1a5f0b175298" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.BASIC</definition>
+        <argsstring></argsstring>
+        <name>BASIC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="557" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="557" bodyend="869"/>
+        <references refid="class_proxy_1_1_proxy_1a6415f8b9913c11a773f03f25618db57c" compoundref="_proxy_8py" startline="46">Proxy.Proxy.content</references>
+        <references refid="class_proxy_1_1_proxy_1a6db9fd736b73c14f6cf809c17abf6180" compoundref="_proxy_8py" startline="47">Proxy.Proxy.content_lenght</references>
+        <references refid="class_proxy_1_1_proxy_1a570ab3ad0617dac2e5f6837f17da9385" compoundref="_proxy_8py" startline="49">Proxy.Proxy.code</references>
+        <references refid="class_proxy_1_1_proxy_1a83e27fbf0f02ac854aa73b8adf95b1e1" compoundref="_proxy_8py" startline="48">Proxy.Proxy.processed_headers</references>
+        <references refid="class_proxy_1_1_proxy_1ae24029c912f5ea05cad1ee6635954971" compoundref="_proxy_8py" startline="50">Proxy.Proxy.content_cached</references>
+        <references refid="class_proxy_1_1_proxy_1ac74831cde9a7ad2ebb39d6ef92d5aaf6" compoundref="_proxy_8py" startline="44">Proxy.Proxy.Allowed</references>
+      </memberdef>
+      <memberdef kind="function" id="class_proxy_1_1_proxy_1a742f2490a7a47accf1b409fb62547ee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Proxy.Proxy.do_CONNECT</definition>
+        <argsstring></argsstring>
+        <name>do_CONNECT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Proxy.py" line="870" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="870" bodyend="981"/>
+        <references refid="class_proxy_1_1_proxy_1a6d31d5befd7c4b94ee5175d4b0a6c8bb" compoundref="_proxy_8py" startline="417" endline="423">Proxy.Proxy.parse_query</references>
+        <references refid="class_proxy_1_1_proxy_1a7e88511cbc9940770aa5b62a2d05f0ff" compoundref="_proxy_8py" startline="45">Proxy.Proxy.parsed_path</references>
+        <references refid="class_proxy_1_1_proxy_1ac74831cde9a7ad2ebb39d6ef92d5aaf6" compoundref="_proxy_8py" startline="44">Proxy.Proxy.Allowed</references>
+        <references refid="class_proxy_1_1_proxy_1a21e5768434deac18cef85f8a8a9870ac" compoundref="_proxy_8py" startline="39">Proxy.Proxy.proxy_user</references>
+        <references refid="class_proxy_1_1_proxy_1a570ab3ad0617dac2e5f6837f17da9385" compoundref="_proxy_8py" startline="49">Proxy.Proxy.code</references>
+        <references refid="class_proxy_1_1_proxy_1a6db9fd736b73c14f6cf809c17abf6180" compoundref="_proxy_8py" startline="47">Proxy.Proxy.content_lenght</references>
+        <references refid="class_cache_1_1_file_cache_1aa3e48c8aceb54811558590d05769af11" compoundref="_cache_8py" startline="34">Cache.FileCache.path</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="116">
+        <label>Proxy.Proxy</label>
+        <link refid="class_proxy_1_1_proxy"/>
+        <childnode refid="117" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>BaseHTTPRequestHandler</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="120">
+        <label>string</label>
+      </node>
+      <node id="118">
+        <label>Proxy.Proxy</label>
+        <link refid="class_proxy_1_1_proxy"/>
+        <childnode refid="119" relation="public-inheritance">
+        </childnode>
+        <childnode refid="120" relation="usage">
+          <edgelabel>http_user</edgelabel>
+          <edgelabel>parsed_path</edgelabel>
+          <edgelabel>http_password</edgelabel>
+          <edgelabel>proxy_password</edgelabel>
+          <edgelabel>content</edgelabel>
+          <edgelabel>server_version</edgelabel>
+          <edgelabel>proxy_user</edgelabel>
+        </childnode>
+      </node>
+      <node id="119">
+        <label>BaseHTTPRequestHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="/prj/proxy-final/proxy/source/Proxy.py" line="34" bodyfile="/prj/proxy-final/proxy/source/Proxy.py" bodystart="34" bodyend="982"/>
+    <listofallmembers>
+      <member refid="class_proxy_1_1_proxy_1ac2ac55dfff6cbcfcac643e7e3129e2da" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>__init__</name></member>
+      <member refid="class_proxy_1_1_proxy_1a5da4f6c1800ab55b1d3d935a2928c82a" prot="private" virt="non-virtual"><scope>Proxy::Proxy</scope><name>__verbs_safe</name></member>
+      <member refid="class_proxy_1_1_proxy_1afd2271a97b05b26a22696fa0a57d03b4" prot="private" virt="non-virtual"><scope>Proxy::Proxy</scope><name>__verbs_supported</name></member>
+      <member refid="class_proxy_1_1_proxy_1a5e813cee5f53787d281c047306364841" prot="private" virt="non-virtual"><scope>Proxy::Proxy</scope><name>__verbs_unsupported</name></member>
+      <member refid="class_proxy_1_1_proxy_1a1f0b40188c9c1885278eb4fb170eb9e8" prot="private" virt="non-virtual"><scope>Proxy::Proxy</scope><name>__version__</name></member>
+      <member refid="class_proxy_1_1_proxy_1ac74831cde9a7ad2ebb39d6ef92d5aaf6" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>Allowed</name></member>
+      <member refid="class_proxy_1_1_proxy_1abb25fa16c6d4a74eaf353de545a7f1ed" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>Allowed</name></member>
+      <member refid="class_proxy_1_1_proxy_1ad2d9d933fc7adfa8b17e1a5f0b175298" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>BASIC</name></member>
+      <member refid="class_proxy_1_1_proxy_1a69cca6a8dc492a7df46430f19598a27b" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>bodySize</name></member>
+      <member refid="class_proxy_1_1_proxy_1ad923748d196f3f4cc70844214ae70e85" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>client_headers</name></member>
+      <member refid="class_proxy_1_1_proxy_1a570ab3ad0617dac2e5f6837f17da9385" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>code</name></member>
+      <member refid="class_proxy_1_1_proxy_1a8b14a11476e1a3b851ce385386590bd6" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>code</name></member>
+      <member refid="class_proxy_1_1_proxy_1a6415f8b9913c11a773f03f25618db57c" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>content</name></member>
+      <member refid="class_proxy_1_1_proxy_1a08a9034e04e2f83ab90d64595b5946b6" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>content</name></member>
+      <member refid="class_proxy_1_1_proxy_1ae24029c912f5ea05cad1ee6635954971" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>content_cached</name></member>
+      <member refid="class_proxy_1_1_proxy_1a6db9fd736b73c14f6cf809c17abf6180" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>content_lenght</name></member>
+      <member refid="class_proxy_1_1_proxy_1aa22aa2049c12d112186e97e3e4649686" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>content_lenght</name></member>
+      <member refid="class_proxy_1_1_proxy_1a742f2490a7a47accf1b409fb62547ee6" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>do_CONNECT</name></member>
+      <member refid="class_proxy_1_1_proxy_1af666b8280db350ab1754a04f8561a4b9" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>handle_HTTP_AUTH</name></member>
+      <member refid="class_proxy_1_1_proxy_1a7a49414b02686c27d29bc911dccd66fd" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>handle_PROXY_AUTH</name></member>
+      <member refid="class_proxy_1_1_proxy_1ac1cb73a7484ca9effbfe1f5075906894" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>http_password</name></member>
+      <member refid="class_proxy_1_1_proxy_1adc00a281fb7111263639ffb60924877d" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>http_password</name></member>
+      <member refid="class_proxy_1_1_proxy_1aafb9a0c764e3e3439045f830cbb7276d" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>http_user</name></member>
+      <member refid="class_proxy_1_1_proxy_1a4d932c725d9b809b5ba5dc56d7d3d5aa" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>http_user</name></member>
+      <member refid="class_proxy_1_1_proxy_1ad86f15414a1c7ec360023c0100eb2b27" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>int_get_html_message</name></member>
+      <member refid="class_proxy_1_1_proxy_1ae9c85135fb49817252b73425b119040a" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>int_HEAD_HTTP_AUTH</name></member>
+      <member refid="class_proxy_1_1_proxy_1a8d819c5915ae01dcaf8018098c6960e9" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>int_HEAD_PROXY_AUTH</name></member>
+      <member refid="class_proxy_1_1_proxy_1ac7477499203679f01ba59c0763de4be8" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>int_send_BODY</name></member>
+      <member refid="class_proxy_1_1_proxy_1a29b4b46dc227817d96e5decebda2643d" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>int_send_HEADERS</name></member>
+      <member refid="class_proxy_1_1_proxy_1aebddfde379db60d1ded977e657e6bec4" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>int_send_HEADERS_FILETYPE</name></member>
+      <member refid="class_proxy_1_1_proxy_1a79f93e001c37ae2bbb63cfa14e5bb4d2" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>int_send_HEADERS_JSON</name></member>
+      <member refid="class_proxy_1_1_proxy_1acab4f744c21caa18f64a9825630fe7c1" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>int_send_HEADERS_redirect</name></member>
+      <member refid="class_proxy_1_1_proxy_1ab8904909599e432eceb2e73c44dca4ef" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>LocalServices</name></member>
+      <member refid="class_proxy_1_1_proxy_1a9db6864eab9f2006368fe909847d83bc" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>log_message</name></member>
+      <member refid="class_proxy_1_1_proxy_1a1d1c37c018e4b8145ef91a90784e2652" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>logger</name></member>
+      <member refid="class_proxy_1_1_proxy_1a393429624d1944463a47b63c079f4722" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>map_ext_to_filetype</name></member>
+      <member refid="class_proxy_1_1_proxy_1a062b5fa9885896b6c1e05542794d28d8" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>myServerAddress</name></member>
+      <member refid="class_proxy_1_1_proxy_1a6d31d5befd7c4b94ee5175d4b0a6c8bb" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>parse_query</name></member>
+      <member refid="class_proxy_1_1_proxy_1a7e88511cbc9940770aa5b62a2d05f0ff" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>parsed_path</name></member>
+      <member refid="class_proxy_1_1_proxy_1a7ff07ccd879fa486f5a51243ba65ca97" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>parsed_path</name></member>
+      <member refid="class_proxy_1_1_proxy_1a83e27fbf0f02ac854aa73b8adf95b1e1" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>processed_headers</name></member>
+      <member refid="class_proxy_1_1_proxy_1a53d61e9b00af20aa42fcf1f8c5b3f2d9" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>processed_headers</name></member>
+      <member refid="class_proxy_1_1_proxy_1ac53a135a1f0cd666c4a4136e433bbaab" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>proxy_password</name></member>
+      <member refid="class_proxy_1_1_proxy_1a3a1b288bb4785d556eaf48f81a938f16" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>proxy_password</name></member>
+      <member refid="class_proxy_1_1_proxy_1a21e5768434deac18cef85f8a8a9870ac" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>proxy_user</name></member>
+      <member refid="class_proxy_1_1_proxy_1a6e94f2561fe165ea83cfd7871f78d847" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>proxy_user</name></member>
+      <member refid="class_proxy_1_1_proxy_1a69004ca892885efbc366741241b569a4" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>selfquery</name></member>
+      <member refid="class_proxy_1_1_proxy_1aa0ad641288078cfa3c7ca4370e74859c" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>server_socket</name></member>
+      <member refid="class_proxy_1_1_proxy_1a5b2e47ca8b9c1f1f1bb66947420ae45f" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>server_version</name></member>
+      <member refid="class_proxy_1_1_proxy_1abaa6decc509fa9749a7070681840e60f" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>server_wfile</name></member>
+      <member refid="class_proxy_1_1_proxy_1a3d8cb3aac8f5187e97d2b09e71d1d834" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>ServiceHandle</name></member>
+      <member refid="class_proxy_1_1_proxy_1a1237202957a6b08d9b7af77df5f282e2" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>svc_hndl_CONFIG</name></member>
+      <member refid="class_proxy_1_1_proxy_1af21544c49ea3bd10fbe5e2df39ea0bfa" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>svc_hndl_DB</name></member>
+      <member refid="class_proxy_1_1_proxy_1a00c77e59bfbd6f31df38461de9d3b86e" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>svc_hndl_FAVICON</name></member>
+      <member refid="class_proxy_1_1_proxy_1ab39c82e0930ce514c746b5e0ec01c94e" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>svc_hndl_FILE</name></member>
+      <member refid="class_proxy_1_1_proxy_1a3d5391352ca830a079824ec9af61a0c9" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>svc_hndl_LIB</name></member>
+      <member refid="class_proxy_1_1_proxy_1a8197ed85f0e852510889d7b0027d18b0" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>svc_hndl_NOOP</name></member>
+      <member refid="class_proxy_1_1_proxy_1afd2a93e40151bb893e17a161b3a9a592" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>svc_hndl_POST</name></member>
+      <member refid="class_proxy_1_1_proxy_1a903eb309eb48270d1a81c4aafbdcd66b" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>svc_hndl_STOP</name></member>
+      <member refid="class_proxy_1_1_proxy_1aad2d321a995641e7fecc7cfe9cd7a0f9" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>svc_hndl_ULIB</name></member>
+      <member refid="class_proxy_1_1_proxy_1a722a6a583213ef2b5ed1f9b351a98ff0" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>svc_hndl_VIRTUAL</name></member>
+      <member refid="class_proxy_1_1_proxy_1a19dcf84349392c1c43473fe836593307" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>theDB</name></member>
+      <member refid="class_proxy_1_1_proxy_1abeccfa250f08858f279dfba710a600c4" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>threadServer</name></member>
+      <member refid="class_proxy_1_1_proxy_1adf0eb725567f57446e803fdb9f665132" prot="public" virt="non-virtual"><scope>Proxy::Proxy</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

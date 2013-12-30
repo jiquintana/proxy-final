@@ -1,0 +1,533 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Proxy doméstico con protección Parental: Referencia de la Clase Headers.ServerHeaders</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="64it-security.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Proxy doméstico con protección Parental
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Proxy doméstico con protección Parental</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_headers_1_1_server_headers.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-attribs">Atributos públicos</a> &#124;
+<a href="#pub-static-attribs">Atributos públicos estáticos</a> &#124;
+<a href="class_headers_1_1_server_headers-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase Headers.ServerHeaders</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de colaboración para Headers.ServerHeaders:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_headers_1_1_server_headers__coll__graph.png" border="0" usemap="#_headers_8_server_headers_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a456a736b904107eddd7eba61ad716919"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#a456a736b904107eddd7eba61ad716919">__init__</a></td></tr>
+<tr class="separator:a456a736b904107eddd7eba61ad716919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb46fb6fc725c07fea7c9d59b185508"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#a7eb46fb6fc725c07fea7c9d59b185508">is_text</a></td></tr>
+<tr class="separator:a7eb46fb6fc725c07fea7c9d59b185508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1fe5a40cb91c4525b4fac1bb16b97c8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#ac1fe5a40cb91c4525b4fac1bb16b97c8">get_content_type</a></td></tr>
+<tr class="separator:ac1fe5a40cb91c4525b4fac1bb16b97c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7572d026e3212c61e6d384a4bcb4c8e7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#a7572d026e3212c61e6d384a4bcb4c8e7">parsed_headers</a></td></tr>
+<tr class="separator:a7572d026e3212c61e6d384a4bcb4c8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a731227c073d6a6226d7e74b7c38e98ca"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#a731227c073d6a6226d7e74b7c38e98ca">dump</a></td></tr>
+<tr class="separator:a731227c073d6a6226d7e74b7c38e98ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b5c13f2416bdcd185452e209eff2da"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#af9b5c13f2416bdcd185452e209eff2da">headers</a></td></tr>
+<tr class="separator:af9b5c13f2416bdcd185452e209eff2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atributos públicos</h2></td></tr>
+<tr class="memitem:a9e689b58646145828e47075285a01dfd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#a9e689b58646145828e47075285a01dfd">ip</a></td></tr>
+<tr class="separator:a9e689b58646145828e47075285a01dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d328b83a9f2484d81cfff78c887a87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#a65d328b83a9f2484d81cfff78c887a87">port</a></td></tr>
+<tr class="separator:a65d328b83a9f2484d81cfff78c887a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a103ed7dd322396cbc0f403ae16c35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#a44a103ed7dd322396cbc0f403ae16c35">DEBUG</a></td></tr>
+<tr class="separator:a44a103ed7dd322396cbc0f403ae16c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a6310df6c7b3c19966b47313a6bdf4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#a53a6310df6c7b3c19966b47313a6bdf4">server_version</a></td></tr>
+<tr class="separator:a53a6310df6c7b3c19966b47313a6bdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Atributos públicos estáticos</h2></td></tr>
+<tr class="memitem:ad40c20e30870b97f13fb6c1b7c26901b"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#ad40c20e30870b97f13fb6c1b7c26901b">DEBUG</a> = Config.DEBUG['ServerHeaders.DEBUG']</td></tr>
+<tr class="separator:ad40c20e30870b97f13fb6c1b7c26901b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab7ddb505c5b674985f18ee4ebac340"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#a3ab7ddb505c5b674985f18ee4ebac340">via_header_seen</a> = False</td></tr>
+<tr class="separator:a3ab7ddb505c5b674985f18ee4ebac340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28d4aadceaef21602f69df4be674b47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#af28d4aadceaef21602f69df4be674b47">headers_have_been_parsed</a> = False</td></tr>
+<tr class="separator:af28d4aadceaef21602f69df4be674b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad49c893c7978250dad3f16542da29604"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#ad49c893c7978250dad3f16542da29604">ip</a> = ''</td></tr>
+<tr class="separator:ad49c893c7978250dad3f16542da29604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca611671864297dbaf364e18ad40837a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#aca611671864297dbaf364e18ad40837a">port</a> = ''</td></tr>
+<tr class="separator:aca611671864297dbaf364e18ad40837a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac737ac570426a0a45fa1276e25a95a82"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_headers_1_1_server_headers.html#ac737ac570426a0a45fa1276e25a95a82">log</a> = <a class="el" href="class_log_1_1_log.html">Log</a>()</td></tr>
+<tr class="separator:ac737ac570426a0a45fa1276e25a95a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock">
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00063">63</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a class="anchor" id="a456a736b904107eddd7eba61ad716919"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def Headers.ServerHeaders.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>debug</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ip</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>port</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>server_version</em> = <code>'HTTP_Proxy/0.1'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00076">76</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a class="anchor" id="a731227c073d6a6226d7e74b7c38e98ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def Headers.ServerHeaders.dump </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00105">105</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1fe5a40cb91c4525b4fac1bb16b97c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def Headers.ServerHeaders.get_content_type </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00096">96</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9b5c13f2416bdcd185452e209eff2da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def Headers.ServerHeaders.headers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00227">227</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_headers_1_1_server_headers_af9b5c13f2416bdcd185452e209eff2da_icgraph.png" border="0" usemap="#class_headers_1_1_server_headers_af9b5c13f2416bdcd185452e209eff2da_icgraph" alt=""/></div>
+<map name="class_headers_1_1_server_headers_af9b5c13f2416bdcd185452e209eff2da_icgraph" id="class_headers_1_1_server_headers_af9b5c13f2416bdcd185452e209eff2da_icgraph">
+<area shape="rect" id="node2" href="class_proxy_1_1_proxy.html#a7a49414b02686c27d29bc911dccd66fd" title="Proxy.Proxy.handle\l_PROXY_AUTH" alt="" coords="259,5,394,46"/><area shape="rect" id="node3" href="class_proxy_1_1_proxy.html#af666b8280db350ab1754a04f8561a4b9" title="Proxy.Proxy.handle\l_HTTP_AUTH" alt="" coords="259,70,394,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7eb46fb6fc725c07fea7c9d59b185508"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def Headers.ServerHeaders.is_text </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00093">93</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7572d026e3212c61e6d384a4bcb4c8e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def Headers.ServerHeaders.parsed_headers </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00099">99</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas para esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_headers_1_1_server_headers_a7572d026e3212c61e6d384a4bcb4c8e7_cgraph.png" border="0" usemap="#class_headers_1_1_server_headers_a7572d026e3212c61e6d384a4bcb4c8e7_cgraph" alt=""/></div>
+<map name="class_headers_1_1_server_headers_a7572d026e3212c61e6d384a4bcb4c8e7_cgraph" id="class_headers_1_1_server_headers_a7572d026e3212c61e6d384a4bcb4c8e7_cgraph">
+<area shape="rect" id="node2" href="class_headers_1_1_server_headers.html#adbe3b88febb76f12405f38353871bcfd" title="Headers.ServerHeaders.\l__parse" alt="" coords="251,5,410,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los datos miembro</h2>
+<a class="anchor" id="ad40c20e30870b97f13fb6c1b7c26901b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list Headers.ServerHeaders.DEBUG = Config.DEBUG['ServerHeaders.DEBUG']</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00064">64</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44a103ed7dd322396cbc0f403ae16c35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Headers.ServerHeaders.DEBUG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00081">81</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af28d4aadceaef21602f69df4be674b47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Headers.ServerHeaders.headers_have_been_parsed = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00066">66</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad49c893c7978250dad3f16542da29604"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Headers.ServerHeaders.ip = ''</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00069">69</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e689b58646145828e47075285a01dfd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Headers.ServerHeaders.ip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00079">79</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac737ac570426a0a45fa1276e25a95a82"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple Headers.ServerHeaders.log = <a class="el" href="class_log_1_1_log.html">Log</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00071">71</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca611671864297dbaf364e18ad40837a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Headers.ServerHeaders.port = ''</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00070">70</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a65d328b83a9f2484d81cfff78c887a87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Headers.ServerHeaders.port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00080">80</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a53a6310df6c7b3c19966b47313a6bdf4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Headers.ServerHeaders.server_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00084">84</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ab7ddb505c5b674985f18ee4ebac340"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Headers.ServerHeaders.via_header_seen = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_headers_8py_source.html#l00065">65</a> del archivo <a class="el" href="_headers_8py_source.html">Headers.py</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<li><a class="el" href="_headers_8py_source.html">Headers.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_headers.html">Headers</a></li><li class="navelem"><a class="el" href="class_headers_1_1_server_headers.html">ServerHeaders</a></li>
+    <li class="footer">Generado el Lunes, 30 de Diciembre de 2013 18:32:36 para Proxy doméstico con protección Parental por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

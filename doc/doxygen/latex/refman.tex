@@ -1,0 +1,122 @@
+\documentclass{book}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage{amssymb}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=4,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large Proxy doméstico con protección Parental \\[1ex]\large 0.\-1 }\\
+\vspace*{1cm}
+{\large Generado por Doxygen 1.8.3.1}\\
+\vspace*{0.5cm}
+{\small Lunes, 30 de Diciembre de 2013 18:32:36}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+\chapter{Indice de namespaces}
+\input{namespaces}
+\chapter{Indice jerárquico}
+\input{hierarchy}
+\chapter{Índice de clases}
+\input{annotated}
+\chapter{Indice de archivos}
+\input{files}
+\chapter{Documentación de namespaces}
+\input{namespace_cache}
+\input{namespace_config}
+\input{namespacedb__layer}
+\input{namespacedb__log}
+\input{namespacedb__mapper}
+\input{namespace_headers}
+\input{namespace_log}
+\input{namespacemain}
+\input{namespace_proxy}
+\input{namespace_thread_pool}
+\chapter{Documentación de las clases}
+\input{classdb__layer_1_1_alchemy_encoder}
+\input{class_headers_1_1_client_headers}
+\input{class_config_1_1_config}
+\input{classdb__layer_1_1_database}
+\input{classdb__log_1_1_database}
+\input{classdb__mapper_1_1db__handler}
+\input{class_cache_1_1_file_cache}
+\input{classdb__layer_1_1_group}
+\input{classdb__layer_1_1_groups}
+\input{classdb__log_1_1_lines}
+\input{class_log_1_1_log}
+\input{classdb__layer_1_1_m_i_m_e_s}
+\input{class_proxy_1_1_proxy}
+\input{classdb__layer_1_1_rol_type}
+\input{classdb__layer_1_1_rule}
+\input{class_headers_1_1_server_headers}
+\input{classmain_1_1_threaded_server}
+\input{class_thread_pool_1_1_thread_pool_mix_in}
+\input{classdb__layer_1_1_u_r_i_s}
+\input{classdb__layer_1_1_user}
+\input{classdb__layer_1_1_w_o_r_d_s}
+\chapter{Documentación de archivos}
+\input{_8template_8py}
+\input{_cache_8py}
+\input{_config_8py}
+\input{db__layer_8py}
+\input{db__log_8py}
+\input{db__mapper_8py}
+\input{_headers_8py}
+\input{_log_8py}
+\input{main_8py}
+\input{_proxy_8py}
+\input{_thread_pool_8py}
+\addcontentsline{toc}{part}{Índice}
+\printindex
+\end{document}

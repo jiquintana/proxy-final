@@ -1,0 +1,237 @@
+\hypertarget{class_headers_1_1_server_headers}{\section{Referencia de la Clase Headers.\-Server\-Headers}
+\label{class_headers_1_1_server_headers}\index{Headers.\-Server\-Headers@{Headers.\-Server\-Headers}}
+}
+
+
+Diagrama de colaboración para Headers.\-Server\-Headers\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_headers_1_1_server_headers__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{class_headers_1_1_server_headers_a456a736b904107eddd7eba61ad716919}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{class_headers_1_1_server_headers_a7eb46fb6fc725c07fea7c9d59b185508}{is\-\_\-text}
+\item 
+def \hyperlink{class_headers_1_1_server_headers_ac1fe5a40cb91c4525b4fac1bb16b97c8}{get\-\_\-content\-\_\-type}
+\item 
+def \hyperlink{class_headers_1_1_server_headers_a7572d026e3212c61e6d384a4bcb4c8e7}{parsed\-\_\-headers}
+\item 
+def \hyperlink{class_headers_1_1_server_headers_a731227c073d6a6226d7e74b7c38e98ca}{dump}
+\item 
+def \hyperlink{class_headers_1_1_server_headers_af9b5c13f2416bdcd185452e209eff2da}{headers}
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_headers_1_1_server_headers_a9e689b58646145828e47075285a01dfd}{ip}
+\item 
+\hyperlink{class_headers_1_1_server_headers_a65d328b83a9f2484d81cfff78c887a87}{port}
+\item 
+\hyperlink{class_headers_1_1_server_headers_a44a103ed7dd322396cbc0f403ae16c35}{D\-E\-B\-U\-G}
+\item 
+\hyperlink{class_headers_1_1_server_headers_a53a6310df6c7b3c19966b47313a6bdf4}{server\-\_\-version}
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{class_headers_1_1_server_headers_ad40c20e30870b97f13fb6c1b7c26901b}{D\-E\-B\-U\-G} = Config.\-D\-E\-B\-U\-G\mbox{[}'Server\-Headers.\-D\-E\-B\-U\-G'\mbox{]}
+\item 
+\hyperlink{class_headers_1_1_server_headers_a3ab7ddb505c5b674985f18ee4ebac340}{via\-\_\-header\-\_\-seen} = False
+\item 
+\hyperlink{class_headers_1_1_server_headers_af28d4aadceaef21602f69df4be674b47}{headers\-\_\-have\-\_\-been\-\_\-parsed} = False
+\item 
+string \hyperlink{class_headers_1_1_server_headers_ad49c893c7978250dad3f16542da29604}{ip} = ''
+\item 
+string \hyperlink{class_headers_1_1_server_headers_aca611671864297dbaf364e18ad40837a}{port} = ''
+\item 
+tuple \hyperlink{class_headers_1_1_server_headers_ac737ac570426a0a45fa1276e25a95a82}{log} = \hyperlink{class_log_1_1_log}{Log}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 63 del archivo Headers.\-py.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_headers_1_1_server_headers_a456a736b904107eddd7eba61ad716919}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def Headers.\-Server\-Headers.\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{response, }
+\item[{}]{debug = {\ttfamily False}, }
+\item[{}]{ip = {\ttfamily ''}, }
+\item[{}]{port = {\ttfamily ''}, }
+\item[{}]{server\-\_\-version = {\ttfamily 'HTTP\-\_\-Proxy/0.1'}}
+\end{DoxyParamCaption}
+)}}\label{class_headers_1_1_server_headers_a456a736b904107eddd7eba61ad716919}
+
+
+Definición en la línea 76 del archivo Headers.\-py.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_headers_1_1_server_headers_a731227c073d6a6226d7e74b7c38e98ca}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!dump@{dump}}
+\index{dump@{dump}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{dump}]{\setlength{\rightskip}{0pt plus 5cm}def Headers.\-Server\-Headers.\-dump (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{class_headers_1_1_server_headers_a731227c073d6a6226d7e74b7c38e98ca}
+
+
+Definición en la línea 105 del archivo Headers.\-py.
+
+\hypertarget{class_headers_1_1_server_headers_ac1fe5a40cb91c4525b4fac1bb16b97c8}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!get\-\_\-content\-\_\-type@{get\-\_\-content\-\_\-type}}
+\index{get\-\_\-content\-\_\-type@{get\-\_\-content\-\_\-type}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{get\-\_\-content\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}def Headers.\-Server\-Headers.\-get\-\_\-content\-\_\-type (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{class_headers_1_1_server_headers_ac1fe5a40cb91c4525b4fac1bb16b97c8}
+
+
+Definición en la línea 96 del archivo Headers.\-py.
+
+\hypertarget{class_headers_1_1_server_headers_af9b5c13f2416bdcd185452e209eff2da}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!headers@{headers}}
+\index{headers@{headers}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{headers}]{\setlength{\rightskip}{0pt plus 5cm}def Headers.\-Server\-Headers.\-headers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_headers_1_1_server_headers_af9b5c13f2416bdcd185452e209eff2da}
+
+
+Definición en la línea 227 del archivo Headers.\-py.
+
+
+
+Gráfico de llamadas a esta función\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_headers_1_1_server_headers_af9b5c13f2416bdcd185452e209eff2da_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_headers_1_1_server_headers_a7eb46fb6fc725c07fea7c9d59b185508}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!is\-\_\-text@{is\-\_\-text}}
+\index{is\-\_\-text@{is\-\_\-text}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{is\-\_\-text}]{\setlength{\rightskip}{0pt plus 5cm}def Headers.\-Server\-Headers.\-is\-\_\-text (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{class_headers_1_1_server_headers_a7eb46fb6fc725c07fea7c9d59b185508}
+
+
+Definición en la línea 93 del archivo Headers.\-py.
+
+\hypertarget{class_headers_1_1_server_headers_a7572d026e3212c61e6d384a4bcb4c8e7}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!parsed\-\_\-headers@{parsed\-\_\-headers}}
+\index{parsed\-\_\-headers@{parsed\-\_\-headers}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{parsed\-\_\-headers}]{\setlength{\rightskip}{0pt plus 5cm}def Headers.\-Server\-Headers.\-parsed\-\_\-headers (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{class_headers_1_1_server_headers_a7572d026e3212c61e6d384a4bcb4c8e7}
+
+
+Definición en la línea 99 del archivo Headers.\-py.
+
+
+
+Gráfico de llamadas para esta función\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_headers_1_1_server_headers_a7572d026e3212c61e6d384a4bcb4c8e7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{class_headers_1_1_server_headers_ad40c20e30870b97f13fb6c1b7c26901b}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!D\-E\-B\-U\-G@{D\-E\-B\-U\-G}}
+\index{D\-E\-B\-U\-G@{D\-E\-B\-U\-G}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}list Headers.\-Server\-Headers.\-D\-E\-B\-U\-G = Config.\-D\-E\-B\-U\-G\mbox{[}'Server\-Headers.\-D\-E\-B\-U\-G'\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{class_headers_1_1_server_headers_ad40c20e30870b97f13fb6c1b7c26901b}
+
+
+Definición en la línea 64 del archivo Headers.\-py.
+
+\hypertarget{class_headers_1_1_server_headers_a44a103ed7dd322396cbc0f403ae16c35}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!D\-E\-B\-U\-G@{D\-E\-B\-U\-G}}
+\index{D\-E\-B\-U\-G@{D\-E\-B\-U\-G}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}Headers.\-Server\-Headers.\-D\-E\-B\-U\-G}}\label{class_headers_1_1_server_headers_a44a103ed7dd322396cbc0f403ae16c35}
+
+
+Definición en la línea 81 del archivo Headers.\-py.
+
+\hypertarget{class_headers_1_1_server_headers_af28d4aadceaef21602f69df4be674b47}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!headers\-\_\-have\-\_\-been\-\_\-parsed@{headers\-\_\-have\-\_\-been\-\_\-parsed}}
+\index{headers\-\_\-have\-\_\-been\-\_\-parsed@{headers\-\_\-have\-\_\-been\-\_\-parsed}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{headers\-\_\-have\-\_\-been\-\_\-parsed}]{\setlength{\rightskip}{0pt plus 5cm}Headers.\-Server\-Headers.\-headers\-\_\-have\-\_\-been\-\_\-parsed = False\hspace{0.3cm}{\ttfamily [static]}}}\label{class_headers_1_1_server_headers_af28d4aadceaef21602f69df4be674b47}
+
+
+Definición en la línea 66 del archivo Headers.\-py.
+
+\hypertarget{class_headers_1_1_server_headers_ad49c893c7978250dad3f16542da29604}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!ip@{ip}}
+\index{ip@{ip}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{ip}]{\setlength{\rightskip}{0pt plus 5cm}string Headers.\-Server\-Headers.\-ip = ''\hspace{0.3cm}{\ttfamily [static]}}}\label{class_headers_1_1_server_headers_ad49c893c7978250dad3f16542da29604}
+
+
+Definición en la línea 69 del archivo Headers.\-py.
+
+\hypertarget{class_headers_1_1_server_headers_a9e689b58646145828e47075285a01dfd}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!ip@{ip}}
+\index{ip@{ip}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{ip}]{\setlength{\rightskip}{0pt plus 5cm}Headers.\-Server\-Headers.\-ip}}\label{class_headers_1_1_server_headers_a9e689b58646145828e47075285a01dfd}
+
+
+Definición en la línea 79 del archivo Headers.\-py.
+
+\hypertarget{class_headers_1_1_server_headers_ac737ac570426a0a45fa1276e25a95a82}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!log@{log}}
+\index{log@{log}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}tuple Headers.\-Server\-Headers.\-log = {\bf Log}()\hspace{0.3cm}{\ttfamily [static]}}}\label{class_headers_1_1_server_headers_ac737ac570426a0a45fa1276e25a95a82}
+
+
+Definición en la línea 71 del archivo Headers.\-py.
+
+\hypertarget{class_headers_1_1_server_headers_aca611671864297dbaf364e18ad40837a}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!port@{port}}
+\index{port@{port}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{port}]{\setlength{\rightskip}{0pt plus 5cm}string Headers.\-Server\-Headers.\-port = ''\hspace{0.3cm}{\ttfamily [static]}}}\label{class_headers_1_1_server_headers_aca611671864297dbaf364e18ad40837a}
+
+
+Definición en la línea 70 del archivo Headers.\-py.
+
+\hypertarget{class_headers_1_1_server_headers_a65d328b83a9f2484d81cfff78c887a87}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!port@{port}}
+\index{port@{port}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{port}]{\setlength{\rightskip}{0pt plus 5cm}Headers.\-Server\-Headers.\-port}}\label{class_headers_1_1_server_headers_a65d328b83a9f2484d81cfff78c887a87}
+
+
+Definición en la línea 80 del archivo Headers.\-py.
+
+\hypertarget{class_headers_1_1_server_headers_a53a6310df6c7b3c19966b47313a6bdf4}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!server\-\_\-version@{server\-\_\-version}}
+\index{server\-\_\-version@{server\-\_\-version}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{server\-\_\-version}]{\setlength{\rightskip}{0pt plus 5cm}Headers.\-Server\-Headers.\-server\-\_\-version}}\label{class_headers_1_1_server_headers_a53a6310df6c7b3c19966b47313a6bdf4}
+
+
+Definición en la línea 84 del archivo Headers.\-py.
+
+\hypertarget{class_headers_1_1_server_headers_a3ab7ddb505c5b674985f18ee4ebac340}{\index{Headers\-::\-Server\-Headers@{Headers\-::\-Server\-Headers}!via\-\_\-header\-\_\-seen@{via\-\_\-header\-\_\-seen}}
+\index{via\-\_\-header\-\_\-seen@{via\-\_\-header\-\_\-seen}!Headers::ServerHeaders@{Headers\-::\-Server\-Headers}}
+\subsubsection[{via\-\_\-header\-\_\-seen}]{\setlength{\rightskip}{0pt plus 5cm}Headers.\-Server\-Headers.\-via\-\_\-header\-\_\-seen = False\hspace{0.3cm}{\ttfamily [static]}}}\label{class_headers_1_1_server_headers_a3ab7ddb505c5b674985f18ee4ebac340}
+
+
+Definición en la línea 65 del archivo Headers.\-py.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_headers_8py}{Headers.\-py}\end{DoxyCompactItemize}

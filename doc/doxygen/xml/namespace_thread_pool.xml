@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespace_thread_pool" kind="namespace">
+    <compoundname>ThreadPool</compoundname>
+    <innerclass refid="class_thread_pool_1_1_thread_pool_mix_in" prot="public">ThreadPool::ThreadPoolMixIn</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_thread_pool_1ab6ecc6904921422a44cc643ab7cfbd7f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ThreadPool.python_OldVersion</definition>
+        <argsstring></argsstring>
+        <name>python_OldVersion</name>
+        <initializer>= True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="14" bodyfile="/prj/proxy-final/proxy/source/ThreadPool.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/prj/proxy-final/proxy/source/ThreadPool.py" line="1"/>
+  </compounddef>
+</doxygen>

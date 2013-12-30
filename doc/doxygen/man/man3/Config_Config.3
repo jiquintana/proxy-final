@@ -1,0 +1,124 @@
+.TH "Config.Config" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Config.Config \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "int \fBMAX_LEN_MSG\fP = 140"
+.br
+.ti -1c
+.RI "int \fBNUM_THREADS\fP = 180"
+.br
+.ti -1c
+.RI "int \fBPORT\fP = 8002"
+.br
+.ti -1c
+.RI "string \fBconfig_Path\fP = '\&./db'"
+.br
+.ti -1c
+.RI "string \fBcache_Path\fP = '\&./cache'"
+.br
+.ti -1c
+.RI "string \fBlog_Path\fP = '\&./cache'"
+.br
+.ti -1c
+.RI "dictionary \fBdbFiles\fP"
+.br
+.ti -1c
+.RI "dictionary \fBdbTrace\fP"
+.br
+.ti -1c
+.RI "dictionary \fBDEBUG\fP"
+.br
+.ti -1c
+.RI "dictionary \fBTRACE\fP"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Definición en la línea 6 del archivo Config\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "string Config\&.Config\&.cache_Path = '\&./cache'\fC [static]\fP"
+
+.PP
+Definición en la línea 12 del archivo Config\&.py\&.
+.SS "string Config\&.Config\&.config_Path = '\&./db'\fC [static]\fP"
+
+.PP
+Definición en la línea 11 del archivo Config\&.py\&.
+.SS "dictionary Config\&.Config\&.dbFiles\fC [static]\fP"
+\fBValor inicial:\fP
+.PP
+.nf
+1 = {
+2         'proxy': 'sqlite:///' + config_Path+'/proxy\&.db',
+3         'log': 'sqlite:///' + config_Path+'/log\&.db'
+4     }
+.fi
+.PP
+Definición en la línea 15 del archivo Config\&.py\&.
+.SS "dictionary Config\&.Config\&.dbTrace\fC [static]\fP"
+\fBValor inicial:\fP
+.PP
+.nf
+1 = {
+2         'proxy': False,
+3         'log': False
+4     }
+.fi
+.PP
+Definición en la línea 20 del archivo Config\&.py\&.
+.SS "dictionary Config\&.Config\&.DEBUG\fC [static]\fP"
+\fBValor inicial:\fP
+.PP
+.nf
+1 = {
+2         'db_mapper\&.DEBUGCALL' : False,
+3         'db_mapper\&.DEBUGANSWER' : False,
+4         'db_mapper\&.DEBUG' : False,
+5         'Proxy\&.DEBUG': False,
+6         'Proxy\&.DEBUG_BEFORE_HANDLING': False,
+7         'Cache\&.DEBUG': False,
+8         'ClientHeaders\&.DEBUG': False,
+9         'ServerHeaders\&.DEBUG': False,
+10     }
+.fi
+.PP
+Definición en la línea 25 del archivo Config\&.py\&.
+.SS "string Config\&.Config\&.log_Path = '\&./cache'\fC [static]\fP"
+
+.PP
+Definición en la línea 13 del archivo Config\&.py\&.
+.SS "int Config\&.Config\&.MAX_LEN_MSG = 140\fC [static]\fP"
+
+.PP
+Definición en la línea 7 del archivo Config\&.py\&.
+.SS "int Config\&.Config\&.NUM_THREADS = 180\fC [static]\fP"
+
+.PP
+Definición en la línea 8 del archivo Config\&.py\&.
+.SS "int Config\&.Config\&.PORT = 8002\fC [static]\fP"
+
+.PP
+Definición en la línea 9 del archivo Config\&.py\&.
+.SS "dictionary Config\&.Config\&.TRACE\fC [static]\fP"
+\fBValor inicial:\fP
+.PP
+.nf
+1 = {
+2         'Log_TRACE': True
+3     }
+.fi
+.PP
+Definición en la línea 36 del archivo Config\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

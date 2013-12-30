@@ -1,0 +1,69 @@
+.TH "db_log" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+db_log \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Clases"
+
+.in +1c
+.ti -1c
+.RI "class \fBDatabase\fP"
+.br
+.ti -1c
+.RI "class \fBLines\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBpython_OldVersion\fP = True"
+.br
+.ti -1c
+.RI "list \fBDRIVER\fP = \fBConfig\&.dbFiles\fP['log']"
+.br
+.ti -1c
+.RI "list \fBTraceSQL\fP = \fBConfig\&.dbTrace\fP['log']"
+.br
+.ti -1c
+.RI "tuple \fBengine\fP = create_engine(\fBDRIVER\fP, echo=\fBTraceSQL\fP,poolclass=NullPool)"
+.br
+.ti -1c
+.RI "tuple \fBBase\fP = declarative_base()"
+.br
+.ti -1c
+.RI "tuple \fBdb\fP = \fBDatabase\fP()"
+.br
+.in -1c
+.SH "Documentación de las variables"
+.PP 
+.SS "tuple db_log\&.Base = declarative_base()"
+
+.PP
+Definición en la línea 28 del archivo db_log\&.py\&.
+.SS "tuple db_log\&.db = \fBDatabase\fP()"
+
+.PP
+Definición en la línea 116 del archivo db_log\&.py\&.
+.SS "list db_log\&.DRIVER = \fBConfig\&.dbFiles\fP['log']"
+
+.PP
+Definición en la línea 22 del archivo db_log\&.py\&.
+.SS "tuple db_log\&.engine = create_engine(\fBDRIVER\fP, echo=\fBTraceSQL\fP,poolclass=NullPool)"
+
+.PP
+Definición en la línea 25 del archivo db_log\&.py\&.
+.SS "db_log\&.python_OldVersion = True"
+
+.PP
+Definición en la línea 6 del archivo db_log\&.py\&.
+.SS "list db_log\&.TraceSQL = \fBConfig\&.dbTrace\fP['log']"
+
+.PP
+Definición en la línea 23 del archivo db_log\&.py\&.
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

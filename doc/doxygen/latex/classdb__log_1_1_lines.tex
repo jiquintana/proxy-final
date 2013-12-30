@@ -1,0 +1,182 @@
+\hypertarget{classdb__log_1_1_lines}{\section{Referencia de la Clase db\-\_\-log.\-Lines}
+\label{classdb__log_1_1_lines}\index{db\-\_\-log.\-Lines@{db\-\_\-log.\-Lines}}
+}
+
+
+Diagrama de herencias de db\-\_\-log.\-Lines\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{classdb__log_1_1_lines__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración para db\-\_\-log.\-Lines\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{classdb__log_1_1_lines__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classdb__log_1_1_lines_a7ed83f9b62253730ba834116b3a9dacb}{string\-Columns}
+\item 
+def \hyperlink{classdb__log_1_1_lines_af5b1c788ddcbd885dfd504a582bfb2cc}{int\-Columns}
+\item 
+def \hyperlink{classdb__log_1_1_lines_a52ae33670fb93711d6016d66c78a5619}{fromdict}
+\item 
+def \hyperlink{classdb__log_1_1_lines_a914fd0c463878da41107306755afeb4b}{fromjson}
+\item 
+def \hyperlink{classdb__log_1_1_lines_aa548522f88fa1ea01ffe26cdbdb26054}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+\item 
+def \hyperlink{classdb__log_1_1_lines_aff5943fbeba30789d71e44a6a5fd61f1}{\-\_\-\-\_\-to\-String\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdb__log_1_1_lines_af96b35a0ff4187be6583293d21f56c52}{lineid}
+\item 
+\hyperlink{classdb__log_1_1_lines_ac55c8876ae06fae44dab728313506935}{timestamp}
+\item 
+\hyperlink{classdb__log_1_1_lines_a2bdb98ff311182c24248853587f3ebb9}{line}
+\end{DoxyCompactItemize}
+\subsection*{Atributos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classdb__log_1_1_lines_a3356fd4f820f9182bf824d0b3e1b537b}{lineid} = Column(Integer, primary\-\_\-key=True, autoincrement=True, index=True)
+\item 
+tuple \hyperlink{classdb__log_1_1_lines_a19e178d833d57124bd08401e99865f3c}{timestamp} = Column(T\-I\-M\-E\-S\-T\-A\-M\-P(timezone=True), primary\-\_\-key=False, nullable=False, default=datetime.\-datetime.\-now())
+\item 
+tuple \hyperlink{classdb__log_1_1_lines_aa63d836730a16dfcf24119149e5faa44}{line} = Column(String(400), nullable=False)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 72 del archivo db\-\_\-log.\-py.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classdb__log_1_1_lines_aa548522f88fa1ea01ffe26cdbdb26054}{\index{db\-\_\-log\-::\-Lines@{db\-\_\-log\-::\-Lines}!\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}!db_log::Lines@{db\-\_\-log\-::\-Lines}}
+\subsubsection[{\-\_\-\-\_\-repr\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def db\-\_\-log.\-Lines.\-\_\-\-\_\-repr\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classdb__log_1_1_lines_aa548522f88fa1ea01ffe26cdbdb26054}
+
+
+Definición en la línea 103 del archivo db\-\_\-log.\-py.
+
+\hypertarget{classdb__log_1_1_lines_aff5943fbeba30789d71e44a6a5fd61f1}{\index{db\-\_\-log\-::\-Lines@{db\-\_\-log\-::\-Lines}!\-\_\-\-\_\-to\-String\-\_\-\-\_\-@{\-\_\-\-\_\-to\-String\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-to\-String\-\_\-\-\_\-@{\-\_\-\-\_\-to\-String\-\_\-\-\_\-}!db_log::Lines@{db\-\_\-log\-::\-Lines}}
+\subsubsection[{\-\_\-\-\_\-to\-String\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def db\-\_\-log.\-Lines.\-\_\-\-\_\-to\-String\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classdb__log_1_1_lines_aff5943fbeba30789d71e44a6a5fd61f1}
+
+
+Definición en la línea 106 del archivo db\-\_\-log.\-py.
+
+\hypertarget{classdb__log_1_1_lines_a52ae33670fb93711d6016d66c78a5619}{\index{db\-\_\-log\-::\-Lines@{db\-\_\-log\-::\-Lines}!fromdict@{fromdict}}
+\index{fromdict@{fromdict}!db_log::Lines@{db\-\_\-log\-::\-Lines}}
+\subsubsection[{fromdict}]{\setlength{\rightskip}{0pt plus 5cm}def db\-\_\-log.\-Lines.\-fromdict (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{jsondata}
+\end{DoxyParamCaption}
+)}}\label{classdb__log_1_1_lines_a52ae33670fb93711d6016d66c78a5619}
+
+
+Definición en la línea 90 del archivo db\-\_\-log.\-py.
+
+\hypertarget{classdb__log_1_1_lines_a914fd0c463878da41107306755afeb4b}{\index{db\-\_\-log\-::\-Lines@{db\-\_\-log\-::\-Lines}!fromjson@{fromjson}}
+\index{fromjson@{fromjson}!db_log::Lines@{db\-\_\-log\-::\-Lines}}
+\subsubsection[{fromjson}]{\setlength{\rightskip}{0pt plus 5cm}def db\-\_\-log.\-Lines.\-fromjson (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{jsondata}
+\end{DoxyParamCaption}
+)}}\label{classdb__log_1_1_lines_a914fd0c463878da41107306755afeb4b}
+
+
+Definición en la línea 96 del archivo db\-\_\-log.\-py.
+
+\hypertarget{classdb__log_1_1_lines_af5b1c788ddcbd885dfd504a582bfb2cc}{\index{db\-\_\-log\-::\-Lines@{db\-\_\-log\-::\-Lines}!int\-Columns@{int\-Columns}}
+\index{int\-Columns@{int\-Columns}!db_log::Lines@{db\-\_\-log\-::\-Lines}}
+\subsubsection[{int\-Columns}]{\setlength{\rightskip}{0pt plus 5cm}def db\-\_\-log.\-Lines.\-int\-Columns (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classdb__log_1_1_lines_af5b1c788ddcbd885dfd504a582bfb2cc}
+
+
+Definición en la línea 87 del archivo db\-\_\-log.\-py.
+
+\hypertarget{classdb__log_1_1_lines_a7ed83f9b62253730ba834116b3a9dacb}{\index{db\-\_\-log\-::\-Lines@{db\-\_\-log\-::\-Lines}!string\-Columns@{string\-Columns}}
+\index{string\-Columns@{string\-Columns}!db_log::Lines@{db\-\_\-log\-::\-Lines}}
+\subsubsection[{string\-Columns}]{\setlength{\rightskip}{0pt plus 5cm}def db\-\_\-log.\-Lines.\-string\-Columns (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classdb__log_1_1_lines_a7ed83f9b62253730ba834116b3a9dacb}
+
+
+Definición en la línea 84 del archivo db\-\_\-log.\-py.
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{classdb__log_1_1_lines_aa63d836730a16dfcf24119149e5faa44}{\index{db\-\_\-log\-::\-Lines@{db\-\_\-log\-::\-Lines}!line@{line}}
+\index{line@{line}!db_log::Lines@{db\-\_\-log\-::\-Lines}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}tuple db\-\_\-log.\-Lines.\-line = Column(String(400), nullable=False)\hspace{0.3cm}{\ttfamily [static]}}}\label{classdb__log_1_1_lines_aa63d836730a16dfcf24119149e5faa44}
+
+
+Definición en la línea 76 del archivo db\-\_\-log.\-py.
+
+\hypertarget{classdb__log_1_1_lines_a2bdb98ff311182c24248853587f3ebb9}{\index{db\-\_\-log\-::\-Lines@{db\-\_\-log\-::\-Lines}!line@{line}}
+\index{line@{line}!db_log::Lines@{db\-\_\-log\-::\-Lines}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}db\-\_\-log.\-Lines.\-line}}\label{classdb__log_1_1_lines_a2bdb98ff311182c24248853587f3ebb9}
+
+
+Definición en la línea 93 del archivo db\-\_\-log.\-py.
+
+\hypertarget{classdb__log_1_1_lines_a3356fd4f820f9182bf824d0b3e1b537b}{\index{db\-\_\-log\-::\-Lines@{db\-\_\-log\-::\-Lines}!lineid@{lineid}}
+\index{lineid@{lineid}!db_log::Lines@{db\-\_\-log\-::\-Lines}}
+\subsubsection[{lineid}]{\setlength{\rightskip}{0pt plus 5cm}tuple db\-\_\-log.\-Lines.\-lineid = Column(Integer, primary\-\_\-key=True, autoincrement=True, index=True)\hspace{0.3cm}{\ttfamily [static]}}}\label{classdb__log_1_1_lines_a3356fd4f820f9182bf824d0b3e1b537b}
+
+
+Definición en la línea 74 del archivo db\-\_\-log.\-py.
+
+\hypertarget{classdb__log_1_1_lines_af96b35a0ff4187be6583293d21f56c52}{\index{db\-\_\-log\-::\-Lines@{db\-\_\-log\-::\-Lines}!lineid@{lineid}}
+\index{lineid@{lineid}!db_log::Lines@{db\-\_\-log\-::\-Lines}}
+\subsubsection[{lineid}]{\setlength{\rightskip}{0pt plus 5cm}db\-\_\-log.\-Lines.\-lineid}}\label{classdb__log_1_1_lines_af96b35a0ff4187be6583293d21f56c52}
+
+
+Definición en la línea 91 del archivo db\-\_\-log.\-py.
+
+\hypertarget{classdb__log_1_1_lines_a19e178d833d57124bd08401e99865f3c}{\index{db\-\_\-log\-::\-Lines@{db\-\_\-log\-::\-Lines}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!db_log::Lines@{db\-\_\-log\-::\-Lines}}
+\subsubsection[{timestamp}]{\setlength{\rightskip}{0pt plus 5cm}tuple db\-\_\-log.\-Lines.\-timestamp = Column(T\-I\-M\-E\-S\-T\-A\-M\-P(timezone=True), primary\-\_\-key=False, nullable=False, default=datetime.\-datetime.\-now())\hspace{0.3cm}{\ttfamily [static]}}}\label{classdb__log_1_1_lines_a19e178d833d57124bd08401e99865f3c}
+
+
+Definición en la línea 75 del archivo db\-\_\-log.\-py.
+
+\hypertarget{classdb__log_1_1_lines_ac55c8876ae06fae44dab728313506935}{\index{db\-\_\-log\-::\-Lines@{db\-\_\-log\-::\-Lines}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!db_log::Lines@{db\-\_\-log\-::\-Lines}}
+\subsubsection[{timestamp}]{\setlength{\rightskip}{0pt plus 5cm}db\-\_\-log.\-Lines.\-timestamp}}\label{classdb__log_1_1_lines_ac55c8876ae06fae44dab728313506935}
+
+
+Definición en la línea 92 del archivo db\-\_\-log.\-py.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{db__log_8py}{db\-\_\-log.\-py}\end{DoxyCompactItemize}

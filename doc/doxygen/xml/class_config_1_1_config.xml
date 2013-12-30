@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_config_1_1_config" kind="class" prot="public">
+    <compoundname>Config::Config</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_config_1_1_config_1a81b4f232892a63987c0712d291d68cd3" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Config.Config::MAX_LEN_MSG</definition>
+        <argsstring></argsstring>
+        <name>MAX_LEN_MSG</name>
+        <initializer>= 140</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Config.py" line="7" bodyfile="/prj/proxy-final/proxy/source/Config.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_1_1_config_1a30a0b4f26a731f1f315b86b16eef807c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Config.Config::NUM_THREADS</definition>
+        <argsstring></argsstring>
+        <name>NUM_THREADS</name>
+        <initializer>= 180</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Config.py" line="8" bodyfile="/prj/proxy-final/proxy/source/Config.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_1_1_config_1aef20c383d5c356bfc5771e132ad241df" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Config.Config::PORT</definition>
+        <argsstring></argsstring>
+        <name>PORT</name>
+        <initializer>= 8002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Config.py" line="9" bodyfile="/prj/proxy-final/proxy/source/Config.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_1_1_config_1a2cf86b6dc19ce8b8458261d408a66d3a" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Config.Config::config_Path</definition>
+        <argsstring></argsstring>
+        <name>config_Path</name>
+        <initializer>= &quot;./db&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Config.py" line="11" bodyfile="/prj/proxy-final/proxy/source/Config.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_1_1_config_1ac40dcb73f850406655e85747ee4f244a" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Config.Config::cache_Path</definition>
+        <argsstring></argsstring>
+        <name>cache_Path</name>
+        <initializer>= &quot;./cache&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Config.py" line="12" bodyfile="/prj/proxy-final/proxy/source/Config.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_1_1_config_1a101073e22bb0e11ae1e78063267eaf35" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string Config.Config::log_Path</definition>
+        <argsstring></argsstring>
+        <name>log_Path</name>
+        <initializer>= &quot;./cache&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Config.py" line="13" bodyfile="/prj/proxy-final/proxy/source/Config.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_1_1_config_1a62ca676b07391529a5c1abd433bed57f" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Config.Config::dbFiles</definition>
+        <argsstring></argsstring>
+        <name>dbFiles</name>
+        <initializer>= {
+        &apos;proxy&apos;: &apos;sqlite:///&apos; + <ref refid="class_config_1_1_config_1a2cf86b6dc19ce8b8458261d408a66d3a" kindref="member">config_Path</ref>+&apos;/proxy.db&apos;,
+        &apos;log&apos;: &apos;sqlite:///&apos; + <ref refid="class_config_1_1_config_1a2cf86b6dc19ce8b8458261d408a66d3a" kindref="member">config_Path</ref>+&apos;/log.db&apos;
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Config.py" line="15" bodyfile="/prj/proxy-final/proxy/source/Config.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_1_1_config_1af7a49b43885faa51f5f5b5687a05120c" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Config.Config::dbTrace</definition>
+        <argsstring></argsstring>
+        <name>dbTrace</name>
+        <initializer>= {
+        &apos;proxy&apos;: False,
+        &apos;log&apos;: False
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Config.py" line="20" bodyfile="/prj/proxy-final/proxy/source/Config.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_1_1_config_1a1d5bf72f9f7f8047bc648261155e3141" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Config.Config::DEBUG</definition>
+        <argsstring></argsstring>
+        <name>DEBUG</name>
+        <initializer>= {
+        &apos;<ref refid="namespacedb__mapper_1a75634fff7a64aeaac74ca5b779941a79" kindref="member">db_mapper.DEBUGCALL</ref>&apos; : False,
+        &apos;<ref refid="namespacedb__mapper_1ae8d592e42c99e3b40554e619dfd7eda4" kindref="member">db_mapper.DEBUGANSWER</ref>&apos; : False,
+        &apos;db_mapper.DEBUG&apos; : False,
+        &apos;Proxy.DEBUG&apos;: False,
+        &apos;<ref refid="namespace_proxy_1a403844540a843656f16ad342add5c23a" kindref="member">Proxy.DEBUG_BEFORE_HANDLING</ref>&apos;: False,
+        &apos;Cache.DEBUG&apos;: False,
+        &apos;ClientHeaders.DEBUG&apos;: False,
+        &apos;ServerHeaders.DEBUG&apos;: False,
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Config.py" line="25" bodyfile="/prj/proxy-final/proxy/source/Config.py" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_headers_1_1_client_headers_1a7ee0d7e2c47c1c9810e8427116479f3d" compoundref="_headers_8py" startline="31" endline="62">Headers.ClientHeaders.parse</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a7572d026e3212c61e6d384a4bcb4c8e7" compoundref="_headers_8py" startline="99" endline="104">Headers.ServerHeaders.parsed_headers</referencedby>
+        <referencedby refid="class_headers_1_1_server_headers_1a731227c073d6a6226d7e74b7c38e98ca" compoundref="_headers_8py" startline="105" endline="113">Headers.ServerHeaders.dump</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_1_1_config_1aedf405e5fbfe131f86b5bde5de495fbc" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Config.Config::TRACE</definition>
+        <argsstring></argsstring>
+        <name>TRACE</name>
+        <initializer>= {
+        &apos;Log_TRACE&apos;: True
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Config.py" line="36" bodyfile="/prj/proxy-final/proxy/source/Config.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="87">
+        <label>Config.Config</label>
+        <link refid="class_config_1_1_config"/>
+        <childnode refid="88" relation="usage">
+          <edgelabel>log_Path</edgelabel>
+          <edgelabel>cache_Path</edgelabel>
+          <edgelabel>config_Path</edgelabel>
+        </childnode>
+      </node>
+      <node id="88">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="/prj/proxy-final/proxy/source/Config.py" line="6" bodyfile="/prj/proxy-final/proxy/source/Config.py" bodystart="6" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_config_1_1_config_1ac40dcb73f850406655e85747ee4f244a" prot="public" virt="non-virtual"><scope>Config::Config</scope><name>cache_Path</name></member>
+      <member refid="class_config_1_1_config_1a2cf86b6dc19ce8b8458261d408a66d3a" prot="public" virt="non-virtual"><scope>Config::Config</scope><name>config_Path</name></member>
+      <member refid="class_config_1_1_config_1a62ca676b07391529a5c1abd433bed57f" prot="public" virt="non-virtual"><scope>Config::Config</scope><name>dbFiles</name></member>
+      <member refid="class_config_1_1_config_1af7a49b43885faa51f5f5b5687a05120c" prot="public" virt="non-virtual"><scope>Config::Config</scope><name>dbTrace</name></member>
+      <member refid="class_config_1_1_config_1a1d5bf72f9f7f8047bc648261155e3141" prot="public" virt="non-virtual"><scope>Config::Config</scope><name>DEBUG</name></member>
+      <member refid="class_config_1_1_config_1a101073e22bb0e11ae1e78063267eaf35" prot="public" virt="non-virtual"><scope>Config::Config</scope><name>log_Path</name></member>
+      <member refid="class_config_1_1_config_1a81b4f232892a63987c0712d291d68cd3" prot="public" virt="non-virtual"><scope>Config::Config</scope><name>MAX_LEN_MSG</name></member>
+      <member refid="class_config_1_1_config_1a30a0b4f26a731f1f315b86b16eef807c" prot="public" virt="non-virtual"><scope>Config::Config</scope><name>NUM_THREADS</name></member>
+      <member refid="class_config_1_1_config_1aef20c383d5c356bfc5771e132ad241df" prot="public" virt="non-virtual"><scope>Config::Config</scope><name>PORT</name></member>
+      <member refid="class_config_1_1_config_1aedf405e5fbfe131f86b5bde5de495fbc" prot="public" virt="non-virtual"><scope>Config::Config</scope><name>TRACE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

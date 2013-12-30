@@ -1,0 +1,5 @@
+<map id="db_layer.Database.wr_addRelation" name="db_layer.Database.wr_addRelation">
+<area shape="rect" id="node2" href="$classdb__layer_1_1_database.html#a1d5f62d1f3ee91d692483abe8c774c89" title="db_layer.Database.addRelation" alt="" coords="198,45,394,72"/>
+<area shape="rect" id="node3" href="$classdb__layer_1_1_database.html#aa97a7c93c41d97e60600dec9fb87270e" title="db_layer.Database.findUser\lByUID" alt="" coords="447,5,622,46"/>
+<area shape="rect" id="node4" href="$classdb__layer_1_1_database.html#a16008b08c96fa493d7ee12b2a7a5b181" title="db_layer.Database.findGroup\lByGID" alt="" coords="443,70,627,111"/>
+</map>

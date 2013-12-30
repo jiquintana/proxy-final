@@ -1,0 +1,8 @@
+<map id="db_mapper.db_handler.handle_request" name="db_mapper.db_handler.handle_request">
+<area shape="rect" id="node2" href="$classdb__mapper_1_1db__handler.html#acab02d962db6d8b42cdeae79bf46425d" title="db_mapper.db_handler.map\l_query2db" alt="" coords="245,5,421,46"/>
+<area shape="rect" id="node3" href="$classdb__mapper_1_1db__handler.html#a4d3b0376c65e8fafd85e7ebd66c9b268" title="db_mapper.db_handler.map\l_db2answer" alt="" coords="245,70,421,111"/>
+<area shape="rect" id="node5" href="$classdb__mapper_1_1db__handler.html#ab82596ecdbec3136052c2f63ea282f0c" title="db_mapper.db_handler.map\l_parms2db" alt="" coords="245,135,421,177"/>
+<area shape="rect" id="node4" href="$classdb__mapper_1_1db__handler.html#a5fcc6f04805b1668cfdd37a56b96e481" title="db_mapper.db_handler.answer\l_wrapper" alt="" coords="470,70,663,111"/>
+<area shape="rect" id="node6" href="$classdb__mapper_1_1db__handler.html#aadb435084c4d5fccc96513605042b49b" title="db_mapper.db_handler.map\l_dict2User" alt="" coords="479,135,655,177"/>
+<area shape="rect" id="node7" href="$classdb__mapper_1_1db__handler.html#aa0a226e11a8afd0b8dfa20fd76362832" title="db_mapper.db_handler.map\l_dict2Group" alt="" coords="479,201,655,242"/>
+</map>

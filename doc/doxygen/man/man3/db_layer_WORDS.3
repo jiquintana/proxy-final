@@ -1,0 +1,117 @@
+.TH "db_layer.WORDS" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+db_layer.WORDS \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Herencias Base\&.
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "def \fBstringColumns\fP"
+.br
+.ti -1c
+.RI "def \fBintColumns\fP"
+.br
+.ti -1c
+.RI "def \fBfromdict\fP"
+.br
+.ti -1c
+.RI "def \fBfromjson\fP"
+.br
+.ti -1c
+.RI "def \fB__repr__\fP"
+.br
+.ti -1c
+.RI "def \fB__toString__\fP"
+.br
+.in -1c
+.SS "Atributos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBwordsid\fP"
+.br
+.ti -1c
+.RI "\fBgid\fP"
+.br
+.ti -1c
+.RI "\fBwords\fP"
+.br
+.in -1c
+.SS "Atributos públicos estáticos"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBwordsid\fP = Column(Integer, primary_key=True, autoincrement=True, index=True)"
+.br
+.ti -1c
+.RI "tuple \fBgid\fP = Column(Integer, ForeignKey('GRUPO\&.gid'), nullable=False, primary_key=True, index=True)"
+.br
+.ti -1c
+.RI "tuple \fBwords\fP = Column(String(250), nullable=False)"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+Definición en la línea 1186 del archivo db_layer\&.py\&.
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "def db_layer\&.WORDS\&.__repr__ (self)"
+
+.PP
+Definición en la línea 1211 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.WORDS\&.__toString__ (self)"
+
+.PP
+Definición en la línea 1215 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.WORDS\&.fromdict (self, jsondata)"
+
+.PP
+Definición en la línea 1198 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.WORDS\&.fromjson (self, jsondata)"
+
+.PP
+Definición en la línea 1204 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.WORDS\&.intColumns (self)"
+
+.PP
+Definición en la línea 1195 del archivo db_layer\&.py\&.
+.SS "def db_layer\&.WORDS\&.stringColumns (self)"
+
+.PP
+Definición en la línea 1192 del archivo db_layer\&.py\&.
+.SH "Documentación de los datos miembro"
+.PP 
+.SS "tuple db_layer\&.WORDS\&.gid = Column(Integer, ForeignKey('GRUPO\&.gid'), nullable=False, primary_key=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 1189 del archivo db_layer\&.py\&.
+.SS "db_layer\&.WORDS\&.gid"
+
+.PP
+Definición en la línea 1200 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.WORDS\&.words = Column(String(250), nullable=False)\fC [static]\fP"
+
+.PP
+Definición en la línea 1190 del archivo db_layer\&.py\&.
+.SS "db_layer\&.WORDS\&.words"
+
+.PP
+Definición en la línea 1201 del archivo db_layer\&.py\&.
+.SS "tuple db_layer\&.WORDS\&.wordsid = Column(Integer, primary_key=True, autoincrement=True, index=True)\fC [static]\fP"
+
+.PP
+Definición en la línea 1188 del archivo db_layer\&.py\&.
+.SS "db_layer\&.WORDS\&.wordsid"
+
+.PP
+Definición en la línea 1199 del archivo db_layer\&.py\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.

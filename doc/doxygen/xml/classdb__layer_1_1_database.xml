@@ -1,0 +1,1052 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classdb__layer_1_1_database" kind="class" prot="public">
+    <compoundname>db_layer::Database</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdb__layer_1_1_database_1a0392fa6d4ee2ef8849aef0d7ea024cac" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>db_layer.Database::__initialized__</definition>
+        <argsstring></argsstring>
+        <name>__initialized__</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="105" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="105" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_database_1a2e4b8be9ebcb91f37e9377164e060c2a" compoundref="db__layer_8py" startline="110" endline="124">db_layer.Database.__init__</referencedby>
+        <referencedby refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" compoundref="db__log_8py" startline="37" endline="52">db_log.Database.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_database_1a7b83f2d4aec38f965eb1d3dbedc1cf1c" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>db_layer.Database::__engine__</definition>
+        <argsstring></argsstring>
+        <name>__engine__</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="106" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="106" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_database_1a2e4b8be9ebcb91f37e9377164e060c2a" compoundref="db__layer_8py" startline="110" endline="124">db_layer.Database.__init__</referencedby>
+        <referencedby refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" compoundref="db__log_8py" startline="37" endline="52">db_log.Database.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>db_layer.Database::__DBSession__</definition>
+        <argsstring></argsstring>
+        <name>__DBSession__</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="107" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="107" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_database_1a2e4b8be9ebcb91f37e9377164e060c2a" compoundref="db__layer_8py" startline="110" endline="124">db_layer.Database.__init__</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1aaa54107650dc6511c7afdaf98112d4c1" compoundref="db__layer_8py" startline="125" endline="145">db_layer.Database.findUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a738e07ff3b7292931bb057d174866249" compoundref="db__layer_8py" startline="156" endline="165">db_layer.Database.isUserAllowed</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a1f4a9b4e8dbd15d9f0ce74c1464ec3f9" compoundref="db__layer_8py" startline="166" endline="177">db_layer.Database.isAdminAllowed</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1aa97a7c93c41d97e60600dec9fb87270e" compoundref="db__layer_8py" startline="178" endline="187">db_layer.Database.findUserByUID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1aa56ec835e0baf06452952528e12062bc" compoundref="db__layer_8py" startline="188" endline="195">db_layer.Database.getAllUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a99ba044bb2e8692e27c34b74f6420ce8" compoundref="db__layer_8py" startline="196" endline="205">db_layer.Database.getLowestUnusedUIDfromUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a607d0253401fe69017f3e2b397a66c65" compoundref="db__layer_8py" startline="206" endline="268">db_layer.Database.addUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a1d5f62d1f3ee91d692483abe8c774c89" compoundref="db__layer_8py" startline="269" endline="278">db_layer.Database.addRelation</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1aa682552b52caba32fde23ef44fb63ade" compoundref="db__layer_8py" startline="279" endline="287">db_layer.Database.wr_addRelation</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1ab4e221a9ae93a5780c084d49d01029d8" compoundref="db__layer_8py" startline="288" endline="298">db_layer.Database.delRelation</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1ab20da0ac6137c6a276f27f59a90d87e3" compoundref="db__layer_8py" startline="299" endline="307">db_layer.Database.wr_delRelation</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1ad8447f580fdb6dc37c23fe4220ee62b9" compoundref="db__layer_8py" startline="308" endline="331">db_layer.Database.delUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a03795c597d3a3ca0ef5d7c73299f8421" compoundref="db__layer_8py" startline="332" endline="347">db_layer.Database.setUserAdmin</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a6b55a92453cf88fd95b0e6b565663bbc" compoundref="db__layer_8py" startline="348" endline="374">db_layer.Database.changeUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a203864bb4a53dfb89f57c23392559b46" compoundref="db__layer_8py" startline="375" endline="390">db_layer.Database.setUserAdvanced</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a03a583931163ed9bac45c5b05e4bf69f" compoundref="db__layer_8py" startline="391" endline="406">db_layer.Database.setUserKid</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1ab86b18a8ab851b48703101ab53af6f8b" compoundref="db__layer_8py" startline="407" endline="422">db_layer.Database.setUserGuest</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a2faddc3de17c5f91a96d835339e5b187" compoundref="db__layer_8py" startline="423" endline="437">db_layer.Database.changeUserPassword</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1ad49eca83ffa1263e355f5757e9b4d814" compoundref="db__layer_8py" startline="438" endline="452">db_layer.Database.changeUserDescription</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a3cdf214f598de4b4c5d08e5a1f7c218b" compoundref="db__layer_8py" startline="453" endline="461">db_layer.Database.commitDBChanges</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a39d62bdcc06c57e3a02aa86c31a45f8d" compoundref="db__layer_8py" startline="462" endline="481">db_layer.Database.findGroup</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a20c7dd43617755b5ebaf0e1d22a4a2f8" compoundref="db__layer_8py" startline="482" endline="490">db_layer.Database.findGroupByGroupname</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a16008b08c96fa493d7ee12b2a7a5b181" compoundref="db__layer_8py" startline="491" endline="499">db_layer.Database.findGroupByGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a8470bd9042a562ac6205dc6edcb374ea" compoundref="db__layer_8py" startline="500" endline="518">db_layer.Database.delGroup</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a36251bcd67a2b86157830f7c4df7c35d" compoundref="db__layer_8py" startline="519" endline="534">db_layer.Database.changeGroup</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1aec26922467f83a27ddc41b583f0f1cb0" compoundref="db__layer_8py" startline="535" endline="540">db_layer.Database.getAllGroups</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a22ed5c7f36dbb61e6f60c4040987bf55" compoundref="db__layer_8py" startline="541" endline="549">db_layer.Database.getAllCustomGroups</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a98fa2d3a8377bca1fe5f2d2946ef2929" compoundref="db__layer_8py" startline="550" endline="559">db_layer.Database.getLowestUnusedGIDfromGroup</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a472b95b106b4fe0185582d99f36edb85" compoundref="db__layer_8py" startline="560" endline="590">db_layer.Database.addGroup</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1ab3e162f3cda68dacdfaa3de68e300567" compoundref="db__layer_8py" startline="591" endline="604">db_layer.Database.changeGroupDescription</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1af6ba4fcf6bcd589b0c85b05f49f46ef5" compoundref="db__layer_8py" startline="605" endline="654">db_layer.Database.isUserAllowedNow</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a9ddac6b8ec475ecd6e817329416e3d22" compoundref="db__layer_8py" startline="655" endline="666">db_layer.Database.isUserAdmin</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1abbe6297269170e88f0ebe7da784fb62b" compoundref="db__layer_8py" startline="667" endline="678">db_layer.Database.isUserAdvanced</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a3aaf3d095b7c6d005ec9061f83ccdc66" compoundref="db__layer_8py" startline="679" endline="690">db_layer.Database.isUserKid</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a9ff75e8e93503e1e6b5ceb083910864a" compoundref="db__layer_8py" startline="691" endline="702">db_layer.Database.isUserGuest</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1acf2271857a561c1e17069068f5c7e317" compoundref="db__layer_8py" startline="703" endline="728">db_layer.Database.findGroupsByUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a782bfdf0a4415ef9f520722125851924" compoundref="db__layer_8py" startline="729" endline="749">db_layer.Database.findNotGroupsByUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1abe7e2fc7937e3fd641a8ec5275b4db60" compoundref="db__layer_8py" startline="750" endline="758">db_layer.Database.findURISbyGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a9182f4e89992da5de14ae67f466514df" compoundref="db__layer_8py" startline="759" endline="770">db_layer.Database.deleteURISbyGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1aebc7fd132c862539ede9959fa4257d2a" compoundref="db__layer_8py" startline="771" endline="789">db_layer.Database.insertURISbyGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a3ede692ddfa18fd73ce142341f21e6a0" compoundref="db__layer_8py" startline="790" endline="799">db_layer.Database.wr_insertURISbyGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a7f168024109c6490cca9f764cd0bbeac" compoundref="db__layer_8py" startline="800" endline="808">db_layer.Database.findWORDSbyGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1af7c91fdd73898b9e2aa1d1e04ebcb8a6" compoundref="db__layer_8py" startline="809" endline="817">db_layer.Database.deleteWORDSbyGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a849faf2993ee0d75f38639f22c3553e7" compoundref="db__layer_8py" startline="818" endline="835">db_layer.Database.insertWORDSbyGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1abf6ce37aea5202f161dbd3e3c41d6a6e" compoundref="db__layer_8py" startline="836" endline="844">db_layer.Database.wr_insertWORDSbyGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a940f5d9df2aa98c4c4452d9a005a0788" compoundref="db__layer_8py" startline="845" endline="853">db_layer.Database.findMIMESbyGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a844ac1872f0ddf55d238e2bc229354c0" compoundref="db__layer_8py" startline="854" endline="862">db_layer.Database.deleteMIMESbyGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1ae95955bc5ae21324a753dca4d76f69f1" compoundref="db__layer_8py" startline="863" endline="880">db_layer.Database.insertMIMESbyGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1ac2a8936466701acf8972dd1dbb73d0ad" compoundref="db__layer_8py" startline="881" endline="890">db_layer.Database.wr_insertMIMESbyGID</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a014383f7f432ef974c12c87bdbe08546" compoundref="db__layer_8py" startline="891" endline="930">db_layer.Database.getRULES</referencedby>
+        <referencedby refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" compoundref="db__log_8py" startline="37" endline="52">db_log.Database.__init__</referencedby>
+        <referencedby refid="classdb__log_1_1_database_1ae34e71223e9896b44ef7ad9e9426718b" compoundref="db__log_8py" startline="53" endline="62">db_log.Database.getLastLines</referencedby>
+        <referencedby refid="classdb__log_1_1_database_1a395b1cf70a83f2d01422566d3e08484c" compoundref="db__log_8py" startline="63" endline="71">db_log.Database.addLine</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__layer_1_1_database_1a49615f902bb09761e484e870ba15792f" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>db_layer.Database::__BASE__</definition>
+        <argsstring></argsstring>
+        <name>__BASE__</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="108" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="108" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_database_1a2e4b8be9ebcb91f37e9377164e060c2a" compoundref="db__layer_8py" startline="110" endline="124">db_layer.Database.__init__</referencedby>
+        <referencedby refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" compoundref="db__log_8py" startline="37" endline="52">db_log.Database.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdb__layer_1_1_database_1a232d5477efc9b4c8d8a36b7541c851e1" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>db_layer.Database::session</definition>
+        <argsstring></argsstring>
+        <name>session</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="109" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="109" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_database_1a2e4b8be9ebcb91f37e9377164e060c2a" compoundref="db__layer_8py" startline="110" endline="124">db_layer.Database.__init__</referencedby>
+        <referencedby refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" compoundref="db__log_8py" startline="37" endline="52">db_log.Database.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdb__layer_1_1_database_1a6de72995e1ee6cc7fcd9f028fb8567f5" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>db_layer.Database::__metadata__</definition>
+        <argsstring></argsstring>
+        <name>__metadata__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="115" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="115" bodyend="-1"/>
+        <referencedby refid="classdb__layer_1_1_database_1a2e4b8be9ebcb91f37e9377164e060c2a" compoundref="db__layer_8py" startline="110" endline="124">db_layer.Database.__init__</referencedby>
+        <referencedby refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" compoundref="db__log_8py" startline="37" endline="52">db_log.Database.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a2e4b8be9ebcb91f37e9377164e060c2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="110" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="110" bodyend="124"/>
+        <references refid="classdb__layer_1_1_database_1a0392fa6d4ee2ef8849aef0d7ea024cac" compoundref="db__layer_8py" startline="105">db_layer.Database.__initialized__</references>
+        <references refid="classdb__layer_1_1_database_1a7b83f2d4aec38f965eb1d3dbedc1cf1c" compoundref="db__layer_8py" startline="106">db_layer.Database.__engine__</references>
+        <references refid="classdb__layer_1_1_database_1a6de72995e1ee6cc7fcd9f028fb8567f5" compoundref="db__layer_8py" startline="115">db_layer.Database.__metadata__</references>
+        <references refid="classdb__layer_1_1_database_1a49615f902bb09761e484e870ba15792f" compoundref="db__layer_8py" startline="108">db_layer.Database.__BASE__</references>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a232d5477efc9b4c8d8a36b7541c851e1" compoundref="db__layer_8py" startline="109">db_layer.Database.session</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1aaa54107650dc6511c7afdaf98112d4c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.findUser</definition>
+        <argsstring></argsstring>
+        <name>findUser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="125" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="125" bodyend="145"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.findUserByUsername</definition>
+        <argsstring></argsstring>
+        <name>findUserByUsername</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="146" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="146" bodyend="155"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1a738e07ff3b7292931bb057d174866249" compoundref="db__layer_8py" startline="156" endline="165">db_layer.Database.isUserAllowed</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a1f4a9b4e8dbd15d9f0ce74c1464ec3f9" compoundref="db__layer_8py" startline="166" endline="177">db_layer.Database.isAdminAllowed</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a607d0253401fe69017f3e2b397a66c65" compoundref="db__layer_8py" startline="206" endline="268">db_layer.Database.addUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a03795c597d3a3ca0ef5d7c73299f8421" compoundref="db__layer_8py" startline="332" endline="347">db_layer.Database.setUserAdmin</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a6b55a92453cf88fd95b0e6b565663bbc" compoundref="db__layer_8py" startline="348" endline="374">db_layer.Database.changeUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a203864bb4a53dfb89f57c23392559b46" compoundref="db__layer_8py" startline="375" endline="390">db_layer.Database.setUserAdvanced</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a03a583931163ed9bac45c5b05e4bf69f" compoundref="db__layer_8py" startline="391" endline="406">db_layer.Database.setUserKid</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1ab86b18a8ab851b48703101ab53af6f8b" compoundref="db__layer_8py" startline="407" endline="422">db_layer.Database.setUserGuest</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a2faddc3de17c5f91a96d835339e5b187" compoundref="db__layer_8py" startline="423" endline="437">db_layer.Database.changeUserPassword</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1ad49eca83ffa1263e355f5757e9b4d814" compoundref="db__layer_8py" startline="438" endline="452">db_layer.Database.changeUserDescription</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1af6ba4fcf6bcd589b0c85b05f49f46ef5" compoundref="db__layer_8py" startline="605" endline="654">db_layer.Database.isUserAllowedNow</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a9ddac6b8ec475ecd6e817329416e3d22" compoundref="db__layer_8py" startline="655" endline="666">db_layer.Database.isUserAdmin</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1abbe6297269170e88f0ebe7da784fb62b" compoundref="db__layer_8py" startline="667" endline="678">db_layer.Database.isUserAdvanced</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a3aaf3d095b7c6d005ec9061f83ccdc66" compoundref="db__layer_8py" startline="679" endline="690">db_layer.Database.isUserKid</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a9ff75e8e93503e1e6b5ceb083910864a" compoundref="db__layer_8py" startline="691" endline="702">db_layer.Database.isUserGuest</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1acf2271857a561c1e17069068f5c7e317" compoundref="db__layer_8py" startline="703" endline="728">db_layer.Database.findGroupsByUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a782bfdf0a4415ef9f520722125851924" compoundref="db__layer_8py" startline="729" endline="749">db_layer.Database.findNotGroupsByUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a738e07ff3b7292931bb057d174866249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.isUserAllowed</definition>
+        <argsstring></argsstring>
+        <name>isUserAllowed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="156" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="156" bodyend="165"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a1f4a9b4e8dbd15d9f0ce74c1464ec3f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.isAdminAllowed</definition>
+        <argsstring></argsstring>
+        <name>isAdminAllowed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="166" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="166" bodyend="177"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+        <references refid="classdb__layer_1_1_database_1a9ddac6b8ec475ecd6e817329416e3d22" compoundref="db__layer_8py" startline="655" endline="666">db_layer.Database.isUserAdmin</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1aa97a7c93c41d97e60600dec9fb87270e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.findUserByUID</definition>
+        <argsstring></argsstring>
+        <name>findUserByUID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="178" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="178" bodyend="187"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1a607d0253401fe69017f3e2b397a66c65" compoundref="db__layer_8py" startline="206" endline="268">db_layer.Database.addUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a1d5f62d1f3ee91d692483abe8c774c89" compoundref="db__layer_8py" startline="269" endline="278">db_layer.Database.addRelation</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a6b55a92453cf88fd95b0e6b565663bbc" compoundref="db__layer_8py" startline="348" endline="374">db_layer.Database.changeUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1aa56ec835e0baf06452952528e12062bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.getAllUser</definition>
+        <argsstring></argsstring>
+        <name>getAllUser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="188" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="188" bodyend="195"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a99ba044bb2e8692e27c34b74f6420ce8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.getLowestUnusedUIDfromUser</definition>
+        <argsstring></argsstring>
+        <name>getLowestUnusedUIDfromUser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="196" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="196" bodyend="205"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1a607d0253401fe69017f3e2b397a66c65" compoundref="db__layer_8py" startline="206" endline="268">db_layer.Database.addUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a607d0253401fe69017f3e2b397a66c65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.addUser</definition>
+        <argsstring></argsstring>
+        <name>addUser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="206" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="206" bodyend="268"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a99ba044bb2e8692e27c34b74f6420ce8" compoundref="db__layer_8py" startline="196" endline="205">db_layer.Database.getLowestUnusedUIDfromUser</references>
+        <references refid="classdb__layer_1_1_database_1a16008b08c96fa493d7ee12b2a7a5b181" compoundref="db__layer_8py" startline="491" endline="499">db_layer.Database.findGroupByGID</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+        <references refid="classdb__layer_1_1_database_1a20c7dd43617755b5ebaf0e1d22a4a2f8" compoundref="db__layer_8py" startline="482" endline="490">db_layer.Database.findGroupByGroupname</references>
+        <references refid="classdb__layer_1_1_database_1aa97a7c93c41d97e60600dec9fb87270e" compoundref="db__layer_8py" startline="178" endline="187">db_layer.Database.findUserByUID</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a1d5f62d1f3ee91d692483abe8c774c89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.addRelation</definition>
+        <argsstring></argsstring>
+        <name>addRelation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="269" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="269" bodyend="278"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1aa97a7c93c41d97e60600dec9fb87270e" compoundref="db__layer_8py" startline="178" endline="187">db_layer.Database.findUserByUID</references>
+        <references refid="classdb__layer_1_1_database_1a16008b08c96fa493d7ee12b2a7a5b181" compoundref="db__layer_8py" startline="491" endline="499">db_layer.Database.findGroupByGID</references>
+        <referencedby refid="classdb__layer_1_1_database_1aa682552b52caba32fde23ef44fb63ade" compoundref="db__layer_8py" startline="279" endline="287">db_layer.Database.wr_addRelation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1aa682552b52caba32fde23ef44fb63ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.wr_addRelation</definition>
+        <argsstring></argsstring>
+        <name>wr_addRelation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="279" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="279" bodyend="287"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a1d5f62d1f3ee91d692483abe8c774c89" compoundref="db__layer_8py" startline="269" endline="278">db_layer.Database.addRelation</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1ab4e221a9ae93a5780c084d49d01029d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.delRelation</definition>
+        <argsstring></argsstring>
+        <name>delRelation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="288" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="288" bodyend="298"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1ab20da0ac6137c6a276f27f59a90d87e3" compoundref="db__layer_8py" startline="299" endline="307">db_layer.Database.wr_delRelation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1ab20da0ac6137c6a276f27f59a90d87e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.wr_delRelation</definition>
+        <argsstring></argsstring>
+        <name>wr_delRelation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="299" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="299" bodyend="307"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1ab4e221a9ae93a5780c084d49d01029d8" compoundref="db__layer_8py" startline="288" endline="298">db_layer.Database.delRelation</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1ad8447f580fdb6dc37c23fe4220ee62b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.delUser</definition>
+        <argsstring></argsstring>
+        <name>delUser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="308" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="308" bodyend="331"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a03795c597d3a3ca0ef5d7c73299f8421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.setUserAdmin</definition>
+        <argsstring></argsstring>
+        <name>setUserAdmin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="332" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="332" bodyend="347"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a6b55a92453cf88fd95b0e6b565663bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.changeUser</definition>
+        <argsstring></argsstring>
+        <name>changeUser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="348" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="348" bodyend="374"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1aa97a7c93c41d97e60600dec9fb87270e" compoundref="db__layer_8py" startline="178" endline="187">db_layer.Database.findUserByUID</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a203864bb4a53dfb89f57c23392559b46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.setUserAdvanced</definition>
+        <argsstring></argsstring>
+        <name>setUserAdvanced</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="375" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="375" bodyend="390"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a03a583931163ed9bac45c5b05e4bf69f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.setUserKid</definition>
+        <argsstring></argsstring>
+        <name>setUserKid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="391" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="391" bodyend="406"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1ab86b18a8ab851b48703101ab53af6f8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.setUserGuest</definition>
+        <argsstring></argsstring>
+        <name>setUserGuest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="407" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="407" bodyend="422"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a2faddc3de17c5f91a96d835339e5b187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.changeUserPassword</definition>
+        <argsstring></argsstring>
+        <name>changeUserPassword</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="423" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="423" bodyend="437"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1ad49eca83ffa1263e355f5757e9b4d814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.changeUserDescription</definition>
+        <argsstring></argsstring>
+        <name>changeUserDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="438" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="438" bodyend="452"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a3cdf214f598de4b4c5d08e5a1f7c218b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.commitDBChanges</definition>
+        <argsstring></argsstring>
+        <name>commitDBChanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="453" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="453" bodyend="461"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a39d62bdcc06c57e3a02aa86c31a45f8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.findGroup</definition>
+        <argsstring></argsstring>
+        <name>findGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="462" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="462" bodyend="481"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a20c7dd43617755b5ebaf0e1d22a4a2f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.findGroupByGroupname</definition>
+        <argsstring></argsstring>
+        <name>findGroupByGroupname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="482" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="482" bodyend="490"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1a607d0253401fe69017f3e2b397a66c65" compoundref="db__layer_8py" startline="206" endline="268">db_layer.Database.addUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a36251bcd67a2b86157830f7c4df7c35d" compoundref="db__layer_8py" startline="519" endline="534">db_layer.Database.changeGroup</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a472b95b106b4fe0185582d99f36edb85" compoundref="db__layer_8py" startline="560" endline="590">db_layer.Database.addGroup</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1ab3e162f3cda68dacdfaa3de68e300567" compoundref="db__layer_8py" startline="591" endline="604">db_layer.Database.changeGroupDescription</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a16008b08c96fa493d7ee12b2a7a5b181" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.findGroupByGID</definition>
+        <argsstring></argsstring>
+        <name>findGroupByGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="491" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="491" bodyend="499"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1a607d0253401fe69017f3e2b397a66c65" compoundref="db__layer_8py" startline="206" endline="268">db_layer.Database.addUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a1d5f62d1f3ee91d692483abe8c774c89" compoundref="db__layer_8py" startline="269" endline="278">db_layer.Database.addRelation</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a36251bcd67a2b86157830f7c4df7c35d" compoundref="db__layer_8py" startline="519" endline="534">db_layer.Database.changeGroup</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a472b95b106b4fe0185582d99f36edb85" compoundref="db__layer_8py" startline="560" endline="590">db_layer.Database.addGroup</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1acf2271857a561c1e17069068f5c7e317" compoundref="db__layer_8py" startline="703" endline="728">db_layer.Database.findGroupsByUser</referencedby>
+        <referencedby refid="classdb__layer_1_1_database_1a782bfdf0a4415ef9f520722125851924" compoundref="db__layer_8py" startline="729" endline="749">db_layer.Database.findNotGroupsByUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a8470bd9042a562ac6205dc6edcb374ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.delGroup</definition>
+        <argsstring></argsstring>
+        <name>delGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="500" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="500" bodyend="518"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a36251bcd67a2b86157830f7c4df7c35d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.changeGroup</definition>
+        <argsstring></argsstring>
+        <name>changeGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="519" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="519" bodyend="534"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a16008b08c96fa493d7ee12b2a7a5b181" compoundref="db__layer_8py" startline="491" endline="499">db_layer.Database.findGroupByGID</references>
+        <references refid="classdb__layer_1_1_database_1a20c7dd43617755b5ebaf0e1d22a4a2f8" compoundref="db__layer_8py" startline="482" endline="490">db_layer.Database.findGroupByGroupname</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1aec26922467f83a27ddc41b583f0f1cb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.getAllGroups</definition>
+        <argsstring></argsstring>
+        <name>getAllGroups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="535" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="535" bodyend="540"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a22ed5c7f36dbb61e6f60c4040987bf55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.getAllCustomGroups</definition>
+        <argsstring></argsstring>
+        <name>getAllCustomGroups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="541" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="541" bodyend="549"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1a782bfdf0a4415ef9f520722125851924" compoundref="db__layer_8py" startline="729" endline="749">db_layer.Database.findNotGroupsByUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a98fa2d3a8377bca1fe5f2d2946ef2929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.getLowestUnusedGIDfromGroup</definition>
+        <argsstring></argsstring>
+        <name>getLowestUnusedGIDfromGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="550" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="550" bodyend="559"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1a472b95b106b4fe0185582d99f36edb85" compoundref="db__layer_8py" startline="560" endline="590">db_layer.Database.addGroup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a472b95b106b4fe0185582d99f36edb85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.addGroup</definition>
+        <argsstring></argsstring>
+        <name>addGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="560" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="560" bodyend="590"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a98fa2d3a8377bca1fe5f2d2946ef2929" compoundref="db__layer_8py" startline="550" endline="559">db_layer.Database.getLowestUnusedGIDfromGroup</references>
+        <references refid="classdb__layer_1_1_database_1a20c7dd43617755b5ebaf0e1d22a4a2f8" compoundref="db__layer_8py" startline="482" endline="490">db_layer.Database.findGroupByGroupname</references>
+        <references refid="classdb__layer_1_1_database_1a16008b08c96fa493d7ee12b2a7a5b181" compoundref="db__layer_8py" startline="491" endline="499">db_layer.Database.findGroupByGID</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1ab3e162f3cda68dacdfaa3de68e300567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.changeGroupDescription</definition>
+        <argsstring></argsstring>
+        <name>changeGroupDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="591" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="591" bodyend="604"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a20c7dd43617755b5ebaf0e1d22a4a2f8" compoundref="db__layer_8py" startline="482" endline="490">db_layer.Database.findGroupByGroupname</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1af6ba4fcf6bcd589b0c85b05f49f46ef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.isUserAllowedNow</definition>
+        <argsstring></argsstring>
+        <name>isUserAllowedNow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="605" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="605" bodyend="654"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a9ddac6b8ec475ecd6e817329416e3d22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.isUserAdmin</definition>
+        <argsstring></argsstring>
+        <name>isUserAdmin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="655" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="655" bodyend="666"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+        <referencedby refid="classdb__layer_1_1_database_1a1f4a9b4e8dbd15d9f0ce74c1464ec3f9" compoundref="db__layer_8py" startline="166" endline="177">db_layer.Database.isAdminAllowed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1abbe6297269170e88f0ebe7da784fb62b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.isUserAdvanced</definition>
+        <argsstring></argsstring>
+        <name>isUserAdvanced</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="667" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="667" bodyend="678"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a3aaf3d095b7c6d005ec9061f83ccdc66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.isUserKid</definition>
+        <argsstring></argsstring>
+        <name>isUserKid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="679" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="679" bodyend="690"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a9ff75e8e93503e1e6b5ceb083910864a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.isUserGuest</definition>
+        <argsstring></argsstring>
+        <name>isUserGuest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="691" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="691" bodyend="702"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1acf2271857a561c1e17069068f5c7e317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.findGroupsByUser</definition>
+        <argsstring></argsstring>
+        <name>findGroupsByUser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="703" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="703" bodyend="728"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+        <references refid="classdb__layer_1_1_database_1a16008b08c96fa493d7ee12b2a7a5b181" compoundref="db__layer_8py" startline="491" endline="499">db_layer.Database.findGroupByGID</references>
+        <referencedby refid="classdb__layer_1_1_database_1a782bfdf0a4415ef9f520722125851924" compoundref="db__layer_8py" startline="729" endline="749">db_layer.Database.findNotGroupsByUser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a782bfdf0a4415ef9f520722125851924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.findNotGroupsByUser</definition>
+        <argsstring></argsstring>
+        <name>findNotGroupsByUser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="729" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="729" bodyend="749"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" compoundref="db__layer_8py" startline="146" endline="155">db_layer.Database.findUserByUsername</references>
+        <references refid="classdb__layer_1_1_database_1a22ed5c7f36dbb61e6f60c4040987bf55" compoundref="db__layer_8py" startline="541" endline="549">db_layer.Database.getAllCustomGroups</references>
+        <references refid="classdb__layer_1_1_database_1acf2271857a561c1e17069068f5c7e317" compoundref="db__layer_8py" startline="703" endline="728">db_layer.Database.findGroupsByUser</references>
+        <references refid="classdb__layer_1_1_database_1a16008b08c96fa493d7ee12b2a7a5b181" compoundref="db__layer_8py" startline="491" endline="499">db_layer.Database.findGroupByGID</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1abe7e2fc7937e3fd641a8ec5275b4db60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.findURISbyGID</definition>
+        <argsstring></argsstring>
+        <name>findURISbyGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="750" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="750" bodyend="758"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1aebc7fd132c862539ede9959fa4257d2a" compoundref="db__layer_8py" startline="771" endline="789">db_layer.Database.insertURISbyGID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a9182f4e89992da5de14ae67f466514df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.deleteURISbyGID</definition>
+        <argsstring></argsstring>
+        <name>deleteURISbyGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="759" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="759" bodyend="770"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1aebc7fd132c862539ede9959fa4257d2a" compoundref="db__layer_8py" startline="771" endline="789">db_layer.Database.insertURISbyGID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1aebc7fd132c862539ede9959fa4257d2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.insertURISbyGID</definition>
+        <argsstring></argsstring>
+        <name>insertURISbyGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="771" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="771" bodyend="789"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a9182f4e89992da5de14ae67f466514df" compoundref="db__layer_8py" startline="759" endline="770">db_layer.Database.deleteURISbyGID</references>
+        <references refid="classdb__layer_1_1_database_1abe7e2fc7937e3fd641a8ec5275b4db60" compoundref="db__layer_8py" startline="750" endline="758">db_layer.Database.findURISbyGID</references>
+        <referencedby refid="classdb__layer_1_1_database_1a3ede692ddfa18fd73ce142341f21e6a0" compoundref="db__layer_8py" startline="790" endline="799">db_layer.Database.wr_insertURISbyGID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a3ede692ddfa18fd73ce142341f21e6a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.wr_insertURISbyGID</definition>
+        <argsstring></argsstring>
+        <name>wr_insertURISbyGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="790" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="790" bodyend="799"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1aebc7fd132c862539ede9959fa4257d2a" compoundref="db__layer_8py" startline="771" endline="789">db_layer.Database.insertURISbyGID</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a7f168024109c6490cca9f764cd0bbeac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.findWORDSbyGID</definition>
+        <argsstring></argsstring>
+        <name>findWORDSbyGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="800" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="800" bodyend="808"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1a849faf2993ee0d75f38639f22c3553e7" compoundref="db__layer_8py" startline="818" endline="835">db_layer.Database.insertWORDSbyGID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1af7c91fdd73898b9e2aa1d1e04ebcb8a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.deleteWORDSbyGID</definition>
+        <argsstring></argsstring>
+        <name>deleteWORDSbyGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="809" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="809" bodyend="817"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1a849faf2993ee0d75f38639f22c3553e7" compoundref="db__layer_8py" startline="818" endline="835">db_layer.Database.insertWORDSbyGID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a849faf2993ee0d75f38639f22c3553e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.insertWORDSbyGID</definition>
+        <argsstring></argsstring>
+        <name>insertWORDSbyGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="818" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="818" bodyend="835"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1af7c91fdd73898b9e2aa1d1e04ebcb8a6" compoundref="db__layer_8py" startline="809" endline="817">db_layer.Database.deleteWORDSbyGID</references>
+        <references refid="classdb__layer_1_1_database_1a7f168024109c6490cca9f764cd0bbeac" compoundref="db__layer_8py" startline="800" endline="808">db_layer.Database.findWORDSbyGID</references>
+        <referencedby refid="classdb__layer_1_1_database_1abf6ce37aea5202f161dbd3e3c41d6a6e" compoundref="db__layer_8py" startline="836" endline="844">db_layer.Database.wr_insertWORDSbyGID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1abf6ce37aea5202f161dbd3e3c41d6a6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.wr_insertWORDSbyGID</definition>
+        <argsstring></argsstring>
+        <name>wr_insertWORDSbyGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="836" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="836" bodyend="844"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a849faf2993ee0d75f38639f22c3553e7" compoundref="db__layer_8py" startline="818" endline="835">db_layer.Database.insertWORDSbyGID</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a940f5d9df2aa98c4c4452d9a005a0788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.findMIMESbyGID</definition>
+        <argsstring></argsstring>
+        <name>findMIMESbyGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="845" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="845" bodyend="853"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1ae95955bc5ae21324a753dca4d76f69f1" compoundref="db__layer_8py" startline="863" endline="880">db_layer.Database.insertMIMESbyGID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a844ac1872f0ddf55d238e2bc229354c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.deleteMIMESbyGID</definition>
+        <argsstring></argsstring>
+        <name>deleteMIMESbyGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="854" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="854" bodyend="862"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <referencedby refid="classdb__layer_1_1_database_1ae95955bc5ae21324a753dca4d76f69f1" compoundref="db__layer_8py" startline="863" endline="880">db_layer.Database.insertMIMESbyGID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1ae95955bc5ae21324a753dca4d76f69f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.insertMIMESbyGID</definition>
+        <argsstring></argsstring>
+        <name>insertMIMESbyGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="863" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="863" bodyend="880"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a844ac1872f0ddf55d238e2bc229354c0" compoundref="db__layer_8py" startline="854" endline="862">db_layer.Database.deleteMIMESbyGID</references>
+        <references refid="classdb__layer_1_1_database_1a940f5d9df2aa98c4c4452d9a005a0788" compoundref="db__layer_8py" startline="845" endline="853">db_layer.Database.findMIMESbyGID</references>
+        <referencedby refid="classdb__layer_1_1_database_1ac2a8936466701acf8972dd1dbb73d0ad" compoundref="db__layer_8py" startline="881" endline="890">db_layer.Database.wr_insertMIMESbyGID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1ac2a8936466701acf8972dd1dbb73d0ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.wr_insertMIMESbyGID</definition>
+        <argsstring></argsstring>
+        <name>wr_insertMIMESbyGID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="881" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="881" bodyend="890"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1ae95955bc5ae21324a753dca4d76f69f1" compoundref="db__layer_8py" startline="863" endline="880">db_layer.Database.insertMIMESbyGID</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__layer_1_1_database_1a014383f7f432ef974c12c87bdbe08546" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_layer.Database.getRULES</definition>
+        <argsstring></argsstring>
+        <name>getRULES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_layer.py" line="891" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="891" bodyend="930"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/prj/proxy-final/proxy/source/db_layer.py" line="104" bodyfile="/prj/proxy-final/proxy/source/db_layer.py" bodystart="104" bodyend="931"/>
+    <listofallmembers>
+      <member refid="classdb__layer_1_1_database_1a49615f902bb09761e484e870ba15792f" prot="private" virt="non-virtual"><scope>db_layer::Database</scope><name>__BASE__</name></member>
+      <member refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" prot="private" virt="non-virtual"><scope>db_layer::Database</scope><name>__DBSession__</name></member>
+      <member refid="classdb__layer_1_1_database_1a7b83f2d4aec38f965eb1d3dbedc1cf1c" prot="private" virt="non-virtual"><scope>db_layer::Database</scope><name>__engine__</name></member>
+      <member refid="classdb__layer_1_1_database_1a2e4b8be9ebcb91f37e9377164e060c2a" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>__init__</name></member>
+      <member refid="classdb__layer_1_1_database_1a0392fa6d4ee2ef8849aef0d7ea024cac" prot="private" virt="non-virtual"><scope>db_layer::Database</scope><name>__initialized__</name></member>
+      <member refid="classdb__layer_1_1_database_1a6de72995e1ee6cc7fcd9f028fb8567f5" prot="private" virt="non-virtual"><scope>db_layer::Database</scope><name>__metadata__</name></member>
+      <member refid="classdb__layer_1_1_database_1a472b95b106b4fe0185582d99f36edb85" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>addGroup</name></member>
+      <member refid="classdb__layer_1_1_database_1a1d5f62d1f3ee91d692483abe8c774c89" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>addRelation</name></member>
+      <member refid="classdb__layer_1_1_database_1a607d0253401fe69017f3e2b397a66c65" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>addUser</name></member>
+      <member refid="classdb__layer_1_1_database_1a36251bcd67a2b86157830f7c4df7c35d" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>changeGroup</name></member>
+      <member refid="classdb__layer_1_1_database_1ab3e162f3cda68dacdfaa3de68e300567" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>changeGroupDescription</name></member>
+      <member refid="classdb__layer_1_1_database_1a6b55a92453cf88fd95b0e6b565663bbc" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>changeUser</name></member>
+      <member refid="classdb__layer_1_1_database_1ad49eca83ffa1263e355f5757e9b4d814" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>changeUserDescription</name></member>
+      <member refid="classdb__layer_1_1_database_1a2faddc3de17c5f91a96d835339e5b187" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>changeUserPassword</name></member>
+      <member refid="classdb__layer_1_1_database_1a3cdf214f598de4b4c5d08e5a1f7c218b" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>commitDBChanges</name></member>
+      <member refid="classdb__layer_1_1_database_1a844ac1872f0ddf55d238e2bc229354c0" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>deleteMIMESbyGID</name></member>
+      <member refid="classdb__layer_1_1_database_1a9182f4e89992da5de14ae67f466514df" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>deleteURISbyGID</name></member>
+      <member refid="classdb__layer_1_1_database_1af7c91fdd73898b9e2aa1d1e04ebcb8a6" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>deleteWORDSbyGID</name></member>
+      <member refid="classdb__layer_1_1_database_1a8470bd9042a562ac6205dc6edcb374ea" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>delGroup</name></member>
+      <member refid="classdb__layer_1_1_database_1ab4e221a9ae93a5780c084d49d01029d8" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>delRelation</name></member>
+      <member refid="classdb__layer_1_1_database_1ad8447f580fdb6dc37c23fe4220ee62b9" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>delUser</name></member>
+      <member refid="classdb__layer_1_1_database_1a39d62bdcc06c57e3a02aa86c31a45f8d" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>findGroup</name></member>
+      <member refid="classdb__layer_1_1_database_1a16008b08c96fa493d7ee12b2a7a5b181" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>findGroupByGID</name></member>
+      <member refid="classdb__layer_1_1_database_1a20c7dd43617755b5ebaf0e1d22a4a2f8" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>findGroupByGroupname</name></member>
+      <member refid="classdb__layer_1_1_database_1acf2271857a561c1e17069068f5c7e317" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>findGroupsByUser</name></member>
+      <member refid="classdb__layer_1_1_database_1a940f5d9df2aa98c4c4452d9a005a0788" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>findMIMESbyGID</name></member>
+      <member refid="classdb__layer_1_1_database_1a782bfdf0a4415ef9f520722125851924" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>findNotGroupsByUser</name></member>
+      <member refid="classdb__layer_1_1_database_1abe7e2fc7937e3fd641a8ec5275b4db60" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>findURISbyGID</name></member>
+      <member refid="classdb__layer_1_1_database_1aaa54107650dc6511c7afdaf98112d4c1" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>findUser</name></member>
+      <member refid="classdb__layer_1_1_database_1aa97a7c93c41d97e60600dec9fb87270e" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>findUserByUID</name></member>
+      <member refid="classdb__layer_1_1_database_1a321ec63103a76c21fb556f82bc03e08f" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>findUserByUsername</name></member>
+      <member refid="classdb__layer_1_1_database_1a7f168024109c6490cca9f764cd0bbeac" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>findWORDSbyGID</name></member>
+      <member refid="classdb__layer_1_1_database_1a22ed5c7f36dbb61e6f60c4040987bf55" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>getAllCustomGroups</name></member>
+      <member refid="classdb__layer_1_1_database_1aec26922467f83a27ddc41b583f0f1cb0" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>getAllGroups</name></member>
+      <member refid="classdb__layer_1_1_database_1aa56ec835e0baf06452952528e12062bc" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>getAllUser</name></member>
+      <member refid="classdb__layer_1_1_database_1a98fa2d3a8377bca1fe5f2d2946ef2929" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>getLowestUnusedGIDfromGroup</name></member>
+      <member refid="classdb__layer_1_1_database_1a99ba044bb2e8692e27c34b74f6420ce8" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>getLowestUnusedUIDfromUser</name></member>
+      <member refid="classdb__layer_1_1_database_1a014383f7f432ef974c12c87bdbe08546" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>getRULES</name></member>
+      <member refid="classdb__layer_1_1_database_1ae95955bc5ae21324a753dca4d76f69f1" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>insertMIMESbyGID</name></member>
+      <member refid="classdb__layer_1_1_database_1aebc7fd132c862539ede9959fa4257d2a" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>insertURISbyGID</name></member>
+      <member refid="classdb__layer_1_1_database_1a849faf2993ee0d75f38639f22c3553e7" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>insertWORDSbyGID</name></member>
+      <member refid="classdb__layer_1_1_database_1a1f4a9b4e8dbd15d9f0ce74c1464ec3f9" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>isAdminAllowed</name></member>
+      <member refid="classdb__layer_1_1_database_1a9ddac6b8ec475ecd6e817329416e3d22" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>isUserAdmin</name></member>
+      <member refid="classdb__layer_1_1_database_1abbe6297269170e88f0ebe7da784fb62b" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>isUserAdvanced</name></member>
+      <member refid="classdb__layer_1_1_database_1a738e07ff3b7292931bb057d174866249" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>isUserAllowed</name></member>
+      <member refid="classdb__layer_1_1_database_1af6ba4fcf6bcd589b0c85b05f49f46ef5" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>isUserAllowedNow</name></member>
+      <member refid="classdb__layer_1_1_database_1a9ff75e8e93503e1e6b5ceb083910864a" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>isUserGuest</name></member>
+      <member refid="classdb__layer_1_1_database_1a3aaf3d095b7c6d005ec9061f83ccdc66" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>isUserKid</name></member>
+      <member refid="classdb__layer_1_1_database_1a232d5477efc9b4c8d8a36b7541c851e1" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>session</name></member>
+      <member refid="classdb__layer_1_1_database_1a03795c597d3a3ca0ef5d7c73299f8421" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>setUserAdmin</name></member>
+      <member refid="classdb__layer_1_1_database_1a203864bb4a53dfb89f57c23392559b46" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>setUserAdvanced</name></member>
+      <member refid="classdb__layer_1_1_database_1ab86b18a8ab851b48703101ab53af6f8b" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>setUserGuest</name></member>
+      <member refid="classdb__layer_1_1_database_1a03a583931163ed9bac45c5b05e4bf69f" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>setUserKid</name></member>
+      <member refid="classdb__layer_1_1_database_1aa682552b52caba32fde23ef44fb63ade" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>wr_addRelation</name></member>
+      <member refid="classdb__layer_1_1_database_1ab20da0ac6137c6a276f27f59a90d87e3" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>wr_delRelation</name></member>
+      <member refid="classdb__layer_1_1_database_1ac2a8936466701acf8972dd1dbb73d0ad" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>wr_insertMIMESbyGID</name></member>
+      <member refid="classdb__layer_1_1_database_1a3ede692ddfa18fd73ce142341f21e6a0" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>wr_insertURISbyGID</name></member>
+      <member refid="classdb__layer_1_1_database_1abf6ce37aea5202f161dbd3e3c41d6a6e" prot="public" virt="non-virtual"><scope>db_layer::Database</scope><name>wr_insertWORDSbyGID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

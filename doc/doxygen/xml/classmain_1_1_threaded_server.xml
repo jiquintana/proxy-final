@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classmain_1_1_threaded_server" kind="class" prot="public">
+    <compoundname>main::ThreadedServer</compoundname>
+    <basecompoundref refid="class_thread_pool_1_1_thread_pool_mix_in" prot="public" virt="non-virtual">ThreadPool.ThreadPoolMixIn</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TCPServer</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="135">
+        <label>ThreadingMixIn</label>
+      </node>
+      <node id="136">
+        <label>TCPServer</label>
+      </node>
+      <node id="134">
+        <label>ThreadPool.ThreadPoolMixIn</label>
+        <link refid="class_thread_pool_1_1_thread_pool_mix_in"/>
+        <childnode refid="135" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>main.ThreadedServer</label>
+        <link refid="classmain_1_1_threaded_server"/>
+        <childnode refid="134" relation="public-inheritance">
+        </childnode>
+        <childnode refid="136" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="139">
+        <label>ThreadingMixIn</label>
+      </node>
+      <node id="140">
+        <label>TCPServer</label>
+      </node>
+      <node id="138">
+        <label>ThreadPool.ThreadPoolMixIn</label>
+        <link refid="class_thread_pool_1_1_thread_pool_mix_in"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>main.ThreadedServer</label>
+        <link refid="classmain_1_1_threaded_server"/>
+        <childnode refid="138" relation="public-inheritance">
+        </childnode>
+        <childnode refid="140" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/prj/proxy-final/proxy/source/main.py" line="28" bodyfile="/prj/proxy-final/proxy/source/main.py" bodystart="28" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1a6be85971f1b071cd2f7d958ff988310f" prot="public" virt="non-virtual"><scope>main::ThreadedServer</scope><name>allow_reuse_address</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1ac5a128ba2a86dc5cd90fd526a26ad148" prot="public" virt="non-virtual"><scope>main::ThreadedServer</scope><name>daemon_threads</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1a52ba9961e4dba0d2151dfc9bb1109c05" prot="public" virt="non-virtual"><scope>main::ThreadedServer</scope><name>force_shutdown</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1af2edfa9a820be9f947c90b737743dea4" prot="public" virt="non-virtual"><scope>main::ThreadedServer</scope><name>handle_request</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1a7e3bc178cfa9c8583685c62e1104a370" prot="public" virt="non-virtual"><scope>main::ThreadedServer</scope><name>KEEP_RUNNING</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1aca5cd6b9a97351bc88b58a94b55d5bf8" prot="public" virt="non-virtual"><scope>main::ThreadedServer</scope><name>keep_running</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1ad8942e9f9352de2747eda5ecbc00c047" prot="public" virt="non-virtual"><scope>main::ThreadedServer</scope><name>logger</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1adc4a62f954256f803da312f6e26ee254" prot="public" virt="non-virtual"><scope>main::ThreadedServer</scope><name>numThreads</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1a3967a11cc2a1ec6cf6d44368ac90ed42" prot="public" virt="non-virtual"><scope>main::ThreadedServer</scope><name>process_request_thread</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1a93c8c7dd5f32ba5faa17096ea56070ad" prot="public" virt="non-virtual"><scope>main::ThreadedServer</scope><name>requests</name></member>
+      <member refid="class_thread_pool_1_1_thread_pool_mix_in_1ab81f98e7bd32d246c065f9d4da78e1cb" prot="public" virt="non-virtual"><scope>main::ThreadedServer</scope><name>serve_forever</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

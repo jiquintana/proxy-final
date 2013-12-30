@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespacedb__mapper" kind="namespace">
+    <compoundname>db_mapper</compoundname>
+    <innerclass refid="classdb__mapper_1_1db__handler" prot="public">db_mapper::db_handler</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacedb__mapper_1a75634fff7a64aeaac74ca5b779941a79" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list db_mapper.DEBUGCALL</definition>
+        <argsstring></argsstring>
+        <name>DEBUGCALL</name>
+        <initializer>= <ref refid="class_config_1_1_config_1a1d5bf72f9f7f8047bc648261155e3141" kindref="member">Config.DEBUG</ref>[&apos;db_mapper.DEBUGCALL&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="12" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__mapper_1ae8d592e42c99e3b40554e619dfd7eda4" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list db_mapper.DEBUGANSWER</definition>
+        <argsstring></argsstring>
+        <name>DEBUGANSWER</name>
+        <initializer>= <ref refid="class_config_1_1_config_1a1d5bf72f9f7f8047bc648261155e3141" kindref="member">Config.DEBUG</ref>[&apos;db_mapper.DEBUGANSWER&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="13" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__mapper_1aa9453ef6afc547acd4f4a36807754062" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list db_mapper.DEBUG</definition>
+        <argsstring></argsstring>
+        <name>DEBUG</name>
+        <initializer>= Config.DEBUG[&apos;db_mapper.DEBUG&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="14" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__mapper_1a7244272b434d7f40820b6eed3a0d7462" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_mapper.handler</definition>
+        <argsstring></argsstring>
+        <name>handler</name>
+        <initializer>= <ref refid="classdb__mapper_1_1db__handler" kindref="compound">db_handler</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="225" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__mapper_1a55b2754b28ffec42672a8110bdac3fd4" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple db_mapper.answer</definition>
+        <argsstring></argsstring>
+        <name>answer</name>
+        <initializer>= handler.handle_request(query=&quot;findUser&quot;, parms=&quot;username=%&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="226" bodyfile="/prj/proxy-final/proxy/source/db_mapper.py" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/prj/proxy-final/proxy/source/db_mapper.py" line="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,898 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Proxy doméstico con protección Parental: Referencia de la Clase Cache.FileCache</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="64it-security.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Proxy doméstico con protección Parental
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Proxy doméstico con protección Parental</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_cache_1_1_file_cache.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-attribs">Atributos públicos</a> &#124;
+<a href="#pub-static-attribs">Atributos públicos estáticos</a> &#124;
+<a href="class_cache_1_1_file_cache-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase Cache.FileCache</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de colaboración para Cache.FileCache:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cache_1_1_file_cache__coll__graph.png" border="0" usemap="#_cache_8_file_cache_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:ac5fa19d6e9b990f58ae6969abfdeceed"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#ac5fa19d6e9b990f58ae6969abfdeceed">remove_html_markup</a></td></tr>
+<tr class="separator:ac5fa19d6e9b990f58ae6969abfdeceed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794781e8000f88b6990d1d1a2b24fbe6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a794781e8000f88b6990d1d1a2b24fbe6">__init__</a></td></tr>
+<tr class="separator:a794781e8000f88b6990d1d1a2b24fbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0ff0a693d8eb05c5635ac68c86a65b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a3a0ff0a693d8eb05c5635ac68c86a65b">setup</a></td></tr>
+<tr class="separator:a3a0ff0a693d8eb05c5635ac68c86a65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b17bfd8c65aa650fd0f53209d03b5c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a45b17bfd8c65aa650fd0f53209d03b5c">is_cached</a></td></tr>
+<tr class="separator:a45b17bfd8c65aa650fd0f53209d03b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474cd0cce36603d869add65a52ec852b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a474cd0cce36603d869add65a52ec852b">put</a></td></tr>
+<tr class="separator:a474cd0cce36603d869add65a52ec852b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6580598cf60ffda8176dbe4036c4929c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a6580598cf60ffda8176dbe4036c4929c">get</a></td></tr>
+<tr class="separator:a6580598cf60ffda8176dbe4036c4929c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atributos públicos</h2></td></tr>
+<tr class="memitem:ac795fe342f956e8b8cd2ec23267c674d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#ac795fe342f956e8b8cd2ec23267c674d">was_checked</a></td></tr>
+<tr class="separator:ac795fe342f956e8b8cd2ec23267c674d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca5f594f2c828bbb00e29385b527b5c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#aca5f594f2c828bbb00e29385b527b5c4">DEBUG</a></td></tr>
+<tr class="separator:aca5f594f2c828bbb00e29385b527b5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969a9af6b255a6d9b14d71ee429cf6af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a969a9af6b255a6d9b14d71ee429cf6af">path</a></td></tr>
+<tr class="separator:a969a9af6b255a6d9b14d71ee429cf6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1c48cd0ee88344f405391545633787"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a2b1c48cd0ee88344f405391545633787">md5hash</a></td></tr>
+<tr class="separator:a2b1c48cd0ee88344f405391545633787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c782bcbd654eff2aea4c3b76815723"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#ad4c782bcbd654eff2aea4c3b76815723">cache_filename_base</a></td></tr>
+<tr class="separator:ad4c782bcbd654eff2aea4c3b76815723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb789c23d266d9148f2fb9c3bc3e8d3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#abb789c23d266d9148f2fb9c3bc3e8d3c">cache_filename_meta</a></td></tr>
+<tr class="separator:abb789c23d266d9148f2fb9c3bc3e8d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64994359a6b953e12a1f3352cbf057a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#af64994359a6b953e12a1f3352cbf057a">cache_filename_cache</a></td></tr>
+<tr class="separator:af64994359a6b953e12a1f3352cbf057a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a427efcf91e7550463882b99d6b3df2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a4a427efcf91e7550463882b99d6b3df2">cache_filename_header</a></td></tr>
+<tr class="separator:a4a427efcf91e7550463882b99d6b3df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a879f97bdb8d6f8a5b14390db395cdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a7a879f97bdb8d6f8a5b14390db395cdf">cache_filename_strip</a></td></tr>
+<tr class="separator:a7a879f97bdb8d6f8a5b14390db395cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6660cc5f8e2408bdece63291305a5e5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a6660cc5f8e2408bdece63291305a5e5e">content_stripped</a></td></tr>
+<tr class="separator:a6660cc5f8e2408bdece63291305a5e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Atributos públicos estáticos</h2></td></tr>
+<tr class="memitem:aa3e48c8aceb54811558590d05769af11"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#aa3e48c8aceb54811558590d05769af11">path</a> = ''</td></tr>
+<tr class="separator:aa3e48c8aceb54811558590d05769af11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94712bab05ce67c5a20c3e2cfba47509"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a94712bab05ce67c5a20c3e2cfba47509">md5hash_str</a> = ''</td></tr>
+<tr class="separator:a94712bab05ce67c5a20c3e2cfba47509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643dfb38067e5c4785397ef0e8c20944"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a643dfb38067e5c4785397ef0e8c20944">cache_filename_base</a> = ''</td></tr>
+<tr class="separator:a643dfb38067e5c4785397ef0e8c20944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e30d3196eea1c3cae1186945c8e0e2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#ab6e30d3196eea1c3cae1186945c8e0e2">cache_filename_meta</a> = ''</td></tr>
+<tr class="separator:ab6e30d3196eea1c3cae1186945c8e0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7b20e99585e8ff1fd1c205eb02c2b3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#abf7b20e99585e8ff1fd1c205eb02c2b3">cache_filename_cache</a> = ''</td></tr>
+<tr class="separator:abf7b20e99585e8ff1fd1c205eb02c2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7d1283375128a83f657d9eb2ed5d3d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a2f7d1283375128a83f657d9eb2ed5d3d">cache_filename_strip</a> = ''</td></tr>
+<tr class="separator:a2f7d1283375128a83f657d9eb2ed5d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27cec37d2b4d4aac26eb0999e220031e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a27cec37d2b4d4aac26eb0999e220031e">cache_filename_header</a> = ''</td></tr>
+<tr class="separator:a27cec37d2b4d4aac26eb0999e220031e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda3d5760616e47bd8fda4fe7490d7a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#afda3d5760616e47bd8fda4fe7490d7a9">content_is_text</a> = False</td></tr>
+<tr class="separator:afda3d5760616e47bd8fda4fe7490d7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6add3c86ea9523a23c289b660d064e57"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a6add3c86ea9523a23c289b660d064e57">content_stripped</a> = bytes()</td></tr>
+<tr class="separator:a6add3c86ea9523a23c289b660d064e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebf67b0706f9ce71f54cdfadacbfe2e"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a7ebf67b0706f9ce71f54cdfadacbfe2e">logger</a> = <a class="el" href="class_log_1_1_log.html">Log</a>()</td></tr>
+<tr class="separator:a7ebf67b0706f9ce71f54cdfadacbfe2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8582c66c170deb664f9e7cd78b21d6b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a8582c66c170deb664f9e7cd78b21d6b1">is_initialized</a> = False</td></tr>
+<tr class="separator:a8582c66c170deb664f9e7cd78b21d6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263cdec129a60caf90b7c6d5eb5c64f3"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cache_1_1_file_cache.html#a263cdec129a60caf90b7c6d5eb5c64f3">DEBUG</a> = Config.DEBUG['Cache.DEBUG']</td></tr>
+<tr class="separator:a263cdec129a60caf90b7c6d5eb5c64f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock">
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00033">33</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a class="anchor" id="a794781e8000f88b6990d1d1a2b24fbe6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def Cache.FileCache.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00066">66</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a class="anchor" id="a6580598cf60ffda8176dbe4036c4929c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def Cache.FileCache.get </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>debug</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ip</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>port</em> = <code>''</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00167">167</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas para esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cache_1_1_file_cache_a6580598cf60ffda8176dbe4036c4929c_cgraph.png" border="0" usemap="#class_cache_1_1_file_cache_a6580598cf60ffda8176dbe4036c4929c_cgraph" alt=""/></div>
+<map name="class_cache_1_1_file_cache_a6580598cf60ffda8176dbe4036c4929c_cgraph" id="class_cache_1_1_file_cache_a6580598cf60ffda8176dbe4036c4929c_cgraph">
+<area shape="rect" id="node2" href="class_cache_1_1_file_cache.html#a3a0ff0a693d8eb05c5635ac68c86a65b" title="Cache.FileCache.setup" alt="" coords="195,5,349,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a45b17bfd8c65aa650fd0f53209d03b5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def Cache.FileCache.is_cached </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>debug</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ip</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>port</em> = <code>''</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00096">96</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas para esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cache_1_1_file_cache_a45b17bfd8c65aa650fd0f53209d03b5c_cgraph.png" border="0" usemap="#class_cache_1_1_file_cache_a45b17bfd8c65aa650fd0f53209d03b5c_cgraph" alt=""/></div>
+<map name="class_cache_1_1_file_cache_a45b17bfd8c65aa650fd0f53209d03b5c_cgraph" id="class_cache_1_1_file_cache_a45b17bfd8c65aa650fd0f53209d03b5c_cgraph">
+<area shape="rect" id="node2" href="class_cache_1_1_file_cache.html#a3a0ff0a693d8eb05c5635ac68c86a65b" title="Cache.FileCache.setup" alt="" coords="187,12,341,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a474cd0cce36603d869add65a52ec852b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def Cache.FileCache.put </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>headers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>strip_text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>debug</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ip</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>port</em> = <code>''</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00116">116</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas para esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cache_1_1_file_cache_a474cd0cce36603d869add65a52ec852b_cgraph.png" border="0" usemap="#class_cache_1_1_file_cache_a474cd0cce36603d869add65a52ec852b_cgraph" alt=""/></div>
+<map name="class_cache_1_1_file_cache_a474cd0cce36603d869add65a52ec852b_cgraph" id="class_cache_1_1_file_cache_a474cd0cce36603d869add65a52ec852b_cgraph">
+<area shape="rect" id="node2" href="class_cache_1_1_file_cache.html#a3a0ff0a693d8eb05c5635ac68c86a65b" title="Cache.FileCache.setup" alt="" coords="195,5,349,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5fa19d6e9b990f58ae6969abfdeceed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def Cache.FileCache.remove_html_markup </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00049">49</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a0ff0a693d8eb05c5635ac68c86a65b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def Cache.FileCache.setup </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>debug</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ip</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>port</em> = <code>''</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00073">73</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cache_1_1_file_cache_a3a0ff0a693d8eb05c5635ac68c86a65b_icgraph.png" border="0" usemap="#class_cache_1_1_file_cache_a3a0ff0a693d8eb05c5635ac68c86a65b_icgraph" alt=""/></div>
+<map name="class_cache_1_1_file_cache_a3a0ff0a693d8eb05c5635ac68c86a65b_icgraph" id="class_cache_1_1_file_cache_a3a0ff0a693d8eb05c5635ac68c86a65b_icgraph">
+<area shape="rect" id="node2" href="class_cache_1_1_file_cache.html#a45b17bfd8c65aa650fd0f53209d03b5c" title="Cache.FileCache.is\l_cached" alt="" coords="213,5,345,46"/><area shape="rect" id="node3" href="class_cache_1_1_file_cache.html#a474cd0cce36603d869add65a52ec852b" title="Cache.FileCache.put" alt="" coords="209,71,349,97"/><area shape="rect" id="node4" href="class_cache_1_1_file_cache.html#a6580598cf60ffda8176dbe4036c4929c" title="Cache.FileCache.get" alt="" coords="209,121,349,148"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los datos miembro</h2>
+<a class="anchor" id="a643dfb38067e5c4785397ef0e8c20944"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Cache.FileCache.cache_filename_base = ''</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00036">36</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4c782bcbd654eff2aea4c3b76815723"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cache.FileCache.cache_filename_base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00083">83</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abf7b20e99585e8ff1fd1c205eb02c2b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Cache.FileCache.cache_filename_cache = ''</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00038">38</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af64994359a6b953e12a1f3352cbf057a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cache.FileCache.cache_filename_cache</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00085">85</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a27cec37d2b4d4aac26eb0999e220031e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Cache.FileCache.cache_filename_header = ''</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00040">40</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a427efcf91e7550463882b99d6b3df2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cache.FileCache.cache_filename_header</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00086">86</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6e30d3196eea1c3cae1186945c8e0e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Cache.FileCache.cache_filename_meta = ''</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00037">37</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abb789c23d266d9148f2fb9c3bc3e8d3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cache.FileCache.cache_filename_meta</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00084">84</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f7d1283375128a83f657d9eb2ed5d3d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Cache.FileCache.cache_filename_strip = ''</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00039">39</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a879f97bdb8d6f8a5b14390db395cdf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cache.FileCache.cache_filename_strip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00087">87</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afda3d5760616e47bd8fda4fe7490d7a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cache.FileCache.content_is_text = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00041">41</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6add3c86ea9523a23c289b660d064e57"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple Cache.FileCache.content_stripped = bytes()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00042">42</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6660cc5f8e2408bdece63291305a5e5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cache.FileCache.content_stripped</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00145">145</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a263cdec129a60caf90b7c6d5eb5c64f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list Cache.FileCache.DEBUG = Config.DEBUG['Cache.DEBUG']</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00047">47</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca5f594f2c828bbb00e29385b527b5c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cache.FileCache.DEBUG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00070">70</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8582c66c170deb664f9e7cd78b21d6b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cache.FileCache.is_initialized = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00046">46</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ebf67b0706f9ce71f54cdfadacbfe2e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple Cache.FileCache.logger = <a class="el" href="class_log_1_1_log.html">Log</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00043">43</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b1c48cd0ee88344f405391545633787"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cache.FileCache.md5hash</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00081">81</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94712bab05ce67c5a20c3e2cfba47509"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Cache.FileCache.md5hash_str = ''</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00035">35</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3e48c8aceb54811558590d05769af11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Cache.FileCache.path = ''</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00034">34</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a969a9af6b255a6d9b14d71ee429cf6af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cache.FileCache.path</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00074">74</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac795fe342f956e8b8cd2ec23267c674d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cache.FileCache.was_checked</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="_cache_8py_source.html#l00069">69</a> del archivo <a class="el" href="_cache_8py_source.html">Cache.py</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<li><a class="el" href="_cache_8py_source.html">Cache.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_cache.html">Cache</a></li><li class="navelem"><a class="el" href="class_cache_1_1_file_cache.html">FileCache</a></li>
+    <li class="footer">Generado el Lunes, 30 de Diciembre de 2013 18:32:36 para Proxy doméstico con protección Parental por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

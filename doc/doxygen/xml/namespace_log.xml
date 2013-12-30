@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespace_log" kind="namespace">
+    <compoundname>Log</compoundname>
+    <innerclass refid="class_log_1_1_log" prot="public">Log::Log</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_log_1ae8f55475ed5df129255d987cde8c6b07" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list Log.TRACE</definition>
+        <argsstring></argsstring>
+        <name>TRACE</name>
+        <initializer>= Config.TRACE[&apos;Log_TRACE&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/Log.py" line="12" bodyfile="/prj/proxy-final/proxy/source/Log.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/prj/proxy-final/proxy/source/Log.py" line="1"/>
+  </compounddef>
+</doxygen>

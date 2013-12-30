@@ -1,0 +1,6 @@
+<map id="db_layer.Database.findNotGroupsByUser" name="db_layer.Database.findNotGroupsByUser">
+<area shape="rect" id="node2" href="$classdb__layer_1_1_database.html#a321ec63103a76c21fb556f82bc03e08f" title="db_layer.Database.findUser\lByUsername" alt="" coords="469,14,643,55"/>
+<area shape="rect" id="node3" href="$classdb__layer_1_1_database.html#a22ed5c7f36dbb61e6f60c4040987bf55" title="db_layer.Database.getAll\lCustomGroups" alt="" coords="239,28,401,70"/>
+<area shape="rect" id="node4" href="$classdb__layer_1_1_database.html#acf2271857a561c1e17069068f5c7e317" title="db_layer.Database.findGroups\lByUser" alt="" coords="225,94,415,135"/>
+<area shape="rect" id="node5" href="$classdb__layer_1_1_database.html#a16008b08c96fa493d7ee12b2a7a5b181" title="db_layer.Database.findGroup\lByGID" alt="" coords="464,123,648,164"/>
+</map>

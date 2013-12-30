@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classdb__log_1_1_database" kind="class" prot="public">
+    <compoundname>db_log::Database</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdb__log_1_1_database_1a29d469f932805e9f22f44ffe0a9eb359" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>db_log.Database::__initialized__</definition>
+        <argsstring></argsstring>
+        <name>__initialized__</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="32" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" compoundref="db__log_8py" startline="37" endline="52">db_log.Database.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__log_1_1_database_1aae97a56a2b3400b7485f8a60cd6d4e8c" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>db_log.Database::__engine__</definition>
+        <argsstring></argsstring>
+        <name>__engine__</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="33" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" compoundref="db__log_8py" startline="37" endline="52">db_log.Database.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__log_1_1_database_1a77fd7838a763f728064e5d1c778d6f5d" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>db_log.Database::__DBSession__</definition>
+        <argsstring></argsstring>
+        <name>__DBSession__</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="34" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" compoundref="db__log_8py" startline="37" endline="52">db_log.Database.__init__</referencedby>
+        <referencedby refid="classdb__log_1_1_database_1ae34e71223e9896b44ef7ad9e9426718b" compoundref="db__log_8py" startline="53" endline="62">db_log.Database.getLastLines</referencedby>
+        <referencedby refid="classdb__log_1_1_database_1a395b1cf70a83f2d01422566d3e08484c" compoundref="db__log_8py" startline="63" endline="71">db_log.Database.addLine</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__log_1_1_database_1a4014013b3724fd103f40a8cd4bf45f4e" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>db_log.Database::__BASE__</definition>
+        <argsstring></argsstring>
+        <name>__BASE__</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="35" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" compoundref="db__log_8py" startline="37" endline="52">db_log.Database.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdb__log_1_1_database_1af6b2deacd2e4d21f3292d2143a4e14ba" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>db_log.Database::session</definition>
+        <argsstring></argsstring>
+        <name>session</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="36" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" compoundref="db__log_8py" startline="37" endline="52">db_log.Database.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdb__log_1_1_database_1a6430b4ed2daac279956e136536eb4aec" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>db_log.Database::__metadata__</definition>
+        <argsstring></argsstring>
+        <name>__metadata__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="42" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" compoundref="db__log_8py" startline="37" endline="52">db_log.Database.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_log.Database.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="37" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="37" bodyend="52"/>
+        <references refid="classdb__layer_1_1_database_1a0392fa6d4ee2ef8849aef0d7ea024cac" compoundref="db__layer_8py" startline="105">db_layer.Database.__initialized__</references>
+        <references refid="classdb__log_1_1_database_1a29d469f932805e9f22f44ffe0a9eb359" compoundref="db__log_8py" startline="32">db_log.Database.__initialized__</references>
+        <references refid="classdb__layer_1_1_database_1a7b83f2d4aec38f965eb1d3dbedc1cf1c" compoundref="db__layer_8py" startline="106">db_layer.Database.__engine__</references>
+        <references refid="classdb__log_1_1_database_1aae97a56a2b3400b7485f8a60cd6d4e8c" compoundref="db__log_8py" startline="33">db_log.Database.__engine__</references>
+        <references refid="classdb__layer_1_1_database_1a6de72995e1ee6cc7fcd9f028fb8567f5" compoundref="db__layer_8py" startline="115">db_layer.Database.__metadata__</references>
+        <references refid="classdb__log_1_1_database_1a6430b4ed2daac279956e136536eb4aec" compoundref="db__log_8py" startline="42">db_log.Database.__metadata__</references>
+        <references refid="classdb__layer_1_1_database_1a49615f902bb09761e484e870ba15792f" compoundref="db__layer_8py" startline="108">db_layer.Database.__BASE__</references>
+        <references refid="classdb__log_1_1_database_1a4014013b3724fd103f40a8cd4bf45f4e" compoundref="db__log_8py" startline="35">db_log.Database.__BASE__</references>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__log_1_1_database_1a77fd7838a763f728064e5d1c778d6f5d" compoundref="db__log_8py" startline="34">db_log.Database.__DBSession__</references>
+        <references refid="classdb__layer_1_1_database_1a232d5477efc9b4c8d8a36b7541c851e1" compoundref="db__layer_8py" startline="109">db_layer.Database.session</references>
+        <references refid="classdb__log_1_1_database_1af6b2deacd2e4d21f3292d2143a4e14ba" compoundref="db__log_8py" startline="36">db_log.Database.session</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__log_1_1_database_1ae34e71223e9896b44ef7ad9e9426718b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_log.Database.getLastLines</definition>
+        <argsstring></argsstring>
+        <name>getLastLines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="53" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="53" bodyend="62"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__log_1_1_database_1a77fd7838a763f728064e5d1c778d6f5d" compoundref="db__log_8py" startline="34">db_log.Database.__DBSession__</references>
+      </memberdef>
+      <memberdef kind="function" id="classdb__log_1_1_database_1a395b1cf70a83f2d01422566d3e08484c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def db_log.Database.addLine</definition>
+        <argsstring></argsstring>
+        <name>addLine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/db_log.py" line="63" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="63" bodyend="71"/>
+        <references refid="classdb__layer_1_1_database_1aae62e5b4c9fd796107461b247434ee2b" compoundref="db__layer_8py" startline="107">db_layer.Database.__DBSession__</references>
+        <references refid="classdb__log_1_1_database_1a77fd7838a763f728064e5d1c778d6f5d" compoundref="db__log_8py" startline="34">db_log.Database.__DBSession__</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/prj/proxy-final/proxy/source/db_log.py" line="31" bodyfile="/prj/proxy-final/proxy/source/db_log.py" bodystart="31" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classdb__log_1_1_database_1a4014013b3724fd103f40a8cd4bf45f4e" prot="private" virt="non-virtual"><scope>db_log::Database</scope><name>__BASE__</name></member>
+      <member refid="classdb__log_1_1_database_1a77fd7838a763f728064e5d1c778d6f5d" prot="private" virt="non-virtual"><scope>db_log::Database</scope><name>__DBSession__</name></member>
+      <member refid="classdb__log_1_1_database_1aae97a56a2b3400b7485f8a60cd6d4e8c" prot="private" virt="non-virtual"><scope>db_log::Database</scope><name>__engine__</name></member>
+      <member refid="classdb__log_1_1_database_1a8ca8cf39fcc9ed91f39d6a8254cd38ca" prot="public" virt="non-virtual"><scope>db_log::Database</scope><name>__init__</name></member>
+      <member refid="classdb__log_1_1_database_1a29d469f932805e9f22f44ffe0a9eb359" prot="private" virt="non-virtual"><scope>db_log::Database</scope><name>__initialized__</name></member>
+      <member refid="classdb__log_1_1_database_1a6430b4ed2daac279956e136536eb4aec" prot="private" virt="non-virtual"><scope>db_log::Database</scope><name>__metadata__</name></member>
+      <member refid="classdb__log_1_1_database_1a395b1cf70a83f2d01422566d3e08484c" prot="public" virt="non-virtual"><scope>db_log::Database</scope><name>addLine</name></member>
+      <member refid="classdb__log_1_1_database_1ae34e71223e9896b44ef7ad9e9426718b" prot="public" virt="non-virtual"><scope>db_log::Database</scope><name>getLastLines</name></member>
+      <member refid="classdb__log_1_1_database_1af6b2deacd2e4d21f3292d2143a4e14ba" prot="public" virt="non-virtual"><scope>db_log::Database</scope><name>session</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

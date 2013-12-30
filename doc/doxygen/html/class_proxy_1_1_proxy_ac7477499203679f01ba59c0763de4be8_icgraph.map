@@ -1,0 +1,7 @@
+<map id="Proxy.Proxy.int_send_BODY" name="Proxy.Proxy.int_send_BODY">
+<area shape="rect" id="node2" href="$class_proxy_1_1_proxy.html#ab39c82e0930ce514c746b5e0ec01c94e" title="Proxy.Proxy.svc_hndl_FILE" alt="" coords="246,5,426,32"/>
+<area shape="rect" id="node3" href="$class_proxy_1_1_proxy.html#af21544c49ea3bd10fbe5e2df39ea0bfa" title="Proxy.Proxy.svc_hndl_DB" alt="" coords="251,56,421,83"/>
+<area shape="rect" id="node4" href="$class_proxy_1_1_proxy.html#a903eb309eb48270d1a81c4aafbdcd66b" title="Proxy.Proxy.svc_hndl_STOP" alt="" coords="243,107,429,133"/>
+<area shape="rect" id="node5" href="$class_proxy_1_1_proxy.html#afd2a93e40151bb893e17a161b3a9a592" title="Proxy.Proxy.svc_hndl_POST" alt="" coords="243,157,429,184"/>
+<area shape="rect" id="node6" href="$class_proxy_1_1_proxy.html#a8197ed85f0e852510889d7b0027d18b0" title="Proxy.Proxy.svc_hndl_NOOP" alt="" coords="241,208,431,235"/>
+</map>

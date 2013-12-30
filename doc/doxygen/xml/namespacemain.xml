@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespacemain" kind="namespace">
+    <compoundname>main</compoundname>
+    <innerclass refid="classmain_1_1_threaded_server" prot="public">main::ThreadedServer</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemain_1a8c220c73f6ecc6956eba2406eba99d7c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.python_OldVersion</definition>
+        <argsstring></argsstring>
+        <name>python_OldVersion</name>
+        <initializer>= True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/main.py" line="6" bodyfile="/prj/proxy-final/proxy/source/main.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1ad92bd309cc4d798ebf9c4c3680dc381e" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple main.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="class_log_1_1_log" kindref="compound">Log</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/main.py" line="26" bodyfile="/prj/proxy-final/proxy/source/main.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemain_1a1fa92828a6a055fa38390012ffdd2b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def main.run</definition>
+        <argsstring></argsstring>
+        <name>run</name>
+        <briefdescription>
+<para>Run an HTTP server on port <ref refid="class_config_1_1_config_1aef20c383d5c356bfc5771e132ad241df" kindref="member">Config.PORT</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/prj/proxy-final/proxy/source/main.py" line="35" bodyfile="/prj/proxy-final/proxy/source/main.py" bodystart="37" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/prj/proxy-final/proxy/source/main.py" line="1"/>
+  </compounddef>
+</doxygen>

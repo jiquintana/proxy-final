@@ -1,0 +1,3 @@
+<map id="main.ThreadedServer" name="main.ThreadedServer">
+<area shape="rect" id="node2" href="$class_thread_pool_1_1_thread_pool_mix_in.html" title="use a thread pool instead of a new thread on every request" alt="" coords="5,80,189,107"/>
+</map>

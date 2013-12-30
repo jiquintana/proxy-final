@@ -1,0 +1,92 @@
+.TH "db_layer.py" 3 "Lunes, 30 de Diciembre de 2013" "Version 0.1" "Proxy doméstico con protección Parental" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+db_layer.py \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Clases"
+
+.in +1c
+.ti -1c
+.RI "class \fBdb_layer\&.AlchemyEncoder\fP"
+.br
+.ti -1c
+.RI "class \fBdb_layer\&.Database\fP"
+.br
+.ti -1c
+.RI "class \fBdb_layer\&.Rule\fP"
+.br
+.ti -1c
+.RI "class \fBdb_layer\&.Groups\fP"
+.br
+.ti -1c
+.RI "class \fBdb_layer\&.RolType\fP"
+.br
+.ti -1c
+.RI "class \fBdb_layer\&.User\fP"
+.br
+.ti -1c
+.RI "class \fBdb_layer\&.Group\fP"
+.br
+.ti -1c
+.RI "class \fBdb_layer\&.URIS\fP"
+.br
+.ti -1c
+.RI "class \fBdb_layer\&.WORDS\fP"
+.br
+.ti -1c
+.RI "class \fBdb_layer\&.MIMES\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBdb_layer\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBdb_layer\&.python_OldVersion\fP = True"
+.br
+.ti -1c
+.RI "int \fBdb_layer\&.MAXUSERS\fP = 1024"
+.br
+.ti -1c
+.RI "int \fBdb_layer\&.MAXGROUPS\fP = 65536"
+.br
+.ti -1c
+.RI "list \fBdb_layer\&.DRIVER\fP = Config\&.dbFiles['proxy']"
+.br
+.ti -1c
+.RI "list \fBdb_layer\&.TraceSQL\fP = Config\&.dbTrace['proxy']"
+.br
+.ti -1c
+.RI "tuple \fBdb_layer\&.engine\fP = create_engine(DRIVER, echo=TraceSQL,poolclass=NullPool)"
+.br
+.ti -1c
+.RI "tuple \fBdb_layer\&.Base\fP = declarative_base()"
+.br
+.ti -1c
+.RI "dictionary \fBdb_layer\&.HOURS_IDX\fP"
+.br
+.ti -1c
+.RI "dictionary \fBdb_layer\&.HOURS_MASK\fP"
+.br
+.ti -1c
+.RI "dictionary \fBdb_layer\&.roles\fP = {'A' : 'Admin User', 'V' : 'Advanced User', 'K' : 'Kid User', 'G' : 'Guest User'}"
+.br
+.ti -1c
+.RI "tuple \fBdb_layer\&.db\fP = Database()"
+.br
+.ti -1c
+.RI "tuple \fBdb_layer\&.rules\fP = db\&.getRULES('MIME', 'kid1')"
+.br
+.in -1c
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para Proxy doméstico con protección Parental del código fuente\&.
