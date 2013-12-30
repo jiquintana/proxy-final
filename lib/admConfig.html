@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<!-- Import jQuery UI and jqGrid UI -->
+<!-- Import jQuery jqGrid JS files -->
+
+<link rel="stylesheet" type="text/css" href="css/body.css">
+<link rel="stylesheet" type="text/css" href="css/formGroup.css">
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="js/themes/redmond/jquery-ui.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/ui/jquery-ui.js"></script>
+
+<link rel="stylesheet" type="text/css" media="screen" href="js/themes/ui.jqgrid.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="js/themes/ui.multiselect.css" />
+<!--link rel="stylesheet" type="text/css" href="css/base-min.css"/>
+<link rel="stylesheet" type="text/css" href="css/forms-min.css"/-->
+<link rel="stylesheet" type="text/css" href="js/themes/redmond/jquery-ui.css"/>
+
+
+<script type="text/javascript" src="js/jquery.jqGrid.min.js"></script>
+<script type="text/javascript" src="js/i18n/grid.locale-en.js"></script>
+
+<!--//code.jquery.com/ui/1.10.3/jquery-ui.js -->
+
+<script type='text/javascript'>
+//<![CDATA[
+	var groupFormData;
+	var rowSelected = 0;
+	var groupFormtype;
+	
+	function disableSelection(target){
+		if (typeof target.onselectstart!="undefined") //IE route
+			target.onselectstart=function(){return false}
+		else if (typeof target.style.MozGroupSelect!="undefined") //Firefox route
+			target.style.MozGroupSelect="none"
+		else //All other route (ie: Opera)
+			target.onmousedown=function(){return false}
+		target.style.cursor = "default"
+	}
+
+	function doreload() {
+		$("#grid").jqGrid('setGridParam',{
+			url:'/db/findGroup?groupname='+document.getElementById("filtrado").value,
+			datatype:"json"
+			}).trigger("reloadGrid");
+		$('#delGroup').attr("disabled", "disabled");
+	}
+	
+	function loadData() {
+		$(window).focus(function() {
+   			doreload();
+		});
+		
+		$("#grid").jqGrid({
+			url:'/db/findGroup?groupname='+document.getElementById("filtrado").value,
+			datatype: "json",
+			jsonReader: {
+				repeatitems: false,
+				root: function (obj) { return obj; },
+				page: function (obj) { return 1; },
+				total: function (obj) { return 1; },
+				records: function (obj) { return obj.length; }
+			},
+			colNames: ['uid','groupname', 'rol', 'password','description',
+						'L_AH','M_AH','X_AH','J_AH','V_AH','S_AH','D_AH'],
+			colModel: [
+				{name:'uid', index:'uid', width:50, sorttype:"int", align: "right"},
+				{name:'groupname',index:'groupname', width:80  },
+				{name:'rol',index:'rol', width:30, align: "center" },
+				{name:'password', index:'password', width:60, hidden: true },
+				{name:'description', index:'description', width:180 },
+				{name:'L_AH', index:'L_AH', width:40, sorttype:"int", align: "right", hidden: true},
+				{name:'M_AH', index:'M_AH', width:40, sorttype:"int", align: "right", hidden: true},
+				{name:'X_AH', index:'X_AH', width:40, sorttype:"int", align: "right", hidden: true},
+				{name:'J_AH', index:'J_AH', width:40, sorttype:"int", align: "right", hidden: true},
+				{name:'V_AH', index:'V_AH', width:40, sorttype:"int", align: "right", hidden: true},
+				{name:'S_AH', index:'S_AH', width:40, sorttype:"int", align: "right", hidden: true},
+				{name:'D_AH', index:'D_AH', width:40, sorttype:"int", align: "right", hidden: true}
+				],
+			rowNum:10,
+			pager: '#pager',
+			sortname: 'uid',
+			viewrecords: true,
+			sortorder: "asc",
+			caption: "Groups",
+			gridComplete: function() { disableSelection(document.getElementById("grid")); },
+
+		});
+	}
+	
+	function getRowIdData(rowId) {
+		var rowData = jQuery('#grid').jqGrid ('getRowData', rowId);
+		var jsondata=JSON.stringify(rowData);
+		return jsondata;
+	}
+	
+	$(window).load(function(){ 
+		loadData();
+		$('#delGroup').attr("disabled", "disabled");
+		
+		$("#grid").jqGrid('setGridParam', {ondblClickRow: function(rowid,iRow,iCol,e){
+			groupFormData = getRowIdData(rowid);
+			groupFormType = 'modGroup'
+			window.open("formGroup.html", 'groupForm', '');
+
+		}});
+		
+		$("#grid").jqGrid('setGridParam', {onSelectRow: function(rowid, status, e){
+			$('#delGroup').removeAttr("disabled");
+			rowSelected = rowid;
+		}});
+		
+		$("#filtrado" ).bind('input', function() {
+			doreload()
+		});
+	});
+	
+	$(document).ready(function(){
+			$('#newGroup').click(function(){
+			$('#delGroup').attr("disabled", "disabled");
+			groupFormType = 'addGroup'
+			window.open("formGroup.html", 'groupForm', '');
+		});
+	});
+	
+	$(document).ready(function(){
+		$('#delGroup').click(function(){
+			groupFormType = 'delGroup'
+			groupFormData = getRowIdData(rowSelected);
+			window.open("delGroup.html", 'groupForm', '');
+			$('#delGroup').attr("disabled", "disabled");
+		});
+	});
+//]]>  
+
+</script>
+</head>
+<body>
+
+<div class="divcontainer">
+    <fieldset>
+    <legend>Buscador usuarios:</legend>
+    <label for="filtrado">Filtrado Usuarios</label>
+    <input class="width" name="Filtrado" id="filtrado" type="text"/>
+    <br><br>
+    <table id="grid"></table>
+    <div id="pager"></div>
+    </fieldset>
+    <button id="refresh" onclick="doreload();">Refrescar Datos</button>
+    <button id="newGroup">Nuevo Usuario</button>
+    <button id="delGroup">Borrar Usuario</button>
+
+</div>
+
+
+</body>
+
+</html>
+

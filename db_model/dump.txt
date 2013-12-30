@@ -1,0 +1,55 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE "GRUPO" (
+        gid INTEGER NOT NULL,
+        groupname VARCHAR(20) NOT NULL,
+        description VARCHAR(80) NOT NULL,
+        PRIMARY KEY (gid)
+);
+INSERT INTO "GRUPO" VALUES(1,'dfl_grp_pepe','Grupo de ed');
+INSERT INTO "GRUPO" VALUES(1024,'test','test');
+CREATE TABLE "USUARIO" (
+        uid INTEGER NOT NULL,
+        username VARCHAR(20) NOT NULL,
+        rol VARCHAR(1),
+        password VARCHAR(16) NOT NULL,
+        description VARCHAR(80) NOT NULL,
+        "L_AH" INTEGER,
+        "M_AH" INTEGER,
+        "X_AH" INTEGER,
+        "J_AH" INTEGER,
+        "V_AH" INTEGER,
+        "S_AH" INTEGER,
+        "D_AH" INTEGER,
+        PRIMARY KEY (uid),
+        CHECK (rol IN ('A', 'V', 'K', 'G'))
+);
+INSERT INTO "USUARIO" VALUES(1,'pepe','G','Ed Jones','ed',0,0,0,0,0,0,0);
+CREATE TABLE "GRUPOS" (
+        uid INTEGER NOT NULL,
+        gid INTEGER NOT NULL,
+        PRIMARY KEY (uid, gid),
+        FOREIGN KEY(uid) REFERENCES "USUARIO" (uid),
+        FOREIGN KEY(gid) REFERENCES "GRUPO" (gid)
+);
+INSERT INTO "GRUPOS" VALUES(1,1);
+INSERT INTO "GRUPOS" VALUES(1,1024);
+CREATE TABLE "URIS" (
+        uriid INTEGER NOT NULL,
+        gid INTEGER NOT NULL,
+        uri VARCHAR(80) NOT NULL,
+        PRIMARY KEY (uriid, gid),
+        FOREIGN KEY(gid) REFERENCES "GRUPO" (gid)
+);
+INSERT INTO "URIS" VALUES(1,1,'blah');
+INSERT INTO "URIS" VALUES(2,1024,'blah 2');
+INSERT INTO "URIS" VALUES(3,1024,'blah 3');
+CREATE UNIQUE INDEX "ix_GRUPO_gid" ON "GRUPO" (gid);
+CREATE UNIQUE INDEX "ix_GRUPO_groupname" ON "GRUPO" (groupname);
+CREATE UNIQUE INDEX "ix_USUARIO_uid" ON "USUARIO" (uid);
+CREATE UNIQUE INDEX "ix_USUARIO_username" ON "USUARIO" (username);
+CREATE INDEX "ix_GRUPOS_uid" ON "GRUPOS" (uid);
+CREATE INDEX "ix_GRUPOS_gid" ON "GRUPOS" (gid);
+CREATE UNIQUE INDEX "ix_URIS_uriid" ON "URIS" (uriid);
+CREATE INDEX "ix_URIS_gid" ON "URIS" (gid);
+COMMIT;

@@ -1,0 +1,86 @@
+
+#divcontainer {
+	width: 98%;
+	height: 98%;
+	margin: 5px 5px 5px 5px;
+}
+
+#divfilter {
+	margin: 5px 5px 5px 5px;
+	width: 98%;
+}
+
+#divlog {
+	margin: 5px 5px 5px 5px;
+	width: 90%;
+	height: 600px;
+}
+#divbtncontainer {
+	margin: 5px 5px 5px 5px;
+	width: 98%;
+	//border: 1px solid green;
+}
+
+
+fieldset {
+	border:1px solid #2E6E9E;
+	padding: 1em;
+	font:80%/1 sans-serif;
+	height: 90%;
+	width: 90%;
+}
+
+.logfield {
+	height: 90%;
+	width: 98%;
+}
+
+legend {
+	padding: 0.2em 0.5em;
+	border:1px solid #2E6E9E;
+	color:#2E6E9E;
+	font-size:90%;
+	text-align:left;
+	font-weight: bold;
+}
+
+input[type=text] {
+	font:80%/1 sans-serif;
+	background-color: LemonChiffon ;
+	width: 250px;
+}
+/*
+input[readonly] {
+	background-color: Silver;
+}
+*/
+
+.refreshbtn {
+	margin: 0px 5px 0px 5px;
+	vertical-align:middle;
+}
+
+label {
+	font-weight:bold;
+	padding-top:0.2em;
+	margin-right:0.5em;
+	width: 100px;
+	color: #2E6E9E;
+	font-weight: bold;
+}
+
+.selection {
+	background: LemonChiffon;
+	margin-right:20px;
+	width: 100px;
+	padding: 2px;
+	font:80%/1 sans-serif;
+	line-height: 1;
+}
+textarea {
+	background-color: Lavender;
+	height: 95%;
+	width: 99%;
+	font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+	font-size: 9pt;
+}

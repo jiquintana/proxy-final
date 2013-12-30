@@ -1,0 +1,7 @@
+class Roltype(object):
+	admin_user = {'A': 'Admin User' }
+	advanced_user= {'V' : 'Advanced User'}
+	kid_user = {'K' : 'Kid User'}
+	guest_user = {'G' : 'Guest User'}
+
+	roles = {admin_user, advanced_user, kid_user, guest_user}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.jqGrid.min.js"></script>
+    <script type="text/javascript" src="js/i18n/grid.locale-en.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="js/themes/redmond/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/themes/ui.jqgrid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/themes/ui.multiselect.css" />
+    <link rel="stylesheet" type="text/css" href="js/themes/redmond/jquery-ui.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/admRules.css">
+    <script type="text/javascript" src="js/admRules.js"></script>
+
+</head>
+<body>
+	<div id="divrules" class="divrules">
+		<fieldset>
+			<legend id="rulestitle" name="rulestitle">Reglas</legend>
+
+            <textarea class="reglas" name="reglas" id="reglas" autofocus></textarea>
+
+			<div class="rulesbtncontainer">
+				<input id="savebtn"	class="rulesbtnsbmt" type="button" name="save" value="Guardar">
+				<input id="cancelbtn"   class="rulesbtnsbmt" type="button" name="cancelbtn" value="Cancelar">
+			</div>
+		</fieldset>
+	</div>
+    
+	<div id="divmain" class="divmain">
+		<div id="divgroups" class="divgroups">
+			<fieldset>
+			<legend>Buscador grupos:</legend>
+			<label  style="width: 140px;" for="filtrado">Filtrado Grupos</label>
+			<input class="width" name="Filtrado" id="filtrado" type="text"/>
+			<br><br>
+			<table id="groupgrid"></table>
+			</fieldset>
+		</div>
+		<div id="divaction" class="divaction">
+			<input id="wordsbtn"  class="rulesbtn" name="wordsbtn" type="button" value="Body">
+			<input id="urisbtn"   class="rulesbtn" name="urisbtn" type="button" value="URIs">
+			<input id="filesbtn"  class="rulesbtn" name="filesbtn" type="button" value="Tipo fich.">
+		</div>
+        <div id="divbutton" class="divbutton" >
+            <A class="mainlink" HREF="2_config.html" title="Volver al menú principal">
+            <img src="images/64-back.png" alt="Atras">
+            </A>
+		</div>
+	</div>
+
+	</body>
+
+	</html>
+

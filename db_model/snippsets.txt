@@ -1,0 +1,4 @@
+http://stackoverflow.com/questions/7345252/python-regex-match-words-in-string-and-get-count
+import re
+words = ["red", "blue"]
+>>> exactMatch = re.compile(r'%s' % '|'.join(words), flags=re.IGNORECASE)

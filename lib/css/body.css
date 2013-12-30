@@ -1,0 +1,19 @@
+.userdivcontainer {
+	margin: 10px 45px 10px 45px;
+	width: 450px;
+}
+
+.groupdivcontainer {
+	margin: 10px 45px 10px 45px;
+	width: 450px;
+}
+
+.notgroupdivcontainer {
+	margin: 10px 45px 10px 45px;
+	width: 450px;
+}
+
+
+body {
+	background-color: #d6f9ff;
+}

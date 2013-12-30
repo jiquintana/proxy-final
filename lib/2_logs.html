@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.jqGrid.min.js"></script>
+    <script type="text/javascript" src="js/i18n/grid.locale-en.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="js/themes/redmond/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/themes/ui.jqgrid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/themes/ui.multiselect.css" />
+    <link rel="stylesheet" type="text/css" href="js/themes/redmond/jquery-ui.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/2_config.css">
+    <script type="text/javascript" src="js/2_config.js"></script>
+    
+</head>
+<body>
+	<div class="divcontainer" id="divcontainer">
+        <div class="divfilter" id="divfilter">
+            <fieldset>
+            <legend>Parámetros de filtrado</legend>
+            <label for="usuario">Número de Líneas</label>
+            <select class="selection" name="numLines" id="numLines">
+                <OPTION SELECTED VALUE="50">50</OPTION> 
+                <OPTION VALUE="100">100</OPTION> 
+                <OPTION VALUE="200">200</OPTION> 
+            </select>
+            <input id="refreshbtn" class="refreshbtn" type="image" src="images/24-refresh.png">
+            </fieldset>
+    
+        </div>
+        <div class="divlog" id="divlog">
+            <fieldset class="logfield">
+            <legend>Logs</legend>
+            <textarea class="logtext" name="logtext" id="logtext" autofocus readonly></textarea>
+            </fieldset>
+    
+        </div>
+        <div class="divbtncontainer" id="divbtncontainer">
+            <A class="mainlink" HREF="2_config.html" title="Volver al menú principal">
+            <img src="images/64-back.png" alt="Atras">
+            </A>
+        </div>
+	</div>
+</body>
+
+</html>
+

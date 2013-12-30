@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<!-- Import jQuery UI and jqGrid UI -->
+<!-- Import jQuery jqGrid JS files -->
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="/lib/js/themes/redmond/jquery-ui.css" />
+<script type="text/javascript" src="/lib/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="/lib/js/ui/jquery-ui.js"></script>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/lib/js/themes/ui.jqgrid.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/lib/js/themes/ui.multiselect.css" />
+<link rel="stylesheet" type="text/css" href="css/base-min.css"/>
+<link rel="stylesheet" type="text/css" href="css/forms-min.css"/>
+
+<script type="text/javascript" src="/lib/js/jquery.jqGrid.min.js"></script>
+<script type="text/javascript" src="/lib/js/i18n/grid.locale-en.js"></script>
+<script src="/lib/js/ui/jquery.ui.core.js"></script>
+<script src="/lib/js/ui/jquery.ui.widget.js"></script>
+<script src="/lib/js/ui/jquery.ui.mouse.js"></script>
+<script src="/lib/js/ui/jquery.ui.draggable.js"></script>
+<script src="/lib/js//ui/jquery.ui.position.js"></script>
+<script src="/lib/js/ui/jquery.ui.resizable.js"></script>
+<script src="/lib/js/ui/jquery.ui.button.js"></script>
+<script src="/lib/js/ui/jquery.ui.dialog.js"></script>
+
+<!-- stuff needed to make things complex -->
+<script src="/lib/js/ui/jquery.ui.datepicker.js"></script>
+<script src="/lib/js/ui/jquery.ui.menu.js"></script>
+<script src="/lib/js/ui/jquery.ui.autocomplete.js"></script>
+<script src="/lib/js/ui/jquery.ui.tooltip.js"></script>
+
+<!--//code.jquery.com/ui/1.10.3/jquery-ui.js -->
+
+<script type='text/javascript'>
+//<![CDATA[
+
+	$(function () {
+		var dialog = $( "#dialog" ).dialog({
+				modal: true,
+				width: 500,
+				buttons: [
+					{
+						click: $.noop,
+						icons: {
+							primary: "ui-icon-check"
+						},
+						text: "Ok"
+					},
+					{
+						click: function() {
+							$( this ).dialog( "close" );
+						},
+						icons: {
+							primary: "ui-icon-cancel"
+						},
+						text: "Cancel",
+						showText: false
+					}
+				]
+			}).dialog("option", "height", 600)
+
+	});
+	
+	function disableSelection(target){
+		if (typeof target.onselectstart!="undefined") //IE route
+			target.onselectstart=function(){return false}
+		else if (typeof target.style.MozUserSelect!="undefined") //Firefox route
+			target.style.MozUserSelect="none"
+		else //All other route (ie: Opera)
+			target.onmousedown=function(){return false}
+		target.style.cursor = "default"
+	}
+
+	function doreload() {
+		$("#grid").jqGrid('setGridParam',{
+			url:'/db/findUser?username='+document.getElementById("filtrado").value,
+			datatype:"json"
+			}).trigger("reloadGrid");
+	}
+	
+	function loadData() {
+		//var valor = document.getElementById("L_AH").value
+		$("#grid").jqGrid({
+			//data: mydata,
+			//datatype: "local",
+			url:'/db/findUser?username='+document.getElementById("filtrado").value,
+			datatype: "json",
+			jsonReader: {
+				repeatitems: false,
+				root: function (obj) { return obj; },
+				page: function (obj) { return 1; },
+				total: function (obj) { return 1; },
+				records: function (obj) { return obj.length; }
+			},
+			colNames: ['uid','username', 'rol', 'password','description',
+						'L_AH','M_AH','X_AH','J_AH','V_AH','S_AH','D_AH'],
+			colModel: [
+				{name:'uid', index:'uid', width:30, sorttype:"int", align: "right"},
+				{name:'username',index:'username', width:60  },
+				{name:'rol',index:'rol', width:30, align: "center" },
+				{name:'password', index:'password', width:60, hidden: true },
+				{name:'description', index:'description', width:90 },
+				{name:'L_AH', index:'L_AH', width:40, sorttype:"int", align: "right", hidden: true},
+				{name:'M_AH', index:'M_AH', width:40, sorttype:"int", align: "right", hidden: true},
+				{name:'X_AH', index:'X_AH', width:40, sorttype:"int", align: "right", hidden: true},
+				{name:'J_AH', index:'J_AH', width:40, sorttype:"int", align: "right", hidden: true},
+				{name:'V_AH', index:'V_AH', width:40, sorttype:"int", align: "right", hidden: true},
+				{name:'S_AH', index:'S_AH', width:40, sorttype:"int", align: "right", hidden: true},
+				{name:'D_AH', index:'D_AH', width:40, sorttype:"int", align: "right", hidden: true}
+				],
+			rowNum:10,
+			pager: '#pager',
+			sortname: 'uid',
+			viewrecords: true,
+			sortorder: "asc",
+			caption: "Users",
+			gridComplete: function() { disableSelection(document.getElementById("grid")); },
+
+		});
+	}
+$(window).load(function(){ 
+
+	loadData();
+	
+	$("#grid").jqGrid('setGridParam', {ondblClickRow: function(rowid,iRow,iCol,e){
+		alert('double clicked @'+rowid);
+	}});
+	
+	$("#filtrado" ).bind('input', function() {
+		doreload()
+		//alert( "Handler for .change() called." );
+	});
+});
+//]]>  
+
+</script>
+</head>
+
+<div class="pure-form margin" id="useradmin" name="useradmin">
+<br>
+ <label for="filtrado">Busqueda Usuarios</label>
+ <input class="pure-input-rounded width" name="Filtrado" id="filtrado" type="text"/>
+<br>
+<br>
+<table id="grid"></table>
+<div id="pager"></div>
+</div>
+
+
+
+
+<div id="dialog" title="Dialogo básico">
+<p>Diálogo básico modal. Puede ser movido, redimensionado y cerrado haciendo clic sobre el botón 'X'.</p>
+</div>
+
+<button id="abrir">Abrir diálogo</button>
+
+
+</body>
+
+</html>
+

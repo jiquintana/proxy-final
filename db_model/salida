@@ -1,0 +1,106 @@
+not initialized
+2013-11-29 19:59:54,060 INFO sqlalchemy.engine.base.Engine PRAGMA table_info("GROUP")
+2013-11-29 19:59:54,060 INFO sqlalchemy.engine.base.Engine ()
+2013-11-29 19:59:54,061 INFO sqlalchemy.engine.base.Engine PRAGMA table_info("USER")
+2013-11-29 19:59:54,061 INFO sqlalchemy.engine.base.Engine ()
+2013-11-29 19:59:54,061 INFO sqlalchemy.engine.base.Engine PRAGMA table_info("_GROUPS")
+2013-11-29 19:59:54,061 INFO sqlalchemy.engine.base.Engine ()
+2013-11-29 19:59:54,071 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2013-11-29 19:59:54,073 INFO sqlalchemy.engine.base.Engine INSERT INTO "USER" (username, rol, password, description, hours, "L_AH", "M_AH", "X_AH", "J_AH", "V_AH", "S_AH", "D_AH") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2013-11-29 19:59:54,073 INFO sqlalchemy.engine.base.Engine ('ed', 'G', 'Ed Jones', 'ed', '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', 0, 0, 0, 0, 0, 0, 0)
+2013-11-29 19:59:54,073 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2013-11-29 19:59:54,074 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2013-11-29 19:59:54,076 INFO sqlalchemy.engine.base.Engine SELECT "USER".uid AS "USER_uid", "USER".username AS "USER_username", "USER".rol AS "USER_rol", "USER".password AS "USER_password", "USER".description AS "USER_description", "USER".hours AS "USER_hours", "USER"."L_AH" AS "USER_L_AH", "USER"."M_AH" AS "USER_M_AH", "USER"."X_AH" AS "USER_X_AH", "USER"."J_AH" AS "USER_J_AH", "USER"."V_AH" AS "USER_V_AH", "USER"."S_AH" AS "USER_S_AH", "USER"."D_AH" AS "USER_D_AH" 
+FROM "USER" 
+WHERE "USER".username = ?
+ LIMIT ? OFFSET ?
+2013-11-29 19:59:54,076 INFO sqlalchemy.engine.base.Engine ('ed', 1, 0)
+...1
+User(1,u'ed',<admin_user>,u'patata',u'pepito')
+	     0         1         2   
+	     012345678901234567890123
+	     ========================
+	L:  '                          '
+	M:  '                          '
+	X:  '                          '
+	J:  '                          '
+	V:  '                          '
+	S:  '                          '
+	D:  '                          '
+
+2013-11-29 19:59:54,078 INFO sqlalchemy.engine.base.Engine SELECT "USER".uid AS "USER_uid", "USER".username AS "USER_username", "USER".rol AS "USER_rol", "USER".password AS "USER_password", "USER".description AS "USER_description", "USER".hours AS "USER_hours", "USER"."L_AH" AS "USER_L_AH", "USER"."M_AH" AS "USER_M_AH", "USER"."X_AH" AS "USER_X_AH", "USER"."J_AH" AS "USER_J_AH", "USER"."V_AH" AS "USER_V_AH", "USER"."S_AH" AS "USER_S_AH", "USER"."D_AH" AS "USER_D_AH" 
+FROM "USER" 
+WHERE "USER".username = ?
+ LIMIT ? OFFSET ?
+2013-11-29 19:59:54,078 INFO sqlalchemy.engine.base.Engine (u'ed', 1, 0)
+2013-11-29 19:59:54,079 INFO sqlalchemy.engine.base.Engine UPDATE "USER" SET rol=? WHERE "USER".uid = ?
+2013-11-29 19:59:54,079 INFO sqlalchemy.engine.base.Engine ('A', 1)
+2013-11-29 19:59:54,080 INFO sqlalchemy.engine.base.Engine COMMIT
+2013-11-29 19:59:54,123 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2013-11-29 19:59:54,123 INFO sqlalchemy.engine.base.Engine SELECT "USER".uid AS "USER_uid", "USER".username AS "USER_username", "USER".rol AS "USER_rol", "USER".password AS "USER_password", "USER".description AS "USER_description", "USER".hours AS "USER_hours", "USER"."L_AH" AS "USER_L_AH", "USER"."M_AH" AS "USER_M_AH", "USER"."X_AH" AS "USER_X_AH", "USER"."J_AH" AS "USER_J_AH", "USER"."V_AH" AS "USER_V_AH", "USER"."S_AH" AS "USER_S_AH", "USER"."D_AH" AS "USER_D_AH" 
+FROM "USER" 
+WHERE "USER".uid = ?
+2013-11-29 19:59:54,123 INFO sqlalchemy.engine.base.Engine (1,)
+2013-11-29 19:59:54,125 INFO sqlalchemy.engine.base.Engine SELECT "USER".uid AS "USER_uid", "USER".username AS "USER_username", "USER".rol AS "USER_rol", "USER".password AS "USER_password", "USER".description AS "USER_description", "USER".hours AS "USER_hours", "USER"."L_AH" AS "USER_L_AH", "USER"."M_AH" AS "USER_M_AH", "USER"."X_AH" AS "USER_X_AH", "USER"."J_AH" AS "USER_J_AH", "USER"."V_AH" AS "USER_V_AH", "USER"."S_AH" AS "USER_S_AH", "USER"."D_AH" AS "USER_D_AH" 
+FROM "USER" 
+WHERE "USER".username = ?
+ LIMIT ? OFFSET ?
+2013-11-29 19:59:54,125 INFO sqlalchemy.engine.base.Engine (u'ed', 1, 0)
+User(1,u'ed',<admin_user>,u'patata',u'pepito')
+	     0         1         2   
+	     012345678901234567890123
+	     ========================
+	L:  '                          '
+	M:  '                          '
+	X:  '                          '
+	J:  '                          '
+	V:  '                          '
+	S:  '                          '
+	D:  '                          '
+
+...2
+2013-11-29 19:59:54,126 INFO sqlalchemy.engine.base.Engine SELECT "USER".uid AS "USER_uid", "USER".username AS "USER_username", "USER".rol AS "USER_rol", "USER".password AS "USER_password", "USER".description AS "USER_description", "USER".hours AS "USER_hours", "USER"."L_AH" AS "USER_L_AH", "USER"."M_AH" AS "USER_M_AH", "USER"."X_AH" AS "USER_X_AH", "USER"."J_AH" AS "USER_J_AH", "USER"."V_AH" AS "USER_V_AH", "USER"."S_AH" AS "USER_S_AH", "USER"."D_AH" AS "USER_D_AH" 
+FROM "USER" 
+WHERE "USER".username = ?
+ LIMIT ? OFFSET ?
+2013-11-29 19:59:54,126 INFO sqlalchemy.engine.base.Engine ('ed', 1, 0)
+...3
+2013-11-29 19:59:54,129 INFO sqlalchemy.engine.base.Engine SELECT "USER".uid AS "USER_uid", "USER".username AS "USER_username", "USER".rol AS "USER_rol", "USER".password AS "USER_password", "USER".description AS "USER_description", "USER".hours AS "USER_hours", "USER"."L_AH" AS "USER_L_AH", "USER"."M_AH" AS "USER_M_AH", "USER"."X_AH" AS "USER_X_AH", "USER"."J_AH" AS "USER_J_AH", "USER"."V_AH" AS "USER_V_AH", "USER"."S_AH" AS "USER_S_AH", "USER"."D_AH" AS "USER_D_AH" 
+FROM "USER" 
+WHERE "USER".username = ?
+ LIMIT ? OFFSET ?
+2013-11-29 19:59:54,129 INFO sqlalchemy.engine.base.Engine (u'ed', 1, 0)
+2013-11-29 19:59:54,130 INFO sqlalchemy.engine.base.Engine UPDATE "USER" SET password=? WHERE "USER".uid = ?
+2013-11-29 19:59:54,130 INFO sqlalchemy.engine.base.Engine ('patata', 1)
+2013-11-29 19:59:54,130 INFO sqlalchemy.engine.base.Engine COMMIT
+2013-11-29 19:59:54,148 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2013-11-29 19:59:54,148 INFO sqlalchemy.engine.base.Engine SELECT "USER".uid AS "USER_uid", "USER".username AS "USER_username", "USER".rol AS "USER_rol", "USER".password AS "USER_password", "USER".description AS "USER_description", "USER".hours AS "USER_hours", "USER"."L_AH" AS "USER_L_AH", "USER"."M_AH" AS "USER_M_AH", "USER"."X_AH" AS "USER_X_AH", "USER"."J_AH" AS "USER_J_AH", "USER"."V_AH" AS "USER_V_AH", "USER"."S_AH" AS "USER_S_AH", "USER"."D_AH" AS "USER_D_AH" 
+FROM "USER" 
+WHERE "USER".uid = ?
+2013-11-29 19:59:54,148 INFO sqlalchemy.engine.base.Engine (1,)
+2013-11-29 19:59:54,150 INFO sqlalchemy.engine.base.Engine SELECT "USER".uid AS "USER_uid", "USER".username AS "USER_username", "USER".rol AS "USER_rol", "USER".password AS "USER_password", "USER".description AS "USER_description", "USER".hours AS "USER_hours", "USER"."L_AH" AS "USER_L_AH", "USER"."M_AH" AS "USER_M_AH", "USER"."X_AH" AS "USER_X_AH", "USER"."J_AH" AS "USER_J_AH", "USER"."V_AH" AS "USER_V_AH", "USER"."S_AH" AS "USER_S_AH", "USER"."D_AH" AS "USER_D_AH" 
+FROM "USER" 
+WHERE "USER".username = ?
+ LIMIT ? OFFSET ?
+2013-11-29 19:59:54,150 INFO sqlalchemy.engine.base.Engine (u'ed', 1, 0)
+User(1,u'ed',<admin_user>,u'patata',u'pepito')
+	     0         1         2   
+	     012345678901234567890123
+	     ========================
+	L:  '                          '
+	M:  '                          '
+	X:  '                          '
+	J:  '                          '
+	V:  '                          '
+	S:  '                          '
+	D:  '                          '
+
+...4
+...5
+2013-11-29 19:59:54,152 INFO sqlalchemy.engine.base.Engine UPDATE "USER" SET description=?, "L_AH"=?, "X_AH"=? WHERE "USER".uid = ?
+2013-11-29 19:59:54,152 INFO sqlalchemy.engine.base.Engine ('cambio de descripcion4', 896, 2096912, 1)
+2013-11-29 19:59:54,153 INFO sqlalchemy.engine.base.Engine SELECT "USER".uid AS "USER_uid", "USER".username AS "USER_username", "USER".rol AS "USER_rol", "USER".password AS "USER_password", "USER".description AS "USER_description", "USER".hours AS "USER_hours", "USER"."L_AH" AS "USER_L_AH", "USER"."M_AH" AS "USER_M_AH", "USER"."X_AH" AS "USER_X_AH", "USER"."J_AH" AS "USER_J_AH", "USER"."V_AH" AS "USER_V_AH", "USER"."S_AH" AS "USER_S_AH", "USER"."D_AH" AS "USER_D_AH" 
+FROM "USER" 
+WHERE "USER".username = ?
+ LIMIT ? OFFSET ?
+2013-11-29 19:59:54,153 INFO sqlalchemy.engine.base.Engine (u'ed', 1, 0)

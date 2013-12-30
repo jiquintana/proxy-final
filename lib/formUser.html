@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="css/body.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/formUser.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <script type='text/javascript' src='js/user.js'></script>
+        <script type='text/javascript' src='js/jquery-1.9.1.js'></script>
+        <script type='text/javascript' src='js/validate.js'></script>
+
+        <script type='text/javascript'>
+		var userFormData;
+		
+		$(window).load(function() {
+			document.forms['formUser'].elements['username'].focus();
+			test_onload();
+			if (! window.opener) {
+				//alert("no opener")
+				document.getElementById('L_AH').value=1;
+				document.getElementById('M_AH').value=8;
+				document.getElementById('X_AH').value=16;
+				document.getElementById('J_AH').value=32;
+				document.getElementById('V_AH').value=64;
+				document.getElementById('S_AH').value=256;
+				document.getElementById('D_AH').value=255;
+				fromForm();
+			} else {
+				document.formUser.action = "/db/"+window.opener.userFormType;
+				if (window.opener.userFormType == 'addUser') {
+					//alert("addUser");
+					//alert("newuser");
+					$("#submit").attr('value', 'Añadir');
+				} else if (window.opener.userFormType == 'modUser') {
+					$("#submit").attr('value', 'Modificar');
+					//alert("modUser");
+					data = JSON.parse(window.opener.userFormData);
+					Object.keys(data).forEach(function(key) {
+						document.getElementById(key).value=data[key];
+					});
+					fromForm();	
+				} else  {
+					alert(window.opener.userFormType);
+				}
+			}
+		});
+        </script>
+</head>
+
+<body>
+
+<div class="divcontainer">
+        <form id="formUser" name="formUser" action="#" method="get">
+        <fieldset>
+            <legend>Usuario:</legend>
+            <label for="uid">uid :</label>	 
+            <input type="text" id="uid" name="uid" readonly>
+    
+            <br><label for="username">usuario :</label>
+            <input type="text" id="username" name="username" >
+    
+            
+            <br><label for="rol">Rol :</label>
+            <!--input type="input" id="rol" name="rol"-->
+            <select id="rol" name="rol">
+                <option value="G">Invitado</option>
+                <option value="K">Menor</option>
+                <option value="V">Usuario Avanzado</option>
+                <option value="A">Administrador</option>
+            </select>
+            
+            <br><label for="password">Contraseña :</label>                
+            <input type="password" id="password" name="password">
+            
+            <br><label for="description">Descripción :</label>
+            <input type="text" id="description" name="description">
+        </fieldset>
+	<div style="display:none">
+        <fieldset>
+                <legend>Binary hours:</legend>
+                <label for="L_AH">L :</label>
+                <input type="input" id="L_AH" name="L_AH">
+                <label for="M_AH">M :</label>
+                <input type="input" id="M_AH" name="M_AH">
+                <label for="X_AH">X :</label>
+                <input type="input" id="X_AH" name="X_AH">
+                <label for="J_AH">J :</label>
+                <input type="input" id="J_AH" name="J_AH">
+                <label for="V_AH">V :</label>
+                <input type="input" id="V_AH" name="V_AH">
+                <label for="S_AH">S :</label>
+                <input type="input" id="S_AH" name="S_AH">
+                <label for="D_AH">D :</label>
+                <input type="input" id="D_AH" name="D_AH">
+        </fieldset>
+	</div>
+        
+        <fieldset>
+        <legend>Horas:</legend>
+        <table>
+                <tr><td ></td>
+			<td class="row">00</td><td class="row">01</td><td class="row">02</td><td class="row">03</td>
+			<td class="row">04</td><td class="row">05</td><td class="row">06</td><td class="row">07</td>
+			<td class="row">08</td><td class="row">09</td><td class="row">10</td><td class="row">11</td>
+			<td class="row">12</td><td class="row">13</td><td class="row">14</td><td class="row">15</td>
+			<td class="row">16</td><td class="row">17</td><td class="row">18</td><td class="row">19</td>
+			<td class="row">20</td><td class="row">21</td><td class="row">22</td><td class="row">23</td>
+		</tr><tr><td class="row">L</td>
+                        <td class="cell" id="L_AH[00]" name="L_AH[00]"></td><td class="cell" id="L_AH[01]" name="L_AH[01]"></td><td class="cell" id="L_AH[02]" name="L_AH[02]"></td>
+                        <td class="cell" id="L_AH[03]" name="L_AH[03]"></td><td class="cell" id="L_AH[04]" name="L_AH[04]"></td><td class="cell" id="L_AH[05]" name="L_AH[05]"></td>
+                        <td class="cell" id="L_AH[06]" name="L_AH[06]"></td><td class="cell" id="L_AH[07]" name="L_AH[07]"></td><td class="cell" id="L_AH[08]" name="L_AH[08]"></td>
+                        <td class="cell" id="L_AH[09]" name="L_AH[09]"></td><td class="cell" id="L_AH[10]" name="L_AH[10]"></td><td class="cell" id="L_AH[11]" name="L_AH[11]"></td>
+                        <td class="cell" id="L_AH[12]" name="L_AH[12]"></td><td class="cell" id="L_AH[13]" name="L_AH[13]"></td><td class="cell" id="L_AH[14]" name="L_AH[14]"></td>
+                        <td class="cell" id="L_AH[15]" name="L_AH[15]"></td><td class="cell" id="L_AH[16]" name="L_AH[16]"></td><td class="cell" id="L_AH[17]" name="L_AH[17]"></td>
+                        <td class="cell" id="L_AH[18]" name="L_AH[18]"></td><td class="cell" id="L_AH[19]" name="L_AH[19]"></td><td class="cell" id="L_AH[20]" name="L_AH[20]"></td>
+                        <td class="cell" id="L_AH[21]" name="L_AH[21]"></td><td class="cell" id="L_AH[22]" name="L_AH[22]"></td><td class="cell" id="L_AH[23]" name="L_AH[23]"></td>
+                </tr><tr><td class="row">M</td>
+                        <td class="cell" id="M_AH[00]" name="M_AH[00]"></td><td class="cell" id="M_AH[01]" name="M_AH[01]"></td><td class="cell" id="M_AH[02]" name="M_AH[02]"></td>
+                        <td class="cell" id="M_AH[03]" name="M_AH[03]"></td><td class="cell" id="M_AH[04]" name="M_AH[04]"></td><td class="cell" id="M_AH[05]" name="M_AH[05]"></td>
+                        <td class="cell" id="M_AH[06]" name="M_AH[06]"></td><td class="cell" id="M_AH[07]" name="M_AH[07]"></td><td class="cell" id="M_AH[08]" name="M_AH[08]"></td>
+                        <td class="cell" id="M_AH[09]" name="M_AH[09]"></td><td class="cell" id="M_AH[10]" name="M_AH[10]"></td><td class="cell" id="M_AH[11]" name="M_AH[11]"></td>
+                        <td class="cell" id="M_AH[12]" name="M_AH[12]"></td><td class="cell" id="M_AH[13]" name="M_AH[13]"></td><td class="cell" id="M_AH[14]" name="M_AH[14]"></td>
+                        <td class="cell" id="M_AH[15]" name="M_AH[15]"></td><td class="cell" id="M_AH[16]" name="M_AH[16]"></td><td class="cell" id="M_AH[17]" name="M_AH[17]"></td>
+                        <td class="cell" id="M_AH[18]" name="M_AH[18]"></td><td class="cell" id="M_AH[19]" name="M_AH[19]"></td><td class="cell" id="M_AH[20]" name="M_AH[20]"></td>
+                        <td class="cell" id="M_AH[21]" name="M_AH[21]"></td><td class="cell" id="M_AH[22]" name="M_AH[22]"></td><td class="cell" id="M_AH[23]" name="M_AH[23]"></td>
+                </tr><tr><td class="row">X</td>
+                        <td class="cell" id="X_AH[00]" name="X_AH[00]"></td><td class="cell" id="X_AH[01]" name="X_AH[01]"></td><td class="cell" id="X_AH[02]" name="X_AH[02]"></td>
+                        <td class="cell" id="X_AH[03]" name="X_AH[03]"></td><td class="cell" id="X_AH[04]" name="X_AH[04]"></td><td class="cell" id="X_AH[05]" name="X_AH[05]"></td>
+                        <td class="cell" id="X_AH[06]" name="X_AH[06]"></td><td class="cell" id="X_AH[07]" name="X_AH[07]"></td><td class="cell" id="X_AH[08]" name="X_AH[08]"></td>
+                        <td class="cell" id="X_AH[09]" name="X_AH[09]"></td><td class="cell" id="X_AH[10]" name="X_AH[10]"></td><td class="cell" id="X_AH[11]" name="X_AH[11]"></td>
+                        <td class="cell" id="X_AH[12]" name="X_AH[12]"></td><td class="cell" id="X_AH[13]" name="X_AH[13]"></td><td class="cell" id="X_AH[14]" name="X_AH[14]"></td>
+                        <td class="cell" id="X_AH[15]" name="X_AH[15]"></td><td class="cell" id="X_AH[16]" name="X_AH[16]"></td><td class="cell" id="X_AH[17]" name="X_AH[17]"></td>
+                        <td class="cell" id="X_AH[18]" name="X_AH[18]"></td><td class="cell" id="X_AH[19]" name="X_AH[19]"></td><td class="cell" id="X_AH[20]" name="X_AH[20]"></td>
+                        <td class="cell" id="X_AH[21]" name="X_AH[21]"></td><td class="cell" id="X_AH[22]" name="X_AH[22]"></td><td class="cell" id="X_AH[23]" name="X_AH[23]"></td>
+                </tr><tr><td class="row">J</td>
+                        <td class="cell" id="J_AH[00]" name="J_AH[00]"></td><td class="cell" id="J_AH[01]" name="J_AH[01]"></td><td class="cell" id="J_AH[02]" name="J_AH[02]"></td>
+                        <td class="cell" id="J_AH[03]" name="J_AH[03]"></td><td class="cell" id="J_AH[04]" name="J_AH[04]"></td><td class="cell" id="J_AH[05]" name="J_AH[05]"></td>
+                        <td class="cell" id="J_AH[06]" name="J_AH[06]"></td><td class="cell" id="J_AH[07]" name="J_AH[07]"></td><td class="cell" id="J_AH[08]" name="J_AH[08]"></td>
+                        <td class="cell" id="J_AH[09]" name="J_AH[09]"></td><td class="cell" id="J_AH[10]" name="J_AH[10]"></td><td class="cell" id="J_AH[11]" name="J_AH[11]"></td>
+                        <td class="cell" id="J_AH[12]" name="J_AH[12]"></td><td class="cell" id="J_AH[13]" name="J_AH[13]"></td><td class="cell" id="J_AH[14]" name="J_AH[14]"></td>
+                        <td class="cell" id="J_AH[15]" name="J_AH[15]"></td><td class="cell" id="J_AH[16]" name="J_AH[16]"></td><td class="cell" id="J_AH[17]" name="J_AH[17]"></td>
+                        <td class="cell" id="J_AH[18]" name="J_AH[18]"></td><td class="cell" id="J_AH[19]" name="J_AH[19]"></td><td class="cell" id="J_AH[20]" name="J_AH[20]"></td>
+                        <td class="cell" id="J_AH[21]" name="J_AH[21]"></td><td class="cell" id="J_AH[22]" name="J_AH[22]"></td><td class="cell" id="J_AH[23]" name="J_AH[23]"></td>
+                </tr><tr><td class="row">V</td>
+			<td class="cell" id="V_AH[00]" name="V_AH[00]"></td><td class="cell" id="V_AH[01]" name="V_AH[01]"></td><td class="cell" id="V_AH[02]" name="V_AH[02]"></td>
+			<td class="cell" id="V_AH[03]" name="V_AH[03]"></td><td class="cell" id="V_AH[04]" name="V_AH[04]"></td><td class="cell" id="V_AH[05]" name="V_AH[05]"></td>
+			<td class="cell" id="V_AH[06]" name="V_AH[06]"></td><td class="cell" id="V_AH[07]" name="V_AH[07]"></td><td class="cell" id="V_AH[08]" name="V_AH[08]"></td>
+			<td class="cell" id="V_AH[09]" name="V_AH[09]"></td><td class="cell" id="V_AH[10]" name="V_AH[10]"></td><td class="cell" id="V_AH[11]" name="V_AH[11]"></td>
+			<td class="cell" id="V_AH[12]" name="V_AH[12]"></td><td class="cell" id="V_AH[13]" name="V_AH[13]"></td><td class="cell" id="V_AH[14]" name="V_AH[14]"></td>
+			<td class="cell" id="V_AH[15]" name="V_AH[15]"></td><td class="cell" id="V_AH[16]" name="V_AH[16]"></td><td class="cell" id="V_AH[17]" name="V_AH[17]"></td>
+			<td class="cell" id="V_AH[18]" name="V_AH[18]"></td><td class="cell" id="V_AH[19]" name="V_AH[19]"></td><td class="cell" id="V_AH[20]" name="V_AH[20]"></td>
+			<td class="cell" id="V_AH[21]" name="V_AH[21]"></td><td class="cell" id="V_AH[22]" name="V_AH[22]"></td><td class="cell" id="V_AH[23]" name="V_AH[23]"></td>
+		</tr><tr><td class="row">S</td>
+                        <td class="cell" id="S_AH[00]" name="S_AH[00]"></td><td class="cell" id="S_AH[01]" name="S_AH[01]"></td><td class="cell" id="S_AH[02]" name="S_AH[02]"></td>
+                        <td class="cell" id="S_AH[03]" name="S_AH[03]"></td><td class="cell" id="S_AH[04]" name="S_AH[04]"></td><td class="cell" id="S_AH[05]" name="S_AH[05]"></td>
+                        <td class="cell" id="S_AH[06]" name="S_AH[06]"></td><td class="cell" id="S_AH[07]" name="S_AH[07]"></td><td class="cell" id="S_AH[08]" name="S_AH[08]"></td>
+                        <td class="cell" id="S_AH[09]" name="S_AH[09]"></td><td class="cell" id="S_AH[10]" name="S_AH[10]"></td><td class="cell" id="S_AH[11]" name="S_AH[11]"></td>
+                        <td class="cell" id="S_AH[12]" name="S_AH[12]"></td><td class="cell" id="S_AH[13]" name="S_AH[13]"></td><td class="cell" id="S_AH[14]" name="S_AH[14]"></td>
+                        <td class="cell" id="S_AH[15]" name="S_AH[15]"></td><td class="cell" id="S_AH[16]" name="S_AH[16]"></td><td class="cell" id="S_AH[17]" name="S_AH[17]"></td>
+                        <td class="cell" id="S_AH[18]" name="S_AH[18]"></td><td class="cell" id="S_AH[19]" name="S_AH[19]"></td><td class="cell" id="S_AH[20]" name="S_AH[20]"></td>
+                        <td class="cell" id="S_AH[21]" name="S_AH[21]"></td><td class="cell" id="S_AH[22]" name="S_AH[22]"></td><td class="cell" id="S_AH[23]" name="S_AH[23]"></td>
+                </tr><tr><td class="row">D</td>
+                        <td class="cell" id="D_AH[00]" name="D_AH[00]"></td><td class="cell" id="D_AH[01]" name="D_AH[01]"></td><td class="cell" id="D_AH[02]" name="D_AH[02]"></td>
+                        <td class="cell" id="D_AH[03]" name="D_AH[03]"></td><td class="cell" id="D_AH[04]" name="D_AH[04]"></td><td class="cell" id="D_AH[05]" name="D_AH[05]"></td>
+                        <td class="cell" id="D_AH[06]" name="D_AH[06]"></td><td class="cell" id="D_AH[07]" name="D_AH[07]"></td><td class="cell" id="D_AH[08]" name="D_AH[08]"></td>
+                        <td class="cell" id="D_AH[09]" name="D_AH[09]"></td><td class="cell" id="D_AH[10]" name="D_AH[10]"></td><td class="cell" id="D_AH[11]" name="D_AH[11]"></td>
+                        <td class="cell" id="D_AH[12]" name="D_AH[12]"></td><td class="cell" id="D_AH[13]" name="D_AH[13]"></td><td class="cell" id="D_AH[14]" name="D_AH[14]"></td>
+                        <td class="cell" id="D_AH[15]" name="D_AH[15]"></td><td class="cell" id="D_AH[16]" name="D_AH[16]"></td><td class="cell" id="D_AH[17]" name="D_AH[17]"></td>
+                        <td class="cell" id="D_AH[18]" name="D_AH[18]"></td><td class="cell" id="D_AH[19]" name="D_AH[19]"></td><td class="cell" id="D_AH[20]" name="D_AH[20]"></td>
+                        <td class="cell" id="D_AH[21]" name="D_AH[21]"></td><td class="cell" id="D_AH[22]" name="D_AH[22]"></td><td class="cell" id="D_AH[23]" name="D_AH[23]"></td>
+                </tr>	 	 
+        </table>
+        </fieldset>
+
+        <!--button onclick="myFunction()">Try it</button-->
+	<input id="submit" type="submit" value="Añadir usuario">
+	<input id="cancelar" type="button" value="Cancelar" onclick="self.close();" >
+        <!--input type="button" value="Recalcular campos" onclick="toForm();" >
+        <input type="button" value="dosubmit" onclick="document.form[0].submit();" -->
+
+        </form>
+	<script  type="text/javascript">
+		var validator = new FormValidator('formUser', [{
+		    name: 'username',
+		    display: 'Usuario',    
+		    rules: 'required|min_length[3]|max_length[20]'
+		},{
+		    name: 'password',
+		    display: 'Contraseña',    
+		    rules: 'required|min_length[4]|max_length[16]'
+		},{
+		    name: 'description',
+		    display: 'Descripción',    
+		    rules: 'max_length[80]'
+		    }
+		], function(errors, event) {
+		    if (errors.length > 0) {
+			/*
+			http://rickharrison.github.io/validate.js/
+			errors - An array of errors from the validation object. If the length > 0, the form failed validation
+
+			This array will contain javascript objects with up to three properties:
+			- id: The id attribute of the form element
+			- name: The name attribute of the form element
+			- message: The error message to display
+			- rule: The rule that prompted this error
+			*/
+			alert(errors[0].message);
+			document.getElementById(errors[0].id).focus();
+			document.getElementById(errors[0].id).select();
+			} else {
+				toForm()
+			}
+		});
+	</script>
+	</div>
+</body>
+
+
+</html>

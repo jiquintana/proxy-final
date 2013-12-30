@@ -1,0 +1,11 @@
+INSERT INTO "USER" VALUES(1,'ed','edspassword','Ed Jones');
+INSERT INTO "USER" VALUES(2,'pep','pepespassword','pepep');
+INSERT INTO "USER" VALUES(3,'sed', 'sed','sed');
+INSERT INTO "USER" VALUES(4,'rep','rep','rep');
+INSERT INTO "GROUP" VALUES(1,'ed','ed group');
+INSERT INTO "GROUP" VALUES(2,'a','a');
+INSERT INTO "GROUP" VALUES(3,'b','b');
+INSERT INTO "GROUP" VALUES(4,'e','e');
+INSERT INTO "GROUP" VALUES(33,'e','e');
+INSERT INTO "_GROUPS" VALUES(1,1);
+INSERT INTO "_GROUPS" VALUES(1,3);

@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<script type='text/javascript' src='/lib/js/jquery-1.9.1.js'></script>
+<script type="text/javascript" src="/lib/Parsley.js-1.2.2/parsley.js"></script>
+
+
+<form parsley-validate>
+    <form id="demo-form" parsley-validate>
+    <label for="fullname">Full Name * :</label>
+    <input type="text" name="fullname" required />
+
+    <label for="email">Email * :</label>
+    <input type="email" name="email" parsley-trigger="change" required />
+
+    <label for="website">Website :</label>
+    <input type="text" name="website" parsley-trigger="change" parsley-type="url" />
+
+    <label for="message">Message (20 chars min, 200 max) :</label>
+    <textarea name="message" parsley-trigger="keyup" parsley-rangelength="[20,200]"></textarea>
+</form>
+</form>

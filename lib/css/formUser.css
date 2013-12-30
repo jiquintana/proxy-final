@@ -1,0 +1,76 @@
+label {
+	font-weight:bold;
+	padding-top:0.2em;
+	margin-right:0.5em;
+	display: block;
+	width: 180px;
+	color: #2E6E9E;
+	font-weight: bold;
+	display: block;
+	float: left;
+}
+
+
+fieldset {
+	border:1px solid #2E6E9E;
+	padding: 1em;
+	font:80%/1 sans-serif;
+}
+
+legend {
+	padding: 0.2em 0.5em;
+	border:1px solid #2E6E9E;
+	color:#2E6E9E;
+	font-size:90%;
+	text-align:left;
+	font-weight: bold;
+
+}
+
+input[type=text] {
+	background-color: AliceBlue ;
+}
+
+input[readonly] {
+	background-color: Silver;
+}
+
+select {
+	background-color: AliceBlue  ;
+	size: 40;
+}
+input[type=button] {
+	margin: 10px 10px 10px 10px;
+	font-size:70%;
+	background-color: LightSkyBlue ;
+}
+
+input[type=submit] {
+	margin: 10px 10px 0px 10px;
+	font-size:70%;
+	background-color: LightSkyBlue ;
+	color: purple;
+	font-weight: bold;
+}
+
+button {
+	margin: 10px 10px 0px 10px;
+	font-size:70%;
+	background-color: LightSkyBlue ;
+}
+
+input[type=text], select
+{
+	width:180px;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+input[type=password], select
+{
+	background-color: AliceBlue ;
+	width:180px;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}

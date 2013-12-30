@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <script type='text/javascript' src='js/jquery-1.9.1.js'></script>
+  <script type="text/javascript" src="js/popit.js"> </script>
+  <script type='text/javascript'>
+	$(document).ready(function () {
+		$('.mainlink').hover(function () {
+			$("#botton").text(
+				$(this).attr("title")
+				);
+		}, function () {
+			$("#botton").text('...');
+		});
+	});
+  </script>
+</head>
+
+<body class="back">  
+
+<table height=100% width=100%><tr><td align=center valign=center>
+	<table border=0px>
+		<tr><th colspan="3">
+			<text class="title">Configuración de los parámetros del proxy</text></tr>
+		</th><tr>
+
+
+		<td><div class="card-container" ><A class="mainlink" HREF="admUser.html"
+			title="Configuración de Usuarios del Proxy">
+		<div class="card" ><img src="images/128-user.png" alt="Configuración de Usuarios del Proxy"></div>
+		</A></div></td>
+
+		<td><div class="card-container" ><A class="mainlink" HREF="admGroup.html"
+			title="Configuración de Grupos">
+                <div class="card" ><img src="images/128-group.png" alt="Configuración de Grupos"></div>
+                </A></div></td>
+
+        <td><div class="card-container" ><A class="mainlink" HREF="admProfiles.html"
+			title="Configuración de Perfiles">
+                <div class="card" ><img src="images/128-profiles.png" alt="Configuración de Perfiles"></div>
+		</A></div></td>
+
+
+		</th><tr>
+        <td><div class="card-container" ><A class="mainlink" HREF="admRules.html"
+			title="Configuración de Reglas">
+                <div class="card" ><img src="images/128-rules-user.png" alt="Configuración de Reglas"></div>
+		</A></div></td>
+        
+        <td><div class="card-container" ><A class="mainlink" HREF="admConfig.html"
+			title="Configuración del Proxy">
+                <div class="card" ><img src="images/128-Program.png" alt="Configuración del Proxy"></div>
+		</A></div></td>
+        
+		<td><div class="card-container" ><A class="mainlink" HREF="index.html"
+			title="Volver al menú principal">
+		<div class="card" ><img src="images/64-back.png" alt="Atras"></div>
+		</A></div></td>
+
+		<tr><th colspan="3">
+			<div id="botton" class="botton">...</div></tr>
+		</th></tr>
+	</table>
+</td></tr></table>
+
+<div class="about">
+	<a href="index.html">Volver a la página principal</a>
+	<a href="" onclick="popit('./about.html','about');">Acerca de...</a>
+    <a href="" onclick="popit('./tech.html','tech');">Tecnologías</a>    
+</div>
+</body>
+
+
+</html>

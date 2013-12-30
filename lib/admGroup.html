@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.jqGrid.min.js"></script>
+    <script type="text/javascript" src="js/i18n/grid.locale-en.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="js/themes/redmond/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/themes/ui.jqgrid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/themes/ui.multiselect.css" />
+    <link rel="stylesheet" type="text/css" href="js/themes/redmond/jquery-ui.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/formGroup.css">
+    <script type="text/javascript" src="js/admGroup.js"></script>
+
+</head>
+<body>
+    <div class="divcontainer">
+        <fieldset>
+        <legend>Buscador grupos:</legend>
+        <label for="filtrado">Filtrado Grupos</label>
+        <input class="width" name="Filtrado" id="filtrado" type="text"/>
+        <br><br>
+        <table id="grid"></table>
+        <div id="pager"></div>
+        </fieldset>
+        <button id="refresh" onClick="doreload();">Refrescar Datos</button>
+        <button id="newGroup">Nuevo Grupo</button>
+        <button id="delGroup">Borrar Grupo</button>
+    </div>
+    <div class="divcontainer" >
+        <A class="mainlink" HREF="2_config.html" title="Volver al menú principal">
+        <img src="images/64-back.png" alt="Atras">
+        </A>
+    </div>
+</body>
+
+</html>
+

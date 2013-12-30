@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="css/body.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/formUser.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+
+        <script type='text/javascript' src='js/user.js'></script>
+        <script type='text/javascript' src='js/jquery-1.9.1.js'></script>
+        <script type='text/javascript' src='js/validate.js'></script>
+
+        <script type='text/javascript'>
+		var userFormData;
+		
+		$(window).load(function() {
+			document.forms['formUser'].elements['username'].focus();
+			if (! window.opener) {
+				//alert("no opener")
+				fromForm();
+			} else {
+				document.formUser.action = "/db/"+window.opener.userFormType;
+				if (window.opener.userFormType == 'delUser') {
+					//alert("modUser");
+					data = JSON.parse(window.opener.userFormData);
+					Object.keys(data).forEach(function(key) {
+						document.getElementById(key).value=data[key];
+					});
+					fromDelForm();	
+				} else  {
+					alert(window.opener.userFormType);
+				}
+			}
+		});
+        </script>
+</head>
+
+<body>
+
+<div class="divcontainer">
+        <form id="formUser" name="formUser" action="#" method="get">
+        <fieldset>
+            <legend>Usuario:</legend>
+            <label for="uid">uid :</label>	 
+            <input type="text" id="uid" name="uid" readonly>
+    
+            <br><label for="username">usuario :</label>
+            <input type="text" id="username" name="username" readonly>
+    
+            
+            <br><label for="rol">Rol :</label>
+            <!--input type="input" id="rol" name="rol"-->
+            <select id="rol" name="rol" disabled>
+                <option value="G">Invitado</option>
+                <option value="K">Menor</option>
+                <option value="V">Usuario Avanzado</option>
+                <option value="A">Administrador</option>
+            </select>
+            
+            <br><label for="password">Contraseña :</label>                
+            <input type="text" id="password" name="password" readonly>
+            
+            <br><label for="description">Descripción :</label>
+            <input type="text" id="description" name="description" readonly>
+        </fieldset>
+
+    <div style="display:none">
+
+        <fieldset>
+                <legend>Binary hours:</legend>
+                <label for="L_AH">L :</label>
+                <input type="input" id="L_AH" name="L_AH">
+                <label for="M_AH">M :</label>
+                <input type="input" id="M_AH" name="M_AH">
+                <label for="X_AH">X :</label>
+                <input type="input" id="X_AH" name="X_AH">
+                <label for="J_AH">J :</label>
+                <input type="input" id="J_AH" name="J_AH">
+                <label for="V_AH">V :</label>
+                <input type="input" id="V_AH" name="V_AH">
+                <label for="S_AH">S :</label>
+                <input type="input" id="S_AH" name="S_AH">
+                <label for="D_AH">D :</label>
+                <input type="input" id="D_AH" name="D_AH">
+        </fieldset>
+	</div>
+        
+        <!--button onclick="myFunction()">Try it</button-->
+		<input type="submit" value="Borrar">
+        <input type="button" value="Cancelar" onclick="self.close()" >
+        </form>
+	<script  type="text/javascript">
+		var validator = new FormValidator('formUser', [{
+			name: 'username',
+			display: 'Usuario',    
+			rules: 'required|min_length[3]|max_length[20]'
+		},{
+			name: 'password',
+			display: 'Contraseña',    
+			rules: 'required|min_length[4]|max_length[16]'
+		},{
+			name: 'description',
+			display: 'Descripción',    
+			rules: 'max_length[80]'
+			}
+		], function(errors, event) {
+			if (errors.length > 0) {
+			/*
+			http://rickharrison.github.io/validate.js/
+			errors - An array of errors from the validation object. If the length > 0, the form failed validation
+		
+			This array will contain javascript objects with up to three properties:
+			- id: The id attribute of the form element
+			- name: The name attribute of the form element
+			- message: The error message to display
+			- rule: The rule that prompted this error
+			*/
+		
+			alert(errors[0].message);
+			document.getElementById(errors[0].id).focus();
+			document.getElementById(errors[0].id).select();
+			} 
+		});
+	</script>
+	</div>
+</body>
+
+
+</html>

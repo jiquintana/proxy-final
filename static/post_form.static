@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>   
+<div class="content">
+    <form action="/POST" method="post">
+        Name: <input name="name" type="text" size="25" />
+        Course: <input name="course" type="text" size="25" />
+        Book: <input name="book" type="text" size="255" />
+        Price: <input name="price" type="text" size="7" />
+        Email: <input name="email" type="text" size="255" />
+        Phone #: <input name="phone" type="text" size="12" />
+        <input name="mySubmit" type="submit" value="submit" />
+    </form>
+</div>
+</body>
+</html>

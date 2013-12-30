@@ -1,0 +1,91 @@
+.not-editable-row {
+	color: LightSteelBlue;
+	font-style:italic;
+}
+
+
+#membergrid .ui-state-highlight { background: Tomato  !important; }
+#notmembergrid .ui-state-highlight { background: LightGreen  !important; }
+
+#userdivcontainer {
+	width: 450px;
+	margin: 10px 40px 10px 310px;
+    //border: 1px solid blue;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+
+#memberwrapper {
+	width: 1000px;
+	margin: 10px 40px 40px 45px;
+    //border: 1px solid black;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+
+#groupdivcontainer {
+	width: 440px;
+	margin: 5px 5px 5px 5px;
+    float:left; /* add this */
+    //border: 1px solid red;
+}
+
+#buttondivcontainer {
+	height: 110px;
+	width: 25px;
+	margin: 60px 5px 5px 5px;
+	//border: 1px solid DarkOrange ;
+	float:left; /* add this */
+}
+
+#notgroupdivcontainer {
+	width: 440px;
+	margin: 5px 5px 5px 5px;
+	//border: 1px solid green;
+	float:left; /* add this */
+}
+
+
+ 
+thelabel {
+	font-weight:bold;
+	padding-top:0.2em;
+	margin-right:0.5em;
+	display: block;
+	width: 180px;
+	color: #2E6E9E;
+	font-weight: bold;
+	display: block;
+	float: left;
+}
+
+
+
+fieldset {
+	border:1px solid #2E6E9E;
+	padding: 1em;
+	font:80%/1 sans-serif;
+}
+
+
+legend {
+	padding: 0.2em 0.5em;
+	border:1px solid #2E6E9E;
+	color:#2E6E9E;
+	font-size:90%;
+	text-align:left;
+	font-weight: bold;
+
+}
+
+input[type=text] {
+	background-color: AliceBlue ;
+}
+
+input[readonly] {
+	background-color: Silver;
+}
+
+select {
+	background-color: AliceBlue  ;
+	size: 40;
+}
+

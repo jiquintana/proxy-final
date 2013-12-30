@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="css/body.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/formGroup.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        
+        <script type='text/javascript' src='js/group.js'></script>
+        <script type='text/javascript' src='js/jquery-1.9.1.js'></script>
+        <script type='text/javascript' src='js/validate.js'></script>
+
+        <script type='text/javascript'>
+		var groupFormData;
+		
+		$(window).load(function() {
+			document.forms['formGroup'].elements['groupname'].focus();
+			if (! window.opener) {
+				//alert("no opener")
+				fromForm();
+			} else {
+				document.formGroup.action = "/db/"+window.opener.groupFormType;
+				if (window.opener.groupFormType == 'delGroup') {
+					//alert("modGroup");
+					data = JSON.parse(window.opener.groupFormData);
+					Object.keys(data).forEach(function(key) {
+						document.getElementById(key).value=data[key];
+					});
+					fromDelForm();	
+				} else  {
+					alert(window.opener.groupFormType);
+				}
+			}
+		});
+        </script>
+</head>
+
+<body>
+
+<div class="divcontainer">
+        <form id="formGroup" name="formGroup" action="#" method="get">
+        <fieldset>
+            <legend>Grupo:</legend>
+            <label for="gid">gid :</label>	 
+            <input type="text" id="gid" name="gid" readonly>
+    
+            <br><label for="groupname">Grupo:</label>
+            <input type="text" id="groupname" name="groupname" >
+    
+            <br><label for="description">Descripción :</label>
+            <input type="text" id="description" name="description">
+        </fieldset>
+
+        <!--button onclick="myFunction()">Try it</button-->
+		<input type="submit" value="Borrar">
+        <input type="button" value="Cancelar" onclick="self.close()" >
+        <!--input type="button" value="Recalcular campos" onclick="toForm();" >
+        <input type="button" value="dosubmit" onclick="document.form[0].submit();" -->
+
+        </form>
+	<script  type="text/javascript">
+		var validator = new FormValidator('formGroup', [{
+			name: 'groupname',
+			display: 'Grupo',    
+			rules: 'required|min_length[3]|max_length[20]'
+		},{
+			name: 'password',
+			display: 'Contraseña',    
+			rules: 'required|min_length[4]|max_length[16]'
+		},{
+			name: 'description',
+			display: 'Descripción',    
+			rules: 'max_length[80]'
+			}
+		], function(errors, event) {
+			if (errors.length > 0) {
+			/*
+			http://rickharrison.github.io/validate.js/
+			errors - An array of errors from the validation object. If the length > 0, the form failed validation
+		
+			This array will contain javascript objects with up to three properties:
+			- id: The id attribute of the form element
+			- name: The name attribute of the form element
+			- message: The error message to display
+			- rule: The rule that prompted this error
+			*/
+		
+			alert(errors[0].message);
+			document.getElementById(errors[0].id).focus();
+			document.getElementById(errors[0].id).select();
+			} 
+		});
+	</script>
+	</div>
+</body>
+
+
+</html>

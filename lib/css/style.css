@@ -1,0 +1,40 @@
+.cell {
+	color:black;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	vertical-align:bottom;
+	white-space:nowrap;
+	border-left: 1px;
+	background: tomato;
+}
+
+.cell.active {
+	color:black;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	vertical-align:bottom;
+	white-space:nowrap;
+	border-left: 1px;
+	background: LimeGreen ;
+}
+
+.row {
+	color:black;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:bottom;
+	background:#B7DEE8;
+	white-space:nowrap;
+	width:20pt;
+}
+
+#content {
+	margin:0 0 0 25px;
+}

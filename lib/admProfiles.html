@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.jqGrid.min.js"></script>
+    <script type="text/javascript" src="js/i18n/grid.locale-en.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="js/themes/redmond/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/themes/ui.jqgrid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/themes/ui.multiselect.css" />
+    <link rel="stylesheet" type="text/css" href="js/themes/redmond/jquery-ui.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/formProfiles.css">
+    <script type="text/javascript" src="js/admProfiles.js"></script>
+    
+</head>
+<body>
+    <div class="userdivcontainer" id="userdivcontainer">
+        <fieldset>
+        <legend>Buscador usuarios:</legend>
+        <label class="thelabel" for="filtrado">Filtrado Usuarios</label>
+        <input class="width" name="Filtrado" id="filtrado" type="text"/>
+        <br><br>
+        <table id="usergrid"></table>
+        </fieldset>
+    </div>
+    <div class="memberwrapper" id="memberwrapper">
+        <div class="groupdivcontainer" id="groupdivcontainer">
+            <fieldset>
+            <legend>Miembro de:</legend>
+            <table name="membergrid" id="membergrid"></table>
+            </fieldset>
+        </div>
+        <div class="buttondivcontainer" id="buttondivcontainer">
+            <input id="refreshbtn" class="refreshbtn" type="image" src="images/24-refresh.png">
+            <input id="addmember" class="addmember"   type="image" src="images/24-left-gray.png">
+            <input id="delmember" class="delmember"   type="image" src="images/24-right-gray.png">
+        </div>
+        <div class="notgroupdivcontainer" id="notgroupdivcontainer">
+            <fieldset>
+            <legend>No miembro de:</legend>
+            <table name="notmembergrid" id="notmembergrid"></table>
+            </fieldset>
+        </div>
+    </div>
+    <div style="display: none;" id="seleccionado" name="seleccionado">
+    </div>
+    <div class="divcontainer" >
+        <A class="mainlink" HREF="2_config.html" title="Volver al menú principal">
+        <img src="images/64-back.png" alt="Atras">
+        </A>
+    </div>
+</body>
+
+</html>
+

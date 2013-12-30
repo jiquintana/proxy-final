@@ -1,0 +1,116 @@
+
+.title {
+	text-align: center;
+ 	vertical-align: middle;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 140%;
+	color: #5800c7;
+	letter-spacing: 0px;
+	line-height: 1.2em;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: none;
+}
+
+.botton {
+	text-align: center;
+ 	vertical-align: middle;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 80%;
+	letter-spacing: 0px;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: none;
+}
+
+.tdmargin {
+	margin: 5px;
+}
+
+H1 {
+	margin: 20px 20px 20px 20px;
+	text-align: left;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 140%;
+	color: #5800c7;
+	letter-spacing: 0px;
+	line-height: 1.2em;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: none;
+}
+
+H2 {
+	margin: 40px 20px 10px 40px;
+	text-align: left;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 110%;
+	color: #5800c7;
+	letter-spacing: 0px;
+	line-height: 1.2em;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: none;
+}
+
+H3 {
+	margin: 10px 20px 10px 20px;
+	text-align: left;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 100%;
+	color: #5800c7;
+	letter-spacing: 0px;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: none;
+}
+
+P {
+	margin: 10px 40px 10px 40px;
+	text-align: left;
+	/* text-indent: 10px;*/
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 100%;
+	/* color: #5800c7;
+	font-weight: bold;
+	font-style: normal;
+	*/
+	letter-spacing: 0px;
+	line-height: 1.2em;
+	text-transform: none;
+}
+
+.back {
+	background: #d6f9ff; /* Old browsers */
+}
+
+.about {
+    position: absolute;
+	margin:10px;
+	bottom: 0;
+	right: 0;
+	color: blue;
+}
+
+.card-container {
+	border: 0px DarkBlue solid;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: linear-gradient(PaleTurquoise ,#dddddd);
+  line-height:145px;  
+}
+
+img {
+  //background-color: rgba(0, 0, 0, 0.5);
+  vertical-align:middle;
+  //border:none;
+}
+
+td {
+	align:center;
+	valign:center;
+}

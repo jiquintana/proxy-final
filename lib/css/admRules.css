@@ -1,0 +1,129 @@
+.not-editable-row {
+	color: LightSteelBlue;
+	font-style:italic;
+}
+
+
+#membergrid .ui-state-highlight { background: Tomato  !important; }
+#notmembergrid .ui-state-highlight { background: LightGreen  !important; }
+
+.divmain {
+	//visibility:hidden;
+	width: 400px;
+	margin: 10px 40px 10px 45px;
+	//border: 1px solid red;
+	overflow: hidden; /* will contain if #first is longer than #second */
+	//z-index: 1;
+}
+
+.divgroups {
+	//border:1px solid blue;
+	width: 360px;
+	margin: 5px 5px 5px 5px;
+}
+.divaction {
+	//border:1px solid orange;
+	margin: 5px 5px 5px 5px;
+	width: 360px;
+	height: 60px;
+	float:left; /* add this */
+	overflow: hidden; /* will contain if #first is longer than #second */
+}
+
+.divrules {
+	//display: none;
+	cursor: default;
+	visibility:hidden;
+	position: absolute;
+	//border:1px solid red;
+	top: 10px;
+	left: 10px;
+	margin: 5px 5px 5px 5px;
+	width: 800px;
+	height: 600px;
+	//overflow: hidden; /* will contain if #first is longer than #second */
+	//float:left; /* add this */
+	z-index: 2;
+}
+
+.rulesbtncontainer {
+	//visibility:hidden;
+	//border:1px solid green ;
+	margin: 10px 0px 0px 0px;
+	width: 98%;
+	float:left; /* add this */
+}
+
+.rulesbtnsbmt {
+	margin: 2px 20px 2px 10px;
+}
+
+.divbutton {
+	//visibility:hidden;
+	//border:1px solid black;
+	margin: 10px 40px 10px 0px;
+	width: 360px;
+	height: 50px;
+	float:left; /* add this */
+}
+
+.rulesbtn {
+	width: 80px;
+	margin: 2px 15px 2px 15px;
+	//border: 6px solid blue;
+}
+
+
+thelabel {
+	font-weight:bold;
+	padding-top:0.2em;
+	margin-right:0.5em;
+	display: block;
+	width: 180px;
+	color: #2E6E9E;
+	font-weight: bold;
+	display: block;
+	float: left;
+}
+
+
+
+fieldset {
+	border:1px solid #2E6E9E;
+	padding: 1em;
+	font:80%/1 sans-serif;
+	height: 90%;
+	width: 90%;
+}
+
+
+legend {
+	padding: 0.2em 0.5em;
+	border:1px solid #2E6E9E;
+	color:#2E6E9E;
+	font-size:90%;
+	text-align:left;
+	font-weight: bold;
+
+}
+
+textarea {
+	height: 85%;
+	width: 98%;
+	font:80%/1 sans-serif;
+}
+
+
+input[type=text] {
+	background-color: AliceBlue ;
+}
+
+input[readonly] {
+	background-color: Silver;
+}
+
+select {
+	background-color: AliceBlue  ;
+	size: 40;
+}
+
