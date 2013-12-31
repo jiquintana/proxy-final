@@ -27,6 +27,8 @@ from db_layer import Database
 from Log import Log
 from Config import Config
 import unicodedata
+import html.parser
+
 
 DEBUG = Config.DEBUG['Proxy.DEBUG']
 DEBUG_BEFORE_HANDLING = Config.DEBUG['Proxy.DEBUG_BEFORE_HANDLING']
@@ -802,6 +804,8 @@ class Proxy(BaseHTTPRequestHandler):
                             if gotText:
                                 #Cache.remove_html_markup(Cache.remove_html_markup(self.content.decode('utf-8')))
                                 theBodyText = Cache.remove_html_markup(self.content.decode('utf-8', 'ignore'))
+                                theBodyText = html.parser.HTMLParser().unescape(theBodyText)
+
                                 #print(theBodyText)
 
                                 theBODYRules = self.theDB.getRULES('WORD', self.proxy_user)
