@@ -36,3 +36,24 @@ class Config:
     TRACE = {
         'Log_TRACE': True
     }
+
+if __name__ == '__main__':
+    from ConfigParser import ConfigParser as configparser
+    
+
+    class MyParser(configparser):
+
+        def as_dict(self):
+            d = dict(self._sections)
+            for k in d:
+                d[k] = dict(self._defaults, **d[k])
+                d[k].pop('__name__', None)
+            return d
+
+
+    config = MyParser()
+    config.add_section('Configuration')
+    config.set('Configuration','Config',Config())
+    
+    with open('example.cfg', 'wb') as configfile:
+        config.write(configfile)

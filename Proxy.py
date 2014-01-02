@@ -13,10 +13,13 @@ if python_OldVersion:       # Python version 2.7
     import urlparse, BaseHTTPServer
     from BaseHTTPServer import BaseHTTPRequestHandler
     from SocketServer import BaseRequestHandler
+    from HTMLParser import HTMLParser as htmlparser
+
 else:                       # Python version 3.x
     import urllib, http.server
     from http.server import HTTPServer, BaseHTTPRequestHandler
     from socketserver import BaseRequestHandler
+    from html.parser import HTMLParser as htmlparser
 
 import base64, binascii, re, string
 import socket, select, os
@@ -27,8 +30,6 @@ from db_layer import Database
 from Log import Log
 from Config import Config
 import unicodedata
-import html.parser
-
 
 DEBUG = Config.DEBUG['Proxy.DEBUG']
 DEBUG_BEFORE_HANDLING = Config.DEBUG['Proxy.DEBUG_BEFORE_HANDLING']
@@ -557,6 +558,7 @@ class Proxy(BaseHTTPRequestHandler):
 
 
     def BASIC(self,what):
+        is_blocked = False
         self.content = b''
         self.content_lenght = 0
         self.code = 0
@@ -804,9 +806,9 @@ class Proxy(BaseHTTPRequestHandler):
                             if gotText:
                                 #Cache.remove_html_markup(Cache.remove_html_markup(self.content.decode('utf-8')))
                                 theBodyText = Cache.remove_html_markup(self.content.decode('utf-8', 'ignore'))
-                                theBodyText = html.parser.HTMLParser().unescape(theBodyText)
-
-                                #print(theBodyText)
+                                
+                                theBodyText = htmlparser().unescape(theBodyText)
+                                
 
                                 theBODYRules = self.theDB.getRULES('WORD', self.proxy_user)
                                 for rule in theBODYRules:

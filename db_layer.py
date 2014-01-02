@@ -332,13 +332,13 @@ class Database:
     def setUserAdmin(self,requestedUser):
         session = self.__DBSession__()
 
-        #print(requestedUser.__repr__())
         if requestedUser != None:
             storedUser=self.findUserByUsername(requestedUser.username)
+            rol = RolType()
             if storedUser != None:
                 theUser = session.query(User).\
                     filter(User.uid==storedUser.uid).\
-                    update({'rol': RolType.get_adm_user_key()})
+                    update({'rol': rol.get_adm_user_key()})
 
                 session.commit()
             return self.findUserByUsername(requestedUser.username)
@@ -348,7 +348,6 @@ class Database:
     def changeUser(self,requestedUser):
         session = self.__DBSession__()
 
-        #print(requestedUser.__repr__())
         if requestedUser != None:
             storedUser=self.findUserByUID(requestedUser.uid)
             if storedUser != None:
@@ -375,13 +374,13 @@ class Database:
     def setUserAdvanced(self,requestedUser):
         session = self.__DBSession__()
 
-        #print(requestedUser.__repr__())
         if requestedUser != None:
             storedUser=self.findUserByUsername(requestedUser.username)
+            rol = RolType()
             if storedUser != None:
                 theUser = session.query(User).\
                     filter(User.uid==storedUser.uid).\
-                    update({'rol': RolType.get_adv_user_key()})
+                    update({'rol': rol.get_adv_user_key()})
 
                 session.commit()
             return self.findUserByUsername(requestedUser.username)
@@ -391,13 +390,13 @@ class Database:
     def setUserKid(self,requestedUser):
             session = self.__DBSession__()
 
-            #print(requestedUser.__repr__())
             if requestedUser != None:
                 storedUser=self.findUserByUsername(requestedUser.username)
+                rol = RolType()
                 if storedUser != None:
                     theUser = session.query(User).\
                         filter(User.uid==storedUser.uid).\
-                        update({'rol': RolType.get_kid_user_key()})
+                        update({'rol': rol.get_kid_user_key()})
 
                     session.commit()
                 return self.findUserByUsername(requestedUser.username)
@@ -405,15 +404,15 @@ class Database:
                 return None
 
     def setUserGuest(self,requestedUser):
-            #print(requestedUser.__repr__())
             session = self.__DBSession__()
 
             if requestedUser != None:
                 storedUser=self.findUserByUsername(requestedUser.username)
+                RolType = rol
                 if storedUser != None:
                     theUser = session.query(User).\
                         filter(User.uid==storedUser.uid).\
-                        update({'rol': RolType.get_guest_user_key()})
+                        update({'rol': rol.get_guest_user_key()})
 
                     session.commit()
                 return self.findUserByUsername(requestedUser.username)
@@ -657,10 +656,9 @@ class Database:
 
         is_admin=False
         storedUser= self.findUserByUsername(username)
+        rol = RolType()
         if storedUser != None:
-            #print(storedUser.rol)
-            #print(RolType.get_adm_user_key())
-            if storedUser.rol == RolType.get_adm_user_key():
+            if storedUser.rol == rol.get_adm_user_key():
                 is_admin = True
         return is_admin
 
@@ -670,9 +668,8 @@ class Database:
         is_advanced=False
         storedUser=self.findUserByUsername(username)
         if storedUser != None:
-            #print(storedUser.rol)
-            #print(RolType.get_adv_user_key())
-            if storedUser.rol == RolType.get_adv_user_key():
+            rol = RolType()
+            if storedUser.rol == rol.get_adv_user_key():
                 is_advanced = True
         return is_advanced
 
@@ -682,9 +679,8 @@ class Database:
         is_kid=False
         storedUser=self.findUserByUsername(username)
         if storedUser != None:
-            #print(storedUser.rol)
-            #print(RolType.get_kid_user_key())
-            if storedUser.rol == RolType.get_kid_user_key():
+            rol = RolType()
+            if storedUser.rol == rol.get_kid_user_key():
                 is_kid = True
         return is_kid
 
@@ -694,21 +690,18 @@ class Database:
         is_guest=False
         storedUser= self.findUserByUsername(username)
         if storedUser != None:
-            #print(storedUser.rol)
-            #print(RolType.get_guest_user_key())
-            if storedUser.rol == RolType.get_guest_user_key():
+            rol = RolType()
+            if storedUser.rol == rol.get_guest_user_key():
                 is_guest = True
         return is_guest
 
     def findGroupsByUser(self, username):
         session = self.__DBSession__()
 
-        #print("....%r" % username)
         membership = []
         if username != '%':
 
             theUser = self.findUserByUsername(username)
-            #print(theUser)
             if theUser != None:
                 membergroups = session.\
                     query(Groups).\
@@ -723,13 +716,11 @@ class Database:
                 for member in membergroups:
                     theGroup = self.findGroupByGID(member.gid)
                     membership.append(theGroup)
-                    #membergroups.append(theGroup)
         return membership
 
     def findNotGroupsByUser(self, username):
         session = self.__DBSession__()
 
-        #print("....%r" % username)
         notMembership = []
         membership = []
         all_groups = []
@@ -1022,13 +1013,13 @@ class RolType(object):
         return roles.values()
     def dbTypes():
         return getValues()
-    def get_adm_user_key():
+    def get_adm_user_key(self):
         return 'A'
-    def get_adv_user_key():
+    def get_adv_user_key(self):
         return 'V'
-    def get_kid_user_key():
+    def get_kid_user_key(self):
         return 'K'
-    def get_guest_user_key():
+    def get_guest_user_key(self):
         return 'G'
     def get_adm_user():
         return getValue('A')
