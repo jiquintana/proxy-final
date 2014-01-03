@@ -10,7 +10,7 @@ else:
 from sqlalchemy import Column, ForeignKey, Integer, String, Boolean, Table, or_, CHAR, Enum,  create_engine, MetaData, event, Index, desc, TIMESTAMP
 from sqlalchemy.orm import relationship, scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base,  DeclarativeMeta
-from sqlalchemy.pool import NullPool
+from sqlalchemy.pool import NullPool, StaticPool, SingletonThreadPool
 import datetime
 if python_OldVersion:
     import string
@@ -22,7 +22,16 @@ from Config import Config
 DRIVER = Config.dbFiles['log']
 TraceSQL = Config.dbTrace['log']
 
-engine = create_engine(DRIVER, echo=TraceSQL,poolclass=NullPool)
+engine = create_engine(DRIVER,
+    connect_args={'check_same_thread':False},
+    echo=TraceSQL,
+    poolclass=NullPool)
+    #poolclass=StaticPool)
+    #poolclass=SingletonThreadPool)
+
+@event.listens_for(engine, "connect")
+def _fk_pragma_on_connect(dbapi_con, con_record):
+    dbapi_con.execute('PRAGMA journal_mode=MEMORY')
 
 
 Base = declarative_base()
@@ -65,6 +74,7 @@ class Database:
         newLine = Lines()
         newLine.line = str(data).rstrip('\n')
         session.add(newLine)
+        session.merge(newLine)
         session.commit()
         return None
 

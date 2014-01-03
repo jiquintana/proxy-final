@@ -10,7 +10,7 @@ else:
 from sqlalchemy import Column, ForeignKey, Integer, String, Boolean, Table, or_, CHAR, Enum,  create_engine, MetaData, event
 from sqlalchemy.orm import relationship, scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base,  DeclarativeMeta
-from sqlalchemy.pool import NullPool
+from sqlalchemy.pool import NullPool, StaticPool, SingletonThreadPool
 from sqlalchemy.dialects import sqlite
 import datetime
 
@@ -26,7 +26,17 @@ MAXGROUPS = 65536
 DRIVER = Config.dbFiles['proxy']
 TraceSQL = Config.dbTrace['proxy']
 
-engine = create_engine(DRIVER, echo=TraceSQL,poolclass=NullPool)
+engine = create_engine(DRIVER, 
+    connect_args={'check_same_thread':False},
+    echo=TraceSQL,
+    #poolclass=NullPool)
+    poolclass=StaticPool)
+    #poolclass=SingletonThreadPool)
+
+@event.listens_for(engine, "connect")
+def _fk_pragma_on_connect(dbapi_con, con_record):
+    dbapi_con.execute('PRAGMA journal_mode=MEMORY')
+
 
 Base = declarative_base()
 
@@ -97,11 +107,7 @@ class AlchemyEncoder(json.JSONEncoder):
 
 def __bitwise_not_hours(hours):
     return hours ^ 0xFFFFFF
-'''
-@event.listens_for(engine, "connect")
-def _fk_pragma_on_connect(dbapi_con, con_record):
-    dbapi_con.execute('PRAGMA journal_mode=MEMORY')
-'''
+
 class Database:
     __initialized__ = False
     __engine__ = None
