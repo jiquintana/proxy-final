@@ -20,7 +20,6 @@
 			test_onload();
 			if (! window.opener) {
 				alert("no opener")
-				fromForm();
 			} else {
 				document.formGroup.action = "/db/"+window.opener.groupFormType;
 				if (window.opener.groupFormType == 'addGroup') {
@@ -34,7 +33,6 @@
 					Object.keys(data).forEach(function(key) {
 						document.getElementById(key).value=data[key];
 					});
-					fromForm();	
 				} else  {
 					alert(window.opener.groupFormType);
 				}
