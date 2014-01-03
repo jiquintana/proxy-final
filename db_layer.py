@@ -11,6 +11,7 @@ from sqlalchemy import Column, ForeignKey, Integer, String, Boolean, Table, or_,
 from sqlalchemy.orm import relationship, scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base,  DeclarativeMeta
 from sqlalchemy.pool import NullPool
+from sqlalchemy.dialects import sqlite
 import datetime
 
 if python_OldVersion:
